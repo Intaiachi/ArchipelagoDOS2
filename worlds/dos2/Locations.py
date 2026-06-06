@@ -9,18 +9,21 @@ from . import Items
 if TYPE_CHECKING:
     from .World import DOS2World
 
-DOS2_LOCATION_LIST = [
-    ["TUT_Troubled_Waters_Get_Your_Bearings", ["Merryweather: Troubled Waters - Get Your Bearings"], 0],
-    ["TUT_Death_Belowdecks_Complete", ["Merryweather: Death Belowdecks - Complete"], 0],
-    ["TUT_Troubled_Waters_Register_With_Magister", ["Merryweather: Troubled Waters - Register With Magister"], 0],
-    ["TUT_Troubled_Waters_Complete", ["Merryweather: Troubled Waters - Complete"], 0]
+DOS2_KILL_LIST = [
+    ["S_TUT_TopDeckVoidling10_bd0123ae-26fd-4dad-8326-b6ae9a3fc1c5", ["Merryweather: Voidling 1"], 0],
+    ["S_TUT_TopDeckVoidling11_2fcb5b84-875f-42bd-ac80-6f8495c6a47c", ["Merryweather: Voidling 2"], 0],
 ]
 
+DOS2_LOCATION_LIST = [
+    ["Quest-TUT_ShipInvestigation", ["Merryweather: Death Belowdecks - Complete"], 0],
+    ["Quest-TUT_ShipMurder", ["Merryweather: Troubled Waters - Complete"], 0]
+] + DOS2_KILL_LIST
+
 LOCATION_NAME_ID_REGION = [
-    ["Merryweather: Troubled Waters - Get Your Bearings", 1, "Merryweather"],
-    ["Merryweather: Death Belowdecks - Complete", 2, "Merryweather"],
-    ["Merryweather: Troubled Waters - Register With Magister", 3, "Merryweather"],
-    ["Merryweather: Troubled Waters - Complete", 4, "Merryweather"]
+    ["Merryweather: Death Belowdecks - Complete", 1, "Merryweather"],
+    ["Merryweather: Troubled Waters - Complete", 2, "Merryweather"],
+    ["Merryweather: Voidling 1", 3, "Merryweather"],
+    ["Merryweather: Voidling 2", 4, "Merryweather"],
     ]
 
 LOCATION_NAME_TO_ID = {item[0]: item[1] for item in LOCATION_NAME_ID_REGION}
