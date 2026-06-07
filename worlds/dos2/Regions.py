@@ -29,4 +29,4 @@ def connect_regions(world: DOS2World) -> None:
 
     merryweather.connect(fortJoy, "Merryweather to Fort Joy", lambda state: state.has("Level Up", world.player))
     fortJoy.connect(eastReapersEye, "Fort Joy to East Reaper's Eye", lambda state: state.has("Level Up", world.player, 2))
-    eastReapersEye.connect(finalReapersEye, "East Reaper's Coast to North-east Reaper's Eye", lambda state: state.has("Level Up", world.player, 3) and state.has("Purging Wand", world.player))
+    eastReapersEye.connect(finalReapersEye, "East Reaper's Eye to North-east Reaper's Eye", lambda state: state.has("Level Up", world.player, 3) and state.has("Purging Wand", world.player))

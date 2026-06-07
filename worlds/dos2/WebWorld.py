@@ -13,7 +13,7 @@ class DOS2WebWorld(WebWorld):
         "English",
         "setup_en.md",
         "setup/en",
-        ["Intaiachi"],
+        ["Intaiachi", "chaotic", "JeyKey09"],
     )
 
     tutorials = [setup_en]

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
+import random
+import math
 
 from BaseClasses import Item, ItemClassification
 
@@ -8,7 +10,24 @@ if(TYPE_CHECKING):
     from .World import DOS2World
 
 FILLER_ITEMS = [
-    ["Gold", "1c3c9c74-34a1-4685-989e-410dc080be6f"]
+    ["Gold", "1c3c9c74-34a1-4685-989e-410dc080be6f"],
+    ["Blessed Water Arrow", "8757323c-dda2-49df-b576-56ae6c102ad7"],
+    ["Charming Arrow", "d2740ee3-6f34-459d-b4bc-100c34f5ab7a"],
+    ["Cursed Fire Arrow", "543ceb20-8b19-4cff-b562-19a86ffcd2e4"],
+    ["Cursing Arrow", "386e54ba-61fd-4e46-8a52-847ad743ba59"],
+    ["Explosive Arrow", "ecbd8c5a-c1f9-4411-a040-bbe6c85b031d"],
+    ["Fire Arrow", "ca50d068-c761-4ca0-86ce-6448507b8bc4"],
+    ["Freezing Arrow", "dff00e98-e93c-4d16-a3e6-4692441a7cee"],
+    ["Knockdown Arrow", "ee6e9c18-bb6c-4562-abd9-e0a66b3609"], #broken
+    ["Poison Arrow", "8b4e9517-d883-484f-8a3d-4da6a09b6d79"],
+    ["Poisoncloud Arrow", "a1c4934d-1021-40a3-8c2c-42972208ade8"],
+    ["Slow Down Arrow", "652b3a02-0fcf-4705-9327-1c813799eaff"],
+    ["Smokescreen Arrow", "d90f9190-561f-4c12-668d-222999ed7ae5"], #broken
+    ["Static Cloud Arrow", "19cdbaa2-ed34-4994-8af7-8d5c72b1b399"],
+    ["Steamcloud Arrow", "16ba4dad-171f-4475-8c39-90804281348"], #broken
+    ["Shocking Arrow", "96c6ab23-6431-40a8-aa49-1530349033ca"],
+    ["Water Arrow", "0d8a606d-abe4-46f1-972a-8fe4f0c2c663"],
+    ["Resurrect Scroll", "60180909-ee47-4d1c-b81c-e43bd8fdce1e"]
 ]
 
 USEFUL_ITEMS = [
@@ -22,9 +41,9 @@ USEFUL_ITEMS = [
     ["Cursed Electric Infusion Skillbook", "a0cf63ce-4cfa-4b04-8246-312d137fbde"],
     ["Dazing Bolt Skillbook", "7b0113b7-03d5-46e2-b3db-bf1288017510"],
     ["Electric Fence Skillbook", "c7538f38-c2a9-457b-aadb-7a9abd81db7e"],
-    ["Electric Infusion Skillbook", "eea2a2a2-571b-4b2a-9e46-e8b9d056b310"],
+    ["Electric Infusion Skillbook", "eea2a2a2-571b-4b2a-9e46-e8b9d056b310"], #broken
     ["Evasive Aura Skillbook", "ef6651cc-95a0-42bf-be0b-d4e2d9c2801b"],
-    ["Evasive Maneuver Skillbook", "5b11b1cb-87be-4a00-aa60-0cabd6d66793"],
+    ["Uncanny Evasion Skillbook", "5b11b1cb-87be-4a00-aa60-0cabd6d66793"],
     ["Favourable Wind Skillbook", "af67492d-77dd-4e07-bb06-01779c2f6b0e"],
     ["Jellyfish Skin Skillbook", "3df50ba4-d0d0-4b3c-bc0d-799025abe"],
     ["Lightning Skillbook", "92262321-b1b7-43a0-6502-29f88adabd45"],
@@ -95,11 +114,11 @@ USEFUL_ITEMS = [
     ["Supernova Skillbook", "a6370cb1-6cbe-407b-b005-a13558581b34"],
     ["Black Shroud Skillbook", "b12a442a-cc2f-4387-995e-7ce14826fa55"],
     ["Bloated Corpse Skillbook", "57ab0717-756e-4456-86b2-1de27deba116"],
-    ["Blood Bubble Skillbook", "3004f9b9-0369-4f16-b659-1b77d89f8f83"],
+    ["Blood Sucker Skillbook", "3004f9b9-0369-4f16-b659-1b77d89f8f83"],
     ["Bone Cage Skillbook", "d54c4e70-5796-48cf-b9e6-9b95b96cea4b"],
-    ["Bone Pile Skillbook", "dcf5c008-c89b-42b9-8e3b-d5722e5230ad"],
+    ["Bone Pile Skillbook", "dcf5c008-c89b-42b9-8e3b-d5722e5230ad"], #might be named Raise Bone Widow
     ["Deaths Door Skillbook", "ac09144a-dd65-485a-962-810a5a731710"],
-    ["Death Wish Skillbook", "21085dcc-ec4a-4ffe-9877-5ee503341658"],
+    ["Death Wish Skillbook", "21085dcc-ec4a-4ffe-9877-5ee503341658"], #broken
     ["Decaying Touch Skillbook", "ac14dff6-8a90-488a-8b2e-e9bcc2dc5b4d"],
     ["Grasp Of The Starved Skillbook", "880d084e-20aa-4a50-9a4c-294d46399ed6"],
     ["Infect Skillbook", "591cb46f-0336-4d34-aad7-026d61f164c6"],
@@ -123,7 +142,7 @@ USEFUL_ITEMS = [
     ["Strip Resistance Skillbook", "902e02e6-b28e-4d0e-b6ff-cbda43b48bac"],
     ["Swap Ground Skillbook", "1abba567-1cb7-4719-a4e9-cb1e207866ca"],
     ["Tentacle Lash Skillbook", "916121ce-bde1-4e3b-934c-96a0e3fb3169"],
-    ["Wings Skillbook", "dad38e23-6ad4-4899-9c92-0c022b3ea752"],
+    ["Spread Your Wings Skillbook", "dad38e23-6ad4-4899-9c92-0c022b3ea752"],
     ["Arrow Spray Skillbook", "871ef655-5a2a-41c6-ac18-018c5c22d63e"],
     ["Ballistic Shot Skillbook", "49ebd42e-42a8-46c3-bd32-a3f5b0dcddd5"],
     ["Elemental Arrowheads Skillbook", "e57b2904-0203-445-ba4c-86145aeb4955"],
@@ -143,24 +162,24 @@ USEFUL_ITEMS = [
     ["Chloroform Skillbook", "6b352396-1e74-446a-94c7-2a762db9ef63"],
     ["Cloak And Dagger Skillbook", "68984f13-9e02-43eb-a95f-8cd339dfcebc"],
     ["Corrupted Blade Skillbook", "2bec772-bea2-4465-8ac3-81a6a69927a"],
-    ["Daggers Drawn Skillbook", "58e7824d-Od4f-4331-86f1-d36976577315"],
+    ["Daggers Drawn Skillbook", "58e7824d-Od4f-4331-86f1-d36976577315"], #broken
     ["Fan Of Knives Skillbook", "89d0e9c5-d538-4300-8504-2a5c93c7c90c"],
     ["Fatality Skillbook", "36384e38-bc56-434b-bbba-37a679ec5220"],
     ["Gag Order Skillbook", "dae871c3fcfc-4e24-9302-359f0505fb0d"],
     ["Knee Breaker Skillbook", "a297e33e-7214-495a-838d-1d437237969"],
     ["Launch Bomber Skillbook", "3a291754-71e6-496b-8038-69f0d0b2adca"],
-    ["Serrated Edge Skillbook", "3896c4ee-243c-4628-adce-cc7e0ee6db2"],
+    ["Serrated Edge Skillbook", "3896c4ee-243c-4628-adce-cc7e0ee6db2"], #broken
     ["Sleeping Arms Skillbook", "5240dd04-e97c-464e-b150-4455876cd6bb"],
     ["Terrifying Cruelty Skillbook", "5da557fe-1823-438-9140-6a59f104ca61"],
     ["Throwing Knife Skillbook", "78ddb7e3-0328-4c3f-8895-6dc77dcf3c2f"],
     ["Vault Skillbook", "813f7c41-4766-455d-bf32-66c0da7a81df"],
-    ["Voidwoken Charm Skillbook", "9373ffa1-8285-49a7-91aaf714934157b"],
+    ["Voidwoken Charm Skillbook", "9373ffa1-8285-49a7-91aaf714934157b"], #broken
     ["Cannibalize Skillbook", "ad1f38d3-d7c9-4dea-88e5-cb52c31892ea"],
     ["Charm Skillbook", "510fe3cd-4370-4e0f-b88c-fe8792062eab"],
     ["Close The Door Skillbook", "f46f480d-678d-4af7-935d-b437a2715060"],
     ["Dimensional Bolt Skillbook", "b8cb5184-b8ad-46d0-96fe-1c4801fd582e"],
-    ["Ethereal Skillbook", "298d9977-10fa-45e2-882f-aee1b64ac38e"],
-    ["Hamony Skillbook", "ea6e34fe-7234-460e-96bb-9d0e1f7ea6fd"],
+    ["Ethereal Storm Skillbook", "298d9977-10fa-45e2-882f-aee1b64ac38e"],
+    ["Rallying Cry Skillbook", "ea6e34fe-7234-460e-96bb-9d0e1f7ea6fd"],
     ["Incarnate Skillbook", "84c1c61a-77dd-4d22-9a1c-83adaa58be31"],
     ["Inner Demon Skillbook", "7c1d4c29-5e16-4fc3-8ee0-afe771fbd367"],
     ["Planar Gateway Skillbook", "27c01b16-bf05-4794-9a4b-073e2e249b5f"],
@@ -183,7 +202,7 @@ USEFUL_ITEMS = [
     ["Guardian Angel Skillbook", "84eb703-e386-4d8b-bb3c-431573e4ea2a"],
     ["Overpower Skillbook", "c034b576-8379-4796-b03d-616c3c22c998"],
     ["Phoenix Dive Skillbook", "5513cf32-5f89-415a-8a02-13c52c579a59"],
-    ["Taunt Skillbook", "0774d0c4-fd3c-4062-b371-78129344e0ee"],
+    ["Provoke Skillbook", "0774d0c4-fd3c-4062-b371-78129344e0ee"],
     ["Thick Of The Fight Skillbook", "4bf493df-6684-4b49-aa34-8d244bc55439"],
     ["Whirlwind Skillbook", "03a001b9-4f0a-9348-b971546c23ea"],
     ["Arcane Stitch Skillbook", "e8ae046a-9780-42a1-839c-9c51beeab0bb"],
@@ -193,7 +212,7 @@ USEFUL_ITEMS = [
     ["Cryogenic Stasis Skillbook", "a3a4900c-32f4-4288-ba15-30c741f86fdb"],
     ["Cryotherapy Skillbook", "e9d33b75-125a-4537-a06e-5ed9358c18f9"],
     ["Frost Aura Skillbook", "d550c530-99ba-430c-9df0-6a32657259da"],
-    ["Frosty Shell Skillbook", "7b703887-6680-419a-b9c1-656200fb709c"],
+    ["Armor of Frost Skillbook", "7b703887-6680-419a-b9c1-656200fb709c"],
     ["Global Cooling Skillbook", "b2db6248-342f-4066-b000-9a8321e1dbc2"],
     ["Hail Attack Skillbook", "f3b278b6-aff3-47e7-a8f7-823ebb6759e6"],
     ["Hail Strike Skillbook", "1850ec4f-c1dd-4859-8b83-a2a2343c2b8c"],
@@ -217,14 +236,12 @@ USEFUL_ITEMS = [
 #0 - jort joy, 1 - reapers eye, tbd for future locations
 PROGRESSION_ITEMS = [
     ["Level Up", "levelUp", 1, ItemClassification.progression, 0],
-    ["Purging Wand", "2b4412a5-467a-44ae-9d7b-bf39a06794b2", 2, ItemClassification.progression, 1]
+    ["Purging Wand", "2b4412a5-467a-44ae-9d7b-bf39a06794b2", 2, ItemClassification.progression, 0]
 ]
 
 #item name, id in game, id in ap, classification, level
-ITEM_TUPLES = [
-    ["Level Up", "levelUp", 1, ItemClassification.progression, 0],
-    ["Purging Wand", "2b4412a5-467a-44ae-9d7b-bf39a06794b2", 2, ItemClassification.progression, 1],
-] + [[item[0], item[1], index + 1000, ItemClassification.useful, 0] for index, item in enumerate(USEFUL_ITEMS)] \
+ITEM_TUPLES = PROGRESSION_ITEMS \
+  + [[item[0], item[1], index + 1000, ItemClassification.useful, 0] for index, item in enumerate(USEFUL_ITEMS)] \
   + [[item[0], item[1], index + 3000, ItemClassification.filler, 0] for index, item in enumerate(FILLER_ITEMS)]
 
 ITEM_NAME_TO_ID = {item[0]: item[2] for item in ITEM_TUPLES}
@@ -233,6 +250,7 @@ AP_ITEM_TO_DOS2_ID = {item[0]: item[1] for item in ITEM_TUPLES}
 ID_TO_AP_ITEM = {item[2]: item[1] for item in ITEM_TUPLES}
 DEFAULT_ITEM_CLASSIFICATIONS = {item[0]: item[3] for item in ITEM_TUPLES}
 IS_DUPEABLE = {item[1]: True for item in FILLER_ITEMS}
+IS_DUPEABLE = {"levelUp": True}
 
 class DOS2Item(Item):
     game = "Divinity Original Sin 2"
@@ -248,8 +266,15 @@ def create_item_with_correct_classification(world: DOS2World, name: str) -> DOS2
 def create_all_items(world: DOS2World) -> None:
     itempool: list[Item] = []
 
+    levelups_to_add = 3 #remember to change this
+    itempool += [world.create_item("Level Up") for _ in range(levelups_to_add)]
+    itempool += [world.create_item("Purging Wand")]
+
     number_of_items = len(itempool)
-    number_of_filler = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
+    number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
+    number_useful = 2 * (number_empty / 3)
+    itempool += [world.create_item(random.choice(USEFUL_ITEMS)[0]) for _ in range(math.ceil(number_useful))]
+    number_of_filler = number_empty - math.ceil(number_useful)
     itempool += [world.create_filler() for _ in range(number_of_filler)]
 
     world.multiworld.itempool += itempool
