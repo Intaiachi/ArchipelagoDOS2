@@ -43,8 +43,6 @@ DOS2_KILL_LIST = [
     ["S_FTJ_OlgoCellarMagister_003_e8c14f56-b34a-41c3-adb3-dda318c5bdc1", ["Fort Joy: Magister Ranger 6 (280, 651)"], 0],
     ["S_FTJ_OlgoCellarMagister_004_2955b578-1a8e-4ecd-aa7f-5f084c428e25", ["Fort Joy: Magister Ranger 7 (279, 663)"], 0],
     #prison
-    ["S_FTJ_MagisterSlaver_001_1f5664fc-db5e-4428-a3ed-8719e5602d4a", ["Fort Joy: Magister Goa (322, 600)"], 0],
-    ["S_FTJ_MagisterSlaver_002_3dc0a0f4-07b6-4066-a99c-1706e33c98e3", ["Fort: Joy: Magister Carin (319, 601)"], 0],
     ["S_FTJ_MagisterTorturer_1d1c0ba0-a91e-4927-af79-6d8d27e0646b", ["Fort Joy: Kniles the Flenser (384, 630)"], 0],
     ["S_FTJ_Torturer_Golem_01_584db8ce-8dcf-4906-bc6f-e51eb057de08", ["Fort Joy: Meat Golem 1 (389, 641)"], 0],
     ["S_FTJ_Torturer_Golem_02_aff8be39-58b0-4bff-8fa6-7cf501b5060b", ["Fort Joy: Meat Golem 2 (370, 639)"], 0],
@@ -158,8 +156,8 @@ DOS2_LOCATION_LIST = [
     ["Quest-TUT_ShipInvestigation", ["Merryweather: Death Belowdecks - Complete"], 0],
     ["Quest-TUT_ShipMurder", ["Merryweather: Troubled Waters - Complete"], 0],
     ["Quest-FTJ_Escape", ["Fort Joy: Escape From Fort Joy - Complete"], 0],
-    ["Quest-FTJ_Escape_Island", ["placeholder2"], 0],
-    ["Quest-FTJ_Escape_Island_SUBA", ["placeholder3"], 0],
+    ["Quest-FTJ_Escape_Island", ["North-east Reaper's Eye: Escape The Island - Complete", "Victory_Alexander"], 0],
+    ["Quest-FTJ_Escape_Island_SUBA", ["North-east Reaper's Eye: Talk to Malady - Complete"], 0],
     ["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0],
     ["Quest-FTJ_Escape_Island_SUBC", ["placeholder5"], 0],
     ["Quest-FTJ_Voice", ["East Reaper's Eye: The Voices - Complete"], 0],
@@ -170,13 +168,13 @@ DOS2_LOCATION_LIST = [
     ["Quest-RC_FTJ_MurderousGheist", ["placeholder11"], 0],
     ["Quest-FTJ_SourceHounds", ["Fort Joy: Finding Emmie - Complete"], 0],
     ["Quest-FTJ_Arena", ["Fort Joy: The Arena of Fort Joy - Complete"], 0],
-    ["Quest-RC_FTJ_SoulJar", ["Fort Joy: Withermoore's Soul Jar - Complete"], 0], #might also be The Eternal Worshipper (nvm nothing of these are, quest flag isnt sent for that one)
+    ["Quest-RC_FTJ_SoulJar", ["Fort Joy: Withermoore's Soul Jar - Complete"], 0], #might also be The Eternal Worshipper (nvm none of these are, quest flag isnt sent for that one)
     ["Quest-FTJ_SaheilaFate", ["placeholder15"], 0],
     ["Quest-RC_FTJ_SaheilaSignet", ["placeholder16"], 0],
     ["Quest-FTJ_Teleporter", ["Fort Joy: The Teleporter - Complete"], 0],
     ["Quest-FTJ_Elodi", ["Fort Joy: The Shakedown - Complete"], 0],
     ["Quest-FTJ_SW_Illusionist", ["East Reaper's Eye: The Vault of Braccus Rex - Complete"], 0],
-    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Most Dangerous When Cornered - Complete"], 0],
+    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch - Complete"], 0], #same flag as Dangerous When Cornered for some reason
     ["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0],
     ["Quest-FTJ_SW_Necromancers", ["East Reaper's Eye: A Fate Worse Than Death - Complete"], 0],
     ["Quest-FTJ_SW_BraccusArmory", ["East Reaper's Eye: The Armoury - Complete"], 0],
@@ -217,8 +215,6 @@ LOCATION_NAME_ID_REGION = [
     ["Fort Joy: Magister Swordsman 3 (276, 651)", 22, "Fort Joy"],
     ["Fort Joy: Magister Ranger 6 (280, 651)", 23, "Fort Joy"],
     ["Fort Joy: Magister Ranger 7 (279, 663)", 24, "Fort Joy"],
-    ["Fort Joy: Magister Goa (322, 600)", 25, "Fort Joy"],
-    ["Fort: Joy: Magister Carin (319, 601)", 26, "Fort Joy"],
     ["Fort Joy: Kniles the Flenser (384, 630)", 27, "Fort Joy"],
     ["Fort Joy: Meat Golem 1 (389, 641)", 28, "Fort Joy"],
     ["Fort Joy: Meat Golem 2 (370, 639)", 29, "Fort Joy"],
@@ -312,8 +308,8 @@ LOCATION_NAME_ID_REGION = [
     ["North-east Reaper's Eye: Gheist (564, 306)", 118, "North-east Reaper's Eye"],
     ["North-east Reaper's Eye: Voidwoken Drillworm (594, 408)", 119, "North-east Reaper's Eye"],
     ["Fort Joy: Escape From Fort Joy - Complete", 120, "Fort Joy"],
-    ["placeholder2", 121, "Fort Joy"],
-    ["placeholder3", 122, "Fort Joy"],
+    ["North-east Reaper's Eye: Escape The Island - Complete", 121, "North-east Reaper's Eye"],
+    ["North-east Reaper's Eye: Talk to Malady - Complete", 122, "North-east Reaper's Eye"],
     ["placeholder4", 123, "Fort Joy"],
     ["placeholder5", 124, "Fort Joy"],
     ["East Reaper's Eye: The Voices - Complete", 125, "East Reaper's Eye"],
@@ -330,13 +326,13 @@ LOCATION_NAME_ID_REGION = [
     ["Fort Joy: The Teleporter - Complete", 136, "Fort Joy"],
     ["Fort Joy: The Shakedown - Complete", 137, "Fort Joy"],
     ["East Reaper's Eye: The Vault of Braccus Rex - Complete", 138, "East Reaper's Eye"],
-    ["Most Dangerous When Cornered", 139, "East Reaper's Eye"],
+    ["East Reaper's Eye: Healing Touch - Complete", 139, "East Reaper's Eye"],
     ["placeholder21", 140, "Fort Joy"],
     ["East Reaper's Eye: A Fate Worse Than Death - Complete", 141, "East Reaper's Eye"],
     ["East Reaper's Eye: The Armoury - Complete", 142, "East Reaper's Eye"],
-    ["placeholder24", 143, "Fort Joy"],
+    ["East Reaper's Eye: The Cursed Ring - Complete", 143, "East Reaper's Eye"],
     ["East Reaper's Eye: The Gargoyle's Maze - Complete", 144, "East Reaper's Eye"],
-    ["placeholder26", 145, "Fort Joy"],
+    ["East Reaper's Eye: The Burning Pigs - Complete", 145, "East Reaper's Eye"],
     ["East Reaper's Eye: The Purged Dragon - Complete", 146, "East Reaper's Eye"],
     ["East Reaper's Eye: Call to Arms - Complete", 147, "East Reaper's Eye"],
     ["East Reaper's Eye: The Shreikers - Complete", 148, "East Reaper's Eye"],
@@ -394,4 +390,4 @@ def create_regular_locations(world: DOS2World) -> None:
     finalReapersEye.add_locations(finalReapersEyeLocations, DOS2Location)
 
     if(world.options.goal == world.options.goal.option_defeat_alexander):
-        merryweather.add_event("Victory_Alexander", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item) #dummy goal
+        finalReapersEye.add_event("Victory_Alexander", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)

@@ -27,6 +27,7 @@ from CommonClient import gui_enabled, logger, get_base_parser, ClientCommandProc
 
 goal = -1
 bad_states = []
+buggedLocations = ["Victory_Alexander"]
 
 class DOS2ClientCommandProcessor(ClientCommandProcessor):
     def _cmd_resync(self):
@@ -131,7 +132,7 @@ class DOS2Context(CommonContext):
             slot_data = args["slot_data"]
             if("seed_name" in args and args["seed_name"]):
                 self.seed_name = args["seed_name"]
-            self.has_death_link = slot_data.get("death_link, False")
+            self.has_death_link = slot_data.get("death_link", False)
             Utils.async_start(self.update_death_link(self.has_death_link), name = "Update Deathlink")
             global goal
             goal = slot_data["goal"]
@@ -185,9 +186,10 @@ async def game_watcher(ctx: DOS2Context):
                                 if(apLoc not in ctx.checked_locations and apLoc in LOCATION_NAME_TO_ID):
                                     sending += [LOCATION_NAME_TO_ID[apLoc]]
                                     ctx.checked_locations.add(LOCATION_NAME_TO_ID[apLoc])
-                                if(apLoc not in LOCATION_NAME_TO_ID):
+                                if(apLoc not in LOCATION_NAME_TO_ID and apLoc not in buggedLocations):
                                     logger.error(f"Something went wrong with location {apLoc}")
-                                if(apLoc == "Victory over Alexander" and goal == 0):
+                                    buggedLocations.append(apLoc)
+                                if(apLoc == "Victory_Alexander" and goal == 0):
                                     victory = True
                                 elif(apLoc == "Bad_State"):
                                     logger.error(f"Something occured that made locations unreachable, an earlier save might be needed")

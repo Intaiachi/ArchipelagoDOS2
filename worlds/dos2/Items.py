@@ -18,13 +18,13 @@ FILLER_ITEMS = [
     ["Explosive Arrow", "ecbd8c5a-c1f9-4411-a040-bbe6c85b031d"],
     ["Fire Arrow", "ca50d068-c761-4ca0-86ce-6448507b8bc4"],
     ["Freezing Arrow", "dff00e98-e93c-4d16-a3e6-4692441a7cee"],
-    ["Knockdown Arrow", "ee6e9c18-bb6c-4562-abd9-e0a66b3609"], #broken
+    ["Knockdown Arrow", "ee6e9c18-bb6c-4562-abd9-e0a66b3f609f"],
     ["Poison Arrow", "8b4e9517-d883-484f-8a3d-4da6a09b6d79"],
     ["Poisoncloud Arrow", "a1c4934d-1021-40a3-8c2c-42972208ade8"],
     ["Slow Down Arrow", "652b3a02-0fcf-4705-9327-1c813799eaff"],
-    ["Smokescreen Arrow", "d90f9190-561f-4c12-668d-222999ed7ae5"], #broken
+    ["Smokescreen Arrow", "d90f9190-561f-4c12-b68d-222999ed7ae5"],
     ["Static Cloud Arrow", "19cdbaa2-ed34-4994-8af7-8d5c72b1b399"],
-    ["Steamcloud Arrow", "16ba4dad-171f-4475-8c39-90804281348"], #broken
+    ["Steamcloud Arrow", "16ba4dad-171f-4475-8c39-d90804281348"],
     ["Shocking Arrow", "96c6ab23-6431-40a8-aa49-1530349033ca"],
     ["Water Arrow", "0d8a606d-abe4-46f1-972a-8fe4f0c2c663"],
     ["Resurrect Scroll", "60180909-ee47-4d1c-b81c-e43bd8fdce1e"]
@@ -41,7 +41,7 @@ USEFUL_ITEMS = [
     ["Cursed Electric Infusion Skillbook", "a0cf63ce-4cfa-4b04-8246-312d137fbde"],
     ["Dazing Bolt Skillbook", "7b0113b7-03d5-46e2-b3db-bf1288017510"],
     ["Electric Fence Skillbook", "c7538f38-c2a9-457b-aadb-7a9abd81db7e"],
-    ["Electric Infusion Skillbook", "eea2a2a2-571b-4b2a-9e46-e8b9d056b310"], #broken
+    ["Electric Infusion Skillbook", "eea2a2a2-571b-4b2a-9e46-e8b9d056b310"],
     ["Evasive Aura Skillbook", "ef6651cc-95a0-42bf-be0b-d4e2d9c2801b"],
     ["Uncanny Evasion Skillbook", "5b11b1cb-87be-4a00-aa60-0cabd6d66793"],
     ["Favourable Wind Skillbook", "af67492d-77dd-4e07-bb06-01779c2f6b0e"],
@@ -60,7 +60,7 @@ USEFUL_ITEMS = [
     ["Windwalker Skillbook", "5dea75d4-7487-435c-b679-2a8e60e02fb8"],
     ["Acid Infusion Skillbook", "a0969593-ef7a-427b-8158-9f50b52b8f78"],
     ["Acid Spores Skillbook", "ae22a78746d3-43e0-6998-4c7eade68110"],
-    ["Artillery Plant Skillbook", "2d1dc69f-40a8-4ff1-ab1f-410df41ae637"],
+    ["Hungry Flower Skillbook", "2d1dc69f-40a8-4ff1-ab1f-410df41ae637"],
     ["Condense Skillbook", "73507ba6-22d5-43c0-ad5b-e3fda728a664"],
     ["Contamination Skillbook", "25654041-51fc-495d-85d4-6ec45fcc7e11"],
     ["Corrosive Spray Skillbook", "cff44010-b803-4a81-a1e9-639d767dfc3e"],
@@ -113,12 +113,12 @@ USEFUL_ITEMS = [
     ["Spontaneous Combustion Skillbook", "a8777c7c-11c3-44ab-b97-361d7acf3f26"],
     ["Supernova Skillbook", "a6370cb1-6cbe-407b-b005-a13558581b34"],
     ["Black Shroud Skillbook", "b12a442a-cc2f-4387-995e-7ce14826fa55"],
-    ["Bloated Corpse Skillbook", "57ab0717-756e-4456-86b2-1de27deba116"],
+    ["Raise Bloated Corpse Skillbook", "57ab0717-756e-4456-86b2-1de27deba116"],
     ["Blood Sucker Skillbook", "3004f9b9-0369-4f16-b659-1b77d89f8f83"],
     ["Bone Cage Skillbook", "d54c4e70-5796-48cf-b9e6-9b95b96cea4b"],
     ["Bone Pile Skillbook", "dcf5c008-c89b-42b9-8e3b-d5722e5230ad"], #might be named Raise Bone Widow
-    ["Deaths Door Skillbook", "ac09144a-dd65-485a-962-810a5a731710"],
-    ["Death Wish Skillbook", "21085dcc-ec4a-4ffe-9877-5ee503341658"], #broken
+    ["Deaths Door Skillbook", "ac09144a-dd65-485a-9f62-810a5a731710"],
+    ["Death Wish Skillbook", "21085dcc-ec4a-4ffe-987f-5ee503341658"],
     ["Decaying Touch Skillbook", "ac14dff6-8a90-488a-8b2e-e9bcc2dc5b4d"],
     ["Grasp Of The Starved Skillbook", "880d084e-20aa-4a50-9a4c-294d46399ed6"],
     ["Infect Skillbook", "591cb46f-0336-4d34-aad7-026d61f164c6"],
@@ -148,7 +148,7 @@ USEFUL_ITEMS = [
     ["Elemental Arrowheads Skillbook", "e57b2904-0203-445-ba4c-86145aeb4955"],
     ["Farsight Skillbook", "682663f1-f19f-47e6-be8e-df344533d949"],
     ["First Aid Skillbook", "e14201d7-3ba5-4481-a849-620a7bf5fd68"],
-    ["Mark Skillbook", "6e0fcc26-8e87-4739-8bba-4b86e81801b1"],
+    ["Glitter Dust Skillbook", "6e0fcc26-8e87-4739-8bba-4b86e81801b1"],
     ["Multishot Skillbook", "bd927e3d-a06d-4c67-8b2e-c39fd6ea6fa0"],
     ["Piercing Shot Skillbook", "4a0aaf3b-bfe8-46c5-b9d5-da019c8640fb"],
     ["Pin Down Skillbook", "9548461b-55d5-412-6082-9331c38a599"],
@@ -161,19 +161,19 @@ USEFUL_ITEMS = [
     ["Adrenaline Skillbook", "2361e63f-dc80-4c63-892a-e8e658c4d832"],
     ["Chloroform Skillbook", "6b352396-1e74-446a-94c7-2a762db9ef63"],
     ["Cloak And Dagger Skillbook", "68984f13-9e02-43eb-a95f-8cd339dfcebc"],
-    ["Corrupted Blade Skillbook", "2bec772-bea2-4465-8ac3-81a6a69927a"],
-    ["Daggers Drawn Skillbook", "58e7824d-Od4f-4331-86f1-d36976577315"], #broken
+    ["Corrupted Blade Skillbook", "2bec77f2-bea2-4465-8ac3-81a6a6992f7a"],
+    ["Daggers Drawn Skillbook", "58e7824d-0d4f-4331-86f1-d36976577315"],
     ["Fan Of Knives Skillbook", "89d0e9c5-d538-4300-8504-2a5c93c7c90c"],
-    ["Fatality Skillbook", "36384e38-bc56-434b-bbba-37a679ec5220"],
+    ["Mortal Blow Skillbook", "36384e38-bc56-434b-bbba-37a679ec5220"],
     ["Gag Order Skillbook", "dae871c3fcfc-4e24-9302-359f0505fb0d"],
     ["Knee Breaker Skillbook", "a297e33e-7214-495a-838d-1d437237969"],
     ["Launch Bomber Skillbook", "3a291754-71e6-496b-8038-69f0d0b2adca"],
-    ["Serrated Edge Skillbook", "3896c4ee-243c-4628-adce-cc7e0ee6db2"], #broken
+    ["Serrated Edge Skillbook", "3896c4ee-243c-4628-adce-cc7fe0ee6db2"],
     ["Sleeping Arms Skillbook", "5240dd04-e97c-464e-b150-4455876cd6bb"],
     ["Terrifying Cruelty Skillbook", "5da557fe-1823-438-9140-6a59f104ca61"],
     ["Throwing Knife Skillbook", "78ddb7e3-0328-4c3f-8895-6dc77dcf3c2f"],
-    ["Vault Skillbook", "813f7c41-4766-455d-bf32-66c0da7a81df"],
-    ["Voidwoken Charm Skillbook", "9373ffa1-8285-49a7-91aaf714934157b"], #broken
+    ["Backlash Skillbook", "813f7c41-4766-455d-bf32-66c0da7a81df"],
+    ["Voidwoken Charm Skillbook", "9373ffa1-8285-49a7-91aa-f7f14934157b"],
     ["Cannibalize Skillbook", "ad1f38d3-d7c9-4dea-88e5-cb52c31892ea"],
     ["Charm Skillbook", "510fe3cd-4370-4e0f-b88c-fe8792062eab"],
     ["Close The Door Skillbook", "f46f480d-678d-4af7-935d-b437a2715060"],
@@ -207,7 +207,7 @@ USEFUL_ITEMS = [
     ["Whirlwind Skillbook", "03a001b9-4f0a-9348-b971546c23ea"],
     ["Arcane Stitch Skillbook", "e8ae046a-9780-42a1-839c-9c51beeab0bb"],
     ["Blood Storm Skillbook", "4fd6849b-b2cb-416b-9094-05c55d56c88e"],
-    ["Chain Heal Skillbook", "a4d37aea-d9b8-4ba6-bd0b-aaaad48d13aa"],
+    ["Healing Ritual Skillbook", "a4d37aea-d9b8-4ba6-bd0b-aaaad48d13aa"],
     ["Cleanse Wounds Skillbook", "9def4e2e-e1bd-4a32-82b8-02b5b26a88a0"],
     ["Cryogenic Stasis Skillbook", "a3a4900c-32f4-4288-ba15-30c741f86fdb"],
     ["Cryotherapy Skillbook", "e9d33b75-125a-4537-a06e-5ed9358c18f9"],
@@ -249,8 +249,11 @@ ID_TO_ITEM_NAME = {item[2]: item[0] for item in ITEM_TUPLES}
 AP_ITEM_TO_DOS2_ID = {item[0]: item[1] for item in ITEM_TUPLES}
 ID_TO_AP_ITEM = {item[2]: item[1] for item in ITEM_TUPLES}
 DEFAULT_ITEM_CLASSIFICATIONS = {item[0]: item[3] for item in ITEM_TUPLES}
-IS_DUPEABLE = {item[1]: True for item in FILLER_ITEMS}
-IS_DUPEABLE = {"levelUp": True}
+IS_DUPEABLE = {
+    **{item[1]: True for item in FILLER_ITEMS},
+    **{item[1]: True for item in USEFUL_ITEMS},
+    "levelUp": True,
+}
 
 class DOS2Item(Item):
     game = "Divinity Original Sin 2"
