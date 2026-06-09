@@ -27,7 +27,7 @@ from CommonClient import gui_enabled, logger, get_base_parser, ClientCommandProc
 
 goal = -1
 bad_states = []
-buggedLocations = ["Victory_Alexander"]
+buggedLocations = ["Victory_Escape_Reapers_Eye"]
 
 class DOS2ClientCommandProcessor(ClientCommandProcessor):
     def _cmd_resync(self):
@@ -189,7 +189,7 @@ async def game_watcher(ctx: DOS2Context):
                                 if(apLoc not in LOCATION_NAME_TO_ID and apLoc not in buggedLocations):
                                     logger.error(f"Something went wrong with location {apLoc}")
                                     buggedLocations.append(apLoc)
-                                if(apLoc == "Victory_Alexander" and goal == 0):
+                                if(apLoc == "Victory_Escape_Reapers_Eye" and goal == 0):
                                     victory = True
                                 elif(apLoc == "Bad_State"):
                                     logger.error(f"Something occured that made locations unreachable, an earlier save might be needed")

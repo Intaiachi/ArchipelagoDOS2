@@ -124,15 +124,15 @@ DOS2_KILL_LIST = [
     ["S_FTJ_SW_BurningSkeleton2_11e95a85-9877-403f-944e-16b2c4e9a4b3", ["East Reaper's Eye: Incandescent Scorcher (539, 94)"], 0],
     ["S_FTJ_SW_BurningSkeleton3_d53d04be-e7d7-4b37-8b93-2807921fb58a", ["East Reaper's Eye: Incandescent Marksman (529, 100)"], 0],
     #trompdoy
-    ["S_FTJ_SW_IllusionistAtEntrance e01c3723-872a-454d-a59b-d798b21183cd", ["East Reaper's Eye: Trompdoy (676, 487)"], 0],
+    ["S_FTJ_SW_IllusionistAtEntrance_e01c3723-872a-454d-a59b-d798b21183cd", ["East Reaper's Eye: Trompdoy (676, 487)"], 0],
     ["S_FTJ_SW_IllusionistFinal_1a3b44d4-0ba4-4289-b158-a54111b83e1d", ["East Reaper's Eye: Trompdoy (700, 497)"], 0],
     #deep dweller and friends //migth not work
     ["S_FTJ_SW_VWBoss_Mage_01_5cf41c21-bfed-499e-a6fe-6eda7c24b118", ["East Reaper's Eye: Decomposing Aeromancer (494, 170)"], 0],
-    ["S_FTJ_SW_VWBoss_Mage_02 2f619e60-5cfc-4323-a094-e285ea922903", ["East Reaper's Eye: Decomposing Cryomancer (480, 159)"], 0],
-    ["S_FTJ_SW_VWBoss_Melee_01 961c827b-43d1-43c8-8553-6d1d4c8e8aed", ["East Reaper's Eye: Decomposing Swashbuckler 4 (481, 164)"], 0],
-    ["S_FTJ_SW_VWBoss_Melee_02 8644ff57-7eb3-4ed7-a496-00e977227b53", ["East Reaper's Eye: Decomposing Swashbuckler 5 (502, 167)"], 0],
-    ["S_FTJ_SW_VWBoss_Ranger_01 e8ad5533-b8f0-4c55-a261-4192f5cf1e48", ["East Reaper's Eye: Decomposing Marksman 1 (482, 175)"], 0],
-    ["S_FTJ_SW_VWBoss_VoidWoken 112f8c17-ea77-4658-ac72-239154772fb8", ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)"], 0],
+    ["S_FTJ_SW_VWBoss_Mage_02_2f619e60-5cfc-4323-a094-e285ea922903", ["East Reaper's Eye: Decomposing Cryomancer (480, 159)"], 0],
+    ["S_FTJ_SW_VWBoss_Melee_01_961c827b-43d1-43c8-8553-6d1d4c8e8aed", ["East Reaper's Eye: Decomposing Swashbuckler 4 (481, 164)"], 0],
+    ["S_FTJ_SW_VWBoss_Melee_02_8644ff57-7eb3-4ed7-a496-00e977227b53", ["East Reaper's Eye: Decomposing Swashbuckler 5 (502, 167)"], 0],
+    ["S_FTJ_SW_VWBoss_Ranger_01_e8ad5533-b8f0-4c55-a261-4192f5cf1e48", ["East Reaper's Eye: Decomposing Marksman 1 (482, 175)"], 0],
+    ["S_FTJ_SW_VWBoss_VoidWoken_112f8c17-ea77-4658-ac72-239154772fb8", ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)"], 0],
     #witch
     ["S_FTJ_SW_Witch_4014aee0-56f1-47e0-a8eb-89c4b5a1da83", ["East Reaper's Eye: Radeka the Witch (691, 602)"], 0],
     ["S_FTJ_SW_Witch_Beetle_01_e973d472-f53a-4dee-be60-cd335f3dad7d", ["East Reaper's Eye: Carrion Beetle (697, 620)"], 0],
@@ -153,29 +153,30 @@ DOS2_KILL_LIST = [
 
 #All of the FTJ ones came from @chaotic and @JeyKey09, thank you!
 DOS2_LOCATION_LIST = [
+    #i dont think Nothing but Child's Play, and The Eternal Worshipper have flags
     ["Quest-TUT_ShipInvestigation", ["Merryweather: Death Belowdecks - Complete"], 0],
     ["Quest-TUT_ShipMurder", ["Merryweather: Troubled Waters - Complete"], 0],
     ["Quest-FTJ_Escape", ["Fort Joy: Escape From Fort Joy - Complete"], 0],
-    ["Quest-FTJ_Escape_Island", ["North-east Reaper's Eye: Escape The Island - Complete", "Victory_Alexander"], 0],
+    ["Quest-FTJ_Escape_Island", ["North-east Reaper's Eye: Escape From Reaper's Eye - Complete", "Victory_Escape_Reapers_Eye"], 0],
     ["Quest-FTJ_Escape_Island_SUBA", ["North-east Reaper's Eye: Talk to Malady - Complete"], 0],
-    ["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0],
-    ["Quest-FTJ_Escape_Island_SUBC", ["placeholder5"], 0],
+    #["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0], I have no idea what these are
+    #["Quest-FTJ_Escape_Island_SUBC", ["placeholder5"], 0],
     ["Quest-FTJ_Voice", ["East Reaper's Eye: The Voices - Complete"], 0],
-    ["Quest-FTJ_Godwoken", ["placeholder7"], 0],
-    ["Quest-FTJ_Hunted", ["placeholder8"], 0],
-    ["Quest-FTJ_Seeker", ["placeholder9"], 0],
+    #["Quest-FTJ_Godwoken", ["placeholder7"], 0], I dont know what this is, might be in the intermission between reapers eye and coast havent tried
+    #["Quest-FTJ_Hunted", ["placeholder8"], 0], #I think these are companion quests
+    #["Quest-FTJ_Seeker", ["placeholder9"], 0], #I dont know
     ["Quest-RC_FTJ_OlgoSaheila", ["Fort Joy: The Imprisioned Elf - Complete"], 0],
-    ["Quest-RC_FTJ_MurderousGheist", ["placeholder11"], 0],
+    ["Quest-RC_FTJ_MurderousGheist", ["Fort Joy: The Murderous Gheist - Complete"], 0],
     ["Quest-FTJ_SourceHounds", ["Fort Joy: Finding Emmie - Complete"], 0],
     ["Quest-FTJ_Arena", ["Fort Joy: The Arena of Fort Joy - Complete"], 0],
-    ["Quest-RC_FTJ_SoulJar", ["Fort Joy: Withermoore's Soul Jar - Complete"], 0], #might also be The Eternal Worshipper (nvm none of these are, quest flag isnt sent for that one)
-    ["Quest-FTJ_SaheilaFate", ["placeholder15"], 0],
-    ["Quest-RC_FTJ_SaheilaSignet", ["placeholder16"], 0],
+    ["Quest-RC_FTJ_SoulJar", ["Fort Joy: Withermoore's Soul Jar - Complete"], 0],
+    #["Quest-FTJ_SaheilaFate", ["placeholder15"], 0], #these two probably are related to act 2
+    #["Quest-RC_FTJ_SaheilaSignet", ["placeholder16"], 0],
     ["Quest-FTJ_Teleporter", ["Fort Joy: The Teleporter - Complete"], 0],
     ["Quest-FTJ_Elodi", ["Fort Joy: The Shakedown - Complete"], 0],
     ["Quest-FTJ_SW_Illusionist", ["East Reaper's Eye: The Vault of Braccus Rex - Complete"], 0],
-    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch - Complete"], 0], #same flag as Dangerous When Cornered for some reason
-    ["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0],
+    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch/Most Dangerous When Cornered - Complete"], 0], #same flag as Dangerous When Cornered for some reason
+    #["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0], #No idea
     ["Quest-FTJ_SW_Necromancers", ["East Reaper's Eye: A Fate Worse Than Death - Complete"], 0],
     ["Quest-FTJ_SW_BraccusArmory", ["East Reaper's Eye: The Armoury - Complete"], 0],
     ["Quest-FTJ_SW_CursedRing", ["East Reaper's Eye: The Cursed Ring - Complete"], 0],
@@ -184,10 +185,10 @@ DOS2_LOCATION_LIST = [
     ["Quest-FTJ_SW_PurgedDragon", ["East Reaper's Eye: The Purged Dragon - Complete"], 0],
     ["Quest-FTJ_SW_CallToArms", ["East Reaper's Eye: Call to Arms - Complete"], 0],
     ["Quest-FTJ_SW_Shriekers", ["East Reaper's Eye: The Shreikers - Complete"], 0],
-    ["Quest-FTJ_SW_Tyrant", ["placeholder30"], 0],
-    ["Quest-ContaminationArmour", ["placeholder31"], 0],
-    ["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0],
-    ["Quest-CaptainArmour", ["placeholder33"], 0]
+    ["Quest-FTJ_SW_Tyrant", ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete"], 0],
+    #["Quest-ContaminationArmour", ["placeholder31"], 0], This isn't completeable till act 4
+    #["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0], Youd think that this is Most Dangerous When Cornered but no
+    ["Quest-CaptainArmour", ["North-east Reaper's Eye: Threads of a Curse - Complete"], 0]
 ] + DOS2_KILL_LIST
 
 LOCATION_NAME_ID_REGION = [
@@ -308,26 +309,26 @@ LOCATION_NAME_ID_REGION = [
     ["North-east Reaper's Eye: Gheist (564, 306)", 118, "North-east Reaper's Eye"],
     ["North-east Reaper's Eye: Voidwoken Drillworm (594, 408)", 119, "North-east Reaper's Eye"],
     ["Fort Joy: Escape From Fort Joy - Complete", 120, "Fort Joy"],
-    ["North-east Reaper's Eye: Escape The Island - Complete", 121, "North-east Reaper's Eye"],
+    ["North-east Reaper's Eye: Escape From Reaper's Eye - Complete", 121, "North-east Reaper's Eye"],
     ["North-east Reaper's Eye: Talk to Malady - Complete", 122, "North-east Reaper's Eye"],
-    ["placeholder4", 123, "Fort Joy"],
-    ["placeholder5", 124, "Fort Joy"],
+    #["placeholder4", 123, "Fort Joy"],
+    #["placeholder5", 124, "Fort Joy"],
     ["East Reaper's Eye: The Voices - Complete", 125, "East Reaper's Eye"],
-    ["placeholder7", 126, "Fort Joy"],
-    ["placeholder8", 127, "Fort Joy"],
-    ["placeholder9", 128, "Fort Joy"],
+    #["placeholder7", 126, "Fort Joy"],
+    #["placeholder8", 127, "Fort Joy"],
+    #["placeholder9", 128, "Fort Joy"],
     ["Fort Joy: The Imprisioned Elf - Complete", 129, "Fort Joy"],
-    ["placeholder11", 130, "Fort Joy"],
+    ["Fort Joy: The Murderous Gheist - Complete", 130, "Fort Joy"],
     ["Fort Joy: Finding Emmie - Complete", 131, "Fort Joy"],
     ["Fort Joy: The Arena of Fort Joy - Complete", 132, "Fort Joy"],
     ["Fort Joy: Withermoore's Soul Jar - Complete", 133, "Fort Joy"],
-    ["placeholder15", 134, "Fort Joy"],
-    ["placeholder16", 135, "Fort Joy"],
+    #["placeholder15", 134, "Fort Joy"],
+    #["placeholder16", 135, "Fort Joy"],
     ["Fort Joy: The Teleporter - Complete", 136, "Fort Joy"],
     ["Fort Joy: The Shakedown - Complete", 137, "Fort Joy"],
     ["East Reaper's Eye: The Vault of Braccus Rex - Complete", 138, "East Reaper's Eye"],
-    ["East Reaper's Eye: Healing Touch - Complete", 139, "East Reaper's Eye"],
-    ["placeholder21", 140, "Fort Joy"],
+    ["East Reaper's Eye: Healing Touch - Complete/Most Dangerous When Cornered", 139, "East Reaper's Eye"],
+    #["placeholder21", 140, "Fort Joy"],
     ["East Reaper's Eye: A Fate Worse Than Death - Complete", 141, "East Reaper's Eye"],
     ["East Reaper's Eye: The Armoury - Complete", 142, "East Reaper's Eye"],
     ["East Reaper's Eye: The Cursed Ring - Complete", 143, "East Reaper's Eye"],
@@ -336,10 +337,10 @@ LOCATION_NAME_ID_REGION = [
     ["East Reaper's Eye: The Purged Dragon - Complete", 146, "East Reaper's Eye"],
     ["East Reaper's Eye: Call to Arms - Complete", 147, "East Reaper's Eye"],
     ["East Reaper's Eye: The Shreikers - Complete", 148, "East Reaper's Eye"],
-    ["placeholder30", 149, "Fort Joy"],
-    ["placeholder31", 150, "Fort Joy"],
-    ["placeholder32", 151, "Fort Joy"],
-    ["placeholder33", 152, "Fort Joy"]
+    ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete", 149, "North-east Reaper's Eye"],
+    #["placeholder31", 150, "Fort Joy"],
+    #["placeholder32", 151, "Fort Joy"],
+    ["North-east Reaper's Eye: Threads of a Curse - Complete", 152, "North-east Reaper's Eye"]
 ]
 
 LOCATION_NAME_TO_ID = {item[0]: item[1] for item in LOCATION_NAME_ID_REGION}
@@ -389,5 +390,5 @@ def create_regular_locations(world: DOS2World) -> None:
     finalReapersEyeLocations = get_location_names_with_ids(finalReapersEyeLocationNames)
     finalReapersEye.add_locations(finalReapersEyeLocations, DOS2Location)
 
-    if(world.options.goal == world.options.goal.option_defeat_alexander):
-        finalReapersEye.add_event("Victory_Alexander", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+    if(world.options.goal == world.options.goal.option_escape_reapers_eye):
+        finalReapersEye.add_event("Victory_Escape_Reapers_Eye", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)

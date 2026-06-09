@@ -6,12 +6,12 @@ class Goal(Choice):
     """
     Determines what constitutes a victory.
     These will determine the length of the game and thus what items and locations are avaliable
-    Defeat Alexander: Goal is to defeat Alexander and board the Lady Vengeance and escape Fort Joy. All items and locations will be limited to the Merryweather and Fort Joy.
+    Escape Reaper's Eye: Goal is to defeat Alexander and board the Lady Vengeance and escape Reaper's Eye. All items and locations will be limited to the Merryweather and Reaper's Eye.
     """
 
     display_name = "Goal"
 
-    option_defeat_alexander = 0
+    option_escape_reapers_eye = 0
 
 class Deathlink(Toggle):
     """
@@ -55,7 +55,6 @@ class SyncOption(Choice):
     On Spell: A custom spell called "Sync Archipelago" will be given to you, and casting it will claim all unclaimed Archipelago items.
     Normally: You will claim items as they get sent to the server.
     This is mainly to avoid recieving items that encumber you in combat.
-    Loading a previous save will give items that were not yet granted at that time, do not worry about permanently losing items when using normal mode.
     """
 
     display_name = "Sync Options"
