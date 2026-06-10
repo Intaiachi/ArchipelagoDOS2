@@ -11,10 +11,10 @@
     -Install guides will be on the linked Github
 
 - Archipelago DOS2 Mod
-    -[Steam workshop link]()
-    -[Github Link]()
+    -[Steam workshop link](https://steamcommunity.com/sharedfiles/filedetails/?id=3741893354)
+    -[Github Link](https://github.com/Intaiachi/DOS2-Archiplago-Mod/releases)
 
-- [dos2.apworld]()
+- [dos2.apworld](https://github.com/Intaiachi/ArchipelagoDOS2/releases)
 
 ## Installation
 
