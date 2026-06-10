@@ -3,7 +3,7 @@ from typing import Any, ClassVar
 
 from worlds.AutoWorld import World
 
-from . import Items, Locations, Options, Regions, Rules, WebWorld
+from . import Items, Locations, Options, Regions, Rules, WebWorld, Settings
 
 class DOS2World(World):
     """
@@ -14,6 +14,7 @@ class DOS2World(World):
     web = WebWorld.DOS2WebWorld()
     options_dataclass = Options.DOS2Options
     options: Options.DOS2Options
+    settings: ClassVar[Settings.DOS2Settings]
 
     location_name_to_id = Locations.LOCATION_NAME_TO_ID
     item_name_to_id = Items.ITEM_NAME_TO_ID

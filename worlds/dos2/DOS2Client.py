@@ -63,7 +63,7 @@ class DOS2Context(CommonContext):
     deathlink_in = "deathlinkIn.json"
     deathlink_out = "deathlinkOut.json"
     seed_name = ""
-    comm_file_directory = os.path.join(os.path.expanduser("~"), "Documents", "Larian Studios", "Divinity Original Sin 2 Definitive Edition", "Osiris Data")
+    comm_file_directory = "" #os.path.join(os.path.expanduser("~"), "Documents", "Larian Studios", "Divinity Original Sin 2 Definitive Edition", "Osiris Data")
 
     def __init__(self, server_address, password):
         super(DOS2Context, self).__init__(server_address, password)
@@ -71,13 +71,21 @@ class DOS2Context(CommonContext):
         self.syncing = False
         self.awaiting_bridge = False
         game_options = DOS2World.settings
+        if(game_options and getattr(game_options, "root_directory", None)):
+            print(f"trying to see if {getattr(game_options, "root_directory", None)} is the right directory")
+            try:
+                self.comm_file_directory = game_options.root_directory
+            except FileNotFoundError:
+                self.comm_file_directory = ""
+        else:
+            self.comm_file_directory = ""
 
-        if(not os.path.isfile(os.path.join(self.comm_file_directory, self.comm_file_sent_items))):
-            with open(self.comm_file_sent_items, "w") as file:
-                file.write("[]")
-        if(not os.path.isfile(os.path.join(self.comm_file_directory, self.comm_file_locations_checked))):
-            with open(self.comm_file_locations_checked, "w") as file:
-                file.write("[]")
+        # if(not os.path.isfile(os.path.join(self.comm_file_directory, self.comm_file_sent_items))):
+        #     with open(self.comm_file_sent_items, "w") as file:
+        #         file.write("[]")
+        # if(not os.path.isfile(os.path.join(self.comm_file_directory, self.comm_file_locations_checked))):
+        #     with open(self.comm_file_locations_checked, "w") as file:
+        #         file.write("[]")
         
     def on_deathlink(self, data: typing.Dict[str, typing.Any]) -> None:
         with open(os.path.join(self.comm_file_directory, self.deathlink_in), 'w') as file:
