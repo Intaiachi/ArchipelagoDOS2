@@ -148,7 +148,8 @@ DOS2_KILL_LIST = [
     ["S_FTJ_SW_FinalBattleMagister_002_0b7282f6-a131-4441-a113-8f3ea62fa9e3", ["North-east Reaper's Eye: Magister Markswoman (567, 309)"], 0],
     ["S_FTJ_SW_FinalBattleMagister_003_b5dd6af4-6b34-482e-bc0a-72bd6269aaf5", ["North-east Reaper's Eye: Magister Knight (570, 304)"], 0],
     ["S_FTJ_SW_FinalBattleMagister_Gheist_06082187-829f-43e1-b3bb-f3242a70904d", ["North-east Reaper's Eye: Gheist (564, 306)"], 0],
-    ["S_FTJ_SW_FinalBattle_Voidwoken_7dcf3cc2-d015-4aff-9949-71fc539fcc73", ["North-east Reaper's Eye: Voidwoken Drillworm (594, 408)"], 0]
+    ["S_FTJ_SW_FinalBattle_Voidwoken_7dcf3cc2-d015-4aff-9949-71fc539fcc73", ["North-east Reaper's Eye: Voidwoken Drillworm (594, 408)"], 0],
+    ["S_GLO_Alexandar_03e6345f-1bd3-403c-80e2-a443a74f6349", ["North-east Reaper's Eye: Bishop Alexander (564, 306)"], 0]
 ]
 
 #All of the FTJ ones came from @chaotic and @JeyKey09, thank you!
@@ -176,7 +177,7 @@ DOS2_LOCATION_LIST = [
     ["Quest-FTJ_Elodi", ["Fort Joy: The Shakedown - Complete"], 0],
     ["Quest-FTJ_SW_Illusionist", ["East Reaper's Eye: The Vault of Braccus Rex - Complete"], 0],
     ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch/Most Dangerous When Cornered - Complete"], 0], #same flag as Dangerous When Cornered for some reason
-    #["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0], #No idea
+    #["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0], #looking at more flags, this does seem to be The Eternal Worshipper, haven't got the flag to shoot outside of leaving act 1
     ["Quest-FTJ_SW_Necromancers", ["East Reaper's Eye: A Fate Worse Than Death - Complete"], 0],
     ["Quest-FTJ_SW_BraccusArmory", ["East Reaper's Eye: The Armoury - Complete"], 0],
     ["Quest-FTJ_SW_CursedRing", ["East Reaper's Eye: The Cursed Ring - Complete"], 0],
@@ -187,8 +188,10 @@ DOS2_LOCATION_LIST = [
     ["Quest-FTJ_SW_Shriekers", ["East Reaper's Eye: The Shreikers - Complete"], 0],
     ["Quest-FTJ_SW_Tyrant", ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete"], 0],
     #["Quest-ContaminationArmour", ["placeholder31"], 0], This isn't completeable till act 4
-    #["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0], Youd think that this is Most Dangerous When Cornered but no
+    #["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0], Youd think that this is Most Dangerous When Cornered but no (fires off on act exit)
     ["Quest-CaptainArmour", ["North-east Reaper's Eye: Threads of a Curse - Complete"], 0]
+    #["Quest-LV_Main", ["Lady Vengence: Lady o' War - Complete"], 1]
+    #["Quest-LV_HoE_Main", ["Lady Vengence: To The Hall of Echoes - Complete"], 1]
 ] + DOS2_KILL_LIST
 
 LOCATION_NAME_ID_REGION = [
@@ -340,7 +343,8 @@ LOCATION_NAME_ID_REGION = [
     ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete", 149, "North-east Reaper's Eye"],
     #["placeholder31", 150, "Fort Joy"],
     #["placeholder32", 151, "Fort Joy"],
-    ["North-east Reaper's Eye: Threads of a Curse - Complete", 152, "North-east Reaper's Eye"]
+    ["North-east Reaper's Eye: Threads of a Curse - Complete", 152, "North-east Reaper's Eye"],
+    ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 153, "North-east Reaper's Eye"]
 ]
 
 LOCATION_NAME_TO_ID = {item[0]: item[1] for item in LOCATION_NAME_ID_REGION}
