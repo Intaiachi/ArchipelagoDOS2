@@ -163,15 +163,15 @@ DOS2_LOCATION_LIST = [
     #["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0], I have no idea what these are
     #["Quest-FTJ_Escape_Island_SUBC", ["placeholder5"], 0],
     ["Quest-FTJ_Voice", ["East Reaper's Eye: The Voices - Complete"], 0],
-    #["Quest-FTJ_Godwoken", ["placeholder7"], 0], I dont know what this is, might be in the intermission between reapers eye and coast havent tried
-    #["Quest-FTJ_Hunted", ["placeholder8"], 0], #I think these are companion quests
+    #["Quest-FTJ_Godwoken", ["placeholder7"], 0], I dont know what this is
+    #["Quest-FTJ_Hunted", ["placeholder8"], 0], #dont know
     #["Quest-FTJ_Seeker", ["placeholder9"], 0], #I dont know
     ["Quest-RC_FTJ_OlgoSaheila", ["Fort Joy: The Imprisioned Elf - Complete"], 0],
     ["Quest-RC_FTJ_MurderousGheist", ["Fort Joy: The Murderous Gheist - Complete"], 0],
     ["Quest-FTJ_SourceHounds", ["Fort Joy: Finding Emmie - Complete"], 0],
     ["Quest-FTJ_Arena", ["Fort Joy: The Arena of Fort Joy - Complete"], 0],
     ["Quest-RC_FTJ_SoulJar", ["Fort Joy: Withermoore's Soul Jar - Complete"], 0],
-    #["Quest-FTJ_SaheilaFate", ["placeholder15"], 0], #these two probably are related to act 2
+    #["Quest-FTJ_SaheilaFate", ["placeholder15"], 0], #these two probably are related to act 2 (Saheila's People / The Elven Seer)
     #["Quest-RC_FTJ_SaheilaSignet", ["placeholder16"], 0],
     ["Quest-FTJ_Teleporter", ["Fort Joy: The Teleporter - Complete"], 0],
     ["Quest-FTJ_Elodi", ["Fort Joy: The Shakedown - Complete"], 0],
@@ -187,11 +187,112 @@ DOS2_LOCATION_LIST = [
     ["Quest-FTJ_SW_CallToArms", ["East Reaper's Eye: Call to Arms - Complete"], 0],
     ["Quest-FTJ_SW_Shriekers", ["East Reaper's Eye: The Shreikers - Complete"], 0],
     ["Quest-FTJ_SW_Tyrant", ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete"], 0],
-    #["Quest-ContaminationArmour", ["placeholder31"], 0], This isn't completeable till act 4
+    #["Quest-ContaminationArmour", ["Seed of Power - Complete"], 0], This isn't completeable till act 4
     #["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0], Youd think that this is Most Dangerous When Cornered but no (fires off on act exit)
-    ["Quest-CaptainArmour", ["North-east Reaper's Eye: Threads of a Curse - Complete"], 0]
-    #["Quest-LV_Main", ["Lady Vengence: Lady o' War - Complete"], 1]
-    #["Quest-LV_HoE_Main", ["Lady Vengence: To The Hall of Echoes - Complete"], 1]
+    ["Quest-CaptainArmour", ["North-east Reaper's Eye: Threads of a Curse - Complete"], 0],
+    #-- Act 2 -- #A Trial for all Seasons lacks flags, same with Burial Rites, Burying the Past
+    ["Quest-LV_Main", ["Lady Vengence: Lady o' War - Complete"], 1],
+    ["Quest-LV_HoE_Main", ["Lady Vengence: To The Hall of Echoes - Complete"], 1],
+    ["Quest-RC_DW_WreckedCaravan", ["Reaper's Coast: The Wrecked Caravan - Complete"], 1],
+    ["Quest-RC_DU_HeroicRescue", ["Reaper's Coast: They Shall Not Pass - Complete"], 1],
+    #["Quest-RC_DU_Storm", ["placeholer3"], 1], #these two only have questclose events im pretty sure theyll never proc. Didnt even fire on act exit, probably nothing
+    #["Quest-RC_DU_EmptyCamp", ["placeholder4"], 1],
+    ["Quest-RC_DW_ShadowOverDriftwood", ["Driftwood: Shadow Over Driftwood - Complete"], 1],
+    ["Quest-RC_WH_SeaGodStatue", ["Reaper's Bluffs: The Burning Prophet - Complete"], 1],
+    ["Quest-RC_WH_BottledWish", ["Reaper's Bluffs: Wishful Thinking - Complete"], 1],
+    ["Quest-RC_WC_TheDeadTrader", ["Reaper's Bluffs: Aggressive Takeover - Complete"], 1],
+    #["Quest-RC_ThreeAltars", ["Driftwood Fields: The Three Altars - Complete"], 1], #according to the wiki, this quest doesnt actually close and is just recorded in The Eternal Proimse, so this probably doesnt work (wiki was right, closes on act leave)
+    ["Quest-RC_DW_GarvanSupplies", ["Driftwood: Red Ink in the Ledger - Complete"], 1],
+    #["Quest-RC_DW_GrandmasterArrest", ["placeholder11"], 1], idk, none fired on act exit
+    #["Quest-RC_DW_Looter", ["placeholder12"], 1],
+    #["Quest-RC_DW_TrappedHusband", ["placeholder13"], 1],
+    #["Quest-RC_DW_BridgeDog", ["placeholder14"], 1],
+    ["Quest-RC_DW_FunnyMeat", ["Driftwood: The Missing Magisters - Complete"], 1],
+    #["Quest-RC_DW_FunnyMeat_SUBA", ["placeholder16"], 1], these are different routes the quest can take, ie annoying missabled, the main fire on all of them anyway
+    #["Quest-RC_DW_FunnyMeat_SUBB", ["placeholder17"], 1],
+    #["Quest-RC_DW_FunnyMeat_SUBC", ["placeholder18"], 1],
+    ["Quest-RC_DW_HidingTinkerer", ["Driftwood: Strange Cargo - Complete"], 1],
+    ["Quest-RC_DW_Dock_Kids", ["Driftwood: Hide & Seek - Complete"], 1],
+    ["Quest-RC_DW_FishScholar", ["Driftwood: Grebb the Scholar - Complete"], 1],
+    #["Quest-RC_DW_CaptiansGhost", ["placeholder22"], 1], notably not Drowning Her Sorrows, dosnt fire on act exit
+    ["Quest-RC_DW_FishermanRing", ["Reaper's Bluffs: Lost and Found - Complete"], 1],
+    #["Quest-RC_DW_Harmon", ["placeholder24"], 1], no idea, doest fire on act exit
+    ["Quest-RC_DW_SpidersKiss", ["Driftwood - A Web of Desire - Complete"], 1],
+    ["Quest-RC_DW_TheDrunkenSailor", ["Driftwood: Drowning Her Sorrows - Complete"], 1],
+    ["Quest-RC_DW_Arena", ["Driftwood: The Driftwood Arena - Complete"], 1],
+    ["Quest-RC_DW_SurpriseDate", ["Driftwood: Love Has a Price - Complete"], 1],
+    #["Quest-RC_DW_MissingEquipment", ["placeholder29"], 1], no idea, doesnt fire on act exit
+    ["Quest-RC_DW_VoidwokenChicks", ["Reaper's Coast: Counting your Chickens - Complete"], 1],
+    ["Quest-RC_DW_DwarvenCriminals", ["Driftwood: The Law of the Order - Complete"], 1],
+    ["Quest-RC_DW_DwarvenCriminals_SUB_RottenGoods", ["Driftwood: Fishy Business - Complete"], 1],
+    ["Quest-RC_DW_Meistr", ["Lady Vengence: Powerful Awakening - Complete", "Victory_Leave_Reapers_Coast"], 1],
+    ["Quest-RC_DW_Meistr_SUBA", ["Reaper's Bluffs: Mordus Awakens - Complete"], 1],
+    ["Quest-RC_DW_Meistr_SUBB", ["Stonegarden: Waking Ryker - Complete"], 1],
+    ["Quest-RC_DW_Meistr_SUBC", ["Cloisterwood: Jahan's Lesson - Complete"], 1],
+    ["Quest-RC_DW_Meistr_SUBD", ["Cloisterwood: Hannag's Bargin - Complete"], 1],
+    ["Quest-RC_DW_Meistr_SUBE", ["Bloodmoon Island: The Demon's Advocate - Complete"], 1],
+    ["Quest-RC_DW_Meistr_SUBF", ["The Cullwoods: Saheila's Reward - Complete"], 1],
+    ["Quest-RC_DW_Meistr_SUBG", ["Paradise Downs: Almira's Dowry - Complete"], 1],
+    ["Quest-RC_OIL_Main", ["The Blackpits: The Midnight Oil - Complete"], 1],
+    ["Quest-RC_DF_PolyLovers", ["Driftwood Fields: Treated Like Cattle - Complete"], 1],
+    ["Quest-RC_DF_UndeadTrader", ["Cloisterwood: Eithne the Trader - Complete"], 1],
+    ["Quest-RC_DF_TrollBridge", ["Cloisterwood: Business Rivals - Complete"], 1], #cant get both paths in one save, keeping the main and nothnig else
+    #["Quest-RC_DF_TrollBridge_SUBA", ["placeholder45"], 1],
+    #["Quest-RC_DF_TrollBridge_SUBB", ["placeholder46"], 1],
+    ["Quest-RC_GY_RykersContract", ["Stonegarden: A Generous Offer - Complete"], 1],
+    ["Quest-RC_GY_RykersSpider", ["Stonegarden: The Weaver - Complete"], 1],
+    ["Quest-RC_GY_PurgedDaughter", ["Stonegarden: A Danger to Herself and Others - Complete"], 1],
+    ["Quest-RC_GY_LizardSpeakingLizard", ["Stonegarden: Speaking In Forked Tongues - Complete"], 1],
+    ["Quest-RC_GY_FavoritePet", ["Stonegarden: Popularity Contest - Complete"], 1],
+    ["Quest-RC_GY_TurtleLove", ["Stonegarden: Opposites Attract - Complete"], 1],
+    ["Quest-RC_GY_BuriedLizard", ["Stonegarden: Stranger in a Strange Land - Complete"], 1],
+    ["Quest-RC_GY_MemorialOfHeroes", ["Stonegarden: Heroes' Rest - Complete"], 1],
+    ["Quest-RC_GY_UglyBird", ["Driftwood Fields: The Ugly Little Bird - Complete"], 1],
+    ["Quest-RC_GY_DeerGhost", ["Stonegarden: A Prize Kill - Complete"], 1],
+    ["Quest-RC_GY_Godslayer", ["Stonegarden: All In The Family - Complete"], 1],
+    ["Quest-RC_GY_WronglyBuried", ["Stonegarden: An Existential Crisis - Complete"], 1],
+    ["Quest-RC_GY_KillRyker", ["Stonegarden: The Reluctant Servants - Complete"], 1],
+    ["Quest-RC_DF_PaladinCheckpoint", ["Driftwood Fields: Dark Dealings in the Blackpits - Complete"], 1],
+    ["Quest-RC_OIL_FourthHouse", ["The Blackpits: No Way Out - Complete"], 1],
+    ["Quest-RC_FL_BrokenPromises", ["Paradise Downs: Unlikely Lovers - Complete"], 1],
+    ["Quest-RC_FL_TabletForAlmira", ["Paradise Downs: Almira's Request - Complete"], 1],
+    ["Quest-RC_BF_ThePresence", ["Cloisterwood: A Hunter of Wicked Things - Complete"], 1],
+    #["Quest-RC_BI_TheTruth", ["placeholder65"], 1], #The Secrets of Bloodmoon Island? cant be completed till act 4 if so (nvm fires on act exit i have no idea what this is)
+    ["Quest-RC_BI_TheVaults", ["Bloodmoon Island: The Forgotten and the Damned - Complete"], 1],
+    ["Quest-RC_BI_TheVaults_SUBA", ["Bloodmoon Island: Delusions of Gradeur - Comeplete"], 1],
+    ["Quest-RC_BI_TheVaults_SUBB", ["Bloodmoon Island: Silent as the Grave - Complete"], 1],
+    ["Quest-RC_BI_TheVaults_SUBC", ["Bloodmoon Island: The Sweet Shackles of Pain - Complete"], 1], 
+    #["Quest-RC_BI_TheVaults_SUBD", ["placeholder70"], 1], #Metalwork? never popped
+    #["Quest-RC_BI_TheVaultGodwoken", ["placeholder71"], 1], none of them fired
+    #["Quest-RC_BI_TheVaultKid", ["placeholder72"], 1],
+    #["Quest-RC_BI_TheVaultAdventurer", ["placeholder73"], 1],
+    ["Quest-RC_BI_Druid", ["Bloodmoon Island: The Druid - Complete"], 1],
+    #["Quest-RC_MIL_War", ["placeholder75"], 1], no idea, doesnt fire on act exit
+    ["Quest-RC_MIL_SyrusOates", ["The Cullwoods: The Stoic Spirit - Complete"], 1],
+    ["Quest-RC_MIL_BlackWidowMaker", ["The Cullwoods: Bitter Tonic - Complete"], 1],
+    ["Quest-RC_MIL_EdieEngrym", ["The Cullwoods: Old Flames - Complete"], 1],
+    ["Quest-RC_MIL_Mudbarrow", ["The Cullwoods: No Laughing Matter - Complete"], 1],
+    ["Quest-RC_MIL_SavingCorbin", ["The Cullwoods: Press-Ganged - Complete"], 1],
+    ["Quest-RC_DW_SourceLich", ["Reaper's Bluffs: A Taste of Freedom - Complete"], 1],
+    ["Quest-RC_BF_CorneredSourcerer", ["Cloisterwood: Window of Opportunity - Complete"], 1],
+    ["Quest-RC_BI_ThePresence", ["Bloodmoon Island: The Advocate - Complete"], 1],
+    ["Quest-FTJ_SaheilaFate", ["The Cullwoods: Saheila's People - Complete"], 1],
+    ["Quest-RC_MIL_RescuingSaheila", ["The Cullwoods: The Elven Seer/Vengeance for the Fallen - Complete"], 1],
+    ["Quest-RC_MIL_GhostRevenge", ["The Cullwoods: An Eye for an Eye - Complete"], 1],
+    ["Quest-RC_MIL_SelenHead", ["The Cullwoods: Finder's Fee - Complete"], 1],
+    ["Quest-RC_MIL_GhostLog", ["The Cullwoods: The Bark's Bite - Complete"], 1],
+    #["Quest-DevourerArmour", ["A Hunger From Beyond - Complete"], 1], Cant be completed until act 4
+    ["Quest-VultureArmour", ["Reaper's Bluffs: Keep Calm and Carrion - Complete"], 1],
+    ["Quest-RC_DW_SnoozingAdventurer", ["Driftwood: The Snoozing Adventurer - Complete"], 1],
+    ["Quest-RC_DW_RichMerchant", ["Driftwood: The Merchant - Complete"], 1],
+    ["Quest-RC_DW_Beggar", ["Driftwood: A Man and His Dog - Complete"], 1],
+    #["Quest-RC_FL_GarethFarm", ["placeholder93"], 1], #fires when killing jonathan in the first encounter with gareth, no where else in Burying the Past. Every other path doesnt fire until act exit, opting to omit this one
+    #["Quest-RC_FL_GarethParents", ["placeholder94"], 1], #This is whatever the one is for killing voidwoken at gareths parents behest, obnoixously missable, probably wont include, doesn't fire on act exit either
+    #["Quest-RC_MIL_ElvenBurial", ["placeholder95"], 1], Confident this is Burial Rites, no flag sent when completeing burial rites (fires on leaving reapers coast)
+    #["Quest-RC_MIL_ElfTest", ["placeholder96"], 1], #fires on act exit, not a clue though
+    ["Quest-RC_MIL_AvengingSaheila", ["The Cullwoods: The Elven Seer/Vengeance for the Fallen - Complete"], 1],
+    ["Quest-RC_OIL_ThirdHouse", ["The Blackpits: On the Ropes - Complete"], 1],
+    ["Quest-RC_DW_Meistr_SUBI", ["Driftwood: The Gift of the Blackroot - Complete"], 1],
 ] + DOS2_KILL_LIST
 
 LOCATION_NAME_ID_REGION = [
@@ -344,7 +445,109 @@ LOCATION_NAME_ID_REGION = [
     #["placeholder31", 150, "Fort Joy"],
     #["placeholder32", 151, "Fort Joy"],
     ["North-east Reaper's Eye: Threads of a Curse - Complete", 152, "North-east Reaper's Eye"],
-    ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 153, "North-east Reaper's Eye"]
+    ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 153, "North-east Reaper's Eye"],
+    #-- Act 2 --
+    ["Lady Vengence: Lady o' War - Complete", 154, "Lady Vengence"],
+    ["Lady Vengence: To The Hall of Echoes - Complete", 155, "Lady Vengence"],
+    ["Reaper's Coast: The Wrecked Caravan - Complete", 156, "Reaper's Coast"],
+    ["Reaper's Coast: They Shall Not Pass - Complete", 157, "Reaper's Coast"],
+    #["placeholder3", 158, "Reaper's Coast"],
+    #["placeholder4", 159, "Reaper's Coast"],
+    ["Driftwood: Shadow Over Driftwood - Complete", 160, "Driftwood"],
+    ["Reaper's Bluffs: The Burning Prophet - Complete", 161, "Reaper's Bluffs"],
+    ["Reaper's Bluffs: Wishful Thinking - Complete", 162, "Reaper's Bluffs"],
+    ["Reaper's Bluffs: Aggressive Takeover - Complete", 163, "Reaper's Bluffs"],
+    #["Driftwood Fields: The Three Altars - Complete", 164, "Driftwood Fields"],
+    ["Driftwood: Red Ink in the Ledger - Complete", 165, "Driftwood"],
+    #["placeholder11", 166, "Reaper's Coast"],
+    #["placeholder12", 167, "Reaper's Coast"],
+    #["placeholder13", 168, "Reaper's Coast"],
+    #["placeholer14", 169, "Driftwood"],
+    ["Driftwood: The Missing Magisters - Complete", 170, "Driftwood"],
+    #["placeholder16", 171, "Reaper's Coast"],
+    #["placeholder17", 172, "Reaper's Coast"],
+    #["placeholder18", 173, "Reaper's Coast"],
+    ["Driftwood: Strange Cargo - Complete", 174, "Driftwood"],
+    ["Driftwood: Hide & Seek - Complete", 175, "Driftwood"],
+    ["Driftwood: Grebb the Scholar - Complete", 176, "Driftwood"],
+    #["placeholder22", 177, "Driftwood"],
+    ["Reaper's Bluffs: Lost and Found - Complete", 178, "Reaper's Bluffs"],
+    #["placeholder24", 179, "Reaper's Coast"],
+    ["Driftwood - A Web of Desire - Complete", 180, "Driftwood"],
+    ["Driftwood: Drowning Her Sorrows - Complete", 181, "Driftwood"],
+    ["Driftwood: The Driftwood Arena - Complete", 182, "Driftwood"],
+    ["Driftwood: Love Has a Price - Complete", 183, "Driftwood"],
+    #["placeholder29", 184, "Reaper's Coast"],
+    ["Reaper's Coast: Counting your Chickens - Complete", 185, "Reaper's Coast"],
+    ["Driftwood: The Law of the Order - Complete", 186, "Driftwood"],
+    ["Driftwood: Fishy Business - Complete", 187, "Driftwood"],
+    ["Lady Vengence: Powerful Awakening - Complete", 188, "Lady Vengence"],
+    ["Reaper's Bluffs: Mordus Awakens - Complete", 189, "Reaper's Bluffs"],
+    ["Stonegarden: Waking Ryker - Complete", 190, "Stonegarden"],
+    ["Cloisterwood: Jahan's Lesson - Complete", 191, "Cloisterwood"],
+    ["Cloisterwood: Hannag's Bargin - Complete", 192, "Cloisterwood"],
+    ["Bloodmoon Island: The Demon's Advocate - Complete", 193, "Bloodmoon Island"],
+    ["The Cullwoods: Saheila's Reward - Complete", 194, "The Cullwoods"],
+    ["Paradise Downs: Almira's Dowry - Complete", 195, "Paradise Downs"],
+    ["The Blackpits: The Midnight Oil - Complete", 196, "The Blackpits"],
+    ["Driftwood Fields: Treated Like Cattle - Complete", 197, "Driftwood Fields"],
+    ["Cloisterwood: Eithne the Trader - Complete", 198, "Cloisterwood"],
+    ["Cloisterwood: Business Rivals - Complete", 199, "Cloisterwood"],
+    #["placeholder45", 200, "Reaper's Coast"],
+    #["placeholder46", 201, "Reaper's Coast"],
+    ["Stonegarden: A Generous Offer - Complete", 202, "Stonegarden"],
+    ["Stonegarden: The Weaver - Complete", 203, "Stonegarden"],
+    ["Stonegarden: A Danger to Herself and Others - Complete", 204, "Stonegarden"],
+    ["Stonegarden: Speaking In Forked Tongues - Complete", 205, "Stonegarden"],
+    ["Stonegarden: Popularity Contest - Complete", 206, "Stonegarden"],
+    ["Stonegarden: Opposites Attract - Complete", 207, "Stonegarden"],
+    ["Stonegarden: Stranger in a Strange Land - Complete", 208, "Stonegarden"],
+    ["Stonegarden: Heroes' Rest - Complete", 209, "Stonegarden"],
+    ["Driftwood Fields: The Ugly Little Bird - Complete", 210, "Driftwood Fields"],
+    ["Stonegarden: A Prize Kill - Complete", 211, "Stonegarden"],
+    ["Stonegarden: All In The Family - Complete", 212, "Stonegarden"],
+    ["Stonegarden: An Existential Crisis - Complete", 213, "Stonegarden"],
+    ["Stonegarden: The Reluctant Servants - Complete", 214, "Stonegarden"],
+    ["Driftwood Fields: Dark Dealings in the Blackpits - Complete", 215, "Driftwood Fields"],
+    ["The Blackpits: No Way Out - Complete", 216, "The Blackpits"],
+    ["Paradise Downs: Unlikely Lovers - Complete", 217, "Paradise Downs"],
+    ["Paradise Downs: Almira's Request - Complete", 218, "Paradise Downs"],
+    ["Cloisterwood: A Hunter of Wicked Things - Complete", 219, "Cloisterwood"],
+    #["placeholder65", 220, "Reaper's Coast"],
+    ["Bloodmoon Island: The Forgotten and the Damned - Complete", 221, "Bloodmoon Island"],
+    ["Bloodmoon Island: Delusions of Gradeur - Comeplete", 222, "Bloodmoon Island"],
+    ["Bloodmoon Island: Silent as the Grave - Complete", 223, "Bloodmoon Island"],
+    ["Bloodmoon Island: The Sweet Shackles of Pain - Complete", 224, "Bloodmoon Island"],
+    #["placeholder70", 225, "Reaper's Coast"],
+    #["placeholder71", 226, "Reaper's Coast"],
+    #["placeholder72", 227, "Reaper's Coast"],
+    #["placeholder73", 228, "Reaper's Coast"],
+    ["Bloodmoon Island: The Druid - Complete", 229, "Bloodmoon Island"],
+    #["placeholder75", 230, "Reaper's Coast"],
+    ["The Cullwoods: The Stoic Spirit - Complete", 231, "The Cullwoods"],
+    ["The Cullwoods: Bitter Tonic - Complete", 232, "The Cullwoods"],
+    ["The Cullwoods: Old Flames - Complete", 233, "The Cullwoods"],
+    ["The Cullwoods: No Laughing Matter - Complete", 234, "The Cullwoods"],
+    ["The Cullwoods: Press-Ganged - Complete", 235, "The Cullwoods"],
+    ["Reaper's Bluffs: A Taste of Freedom - Complete", 236, "Reaper's Bluffs"],
+    ["Cloisterwood: Window of Opportunity - Complete", 237, "Cloisterwood"],
+    ["Bloodmoon Island: The Advocate - Complete", 238, "Bloodmoon Island"],
+    ["The Cullwoods: Saheila's People - Complete", 239, "The Cullwoods"],
+    ["The Cullwoods: The Elven Seer/Vengeance for the Fallen - Complete", 240, "The Cullwoods"],
+    ["The Cullwoods: An Eye for an Eye - Complete", 241, "The Cullwoods"],
+    ["The Cullwoods: Finder's Fee - Complete", 242, "The Cullwoods"],
+    ["The Cullwoods: The Bark's Bite - Complete", 243, "The Cullwoods"],
+    #["placeholderDA", 244, "Driftwood"],
+    ["Reaper's Bluffs: Keep Calm and Carrion - Complete", 245, "Reaper's Bluffs"],
+    ["Driftwood: The Snoozing Adventurer - Complete", 246, "Driftwood"],
+    ["Driftwood: The Merchant - Complete", 247, "Driftwood"],
+    ["Driftwood: A Man and His Dog - Complete", 248, "Driftwood"],
+    #["placeholder93", 249, "Driftwood"],
+    #["placeholder94", 250, "Driftwood"],
+    #["placeholder95", 251, "Driftwood"],
+    #["placeholder96", 252, "Driftwood"],
+    ["The Blackpits: On the Ropes - Complete", 254, "The Blackpits"],
+    ["Driftwood: The Gift of the Blackroot - Complete", 255, "Driftwood"],
 ]
 
 LOCATION_NAME_TO_ID = {item[0]: item[1] for item in LOCATION_NAME_ID_REGION}
@@ -365,6 +568,18 @@ def create_regular_locations(world: DOS2World) -> None:
     fortJoy = world.get_region("Fort Joy")
     eastReapersEye = world.get_region("East Reaper's Eye")
     finalReapersEye = world.get_region("North-east Reaper's Eye")
+
+    ladyVengence = world.get_region("Lady Vengence")
+    reapersCoast = world.get_region("Reaper's Coast")
+    stonegarden = world.get_region("Stonegarden")
+    theBlackpits = world.get_region("The Blackpits")
+    driftwood = world.get_region("Driftwood")
+    reapersBluffs = world.get_region("Reaper's Bluffs")
+    cloisterwood = world.get_region("Cloisterwood")
+    driftwoodFields = world.get_region("Driftwood Fields")
+    theCullwoods = world.get_region("The Cullwoods")
+    paradiseDowns = world.get_region("Paradise Downs")
+    bloodmoonIsland = world.get_region("Bloodmoon Island")
 
     merryweatherLocationNames = []
     for loc in LOCATION_NAME_ID_REGION:
@@ -394,5 +609,87 @@ def create_regular_locations(world: DOS2World) -> None:
     finalReapersEyeLocations = get_location_names_with_ids(finalReapersEyeLocationNames)
     finalReapersEye.add_locations(finalReapersEyeLocations, DOS2Location)
 
+    if(world.options.goal != world.options.goal.option_escape_reapers_eye):
+        ladyVengenceLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Lady Vengence"):
+                ladyVengenceLocationNames.append(loc[0])
+        ladyVengenceLocations = get_location_names_with_ids(ladyVengenceLocationNames)
+        ladyVengence.add_locations(ladyVengenceLocations, DOS2Location)
+
+        reapersCoastLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Reaper's Coast"):
+                reapersCoastLocationNames.append(loc[0])
+        reapersCoastLocations = get_location_names_with_ids(reapersCoastLocationNames)
+        reapersCoast.add_locations(reapersCoastLocations, DOS2Location)
+
+        stonegardenLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Stonegarden"):
+                stonegardenLocationNames.append(loc[0])
+        stonegardenLocations = get_location_names_with_ids(stonegardenLocationNames)
+        stonegarden.add_locations(stonegardenLocations, DOS2Location)
+
+        theBlackpitsLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "The Blackpits"):
+                theBlackpitsLocationNames.append(loc[0])
+        theBlackpitsLocations = get_location_names_with_ids(theBlackpitsLocationNames)
+        theBlackpits.add_locations(theBlackpitsLocations, DOS2Location)
+
+        driftwoodLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Driftwood"):
+                driftwoodLocationNames.append(loc[0])
+        driftwoodLocations = get_location_names_with_ids(driftwoodLocationNames)
+        driftwood.add_locations(driftwoodLocations, DOS2Location)
+
+        reapersBluffsLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Reaper's Bluffs"):
+                reapersBluffsLocationNames.append(loc[0])
+        reapersBluffsLocations = get_location_names_with_ids(reapersBluffsLocationNames)
+        reapersBluffs.add_locations(reapersBluffsLocations, DOS2Location)
+
+        cloisterwoodLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Cloisterwood"):
+                cloisterwoodLocationNames.append(loc[0])
+        cloisterwoodLocations = get_location_names_with_ids(cloisterwoodLocationNames)
+        cloisterwood.add_locations(cloisterwoodLocations, DOS2Location)
+
+        driftwoodFieldsLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Driftwood Fields"):
+                driftwoodFieldsLocationNames.append(loc[0])
+        driftwoodFieldsLocations = get_location_names_with_ids(driftwoodFieldsLocationNames)
+        driftwoodFields.add_locations(driftwoodFieldsLocations, DOS2Location)
+
+        theCullwoodsLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "The Cullwoods"):
+                theCullwoodsLocationNames.append(loc[0])
+        theCullwoodsLocations = get_location_names_with_ids(theCullwoodsLocationNames)
+        theCullwoods.add_locations(theCullwoodsLocations, DOS2Location)
+
+        paradiseDownsLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Paradise Downs"):
+                paradiseDownsLocationNames.append(loc[0])
+        paradiseDownsLocations = get_location_names_with_ids(paradiseDownsLocationNames)
+        paradiseDowns.add_locations(paradiseDownsLocations, DOS2Location)
+
+        bloodmoonIslandLocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "Bloodmoon Island"):
+                bloodmoonIslandLocationNames.append(loc[0])
+        bloodmoonIslandLocations = get_location_names_with_ids(bloodmoonIslandLocationNames)
+        bloodmoonIsland.add_locations(bloodmoonIslandLocations, DOS2Location)
+
+
+
     if(world.options.goal == world.options.goal.option_escape_reapers_eye):
         finalReapersEye.add_event("Victory_Escape_Reapers_Eye", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+    elif(world.options.goal == world.options.goal.option_leave_reapers_coast):
+        ladyVengence.add_event("Victory_Leave_Reapers_Coast", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)

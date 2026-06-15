@@ -7,11 +7,13 @@ class Goal(Choice):
     Determines what constitutes a victory.
     These will determine the length of the game and thus what items and locations are avaliable
     Escape Reaper's Eye: Goal is to defeat Alexander and board the Lady Vengeance and escape Reaper's Eye. All items and locations will be limited to the Merryweather and Reaper's Eye.
+    Leave Reaper's Coast: Goal is to master source and leave Reaper's Coast. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, and Reaper's Coast.
     """
 
     display_name = "Goal"
 
     option_escape_reapers_eye = 0
+    option_leave_reapers_coast = 1
 
 class Deathlink(Toggle):
     """

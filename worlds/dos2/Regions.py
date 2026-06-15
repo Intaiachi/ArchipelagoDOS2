@@ -17,7 +17,19 @@ def create_all_regions(world: DOS2World) -> None:
     eastReapersEye = Region("East Reaper's Eye", world.player, world.multiworld)
     finalReapersEye = Region("North-east Reaper's Eye", world.player, world.multiworld)
 
-    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye]
+    ladyVengence = Region("Lady Vengence", world.player, world.multiworld)
+    reapersCoast = Region("Reaper's Coast", world.player, world.multiworld)
+    stonegarden = Region("Stonegarden", world.player, world.multiworld)
+    theBlackpits = Region("The Blackpits", world.player, world.multiworld)
+    driftwood = Region("Driftwood", world.player, world.multiworld)
+    reapersBluffs = Region("Reaper's Bluffs", world.player, world.multiworld)
+    cloisterwood = Region("Cloisterwood", world.player, world.multiworld)
+    driftwoodFields = Region("Driftwood Fields", world.player, world.multiworld)
+    theCullwoods = Region("The Cullwoods", world.player, world.multiworld)
+    paradiseDowns = Region("Paradise Downs", world.player, world.multiworld)
+    bloodmoonIsland = Region("Bloodmoon Island", world.player, world.multiworld)
+
+    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye, ladyVengence, reapersCoast, stonegarden, theBlackpits, driftwood, reapersBluffs, cloisterwood, driftwoodFields, theCullwoods, paradiseDowns, bloodmoonIsland]
 
     world.multiworld.regions += regions
 
@@ -27,6 +39,33 @@ def connect_regions(world: DOS2World) -> None:
     eastReapersEye = world.get_region("East Reaper's Eye")
     finalReapersEye = world.get_region("North-east Reaper's Eye")
 
+    ladyVengence = world.get_region("Lady Vengence")
+    reapersCoast = world.get_region("Reaper's Coast")
+    stonegarden = world.get_region("Stonegarden")
+    theBlackpits = world.get_region("The Blackpits")
+    driftwood = world.get_region("Driftwood")
+    reapersBluffs = world.get_region("Reaper's Bluffs")
+    cloisterwood = world.get_region("Cloisterwood")
+    driftwoodFields = world.get_region("Driftwood Fields")
+    theCullwoods = world.get_region("The Cullwoods")
+    paradiseDowns = world.get_region("Paradise Downs")
+    bloodmoonIsland = world.get_region("Bloodmoon Island")
+
     merryweather.connect(fortJoy, "Merryweather to Fort Joy", lambda state: state.has("Level Up", world.player))
     fortJoy.connect(eastReapersEye, "Fort Joy to East Reaper's Eye", lambda state: state.has("Level Up", world.player, 2))
     eastReapersEye.connect(finalReapersEye, "East Reaper's Eye to North-east Reaper's Eye", lambda state: state.has("Level Up", world.player, 3) and state.has("Purging Wand", world.player))
+    if(world.options.goal != world.options.goal.option_escape_reapers_eye):
+        finalReapersEye.connect(ladyVengence, "North-east Reaper's Eye to Lady Vengence")
+        ladyVengence.connect(reapersCoast, "Lady Vengence to Reaper's Coast")
+        reapersCoast.connect(stonegarden, "Reaper's Coast to Stonegarden")
+        reapersCoast.connect(driftwood, "Reaper's Coast to Driftwood")
+        reapersCoast.connect(driftwoodFields, "Reaper's Coast to Driftwood Fields")
+        stonegarden.connect(theCullwoods, "Stonegarden to The Cullwoods")
+        stonegarden.connect(paradiseDowns, "Stonegarden to Paradise Downs")
+        paradiseDowns.connect(theBlackpits, "Paradise Downs to The Blackpits")
+        driftwood.connect(reapersBluffs, "Driftwood to Reaper's Bluffs")
+        reapersBluffs.connect(cloisterwood, "Reaper's Bluffs to Cloisterwood")
+        cloisterwood.connect(driftwoodFields, "Cloisterwood to Driftwood Fields")
+        driftwoodFields.connect(theCullwoods, "Driftwood Fields to The Cullwoods")
+        driftwoodFields.connect(bloodmoonIsland, "Driftwood Fields to Bloodmoon Island")
+        theCullwoods.connect(paradiseDowns, "The Cullwoods to Paradise Down")
