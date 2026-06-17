@@ -70,4 +70,4 @@ The mod and client talk to eachother using files in the directory stated above i
 please be aware of these files that are left behind. After you are done you are free to delete everything in the Osiris Data folder that is Archipelago related.
 
 This is very early in development and is far from complete. Your feedback is welcome. If you notice any problem, find some checks to be odd, think some locations aren't intuitve or think some are missing, please
-let me know in the Archipelago AD Discord. As such, please keep in mind that there may be problems or hiccups while playing. Be cautious about bring into public games for now.
+let me know in the Archipelago AD Discord. As such, please keep in mind that there may be problems or hiccups while playing. Be cautious about bringing into public games for now.

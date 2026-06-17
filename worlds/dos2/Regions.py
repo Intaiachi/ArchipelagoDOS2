@@ -24,12 +24,12 @@ def create_all_regions(world: DOS2World) -> None:
     driftwood = Region("Driftwood", world.player, world.multiworld)
     reapersBluffs = Region("Reaper's Bluffs", world.player, world.multiworld)
     cloisterwood = Region("Cloisterwood", world.player, world.multiworld)
-    driftwoodFields = Region("Driftwood Fields", world.player, world.multiworld)
+    theMeadows = Region("The Meadows", world.player, world.multiworld)
     theCullwoods = Region("The Cullwoods", world.player, world.multiworld)
     paradiseDowns = Region("Paradise Downs", world.player, world.multiworld)
     bloodmoonIsland = Region("Bloodmoon Island", world.player, world.multiworld)
 
-    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye, ladyVengence, reapersCoast, stonegarden, theBlackpits, driftwood, reapersBluffs, cloisterwood, driftwoodFields, theCullwoods, paradiseDowns, bloodmoonIsland]
+    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye, ladyVengence, reapersCoast, stonegarden, theBlackpits, driftwood, reapersBluffs, cloisterwood, theMeadows, theCullwoods, paradiseDowns, bloodmoonIsland]
 
     world.multiworld.regions += regions
 
@@ -46,7 +46,7 @@ def connect_regions(world: DOS2World) -> None:
     driftwood = world.get_region("Driftwood")
     reapersBluffs = world.get_region("Reaper's Bluffs")
     cloisterwood = world.get_region("Cloisterwood")
-    driftwoodFields = world.get_region("Driftwood Fields")
+    theMeadows = world.get_region("The Meadows")
     theCullwoods = world.get_region("The Cullwoods")
     paradiseDowns = world.get_region("Paradise Downs")
     bloodmoonIsland = world.get_region("Bloodmoon Island")
@@ -57,15 +57,15 @@ def connect_regions(world: DOS2World) -> None:
     if(world.options.goal != world.options.goal.option_escape_reapers_eye):
         finalReapersEye.connect(ladyVengence, "North-east Reaper's Eye to Lady Vengence")
         ladyVengence.connect(reapersCoast, "Lady Vengence to Reaper's Coast")
-        reapersCoast.connect(stonegarden, "Reaper's Coast to Stonegarden")
+        reapersCoast.connect(stonegarden, "Reaper's Coast to Stonegarden", lambda state: state.has("Level Up", world.player, 4))
         reapersCoast.connect(driftwood, "Reaper's Coast to Driftwood")
-        reapersCoast.connect(driftwoodFields, "Reaper's Coast to Driftwood Fields")
-        stonegarden.connect(theCullwoods, "Stonegarden to The Cullwoods")
-        stonegarden.connect(paradiseDowns, "Stonegarden to Paradise Downs")
-        paradiseDowns.connect(theBlackpits, "Paradise Downs to The Blackpits")
-        driftwood.connect(reapersBluffs, "Driftwood to Reaper's Bluffs")
-        reapersBluffs.connect(cloisterwood, "Reaper's Bluffs to Cloisterwood")
-        cloisterwood.connect(driftwoodFields, "Cloisterwood to Driftwood Fields")
-        driftwoodFields.connect(theCullwoods, "Driftwood Fields to The Cullwoods")
-        driftwoodFields.connect(bloodmoonIsland, "Driftwood Fields to Bloodmoon Island")
-        theCullwoods.connect(paradiseDowns, "The Cullwoods to Paradise Down")
+        reapersCoast.connect(theMeadows, "Reaper's Coast to The Meadows", lambda state: state.has("Level Up", world.player, 5))
+        stonegarden.connect(theCullwoods, "Stonegarden to The Cullwoods", lambda state: state.has("Level Up", world.player, 5))
+        stonegarden.connect(paradiseDowns, "Stonegarden to Paradise Downs", lambda state: state.has("Level Up", world.player, 6))
+        paradiseDowns.connect(theBlackpits, "Paradise Downs to The Blackpits", lambda state: state.has("Level Up", world.player, 6))
+        driftwood.connect(reapersBluffs, "Driftwood to Reaper's Bluffs", lambda state: state.has("Level Up", world.player, 4))
+        reapersBluffs.connect(cloisterwood, "Reaper's Bluffs to Cloisterwood", lambda state: state.has("Level Up", world.player, 5))
+        cloisterwood.connect(theMeadows, "Cloisterwood to The Meadows", lambda state: state.has("Level Up", world.player, 5))
+        theMeadows.connect(theCullwoods, "The Meadows to The Cullwoods", lambda state: state.has("Level Up", world.player, 5))
+        theMeadows.connect(bloodmoonIsland, "The Meadows to Bloodmoon Island", lambda state: state.has("Level Up", world.player, 7))
+        theCullwoods.connect(paradiseDowns, "The Cullwoods to Paradise Downs", lambda state: state.has("Level Up", world.player, 6))

@@ -236,7 +236,9 @@ FILLER_ITEMS = [
     ["Rain Scroll", "35040ba8-1f97-418c-b4a2-3af74e14bc36"],
     ["Restoration Scroll", "b852456a-1230-4933-92ef-ad7c65611ab5"],
     ["Raining Blood Scroll", "61085ef6-836c-4070-8ca8-316e50c39e06"],
-    ["Laser Ray Scroll", "9f97f8fc-2010-4075-a591-d45fe9970d8b"]
+    ["Laser Ray Scroll", "9f97f8fc-2010-4075-a591-d45fe9970d8b"],
+    ["Lockpick", "06d0eecb-4271-42a7-bd8c-4cbf24927197"],
+    ["Trap Disarming Kit", "9fda335e-2220-4ae9-a4c2-2424d5ef5165"]
 ]
 
 USEFUL_ITEMS = [
@@ -488,12 +490,15 @@ def create_item_with_correct_classification(world: DOS2World, name: str) -> DOS2
 def create_all_items(world: DOS2World) -> None:
     itempool: list[Item] = []
 
-    levelups_to_add = 5 #remember to change these
-    attribute_to_add = 8
-    combat_ability_to_add = 5
-    talent_point_to_add = 3
-    max_source_point_to_add = 3
-    civil_ability_to_add = 5
+    scale = 1
+    if(world.options.goal == world.options.goal.option_leave_reapers_coast):
+        scale = 2
+    levelups_to_add = 5 * scale #these will need some honing, nothing to do but get feedback
+    attribute_to_add = 8 * scale
+    combat_ability_to_add = 5 * scale
+    talent_point_to_add = 3 * scale
+    max_source_point_to_add = 3 * scale
+    civil_ability_to_add = 5 * scale
     itempool += [world.create_item("Level Up") for _ in range(levelups_to_add)]
     itempool += [world.create_item("Attribute Point") for _ in range(attribute_to_add)]
     itempool += [world.create_item("Combat Ability Point") for _ in range(combat_ability_to_add)]
@@ -502,11 +507,17 @@ def create_all_items(world: DOS2World) -> None:
     itempool += [world.create_item("Civil Ability Point") for _ in range(civil_ability_to_add)]
     itempool += [world.create_item("Purging Wand")]
 
-    number_of_items = len(itempool)
-    number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
-    number_useful = 2 * (number_empty / 3)
-    itempool += [world.create_item(random.choice(USEFUL_ITEMS)[0]) for _ in range(math.ceil(number_useful))] #this is temporary until the total number of checks exceeds the total useful items
-    number_of_filler = number_empty - math.ceil(number_useful)
-    itempool += [world.create_filler() for _ in range(number_of_filler)]
+    if(world.options.goal == world.options.goal.option_escape_reapers_eye): #fill 2/3 of the pool with useful, rest with filler
+        number_of_items = len(itempool)
+        number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
+        number_useful = 2 * (number_empty / 3)
+        itempool += [world.create_item(random.choice(USEFUL_ITEMS)[0]) for _ in range(math.ceil(number_useful))]
+        number_of_filler = number_empty - math.ceil(number_useful)
+        itempool += [world.create_filler() for _ in range(number_of_filler)]
+    else: #add every useful item, fill rest with filler
+        itempool += [world.create_item(item[0]) for item in USEFUL_ITEMS]
+        number_of_items = len(itempool)
+        number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
+        itempool += [world.create_filler() for _ in range(number_empty)]
 
     world.multiworld.itempool += itempool
