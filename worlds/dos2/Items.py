@@ -444,6 +444,23 @@ USEFUL_ITEMS = [
     ["Winter Blast Skillbook", "b90ab93a-a9f0-4774-8750-a0735ebee18c"]
 ]
 
+EQUIPMENT = [
+    ["Random Weak Weapon", "ST_WeaponNormal"],
+    ["Random Mediocre Weapon", "ST_WeaponMagic"],
+    ["Random Good Weapon", "ST_WeaponRare"],
+    ["Random Powerful Weapon", "ST_WeaponLegendary"],
+    ["Random Weak Gear", "ST_ArmorNormal"],
+    ["Random Mediocre Gear", "ST_ArmorMagic"],
+    ["Random Good Gear", "ST_ArmorRare"],
+    ["Random Powerful Gear", "ST_ArmorLegendary"]
+]
+
+TRAPS = [
+    ["Minor Random Status Trap", "TrapMinor"],
+    ["Moderate Random Status Trap", "TrapModerate"],
+    ["Severe Random Status Trap", "TrapSevere"]
+]
+
 #0 - jort joy, 1 - reapers eye, tbd for future locations
 PROGRESSION_ITEMS = [
     ["Level Up", "levelUp", 1, ItemClassification.progression, 0],
@@ -458,7 +475,9 @@ PROGRESSION_ITEMS = [
 #item name, id in game, id in ap, classification, level
 ITEM_TUPLES = PROGRESSION_ITEMS \
   + [[item[0], item[1], index + 1000, ItemClassification.useful, 0] for index, item in enumerate(USEFUL_ITEMS)] \
-  + [[item[0], item[1], index + 3000, ItemClassification.filler, 0] for index, item in enumerate(FILLER_ITEMS)]
+  + [[item[0], item[1], index + 3000, ItemClassification.filler, 0] for index, item in enumerate(FILLER_ITEMS)] \
+  + [[item[0], item[1], index + 5000, ItemClassification.useful, 0] for index, item in enumerate(EQUIPMENT)] \
+  + [[item[0], item[1], index + 7000, ItemClassification.trap, 0] for index, item in enumerate(TRAPS)] \
 
 ITEM_NAME_TO_ID = {item[0]: item[2] for item in ITEM_TUPLES}
 ID_TO_ITEM_NAME = {item[2]: item[0] for item in ITEM_TUPLES}
@@ -468,6 +487,8 @@ DEFAULT_ITEM_CLASSIFICATIONS = {item[0]: item[3] for item in ITEM_TUPLES}
 IS_DUPEABLE = {
     **{item[1]: True for item in FILLER_ITEMS},
     **{item[1]: True for item in USEFUL_ITEMS},
+    **{item[1]: True for item in EQUIPMENT},
+    **{item[1]: True for item in TRAPS},
     "levelUp": True,
     "attributePoint": True,
     "combatAbilityPoint": True,
@@ -480,6 +501,9 @@ class DOS2Item(Item):
     game = "Divinity Original Sin 2"
 
 def get_random_filler_item_name(world: DOS2World) -> str:
+    if(world.random.randint(0, 100) < world.options.trapPercentage):
+        type = world.random.randint(0, 2)
+        return TRAPS[type][0]
     index = world.random.randint(0, len(FILLER_ITEMS) - 1)
     return FILLER_ITEMS[index][0]
 
@@ -490,17 +514,35 @@ def create_item_with_correct_classification(world: DOS2World, name: str) -> DOS2
 def create_all_items(world: DOS2World) -> None:
     itempool: list[Item] = []
 
+    #these are used in item pool calculations
+    act1Location = 140
+    act2Location = 464
+    act3Location = 504
+    #these will need some honing, nothing to do but get feedback
+
     scale = 1
     if(world.options.goal == world.options.goal.option_leave_reapers_coast or world.options.goal == world.options.goal.option_reapers_coast_hit_list):
-        scale = 2
+        scale = act2Location / act1Location
     elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
-        scale = 2.5
-    levelups_to_add = math.floor(5 * scale) #these will need some honing, nothing to do but get feedback
-    attribute_to_add = math.floor(8 * scale)
-    combat_ability_to_add = math.floor(5 * scale)
-    talent_point_to_add = math.floor(3 * scale)
-    max_source_point_to_add = math.floor(3 * scale)
-    civil_ability_to_add = math.floor(5 * scale)
+        scale = act3Location / act1Location
+    levelups_to_add = math.floor(4 * scale) #2.9% of pool
+    attribute_to_add = math.floor(7 * scale) #5.0% of pool
+    combat_ability_to_add = math.floor(4 * scale) #2.9% of pool
+    talent_point_to_add = math.floor(2 * scale) #1.4% of pool
+    max_source_point_to_add = math.floor(2 * scale) #1.4% of pool
+    civil_ability_to_add = math.floor(4 * scale) #2.9% of pool
+    #stats make up 16.5% of pool
+
+    commonWeaponToAdd = math.floor(3 * scale) #2.1% of pool
+    epicWeaponToAdd = math.floor(5 * scale) #3.6% of pool
+    legendaryWeaponToAdd = math.floor(3 * scale) #2.1% of pool
+    divineWeaponToAdd = math.floor(2 * scale) #1.4% of pool
+    commonGearToAdd = math.floor(6 * scale) #4.3% of pool
+    epicGearToAdd = math.floor(9 * scale) #6.4% of pool
+    legendaryGearToAdd = math.floor(6 * scale) #4.3% of pool
+    divineGearToAdd = math.floor(4 * scale) #2.9% of pool
+    #equipment makes up 27.1% of pool
+
     itempool += [world.create_item("Level Up") for _ in range(levelups_to_add)]
     itempool += [world.create_item("Attribute Point") for _ in range(attribute_to_add)]
     itempool += [world.create_item("Combat Ability Point") for _ in range(combat_ability_to_add)]
@@ -508,6 +550,14 @@ def create_all_items(world: DOS2World) -> None:
     itempool += [world.create_item("Max Source Point") for _ in range(max_source_point_to_add)]
     itempool += [world.create_item("Civil Ability Point") for _ in range(civil_ability_to_add)]
     itempool += [world.create_item("Purging Wand")]
+    itempool += [world.create_item("Random Weak Weapon") for _ in range(commonWeaponToAdd)]
+    itempool += [world.create_item("Random Mediocre Weapon") for _ in range(epicWeaponToAdd)]
+    itempool += [world.create_item("Random Good Weapon") for _ in range(legendaryWeaponToAdd)]
+    itempool += [world.create_item("Random Powerful Weapon") for _ in range(divineWeaponToAdd)]
+    itempool += [world.create_item("Random Weak Gear") for _ in range(commonGearToAdd)]
+    itempool += [world.create_item("Random Mediocre Gear") for _ in range(epicGearToAdd)]
+    itempool += [world.create_item("Random Good Gear") for _ in range(legendaryGearToAdd)]
+    itempool += [world.create_item("Random Powerful Gear") for _ in range(divineGearToAdd)]
 
     if(world.options.goal == world.options.goal.option_escape_reapers_eye or world.options.goal == world.options.goal.option_reapers_eye_hit_list): #fill 2/3 of the pool with useful, rest with filler
         number_of_items = len(itempool)

@@ -114,6 +114,27 @@ class SyncOption(Choice):
     option_on_spell = 0
     option_normally = 1
 
+class TrapPercentage(Range):
+    """
+    Enables and sets the percent of filler items that wll be replaced with traps.
+    These traps gives a random status effect for either 1 turn (minor), 2 turns (moderate), 3 turns (severe).
+    Not recommened if using on spell sync option
+    """
+    display_name = "Trap Chance"
+    range_start = 0
+    range_end = 100
+    default = 0
+
+class TrapStyle(Choice):
+    """
+    Determines if a trap applies its status to all party members or one random party member.
+    Does nothing if traps aren't enabled
+    """
+
+    display_name = "Trap Style"
+    option_party = 0
+    option_random_party_member = 1
+
 @dataclass
 class DOS2Options(PerGameCommonOptions):
     goal: Goal
@@ -122,3 +143,5 @@ class DOS2Options(PerGameCommonOptions):
     deathlinkStyleIn: DeathlinkStyleIn
     deathlinkStyleOut: DeathlinkStyleOut
     syncOption: SyncOption
+    trapPercentage: TrapPercentage
+    trapStyle: TrapStyle
