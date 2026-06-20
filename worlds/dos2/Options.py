@@ -8,12 +8,62 @@ class Goal(Choice):
     These will determine the length of the game and thus what items and locations are avaliable
     Escape Reaper's Eye: Goal is to defeat Alexander and board the Lady Vengeance and escape Reaper's Eye. All items and locations will be limited to the Merryweather and Reaper's Eye.
     Leave Reaper's Coast: Goal is to master source and leave Reaper's Coast. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, and Reaper's Coast.
+    Escape The Nameless Isle: Goal is to escape The Nameless Isle after Dallis sabotages your ascension. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, Reaper's Coast, and The Nameless Isle
+    Reaper's Eye Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye.
+    Reaper's Coast Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye and Reaper's Coast.
+    The Nameless Isle Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye, Reaper's Coast, and The Nameless Isle.
     """
 
     display_name = "Goal"
 
     option_escape_reapers_eye = 0
     option_leave_reapers_coast = 1
+    option_escape_the_nameless_isle = 2
+    option_reapers_eye_hit_list = 4
+    option_reapers_coast_hit_list = 5
+    option_the_nameless_isle_hit_list = 6
+
+class HitList(OptionSet):
+    """
+    If a hit list is set as a goal, select which kills are required to complete the goal.
+    Enemies selected that aren't available in the acts selected will be ignored
+    Reaper's Eye: Windego, Voidwoken Deep-dweller, Radeka the Witch, Bishop Alexander
+    Reaper's Coast: Lich, Lamenting Abomination, Alice Alisceon, Harbinger of Doom, The Eternal Aetera, "Ghalann, Scion of the Elves", Ryker, Mordus
+    The Nameless Isle: The Great Guardian, Source Titan
+    """
+    valid_keys = [
+        "Windego",
+        "Voidwoken Deep-dweller",
+        "Radeka the Witch",
+        "Bishop Alexander",
+        "Lich",
+        "Lamenting Abomination",
+        "Alice Alisceon",
+        "Harbinger of Doom",
+        "The Eternal Aetera",
+        "Ghalann, Scion of the Elves",
+        "Ryker",
+        "Mordus",
+        "The Great Guardian",
+        "Source Titan"
+    ]
+    display_name = "User Defined Hit List"
+    default = {
+        "Windego",
+        "Voidwoken Deep-dweller",
+        "Radeka the Witch",
+        "Bishop Alexander",
+        "Lich",
+        "Lamenting Abomination",
+        "Alice Alisceon",
+        "Harbinger of Doom",
+        "The Eternal Aetera",
+        "Ghalann, Scion of the Elves",
+        "Ryker",
+        "Mordus",
+        "The Great Guardian",
+        "Source Titan"
+    }
 
 class Deathlink(Toggle):
     """
@@ -67,6 +117,7 @@ class SyncOption(Choice):
 @dataclass
 class DOS2Options(PerGameCommonOptions):
     goal: Goal
+    hitList: HitList
     death_link: Deathlink
     deathlinkStyleIn: DeathlinkStyleIn
     deathlinkStyleOut: DeathlinkStyleOut

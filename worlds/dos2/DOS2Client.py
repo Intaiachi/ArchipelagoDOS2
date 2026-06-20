@@ -27,7 +27,29 @@ from CommonClient import gui_enabled, logger, get_base_parser, ClientCommandProc
 
 goal = -1
 bad_states = []
-buggedLocations = ["Victory_Escape_Reapers_Eye", "Victory_Leave_Reapers_Coast"]
+buggedLocations = ["Victory_Escape_Reapers_Eye", "Victory_Leave_Reapers_Coast", "Victory_Escape_The_Nameless_Isle"]
+reapersEyeBosses = [["East Reaper's Eye: Windego (357, 192)", 4], ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)", 4], ["East Reaper's Eye: Radeka the Witch (691, 602)", 4], ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 4]]
+reapersCoastBosses = [["Driftwood: Dessicated Undead (490, 828)", 5], ["Cloisterwood: Lamenting Abomination (112, 267)", 5], ["Cloisterwood: Alice Alisceon (221, 316)", 5], ["Paradise Downs: Harbinger of Doom (679, 437)", 5], ["The Blackpits: The Eternal Aetera (411, 671)", 5], ["Stonegarden: Ghalann, Scion of the Elves (106, 540)", 5], ["Stonegarden: Ryker (516, 181)", 5], ["Reaper's Bluffs: Mordus Awakens - Complete", 5]]
+namelessIsleBosses = [["The Nameless Isle: The Great Guardian (549, 923)", 6], ["The Nameless Isle: Source Titan (-211, 1027)", 6]]
+goalBosses = reapersEyeBosses + reapersCoastBosses + namelessIsleBosses
+bossmap = {
+    "Windego": "East Reaper's Eye: Windego (357, 192)",
+    "Voidwoken Deep-dweller": "East Reaper's Eye: Voidwoken Deep-dweller (499, 157)",
+    "Radeka the Witch": "East Reaper's Eye: Radeka the Witch (691, 602)",
+    "Bishop Alexander": "North-east Reaper's Eye: Bishop Alexander (564, 306)",
+
+    "Lich": "Driftwood: Dessicated Undead (490, 828)",
+    "Lamenting Abomination": "Cloisterwood: Lamenting Abomination (112, 267)",
+    "Alice Alisceon": "Cloisterwood: Alice Alisceon (221, 316)",
+    "Harbinger of Doom": "Paradise Downs: Harbinger of Doom (679, 437)",
+    "The Eternal Aetera": "The Blackpits: The Eternal Aetera (411, 671)",
+    "Ghalann, Scion of the Elves": "Stonegarden: Ghalann, Scion of the Elves (106, 540)",
+    "Ryker": "Stonegarden: Ryker (516, 181)",
+    "Mordus": "Reaper's Bluffs: Mordus Awakens - Complete",
+
+    "The Great Guardian": "The Nameless Isle: The Great Guardian (549, 923)",
+    "Source Titan": "The Nameless Isle: Source Titan (-211, 1027)"
+}
 
 class DOS2ClientCommandProcessor(ClientCommandProcessor):
     def _cmd_resync(self):
@@ -144,6 +166,16 @@ class DOS2Context(CommonContext):
             Utils.async_start(self.update_death_link(self.has_death_link), name = "Update Deathlink")
             global goal
             goal = slot_data["goal"]
+            if(goal == 4 or goal == 5 or goal == 6):
+                global user_defined_fights
+                global goalBosses
+                user_defined_fights = slot_data["hitList"]
+                user_selected_fight_values = set()
+                for key in user_defined_fights:
+                    if(key in bossmap):
+                        user_selected_fight_values.add(bossmap[key])
+                goalBosses = [boss[0] for boss in goalBosses if boss[0] in user_selected_fight_values and boss[1] <= goal]
+                logger.error(f"Expected bosses for goal: {goalBosses}")
             sync_option_path = os.path.join(self.comm_file_directory, self.sync_option)
             with open(sync_option_path, 'w') as f:
                 json.dump(slot_data, f)
@@ -186,7 +218,8 @@ async def game_watcher(ctx: DOS2Context):
                     with open(path, 'w') as f:
                         f.write("[]")
                 if(goal != -1):
-                    if(goal not in [0, 1]):
+                    global goalBosses
+                    if(goal not in [0, 1, 2, 4, 5, 6]):
                         logger.error(goal)
                     for loc in dos2LocationsToSend:
                         if(loc in DOS2_LOCATION_TO_AP_LOCATIONS):
@@ -201,9 +234,28 @@ async def game_watcher(ctx: DOS2Context):
                                     victory = True
                                 elif(apLoc == "Victory_Leave_Reapers_Coast" and goal == 1):
                                     victory = True
+                                elif(apLoc == "Victory_Escape_The_Nameless_Isle" and goal == 2):
+                                    victory = True
+                                elif(apLoc not in ctx.checked_locations and apLoc in goalBosses and (goal == 4 or goal == 5 or goal == 6)):
+                                    remainingBosses = [
+                                        boss for boss in goalBosses
+                                        if LOCATION_NAME_TO_ID[boss] not in ctx.checked_locations
+                                    ]
+                                    if not remainingBosses:
+                                        victory = True
+                                    else:
+                                        goalBosses = remainingBosses
                                 elif(apLoc == "Bad_State"):
                                     logger.error(f"Something occured that made locations unreachable, an earlier save might be needed")
                                     bad_states.append[loc]
+                if(goal == 4 or goal == 5 or goal == 6):
+                    remainingBosses = [
+                        boss for boss in goalBosses
+                        if LOCATION_NAME_TO_ID[boss] not in ctx.checked_locations
+                    ]
+                    if not remainingBosses:
+                        victory = True
+                    goalBosses = remainingBosses
                 message = [{"cmd": 'LocationChecks', "locations": sending}]
                 await ctx.send_msgs(message)
                 if(not ctx.finished_game and victory):

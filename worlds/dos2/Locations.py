@@ -83,7 +83,7 @@ DOS2_KILL_LIST = [
     ["S_FTJ_SoulJarTrapSkeleton_006_a46127af-ff0f-452f-a2e1-260abd2a1001", ["Fort Joy: Eagle-Eyed Guardian (379, 577)"], 0],
     ["S_FTJ_SoulJarTrapSkeleton_007_deffe0d5-11f5-44a9-b50f-497f200ad4f7", ["Fort Joy: Traitorous Guardian (370, 550)"], 0],
     #windego
-    ["S_GLO_Windego_d783285f-d3be-4cba-8333-db8976cef182", ["East Reaper's Eye: Windego (357, 192)"], 0],
+    ["S_GLO_Windego_d783285f-d3be-4cba-8333-db8976cef182", ["East Reaper's Eye: Windego (357, 192)"], 0], #kill list candidate
     #swamp
     ["S_FTJ_SwampBuildup_A_Undead_Assassin_a54a04a3-8507-4a37-a8b6-068fd0ec8146", ["East Reaper's Eye: Decomposing Assassin (379, 152)"], 0],
     ["S_FTJ_SwampBuildup_A_Undead_Melee_01_8b70b76c-24f8-4b3c-aae8-3c78c93ab2bb", ["East Reaper's Eye: Decomposing Swashbuckler (386, 155)"], 0],
@@ -132,9 +132,9 @@ DOS2_KILL_LIST = [
     ["S_FTJ_SW_VWBoss_Melee_01_961c827b-43d1-43c8-8553-6d1d4c8e8aed", ["East Reaper's Eye: Decomposing Swashbuckler 4 (481, 164)"], 0],
     ["S_FTJ_SW_VWBoss_Melee_02_8644ff57-7eb3-4ed7-a496-00e977227b53", ["East Reaper's Eye: Decomposing Swashbuckler 5 (502, 167)"], 0],
     ["S_FTJ_SW_VWBoss_Ranger_01_e8ad5533-b8f0-4c55-a261-4192f5cf1e48", ["East Reaper's Eye: Decomposing Marksman 1 (482, 175)"], 0],
-    ["S_FTJ_SW_VWBoss_VoidWoken_112f8c17-ea77-4658-ac72-239154772fb8", ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)"], 0],
+    ["S_FTJ_SW_VWBoss_VoidWoken_112f8c17-ea77-4658-ac72-239154772fb8", ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)"], 0], #kill list candidate
     #witch
-    ["S_FTJ_SW_Witch_4014aee0-56f1-47e0-a8eb-89c4b5a1da83", ["East Reaper's Eye: Radeka the Witch (691, 602)"], 0],
+    ["S_FTJ_SW_Witch_4014aee0-56f1-47e0-a8eb-89c4b5a1da83", ["East Reaper's Eye: Radeka the Witch (691, 602)"], 0], #kill list candidate
     ["S_FTJ_SW_Witch_Beetle_01_e973d472-f53a-4dee-be60-cd335f3dad7d", ["East Reaper's Eye: Carrion Beetle (697, 620)"], 0],
     ["S_FTJ_SW_Witch_Beetle_02_ea698437-fdcc-470f-8f9e-e7640c438690", ["East Reaper's Eye: Carrion Beetle (690, 597)"], 0],
     ["S_FTJ_SW_Witch_Beetle_03_a70281cd-a226-434b-b6a6-98ddedd42575", ["East Reaper's Eye: Carrion Beetle (679, 611)"], 0],
@@ -149,7 +149,7 @@ DOS2_KILL_LIST = [
     ["S_FTJ_SW_FinalBattleMagister_003_b5dd6af4-6b34-482e-bc0a-72bd6269aaf5", ["North-east Reaper's Eye: Magister Knight (570, 304)"], 0],
     ["S_FTJ_SW_FinalBattleMagister_Gheist_06082187-829f-43e1-b3bb-f3242a70904d", ["North-east Reaper's Eye: Gheist (564, 306)"], 0],
     ["S_FTJ_SW_FinalBattle_Voidwoken_7dcf3cc2-d015-4aff-9949-71fc539fcc73", ["North-east Reaper's Eye: Voidwoken Drillworm (594, 408)"], 0],
-    ["S_GLO_Alexandar_03e6345f-1bd3-403c-80e2-a443a74f6349", ["North-east Reaper's Eye: Bishop Alexander (564, 306)"], 0],
+    ["S_GLO_Alexandar_03e6345f-1bd3-403c-80e2-a443a74f6349", ["North-east Reaper's Eye: Bishop Alexander (564, 306)"], 0], #kill list candidate
     #-- Reaper's Coast --
     ["S_RC_DU_Abduction_Combat1_04d4d854-8474-4c32-887e-43f395508392", ["Reaper's Coast: Viscous Voidling (423, -4)"], 1],
     ["S_RC_DU_Abduction_Combat2_bede8cbd-a5c9-4bd0-9e48-43f3b41d5a32", ["Reaper's Coast: Viscous Voidling (407, 1)"], 1],
@@ -185,7 +185,7 @@ DOS2_KILL_LIST = [
     ["RC_DW_Tavern_ArenaChamp_InArena_aa7f67da-aece-4487-83cf-96f10a018ed1", ["Driftwood: Murga (420, 862)"], 1],
     ["S_RC_DW_UnderTavern_Voidwoken_13bb467b-de20-4726-8afd-757705352361", ["Driftwood: Captive Deep-Dweller (413, 855)"], 1],
     #lich
-    ["S_RC_DW_SourceLich_adf5b715-1e96-4e48-88a7-d68a5b6d0351", ["Driftwood: Dessicated Undead (490, 828)"], 1],
+    ["S_RC_DW_SourceLich_adf5b715-1e96-4e48-88a7-d68a5b6d0351", ["Driftwood: Dessicated Undead (490, 828)"], 1], #kill list candidate
     ["S_RC_DW_LichGuards_1_bd4a02c1-cfa5-40d9-82ab-b49a8fa34bd8", ["Driftwood: Skeletal Hailcaster (496, 812)"], 1],
     ["S_RC_DW_LichGuards_2_25f65683-0e7f-495a-baca-01bd5e2a589f", ["Driftwood: Skeletal Flameweaver (499, 842)"], 1],
     ["S_RC_DW_LichGuards_3_75858ba9-e7d0-42df-93a2-97626dd982b5", ["Driftwood: Skeletal Graverobber (483, 826)"], 1],
@@ -213,6 +213,7 @@ DOS2_KILL_LIST = [
     ["RC_WH_RuinsCliff_DwarfRanger_02_4a7b6122-3e3d-4cd8-ac46-e4551c2d1dfe", ["Reaper's Bluffs: Possessed Arbalist (119, 125)"], 1],
     ["RC_WH_RuinsCliff_Voidwoken_91852d6c-07ca-4244-b2b4-6001de35054c", ["Reaper's Bluffs: Venom-Wing Voidwoken (113, 112)"], 1],
     #wreckers cave (every enemy in the mordus boss is technically missable as killng mordus first despawns the ads, and letting mordus transform or live makes mordus missable. The eggs are also missable once they hatch)
+    #mordus potential kill list candidate, i feel like having the goal to kill him and missing him is the players fault at that point. he transforms back when defeated to converse so kill list should still be fine
     ["S_Hive_Guardian_Bat_01_0819d46d-a3ce-4214-8c42-f4d20c76d01b", ["Reaper's Bluffs: Vampiric Voidwoken (722, 671)"], 1],
     ["S_Hive_Guardian_Bat_02_1af2c6b2-9479-43d8-8938-cf7019202d65", ["Reaper's Bluffs: Vampiric Voidwoken (743, 655)"], 1],
     ["S_Hive_Guardian_InsectW_01_c19ac6db-960d-496b-bcb9-2f16e521134c", ["Reaper's Bluffs: Storm-Wing Voidwoken (724, 685)"], 1],
@@ -227,13 +228,15 @@ DOS2_KILL_LIST = [
     ["S_RC_DW_WC_IndivFight_Voidwoken_004_46bab1fd-001d-411e-a2c3-677051da2dc1", ["Reaper's Bluffs: Cold-crawler Voidwoken (656, 533)"], 1],
     ["S_RC_WC_MordusOffice_Shark_cd9732b8-f89a-4326-af93-d28d7a8435aa", ["Reaper's Bluffs: Shark (77, 782)"], 1],
     #cloisterwood (hannag and the magisters are missable depending on how Window of Opportunity goes)
+    #hannag is also a kill list candidate for the same reason mordus is
+    #["S_RC_BF_CorneredSourcerer_Sourcerer_b201a72c-8ead-4bbf-8612-fcd8c0944e52", ["Cloisterwood: Hannag (201, 259)"], 1], #kill list exclusive
     ["S_RC_BF_Altar_Wolf_Black_000_d3f23369-9e96-47f8-bf1c-4b2307537552", ["Cloisterwood: Old Gray Wolf (127, 273)"], 1],
     ["S_RC_BF_Altar_Wolf_Black_001_0d22cb95-db90-4678-b6c7-ce528ed672d1", ["Cloisterwood: Black Wolf (110, 273)"], 1],
     ["S_RC_BF_Altar_Wolf_Black_002_8a34ce03-d69f-46d9-aa6b-b8d31b022d6a", ["Cloisterwood: Black Wolf (129, 267)"], 1],
     ["S_RC_BF_Altar_Wolf_Black_003_3f7d0a8e-be6b-4259-9d98-95b3dc29c7a0", ["Cloisterwood: Black Wolf (116, 276)"], 1],
     ["S_RC_BF_Altar_Wolf_Black_004_0fea5dc4-2b31-426c-adbf-f1eaaf4ef588", ["Cloisterwood: Black Wolf (122, 262)"], 1],
-    ["S_RC_BF_Altar_Werewolf_000_8fe2d805-39b6-42ad-a5ef-bc0b9d647466", ["Cloisterwood: Lamenting Abomination (112, 267)"], 1],
-    ["S_RC_BF_PolyServants_BurningWitch_73ffd67d-1536-41eb-b96d-be3c03515913", ["Cloisterwood: Alice Alisceon (221, 316)"], 1],
+    ["S_RC_BF_Altar_Werewolf_000_8fe2d805-39b6-42ad-a5ef-bc0b9d647466", ["Cloisterwood: Lamenting Abomination (112, 267)"], 1], #kill list candidate
+    ["S_RC_BF_PolyServants_BurningWitch_73ffd67d-1536-41eb-b96d-be3c03515913", ["Cloisterwood: Alice Alisceon (221, 316)"], 1], #kill list candidate
     #the meadows
     ["S_RC_DF_Scarecrow_000_88c4581e-30c9-4dc7-a7a8-eec8244e7531", ["The Meadows: Enchanted Scarecrow (394, 211)"], 1],
     ["S_RC_DF_Scarecrow_001_6091c03c-1ca2-474b-8f24-9cb0a1fa0b2c", ["The Meadows: Enchanted Scarecrow (399, 217)"], 1],
@@ -275,7 +278,7 @@ DOS2_KILL_LIST = [
     ["S_RC_FL_ShatteredHouse_Archer_8a4080d6-5f92-4ec7-9bef-05ab4500b9ab", ["Paradise Downs: Crossbowman Looter (599, 396)"], 1],
     ["S_RC_FL_ShatteredHouse_Chef_4890000e-78cc-42b8-b571-7ab7ed93f70c", ["Paradise Downs: Chief Looter (604, 396)"], 1],
     #harbinger of doom
-    ["S_RC_FL_AlanBoss_ef0adba7-2471-4972-9feb-ceb4c7547141", ["Paradise Downs: Harbinger of Doom (679, 437)"], 1],
+    ["S_RC_FL_AlanBoss_ef0adba7-2471-4972-9feb-ceb4c7547141", ["Paradise Downs: Harbinger of Doom (679, 437)"], 1], #kill list candidate
     ["S_RC_FL_AlanBoss_NPC_01_143d8d41-883e-4498-bc77-1b21954043c2", ["Paradise Downs: Dead Magister Knight (675, 437)"], 1],
     ["S_RC_FL_AlanBoss_NPC_02_d4befb98-3743-4d61-a84a-e5f7014cd410", ["Paradise Downs: Dead Magister Swordsman (678, 439)"], 1],
     ["S_RC_FL_AlanBoss_NPC_03_b3c6b4b8-266e-44ac-b2b6-f842eb21129a", ["Paradise Downs: Dead Magister Knight (676, 432)"], 1],
@@ -370,7 +373,7 @@ DOS2_KILL_LIST = [
     ["S_RC_OIL_Tomb_Ataraxian_Doggy_02_6ed136a3-0f28-4b58-a9df-82f6c9d949dd", ["The Blackpits: Eternal Stalker (420, 665)"], 1],
     ["S_RC_OIL_Tomb_Ataraxian_Doggy_03_efa12e2c-a6b8-4bd7-a3cb-bc161940f306", ["The Blackpits: Eternal Stalker (408, 673)"], 1],
     ["S_RC_OIL_Tomb_Ataraxian_Doggy_04_753d4374-ec3c-4d1f-ba60-c8d8c350baed", ["The Blackpits: Eternal Stalker (408, 665)"], 1],
-    ["S_RC_OIL_Tomb_Ataraxian_b844294c-62c2-4ff8-82f1-f874b9e4352d", ["The Blackpits: The Eternal Aetera (411, 671)"], 1],
+    ["S_RC_OIL_Tomb_Ataraxian_b844294c-62c2-4ff8-82f1-f874b9e4352d", ["The Blackpits: The Eternal Aetera (411, 671)"], 1], #kill list candidate
     #stonegarden
     #hero rest might want to test the p2 parts
     ["S_RC_GY_Memorial_Lizard_c58aa84d-c95e-4f4f-87b6-d69aebdbe66c", ["Stonegarden: Vydia (584, 137)"], 1],
@@ -389,7 +392,7 @@ DOS2_KILL_LIST = [
     #andras
     ["S_RC_GY_LoyalDog_46e022c5-f2d4-465c-a5f0-db0e9760fcce", ["Stonegarden: Andras (554, 137)"], 1],
     #ancestor tree ads go away after ghalann is dead, missable
-    ["S_RC_GY_VoidwokenAncestorTree_Boss_e3e5e53f-e167-4b35-bd53-d11b4332db76", ["Stonegarden: Ghalann, Scion of the Elves (106, 540)"], 1],
+    ["S_RC_GY_VoidwokenAncestorTree_Boss_e3e5e53f-e167-4b35-bd53-d11b4332db76", ["Stonegarden: Ghalann, Scion of the Elves (106, 540)"], 1], #kill list candidate
     #clay army
     ["S_RC_GY_VengefulSpirits_ClayArmy_W1_Melee_01_84782e40-4f83-4707-80e3-e890a49182af", ["Stonegarden: Clay Sentinel (154, 597)"], 1],
     ["S_RC_GY_VengefulSpirits_ClayArmy_W1_Melee_02_40548524-2067-4604-808c-a3cb4436bf99", ["Stonegarden: Clay Sentinel (154, 595)"], 1],
@@ -421,8 +424,10 @@ DOS2_KILL_LIST = [
     ["S_RC_GY_RykersSpider_bdc57d81-43fb-4592-8387-efd757a9b3be", ["Stonegarden: The Weaver (196, 647)"], 1],
     #ryker if you already have the tablet before first talking to ryker and give it to him there, you will fight upstairs instead of downstairs,
     #not to mention killing ryker first makes the ads dissapear making the ads from both arenas missable
-    ["S_RC_GY_Ryker_522b8095-b539-4a82-84f3-bf8e5a74dfe4", ["Stonegarden: Ryker (516, 181)"], 1],
+    ["S_RC_GY_Ryker_522b8095-b539-4a82-84f3-bf8e5a74dfe4", ["Stonegarden: Ryker (516, 181)"], 1], #kill list candidate
     #bloodmoon island The advocate and gang are not hostile and the voidwoken ambush upon making the advocate say god king is missable, not included
+    #advocate is a kill list canidate for the same reason mordus is
+    #["S_GLO_Advocate_bfa3e903-78ab-46aa-9a95-54fb956eb2b3", ["Bloodmoon Island: The Advocate (274, 351)"], 1], #kill list exclusive
     ["S_RC_BI_DemonSpot2_Demon_1_9a9e4795-2612-4190-8976-478c6a80240f", ["Bloodmoon Island: Gryst Bloodspawn (207, 415)"], 1],
     ["S_RC_BI_DemonSpot2_Demon_2_80b8fc46-b0a3-44a2-8519-2371ea962b2b", ["Bloodmoon Island: Puxk Bloodspawn (224, 428)"], 1],
     ["S_RC_BI_DemonSpot2_Demon_3_f759d7b1-2e66-4bab-8842-91cdba94ee7b", ["Bloodmoon Island: Lrm the Accursed (207, 429)"], 1],
@@ -443,6 +448,47 @@ DOS2_KILL_LIST = [
     ["S_RC_BI_Vault_PosessedPerson_001_f0d1f343-fc73-4c09-8d13-ed37bf51ae25", ["Bloodmoon Island: Possessed Dwarf (674, 851)"], 1],
     ["S_RC_BI_Vault_Demon_001_01c5d4d3-425f-42fd-8200-528b14aafec8", ["Bloodmoon Island: Mor the Trenchmouthed (673, 852)"], 1],
     ["S_RC_BI_Vault_PossessedPerson_003_019e266d-2d45-4818-a778-2cebffdcd743", ["Bloodmoon Island: Rajjarima (674, 775)"], 1],
+    #-- act 3 --
+    #vrogir
+    ["S_CoS_Temples_OrcEntranceBR_001_d1734204-2ddf-47f1-aee8-1b6ce55a1a1a", ["The Nameless Isle: Black Ring Defiler (136, 897)"], 2],
+    ["S_CoS_Temples_OrcEntranceBR_002_ab370701-5c09-4f99-b7fe-7ab32818c356", ["The Nameless Isle: Black Ring Reaver (137, 902)"], 2],
+    ["S_CoS_Temples_Orc_CampBlackRing_001_7b438b65-1122-4fb5-bb5f-fc3a2cf460ea", ["The Nameless Isle: Black Ring Painweaver (157, 943)"], 2],
+    ["S_CoS_Temples_Orc_CampBlackRing_002_5f1f25ab-9e95-4602-bcf9-2b488c63d2a6", ["The Nameless Isle: Black Ring Defiler (166, 950)"], 2],
+    ["S_CoS_Temples_Orc_PortalMaster_74f2fccd-a0a6-408e-98ff-19ac07418ff2", ["The Nameless Isle: Black Ring Portalmaster (158, 963)"], 2],
+    ["S_CoS_Temples_Orc_CampBlackRing_Captain_1eceaf90-79a6-4d36-9360-975f1464b0e3", ["The Nameless Isle: Black Ring Captain (167, 942)"], 2],
+    #rhalic, you can side with the order or the black ring if your undead, the order force only has 3 combatants so this is my best compromise
+    ["S_CoS_Temples_Human_Magister_001_5b6cb39b-2e8a-4a8c-8447-8538f6b47313", ["The Nameless Isle: Magister Inquisitor/Black Ring Defiler (191, 828)"], 2],
+    ["S_CoS_Temples_Human_BlackRing_001_25888479-67b5-4380-9cd4-163a004883db", ["The Nameless Isle: Magister Inquisitor/Black Ring Defiler (191, 828)"], 2],
+    ["S_CoS_Temples_Human_Magister_002_3c5a4458-a17c-43c7-9827-4eb3fd028559", ["The Nameless Isle: Paladin Archer/Black Ring Defiler (203, 823)"], 2],
+    ["S_CoS_Temples_Human_BlackRing_002_29c6711c-adce-4e8f-b402-8b6239a7c7e3", ["The Nameless Isle: Paladin Archer/Black Ring Defiler (203, 823)"], 2],
+    ["S_CoS_Temples_Human_Magister_003_318befa0-49d4-4ada-9196-90d8bd4d89ca", ["The Nameless Isle: Magister Priestess/Black Ring Painweaver (202, 833)"], 2],
+    ["S_CoS_Temples_Human_BlackRing_003_93f7c630-eece-420c-b519-6caa057ecff6", ["The Nameless Isle: Magister Priestess/Black Ring Painweaver (202, 833)"], 2],
+    #forktongue
+    ["S_CoS_Temples_Elf_BlackRing_001_78df2cf8-b492-461b-a34d-2116b29a294d", ["The Nameless Isle: Black Ring Reaver (251, 884)"], 2],
+    ["S_CoS_Temples_Elf_BlackRing_002_4078d759-ed9d-4971-9f68-415cb9a71704", ["The Nameless Isle: Forktongue (243, 878)"], 2],
+    ["S_CoS_Temples_Elf_BlackRing_003_b31439fd-3d0f-4a85-aedd-a59ad856842b", ["The Nameless Isle: Black Ring Painweaver (235, 888)"], 2],
+    ["S_CoS_Temples_Elf_BlackRing_004_c1631c6e-e570-49ed-9987-d699da96059c", ["The Nameless Isle: Black Ring Fearmaiden (238, 883)"], 2],
+    ["S_CoS_Temples_Elf_BlackRing_005_8f340801-5f6e-4b7e-9f34-c734f22e3b53", ["The Nameless Isle: Black Ring Defiler (247, 876)"], 2],
+    ["S_CoS_Temples_Elf_BlackRingWarg_001_d13b4a32-5c70-4585-aef2-1e858c920c8b", ["The Nameless Isle: Black Ring Warg (246, 884)"], 2],
+    #stormblade cave
+    ["S_CoS_Temples_ElfCave_Automaton_001_3242ab1a-db0d-4c3b-a7f1-68c8d62bc651", ["The Nameless Isle: Eternal Protector (617, 254)"], 2],
+    ["S_CoS_Temples_ElfCave_Automaton_002_444c20b4-8f62-4903-a0ff-de55707496e0", ["The Nameless Isle: Eternal Sentinel (626, 247)"], 2],
+    ["S_CoS_Temples_ElfCave_Automaton_003_88f85544-1280-4b00-8beb-d05c6747afa4", ["The Nameless Isle: Eternal Protector (617, 236)"], 2],
+    ["S_CoS_Temples_ElfCave_Automaton_004_c35234bc-6172-4661-a766-7542b6df79e5", ["The Nameless Isle: Eternal Sentinel (607, 246)"], 2],
+    #opting to exclude sallow and alexander for there are paths you can take that leave one of them alive, still kill list canidates
+    #also exluding windego, funnily enough its the exact same one so the check is already sent in act 1
+    #black ring hub
+    ["S_CoS_Temples_BlackRingHub_Grunt_001_22e17bb5-887b-49b9-a435-fa3565a2fb43", ["The Nameless Isle: Black Ring Reaver (236, 765)"], 2],
+    ["S_CoS_Temples_BlackRingHub_Grunt_002_bd6234b0-7ecc-4c2d-a07c-4d196f1a0958", ["The Nameless Isle: Black Ring Fearmaiden (228, 765)"], 2],
+    ["S_CoS_Temples_BlackRingHub_Alchemist_9ba43a01-adb5-418f-8f66-da36657bc402", ["The Nameless Isle: Black Ring Alchemist (226, 770)"], 2],
+    ["S_CoS_Temples_BlackRingHub_Quartermaster_a652a830-6202-4589-a5c5-a49154d2a87e", ["The Nameless Isle: Black Ring Quartermaster (238, 771)"], 2],
+    ["S_CoS_Temples_BlackRingHub_Captain_7d32e545-6c6c-4a95-90dd-3ed14d3a20de", ["The Nameless Isle: Wordless (231, 773)"], 2],
+    ["S_CoS_Temples_BlackRingHub_Dreamer_001_3307d7f7-b2fe-448e-828d-3cd3cde1cb8c", ["The Nameless Isle: Lizard Dreamer (242, 751)"], 2],
+    ["S_CoS_Temples_BlackRingHub_Dreamer_002_25bf2b1b-0d49-4be1-946d-837dfd1ccf54", ["The Nameless Isle: Lizard Dreamer (237, 750)"], 2],
+    #arena ads die when boss does, so theyre missable
+    ["S_CoS_MonolithBoss_Char_c963ad5d-72f7-4c0e-8f08-910ffe11a0a3", ["The Nameless Isle: The Great Guardian (549, 923)"], 2], #kill list candidate
+    #finale prob should double check this one
+    ["S_CoS_AotO_SourceTitan_d230a9d9-e44d-493e-8c69-9570f2fa065f", ["The Nameless Isle: Source Titan (-211, 1027)"], 2], #kill list canidate
 ]
 
 #All of the FTJ ones came from @chaotic and @JeyKey09, thank you!
@@ -452,25 +498,24 @@ DOS2_LOCATION_LIST = [
     ["Quest-TUT_ShipMurder", ["Merryweather: Troubled Waters - Complete"], 0],
     ["Quest-FTJ_Escape", ["Fort Joy: Escape From Fort Joy - Complete"], 0],
     ["Quest-FTJ_Escape_Island", ["North-east Reaper's Eye: Escape From Reaper's Eye - Complete", "Victory_Escape_Reapers_Eye"], 0],
-    ["Quest-FTJ_Escape_Island_SUBA", ["North-east Reaper's Eye: Talk to Malady - Complete"], 0],
-    #["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0], I have no idea what these are
-    #["Quest-FTJ_Escape_Island_SUBC", ["placeholder5"], 0],
+    ["Quest-FTJ_Escape_Island_SUBA", ["North-east Reaper's Eye: Seek and You Shall Find - Complete"], 0], #Seek and You Shall Find
+    #["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0], I have no idea what these are #The Dragon's Way
+    #["Quest-FTJ_Escape_Island_SUBC", ["placeholder5"], 0], #Silence the Shrieking
     ["Quest-FTJ_Voice", ["East Reaper's Eye: The Voices - Complete"], 0],
-    #["Quest-FTJ_Godwoken", ["placeholder7"], 0], I dont know what this is
-    #["Quest-FTJ_Hunted", ["placeholder8"], 0], #dont know
-    #["Quest-FTJ_Seeker", ["placeholder9"], 0], #I dont know
+    #["Quest-FTJ_Godwoken", ["placeholder7"], 0], I dont know what this is #Champion of the Gods - {character}
+    #["Quest-FTJ_Hunted", ["placeholder8"], 0], #dont know #A Rare Prey
+    #["Quest-FTJ_Seeker", ["placeholder9"], 0], #I dont know #Signs of Resistance
     ["Quest-RC_FTJ_OlgoSaheila", ["Fort Joy: The Imprisioned Elf - Complete"], 0],
     ["Quest-RC_FTJ_MurderousGheist", ["Fort Joy: The Murderous Gheist - Complete"], 0],
     ["Quest-FTJ_SourceHounds", ["Fort Joy: Finding Emmie - Complete"], 0],
     ["Quest-FTJ_Arena", ["Fort Joy: The Arena of Fort Joy - Complete"], 0],
     ["Quest-RC_FTJ_SoulJar", ["Fort Joy: Withermoore's Soul Jar - Complete"], 0],
-    #["Quest-FTJ_SaheilaFate", ["placeholder15"], 0], #these two probably are related to act 2 (Saheila's People / The Elven Seer)
     #["Quest-RC_FTJ_SaheilaSignet", ["placeholder16"], 0],
     ["Quest-FTJ_Teleporter", ["Fort Joy: The Teleporter - Complete"], 0],
     ["Quest-FTJ_Elodi", ["Fort Joy: The Shakedown - Complete"], 0],
     ["Quest-FTJ_SW_Illusionist", ["East Reaper's Eye: The Vault of Braccus Rex - Complete"], 0],
-    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch/Most Dangerous When Cornered - Complete"], 0], #same flag as Dangerous When Cornered for some reason
-    #["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0], #looking at more flags, this does seem to be The Eternal Worshipper, haven't got the flag to shoot outside of leaving act 1
+    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch/Most Dangerous When Cornered - Complete"], 0], #same flag as Dangerous When Cornered for some reason #Healing Touch
+    #["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0], #looking at more flags, this does seem to be The Eternal Worshipper, haven't got the flag to shoot outside of leaving act 1 #The Eternal Worshipper
     ["Quest-FTJ_SW_Necromancers", ["East Reaper's Eye: A Fate Worse Than Death - Complete"], 0],
     ["Quest-FTJ_SW_BraccusArmory", ["East Reaper's Eye: The Armoury - Complete"], 0],
     ["Quest-FTJ_SW_CursedRing", ["East Reaper's Eye: The Cursed Ring - Complete"], 0],
@@ -481,7 +526,7 @@ DOS2_LOCATION_LIST = [
     ["Quest-FTJ_SW_Shriekers", ["East Reaper's Eye: The Shreikers - Complete"], 0],
     ["Quest-FTJ_SW_Tyrant", ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete"], 0],
     #["Quest-ContaminationArmour", ["Seed of Power - Complete"], 0], This isn't completeable till act 4
-    #["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0], Youd think that this is Most Dangerous When Cornered but no (fires off on act exit)
+    #["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0], Youd think that this is Most Dangerous When Cornered but no (fires off on act exit) #Most Dangerous When Cornered
     ["Quest-CaptainArmour", ["North-east Reaper's Eye: Threads of a Curse - Complete"], 0],
     #-- Act 2 -- #A Trial for all Seasons lacks flags, same with Burial Rites, Burying the Past
     ["Quest-LV_Main", ["Lady Vengence: Lady o' War - Complete"], 1],
@@ -501,9 +546,9 @@ DOS2_LOCATION_LIST = [
     #["Quest-RC_DW_TrappedHusband", ["placeholder13"], 1],
     #["Quest-RC_DW_BridgeDog", ["placeholder14"], 1],
     ["Quest-RC_DW_FunnyMeat", ["Driftwood: The Missing Magisters - Complete"], 1],
-    #["Quest-RC_DW_FunnyMeat_SUBA", ["placeholder16"], 1], these are different routes the quest can take, ie annoying missabled, the main fire on all of them anyway
-    #["Quest-RC_DW_FunnyMeat_SUBB", ["placeholder17"], 1],
-    #["Quest-RC_DW_FunnyMeat_SUBC", ["placeholder18"], 1],
+    #["Quest-RC_DW_FunnyMeat_SUBA", ["placeholder16"], 1], these are different routes the quest can take, ie annoying missabled, the main fire on all of them anyway #Stewart's Investigation
+    #["Quest-RC_DW_FunnyMeat_SUBB", ["placeholder17"], 1], #Carver's Investigation
+    #["Quest-RC_DW_FunnyMeat_SUBC", ["placeholder18"], 1], #Investigation Over
     ["Quest-RC_DW_HidingTinkerer", ["Driftwood: Strange Cargo - Complete"], 1],
     ["Quest-RC_DW_Dock_Kids", ["Driftwood: Hide & Seek - Complete"], 1],
     ["Quest-RC_DW_FishScholar", ["Driftwood: Grebb the Scholar - Complete"], 1],
@@ -514,7 +559,7 @@ DOS2_LOCATION_LIST = [
     ["Quest-RC_DW_TheDrunkenSailor", ["Driftwood: Drowning Her Sorrows - Complete"], 1],
     ["Quest-RC_DW_Arena", ["Driftwood: The Driftwood Arena - Complete"], 1],
     ["Quest-RC_DW_SurpriseDate", ["Driftwood: Love Has a Price - Complete"], 1],
-    #["Quest-RC_DW_MissingEquipment", ["placeholder29"], 1], no idea, doesnt fire on act exit
+    #["Quest-RC_DW_MissingEquipment", ["placeholder29"], 1], no idea, doesnt fire on act exit #Getting Your Own Back (I think this is added when you get your stuff stolen in Love Has a Price idk)
     ["Quest-RC_DW_VoidwokenChicks", ["Reaper's Coast: Counting your Chickens - Complete"], 1],
     ["Quest-RC_DW_DwarvenCriminals", ["Driftwood: The Law of the Order - Complete"], 1],
     ["Quest-RC_DW_DwarvenCriminals_SUB_RottenGoods", ["Driftwood: Fishy Business - Complete"], 1],
@@ -530,8 +575,8 @@ DOS2_LOCATION_LIST = [
     ["Quest-RC_DF_PolyLovers", ["The Meadows: Treated Like Cattle - Complete"], 1],
     ["Quest-RC_DF_UndeadTrader", ["Cloisterwood: Eithne the Trader - Complete"], 1],
     ["Quest-RC_DF_TrollBridge", ["Cloisterwood: Business Rivals - Complete"], 1], #cant get both paths in one save, keeping the main and nothnig else
-    #["Quest-RC_DF_TrollBridge_SUBA", ["placeholder45"], 1],
-    #["Quest-RC_DF_TrollBridge_SUBB", ["placeholder46"], 1],
+    #["Quest-RC_DF_TrollBridge_SUBA", ["placeholder45"], 1], #Grog's Monopoly
+    #["Quest-RC_DF_TrollBridge_SUBB", ["placeholder46"], 1], #Marg's Monopoly
     ["Quest-RC_GY_RykersContract", ["Stonegarden: A Generous Offer - Complete"], 1],
     ["Quest-RC_GY_RykersSpider", ["Stonegarden: The Weaver - Complete"], 1],
     ["Quest-RC_GY_PurgedDaughter", ["Stonegarden: A Danger to Herself and Others - Complete"], 1],
@@ -550,7 +595,7 @@ DOS2_LOCATION_LIST = [
     ["Quest-RC_FL_BrokenPromises", ["Paradise Downs: Unlikely Lovers - Complete"], 1],
     ["Quest-RC_FL_TabletForAlmira", ["Paradise Downs: Almira's Request - Complete"], 1],
     ["Quest-RC_BF_ThePresence", ["Cloisterwood: A Hunter of Wicked Things - Complete"], 1],
-    #["Quest-RC_BI_TheTruth", ["placeholder65"], 1], #The Secrets of Bloodmoon Island? cant be completed till act 4 if so (nvm fires on act exit i have no idea what this is)
+    #["Quest-RC_BI_TheTruth", ["placeholder65"], 1], #The Secrets of Bloodmoon Island? cant be completed till act 4 if so (nvm fires on act exit i have no idea what this is) -it is secrets of bloodmoon
     ["Quest-RC_BI_TheVaults", ["Bloodmoon Island: The Forgotten and the Damned - Complete"], 1],
     ["Quest-RC_BI_TheVaults_SUBA", ["Bloodmoon Island: Delusions of Gradeur - Comeplete"], 1],
     ["Quest-RC_BI_TheVaults_SUBB", ["Bloodmoon Island: Silent as the Grave - Complete"], 1],
@@ -580,12 +625,33 @@ DOS2_LOCATION_LIST = [
     ["Quest-RC_DW_RichMerchant", ["Driftwood: The Merchant - Complete"], 1],
     ["Quest-RC_DW_Beggar", ["Driftwood: A Man and His Dog - Complete"], 1],
     #["Quest-RC_FL_GarethFarm", ["placeholder93"], 1], #fires when killing jonathan in the first encounter with gareth, no where else in Burying the Past. Every other path doesnt fire until act exit, opting to omit this one
-    #["Quest-RC_FL_GarethParents", ["placeholder94"], 1], #This is whatever the one is for killing voidwoken at gareths parents behest, obnoixously missable, probably wont include, doesn't fire on act exit either
+    #["Quest-RC_FL_GarethParents", ["placeholder94"], 1], #This is whatever the one is for killing voidwoken at gareths parents behest, obnoixously missable, probably wont include, doesn't fire on act exit either #Infestation
     #["Quest-RC_MIL_ElvenBurial", ["placeholder95"], 1], Confident this is Burial Rites, no flag sent when completeing burial rites (fires on leaving reapers coast)
-    #["Quest-RC_MIL_ElfTest", ["placeholder96"], 1], #fires on act exit, not a clue though
+    #["Quest-RC_MIL_ElfTest", ["placeholder96"], 1], #A Trial for All Seasons, doesnt fire on completion
     ["Quest-RC_MIL_AvengingSaheila", ["The Cullwoods: The Elven Seer/Vengeance for the Fallen - Complete"], 1],
     ["Quest-RC_OIL_ThirdHouse", ["The Blackpits: On the Ropes - Complete"], 1],
     ["Quest-RC_DW_Meistr_SUBI", ["Driftwood: The Gift of the Blackroot - Complete"], 1],
+    #-- act 3 --
+    #["Quest-CoS_BreakerForAlmira", ["The Nameless Isle: The Key to Freedom - Complete"], 2], #probably missable
+    ["Quest-CoS_Temples", ["The Nameless Isle: The Nameless Isle - Complete"], 2], #
+    #["Quest-CoS_Temples_SUBA", ["The Nameless Isle: Helping Alexander - Complete"], 2], #missable (pops at aoto)
+    #["Quest-CoS_Temples_SUBB", ["The Nameless Isle: Helping Sallow - Complete"], 2], (pops at aoto)
+    #["Quest-CoS_Temples_SUBC", ["The Nameless Isle: To the Belly of the Mountain - Complete"], 2],
+    ["Quest-CoS_ImpTemple", ["The Nameless Isle: Running like Clockwork - Complete"], 2],
+    ["Quest-CoS_OrcTemple", ["The Nameless Isle: The Drowned Temple - Complete"], 2], #good (pops at aoto)
+    ["Quest-CoS_WizardTemple", ["The Nameless Isle: Up in the Clouds - Complete"], 2], #(pops at aoto)
+    ["Quest-CoS_HelpingTheSallowMan", ["The Nameless Isle: The Sallow Man - Complete"], 2], #probably mutually exclusive with unlikley patron (pops at aoto) pops on sallows death so actually keeping this as an either you do it, or you fail it
+    #["Quest-CoS_CompanionCulling", ["The Nameless Isle: Thinning the Herd - Complete"], 2], #thinning the herd - {character} gonna be missable
+    #["Quest-CoS_HelpingAlexandar", ["The Nameless Isle: An Unlikely Patron - Complete"], 2], #(pops at aoto) this doesnt pop for anything, completing or failing the quest
+    #["Quest-CoS_Delorus", ["The Nameless Isle: A Familiar Face - Complete"], 2], #missable
+    #["Quest-CoS_GarethsRevenge", ["The Nameless Isle: Seeking Revenge - Complete"], 2], #also probably super missable, correct
+    ["Quest-CoS_BlackRing", ["The Nameless Isle: Invaders - Complete"], 2], #(pops at aoto)
+    ["Quest-CoS_TheWatcher", ["The Nameless Isle: The Watcher's Mercy - Complete"], 2], #(pops at aoto)
+    ["Quest-CoS_SpyMaster", ["The Nameless Isle: The Mother Tree - Complete"], 2], #(pops at aoto)
+    ["Quest-CoS_MissingStudent", ["The Nameless Isle: Unscholarly Pursuits - Complete"], 2], #(pops at aoto)
+    ["Quest-CoS_ForbiddenLibrary", ["The Nameless Isle: Proving Ground - Complete"], 2], #(pops at aoto)
+    ["Quest-CoS_Academy", ["The Nameless Isle: The Academy - Complete"], 2],
+    ["Quest-CoS_ArenaOfTheOne", ["The Nameless Isle: The Arena of the One - Complete", "Victory_Escape_The_Nameless_Isle"], 2], #probably the goal locaion
 ] + DOS2_KILL_LIST
 
 LOCATION_NAME_ID_REGION = [
@@ -707,7 +773,7 @@ LOCATION_NAME_ID_REGION = [
     ["North-east Reaper's Eye: Voidwoken Drillworm (594, 408)", 119, "North-east Reaper's Eye"],
     ["Fort Joy: Escape From Fort Joy - Complete", 120, "Fort Joy"],
     ["North-east Reaper's Eye: Escape From Reaper's Eye - Complete", 121, "North-east Reaper's Eye"],
-    ["North-east Reaper's Eye: Talk to Malady - Complete", 122, "North-east Reaper's Eye"],
+    ["North-east Reaper's Eye: Seek and You Shall Find - Complete", 122, "North-east Reaper's Eye"],
     #["placeholder4", 123, "Fort Joy"],
     #["placeholder5", 124, "Fort Joy"],
     ["East Reaper's Eye: The Voices - Complete", 125, "East Reaper's Eye"],
@@ -719,7 +785,6 @@ LOCATION_NAME_ID_REGION = [
     ["Fort Joy: Finding Emmie - Complete", 131, "Fort Joy"],
     ["Fort Joy: The Arena of Fort Joy - Complete", 132, "Fort Joy"],
     ["Fort Joy: Withermoore's Soul Jar - Complete", 133, "Fort Joy"],
-    #["placeholder15", 134, "Fort Joy"],
     #["placeholder16", 135, "Fort Joy"],
     ["Fort Joy: The Teleporter - Complete", 136, "Fort Joy"],
     ["Fort Joy: The Shakedown - Complete", 137, "Fort Joy"],
@@ -1090,6 +1155,55 @@ LOCATION_NAME_ID_REGION = [
     ["Bloodmoon Island: Possessed Dwarf (674, 851)", 502, "Bloodmoon Island"],
     ["Bloodmoon Island: Mor the Trenchmouthed (673, 852)", 503, "Bloodmoon Island"],
     ["Bloodmoon Island: Rajjarima (674, 775)", 504, "Bloodmoon Island"],
+    #-- act 3 --
+    #["The Nameless Isle: The Key to Freedom - Complete", 505, "The Nameless Isle"],
+    ["The Nameless Isle: The Nameless Isle - Complete", 506, "The Nameless Isle"],
+    #["The Nameless Isle: Helping Alexander - Complete", 507, "The Nameless Isle"],
+    #["The Nameless Isle: Helping Sallow - Complete", 508, "The Nameless Isle"],
+    #["The Nameless Isle: To the Belly of the Mountain - Complete", 509, "The Nameless Isle"],
+    ["The Nameless Isle: Running like Clockwork - Complete", 510, "The Nameless Isle"],
+    ["The Nameless Isle: The Drowned Temple - Complete", 511, "The Nameless Isle"],
+    ["The Nameless Isle: Up in the Clouds - Complete", 512, "The Nameless Isle"],
+    ["The Nameless Isle: The Sallow Man - Complete", 513, "The Nameless Isle"],
+    #["The Nameless Isle: Thinning the Herd - Complete", 514, "The Nameless Isle"],
+    #["The Nameless Isle: An Unlikely Patron - Complete", 515, "The Nameless Isle"],
+    #["The Nameless Isle: A Familiar Face - Complete", 516, "The Nameless Isle"],
+    #["The Nameless Isle: Seeking Revenge - Complete", 517, "The Nameless Isle"],
+    ["The Nameless Isle: Invaders - Complete", 518, "The Nameless Isle"],
+    ["The Nameless Isle: The Watcher's Mercy - Complete", 519, "The Nameless Isle"],
+    ["The Nameless Isle: The Mother Tree - Complete", 520, "The Nameless Isle"],
+    ["The Nameless Isle: Unscholarly Pursuits - Complete", 521, "The Nameless Isle"],
+    ["The Nameless Isle: Proving Ground - Complete", 522, "The Nameless Isle"],
+    ["The Nameless Isle: The Academy - Complete", 523, "The Nameless Isle"],
+    ["The Nameless Isle: The Arena of the One - Complete", 524, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Defiler (136, 897)", 525, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Reaver (137, 902)", 526, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Painweaver (157, 943)", 527, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Defiler (166, 950)", 528, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Portalmaster (158, 963)", 529, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Captain (167, 942)", 530, "The Nameless Isle"],
+    ["The Nameless Isle: Magister Inquisitor/Black Ring Defiler (191, 828)", 531, "The Nameless Isle"],
+    ["The Nameless Isle: Paladin Archer/Black Ring Defiler (203, 823)", 532, "The Nameless Isle"],
+    ["The Nameless Isle: Magister Priestess/Black Ring Painweaver (202, 833)", 533, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Reaver (251, 884)", 534, "The Nameless Isle"],
+    ["The Nameless Isle: Forktongue (243, 878)", 535, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Painweaver (235, 888)", 536, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Fearmaiden (238, 883)", 537, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Defiler (247, 876)", 538, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Warg (246, 884)", 539, "The Nameless Isle"],
+    ["The Nameless Isle: Eternal Protector (617, 254)", 540, "The Nameless Isle"],
+    ["The Nameless Isle: Eternal Sentinel (626, 247)", 541, "The Nameless Isle"],
+    ["The Nameless Isle: Eternal Protector (617, 236)", 542, "The Nameless Isle"],
+    ["The Nameless Isle: Eternal Sentinel (607, 246)", 543, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Reaver (236, 765)", 544, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Fearmaiden (228, 765)", 545, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Alchemist (226, 770)", 546, "The Nameless Isle"],
+    ["The Nameless Isle: Black Ring Quartermaster (238, 771)", 547, "The Nameless Isle"],
+    ["The Nameless Isle: Wordless (231, 773)", 548, "The Nameless Isle"],
+    ["The Nameless Isle: Lizard Dreamer (242, 751)", 549, "The Nameless Isle"],
+    ["The Nameless Isle: Lizard Dreamer (237, 750)", 550, "The Nameless Isle"],
+    ["The Nameless Isle: The Great Guardian (549, 923)", 551, "The Nameless Isle"],
+    ["The Nameless Isle: Source Titan (-211, 1027)", 552, "The Nameless Isle"],
 ]
 
 LOCATION_NAME_TO_ID = {item[0]: item[1] for item in LOCATION_NAME_ID_REGION}
@@ -1123,6 +1237,8 @@ def create_regular_locations(world: DOS2World) -> None:
     paradiseDowns = world.get_region("Paradise Downs")
     bloodmoonIsland = world.get_region("Bloodmoon Island")
 
+    namelessIsle = world.get_region("The Nameless Isle")
+
     merryweatherLocationNames = []
     for loc in LOCATION_NAME_ID_REGION:
         if(loc[2] == "Merryweather"):
@@ -1151,7 +1267,7 @@ def create_regular_locations(world: DOS2World) -> None:
     finalReapersEyeLocations = get_location_names_with_ids(finalReapersEyeLocationNames)
     finalReapersEye.add_locations(finalReapersEyeLocations, DOS2Location)
 
-    if(world.options.goal != world.options.goal.option_escape_reapers_eye):
+    if(world.options.goal != world.options.goal.option_escape_reapers_eye and world.options.goal != world.options.goal.option_reapers_eye_hit_list):
         ladyVengenceLocationNames = []
         for loc in LOCATION_NAME_ID_REGION:
             if(loc[2] == "Lady Vengence"):
@@ -1229,9 +1345,21 @@ def create_regular_locations(world: DOS2World) -> None:
         bloodmoonIslandLocations = get_location_names_with_ids(bloodmoonIslandLocationNames)
         bloodmoonIsland.add_locations(bloodmoonIslandLocations, DOS2Location)
 
+        if(world.options.goal != world.options.goal.option_leave_reapers_coast and world.options.goal != world.options.goal.option_reapers_coast_hit_list):
+            namelessIsleLocationNames = []
+            for loc in LOCATION_NAME_ID_REGION:
+                if(loc[2] == "The Nameless Isle"):
+                    namelessIsleLocationNames.append(loc[0])
+            namelessIsleLocations = get_location_names_with_ids(namelessIsleLocationNames)
+            namelessIsle.add_locations(namelessIsleLocations, DOS2Location)
+
 
 
     if(world.options.goal == world.options.goal.option_escape_reapers_eye):
         finalReapersEye.add_event("Victory_Escape_Reapers_Eye", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
     elif(world.options.goal == world.options.goal.option_leave_reapers_coast):
         ladyVengence.add_event("Victory_Leave_Reapers_Coast", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+    elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle):
+        namelessIsle.add_event("Victory_Escape_The_Nameless_Isle", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+    elif(world.options.goal == world.options.goal.option_reapers_eye_hit_list or world.options.goal == world.options.goal.option_reapers_coast_hit_list or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
+        fortJoy.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)

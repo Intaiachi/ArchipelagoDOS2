@@ -491,14 +491,16 @@ def create_all_items(world: DOS2World) -> None:
     itempool: list[Item] = []
 
     scale = 1
-    if(world.options.goal == world.options.goal.option_leave_reapers_coast):
+    if(world.options.goal == world.options.goal.option_leave_reapers_coast or world.options.goal == world.options.goal.option_reapers_coast_hit_list):
         scale = 2
-    levelups_to_add = 5 * scale #these will need some honing, nothing to do but get feedback
-    attribute_to_add = 8 * scale
-    combat_ability_to_add = 5 * scale
-    talent_point_to_add = 3 * scale
-    max_source_point_to_add = 3 * scale
-    civil_ability_to_add = 5 * scale
+    elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
+        scale = 2.5
+    levelups_to_add = math.floor(5 * scale) #these will need some honing, nothing to do but get feedback
+    attribute_to_add = math.floor(8 * scale)
+    combat_ability_to_add = math.floor(5 * scale)
+    talent_point_to_add = math.floor(3 * scale)
+    max_source_point_to_add = math.floor(3 * scale)
+    civil_ability_to_add = math.floor(5 * scale)
     itempool += [world.create_item("Level Up") for _ in range(levelups_to_add)]
     itempool += [world.create_item("Attribute Point") for _ in range(attribute_to_add)]
     itempool += [world.create_item("Combat Ability Point") for _ in range(combat_ability_to_add)]
@@ -507,7 +509,7 @@ def create_all_items(world: DOS2World) -> None:
     itempool += [world.create_item("Civil Ability Point") for _ in range(civil_ability_to_add)]
     itempool += [world.create_item("Purging Wand")]
 
-    if(world.options.goal == world.options.goal.option_escape_reapers_eye): #fill 2/3 of the pool with useful, rest with filler
+    if(world.options.goal == world.options.goal.option_escape_reapers_eye or world.options.goal == world.options.goal.option_reapers_eye_hit_list): #fill 2/3 of the pool with useful, rest with filler
         number_of_items = len(itempool)
         number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
         number_useful = 2 * (number_empty / 3)
