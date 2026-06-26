@@ -31,7 +31,11 @@ def create_all_regions(world: DOS2World) -> None:
 
     namelessIsle = Region("The Nameless Isle", world.player, world.multiworld)
 
-    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye, ladyVengence, reapersCoast, stonegarden, theBlackpits, driftwood, reapersBluffs, cloisterwood, theMeadows, theCullwoods, paradiseDowns, bloodmoonIsland, namelessIsle]
+    arxOutskirts = Region("Arx Outskirts", world.player, world.multiworld)
+    arx = Region("Arx", world.player, world.multiworld)
+    tombOfLucian = Region("Tomb of Lucian", world.player, world.multiworld)
+
+    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye, ladyVengence, reapersCoast, stonegarden, theBlackpits, driftwood, reapersBluffs, cloisterwood, theMeadows, theCullwoods, paradiseDowns, bloodmoonIsland, namelessIsle, arxOutskirts, arx, tombOfLucian]
 
     world.multiworld.regions += regions
 
@@ -55,6 +59,10 @@ def connect_regions(world: DOS2World) -> None:
 
     namelessIsle = world.get_region("The Nameless Isle")
 
+    arxOutskirts = world.get_region("Arx Outskirts")
+    arx = world.get_region("Arx")
+    tombOfLucian = world.get_region("Tomb of Lucian")
+
     merryweather.connect(fortJoy, "Merryweather to Fort Joy", lambda state: state.has("Level Up", world.player))
     fortJoy.connect(eastReapersEye, "Fort Joy to East Reaper's Eye", lambda state: state.has("Level Up", world.player, 2))
     eastReapersEye.connect(finalReapersEye, "East Reaper's Eye to North-east Reaper's Eye", lambda state: state.has("Level Up", world.player, 3) and state.has("Purging Wand", world.player))
@@ -75,3 +83,7 @@ def connect_regions(world: DOS2World) -> None:
         theCullwoods.connect(paradiseDowns, "The Cullwoods to Paradise Downs", lambda state: state.has("Level Up", world.player, 6))
         if(world.options.goal != world.options.goal.option_leave_reapers_coast and world.options.goal != world.options.goal.option_reapers_coast_hit_list):
             ladyVengence.connect(namelessIsle, "Lady Vengence to The Nameless Isle", lambda state: state.has("Level Up", world.player, 7))
+            if(world.options.goal != world.options.goal.option_escape_the_nameless_isle and world.options.goal != world.options.goal.option_the_nameless_isle_hit_list):
+                ladyVengence.connect(arxOutskirts, "Lady Vengence to Arx Outskirts")
+                arxOutskirts.connect(arx, "Arx Outskirts to Arx", lambda state: state.has("Level Up", world.player, 8))
+                arx.connect(tombOfLucian, "Arx to Tomb of Lucian", lambda state: state.has("Level Up", world.player, 9) and state.has("Source Amulet", world.player) and state.has("Scroll Of Atonement", world.player))

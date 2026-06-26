@@ -27,11 +27,45 @@ from CommonClient import gui_enabled, logger, get_base_parser, ClientCommandProc
 
 goal = -1
 bad_states = []
-buggedLocations = ["Victory_Escape_Reapers_Eye", "Victory_Leave_Reapers_Coast", "Victory_Escape_The_Nameless_Isle"]
-reapersEyeBosses = [["East Reaper's Eye: Windego (357, 192)", 4], ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)", 4], ["East Reaper's Eye: Radeka the Witch (691, 602)", 4], ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 4]]
-reapersCoastBosses = [["Driftwood: Dessicated Undead (490, 828)", 5], ["Cloisterwood: Lamenting Abomination (112, 267)", 5], ["Cloisterwood: Alice Alisceon (221, 316)", 5], ["Paradise Downs: Harbinger of Doom (679, 437)", 5], ["The Blackpits: The Eternal Aetera (411, 671)", 5], ["Stonegarden: Ghalann, Scion of the Elves (106, 540)", 5], ["Stonegarden: Ryker (516, 181)", 5], ["Reaper's Bluffs: Mordus Awakens - Complete", 5]]
-namelessIsleBosses = [["The Nameless Isle: The Great Guardian (549, 923)", 6], ["The Nameless Isle: Source Titan (-211, 1027)", 6]]
-goalBosses = reapersEyeBosses + reapersCoastBosses + namelessIsleBosses
+buggedLocations = [
+    "Victory_Escape_Reapers_Eye", 
+    "Victory_Leave_Reapers_Coast", 
+    "Victory_Escape_The_Nameless_Isle", 
+    "Victory_Defeat_Braccus_Rex"
+]
+reapersEyeBosses = [
+    ["East Reaper's Eye: Windego (357, 192)", 4], 
+    ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)", 4], 
+    ["East Reaper's Eye: Radeka the Witch (691, 602)", 4], 
+    ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 4]
+]
+reapersCoastBosses = [
+    ["Driftwood: Dessicated Undead (490, 828)", 5], 
+    ["Cloisterwood: Lamenting Abomination (112, 267)", 5], 
+    ["Cloisterwood: Alice Alisceon (221, 316)", 5], 
+    ["Paradise Downs: Harbinger of Doom (679, 437)", 5], 
+    ["The Blackpits: The Eternal Aetera (411, 671)", 5], 
+    ["Stonegarden: Ghalann, Scion of the Elves (106, 540)", 5], 
+    ["Stonegarden: Ryker (516, 181)", 5], 
+    ["Reaper's Bluffs: Mordus Awakens - Complete", 5]
+]
+namelessIsleBosses = [
+    ["The Nameless Isle: The Great Guardian (549, 923)", 6], 
+    ["The Nameless Isle: Source Titan (-211, 1027)", 6]
+]
+arxBosses = [
+    ["Arx Outskirts: Loic the Immaculate (356, -7)", 7], 
+    ["Arx Outskirts: Voidwoken Bloodfury (302, 172)", 7], 
+    ["Arx: Sanguinia Tell (419, 298)", 7], 
+    ["Arx: Karon (163, 750)", 7], 
+    ["Arx: Isbeil (280, 672)", 7], 
+    ["Arx: Thorny Suncaller (101, 286)", 7], 
+    ["Arx: Lord Linder Kemm (325, 263)", 7], 
+    ["Arx: Adramahlihk (387, 418)", 7], 
+    ["Arx: Contaminated Horror (172, 136)", 7], 
+    ["Tomb of Lucian: Braccus Rex (581, 284)", 7]
+]
+goalBosses = reapersEyeBosses + reapersCoastBosses + namelessIsleBosses + arxBosses
 bossmap = {
     "Windego": "East Reaper's Eye: Windego (357, 192)",
     "Voidwoken Deep-dweller": "East Reaper's Eye: Voidwoken Deep-dweller (499, 157)",
@@ -48,8 +82,20 @@ bossmap = {
     "Mordus": "Reaper's Bluffs: Mordus Awakens - Complete",
 
     "The Great Guardian": "The Nameless Isle: The Great Guardian (549, 923)",
-    "Source Titan": "The Nameless Isle: Source Titan (-211, 1027)"
+    "Source Titan": "The Nameless Isle: Source Titan (-211, 1027)",
+
+    "Loic the Immaculate": "Arx Outskirts: Loic the Immaculate (356, -7)",
+    "Voidwoken Bloodfury": "Arx Outskirts: Voidwoken Bloodfury (302, 172)",
+    "Sanguinia Tell": "Arx: Sanguinia Tell (419, 298)",
+    "Karon": "Arx: Karon (163, 750)",
+    "Isbeil": "Arx: Isbeil (280, 672)",
+    "Thorny Suncaller": "Arx: Thorny Suncaller (101, 286)",
+    "Lord Linder Kemm": "Arx: Lord Linder Kemm (325, 263)",
+    "Adramahlihk": "Arx: Adramahlihk (387, 418)",
+    "Contaminated Horror": "Arx: Contaminated Horror (172, 136)",
+    "Braccus Rex": "Tomb of Lucian: Braccus Rex (581, 284)"
 }
+mapboss = {loc: name for name, loc in bossmap.items()}
 
 class DOS2ClientCommandProcessor(ClientCommandProcessor):
     def _cmd_resync(self):
@@ -95,12 +141,14 @@ class DOS2Context(CommonContext):
         game_options = DOS2World.settings
         if(game_options and getattr(game_options, "root_directory", None)):
             print(f"trying to see if {getattr(game_options, "root_directory", None)} is the right directory")
-            try:
-                self.comm_file_directory = game_options.root_directory
-            except FileNotFoundError:
-                self.comm_file_directory = ""
+            self.comm_file_directory = game_options.root_directory
+            if(not self.comm_file_directory.endswith("/Larian Studios/Divinity Original Sin 2 Definitive Edition/Osiris Data")):
+                print("Comm file directory is incorrect!")
+                self.comm_file_directory = "error"
+            else:
+                print(f"directory is correctly: {self.comm_file_directory}")
         else:
-            self.comm_file_directory = ""
+            self.comm_file_directory = "error"
 
         # if(not os.path.isfile(os.path.join(self.comm_file_directory, self.comm_file_sent_items))):
         #     with open(self.comm_file_sent_items, "w") as file:
@@ -139,7 +187,7 @@ class DOS2Context(CommonContext):
         self.server_locations.clear()
         self.finished_game = False
     
-    def remove_comm_files(self):
+    def remove_comm_files(self): #depreciated, couldnt find a place for it either
         for root, dirs, files in os.walk(os.path.join(os.path.expanduser("~"), "Documents", "Larian Studios", "Divinity Original Sin 2 Definitive Edition", "Osiris Data")):
             for file in files:
                 if(file.find("apIn") != -1 or file.find("apOut") != -1 or file.find("deathlink") != -1 or file.find("apOptions") != -1):
@@ -166,7 +214,7 @@ class DOS2Context(CommonContext):
             Utils.async_start(self.update_death_link(self.has_death_link), name = "Update Deathlink")
             global goal
             goal = slot_data["goal"]
-            if(goal == 4 or goal == 5 or goal == 6):
+            if(goal == 4 or goal == 5 or goal == 6 or goal == 7):
                 global user_defined_fights
                 global goalBosses
                 user_defined_fights = slot_data["hitList"]
@@ -175,7 +223,9 @@ class DOS2Context(CommonContext):
                     if(key in bossmap):
                         user_selected_fight_values.add(bossmap[key])
                 goalBosses = [boss[0] for boss in goalBosses if boss[0] in user_selected_fight_values and boss[1] <= goal]
-                logger.error(f"Expected bosses for goal: {goalBosses}")
+                logger.info(f"Bosses on the hit list:\n")
+                for boss in goalBosses:
+                    logger.info(f"{mapboss[boss]}\n")
             sync_option_path = os.path.join(self.comm_file_directory, self.sync_option)
             with open(sync_option_path, 'w') as f:
                 json.dump(slot_data, f)
@@ -219,8 +269,6 @@ async def game_watcher(ctx: DOS2Context):
                         f.write("[]")
                 if(goal != -1):
                     global goalBosses
-                    if(goal not in [0, 1, 2, 4, 5, 6]):
-                        logger.error(goal)
                     for loc in dos2LocationsToSend:
                         if(loc in DOS2_LOCATION_TO_AP_LOCATIONS):
                             for apLoc in DOS2_LOCATION_TO_AP_LOCATIONS[loc]:
@@ -236,26 +284,25 @@ async def game_watcher(ctx: DOS2Context):
                                     victory = True
                                 elif(apLoc == "Victory_Escape_The_Nameless_Isle" and goal == 2):
                                     victory = True
-                                elif(apLoc not in ctx.checked_locations and apLoc in goalBosses and (goal == 4 or goal == 5 or goal == 6)):
+                                elif(apLoc == "Victory_Defeat_Braccus_Rex" and goal == 3):
+                                    victory = True
+                                elif(apLoc not in ctx.checked_locations and apLoc in goalBosses and (goal == 4 or goal == 5 or goal == 6 or goal == 7) and apLoc not in buggedLocations):
+                                    logger.info(f"Hit complete for {mapboss[apLoc]}")
                                     remainingBosses = [
                                         boss for boss in goalBosses
                                         if LOCATION_NAME_TO_ID[boss] not in ctx.checked_locations
                                     ]
                                     if not remainingBosses:
+                                        buggedLocations.append(apLoc)
                                         victory = True
                                     else:
                                         goalBosses = remainingBosses
+                                        logger.info(f"Remaining hits:\n")
+                                        for boss in goalBosses:
+                                            logger.info(f"{mapboss[boss]}\n")
                                 elif(apLoc == "Bad_State"):
                                     logger.error(f"Something occured that made locations unreachable, an earlier save might be needed")
                                     bad_states.append[loc]
-                if(goal == 4 or goal == 5 or goal == 6):
-                    remainingBosses = [
-                        boss for boss in goalBosses
-                        if LOCATION_NAME_TO_ID[boss] not in ctx.checked_locations
-                    ]
-                    if not remainingBosses:
-                        victory = True
-                    goalBosses = remainingBosses
                 message = [{"cmd": 'LocationChecks', "locations": sending}]
                 await ctx.send_msgs(message)
                 if(not ctx.finished_game and victory):

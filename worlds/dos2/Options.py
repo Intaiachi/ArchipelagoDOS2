@@ -8,10 +8,12 @@ class Goal(Choice):
     These will determine the length of the game and thus what items and locations are avaliable
     Escape Reaper's Eye: Goal is to defeat Alexander and board the Lady Vengeance and escape Reaper's Eye. All items and locations will be limited to the Merryweather and Reaper's Eye.
     Leave Reaper's Coast: Goal is to master source and leave Reaper's Coast. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, and Reaper's Coast.
-    Escape The Nameless Isle: Goal is to escape The Nameless Isle after Dallis sabotages your ascension. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, Reaper's Coast, and The Nameless Isle
+    Escape The Nameless Isle: Goal is to escape The Nameless Isle after Dallis sabotages your ascension. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, Reaper's Coast, and The Nameless Isle.
+    Defeat Braccus Rex: Goal is to defeat the final boss and complete the game. All items and locations are included.
     Reaper's Eye Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye.
     Reaper's Coast Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye and Reaper's Coast.
     The Nameless Isle Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye, Reaper's Coast, and The Nameless Isle.
+    Arx Hit List: Goal is to kill a defined group of enemies set in the following option. All hits are allowed.
     """
 
     display_name = "Goal"
@@ -19,9 +21,11 @@ class Goal(Choice):
     option_escape_reapers_eye = 0
     option_leave_reapers_coast = 1
     option_escape_the_nameless_isle = 2
+    option_defeat_braccus_rex = 3
     option_reapers_eye_hit_list = 4
     option_reapers_coast_hit_list = 5
     option_the_nameless_isle_hit_list = 6
+    option_arx_hit_list = 7
 
 class HitList(OptionSet):
     """
@@ -30,6 +34,7 @@ class HitList(OptionSet):
     Reaper's Eye: Windego, Voidwoken Deep-dweller, Radeka the Witch, Bishop Alexander
     Reaper's Coast: Lich, Lamenting Abomination, Alice Alisceon, Harbinger of Doom, The Eternal Aetera, "Ghalann, Scion of the Elves", Ryker, Mordus
     The Nameless Isle: The Great Guardian, Source Titan
+    Arx: Loic the Immaculate, Voidwoken Bloodfury, Sanguinia Tell, Karon, Isbeil, Thorny Suncaller, Lord Linder Kemm, Adramahlihk, Contaminated Horror, Braccus Rex
     """
     valid_keys = [
         "Windego",
@@ -45,7 +50,17 @@ class HitList(OptionSet):
         "Ryker",
         "Mordus",
         "The Great Guardian",
-        "Source Titan"
+        "Source Titan",
+        "Loic the Immaculate",
+        "Voidwoken Bloodfury",
+        "Sanguinia Tell",
+        "Karon",
+        "Isbeil",
+        "Thorny Suncaller",
+        "Lord Linder Kemm",
+        "Adramahlihk",
+        "Contaminated Horror",
+        "Braccus Rex"
     ]
     display_name = "User Defined Hit List"
     default = {
@@ -62,7 +77,17 @@ class HitList(OptionSet):
         "Ryker",
         "Mordus",
         "The Great Guardian",
-        "Source Titan"
+        "Source Titan",
+        "Loic the Immaculate",
+        "Voidwoken Bloodfury",
+        "Sanguinia Tell",
+        "Karon",
+        "Isbeil",
+        "Thorny Suncaller",
+        "Lord Linder Kemm",
+        "Adramahlihk",
+        "Contaminated Horror",
+        "Braccus Rex"
     }
 
 class Deathlink(Toggle):

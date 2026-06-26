@@ -22,7 +22,7 @@
 
 1. Download and install Archipelago from the link above, the more recent the better.
 2. Install the dos2.apworld. This can be done by using the Archipelago Launcher's "Install AP World" component, or just by copying the dos2.apworld into the custom_worlds folder in the Archipelago install.
-3. Download and install Norbyte's Script Extender from the link above, the more recent the better. Follow the instruction on the Script Extender's Github.
+3. Download and install Norbyte's Script Extender from the link above, the more recent the better. Follow the instructions on the Script Extender's Github.
 4. Download the Archipelago DOS2 mod. If using the Steam workshop, simply subscribe to the linked mod. If you downloaded the mod off Github, move the .pak folder into the the game's mod folder
 (Documents\Larian Studios\Divinity Original Sin 2\Mods).
 5. Make sure the Archipelago mod is enabled in game by going to "Mods" in the main menu and making sure the corresponding box is checked.
@@ -33,7 +33,7 @@ Other operating systems should be similar if not identical (confirmation needed,
 
 ## Create a Config (.yaml) File
 
-In your Archipelago install, locate the Archipelago Launcher and open it. Open the "Options Creator" component. Find Divintiy Original Sin 2 on the left and click it. Run through the options presented and hit "export" to create your .yaml
+In your Archipelago install, locate the Archipelago Launcher and open it. Open the "Options Creator" component. Find Divinity Original Sin 2 on the left and click it. Run through the options presented and hit "export" to create your .yaml
 You can also run the "Generate Template Options" component in the Archipelago Launcher, then find the Divinity Original Sin 2 .yaml in the file explorer that pops up. Open this file in a text editor and adjust the settings to your liking.
 Don't forget to save!
 
@@ -43,13 +43,13 @@ When you join a multiworld game, provide your .yaml to the host. You will not ne
 
 ### Connecting to the Multiworld
 
-In the Archipelago Launcher, search for "Divinity Original Sin 2 Client" and launch it. A message box will appear asking for the directory you created in step 6 of the setup, select the Osris Data folder and the client will open properly.
- In the Divinity Original Sin 2 Client, type in the host's room in the server box at the top. This will either be "archipelago.gg:xxxxx"or an ip depending on what the host is hosting on. Hit connect and you
+In the Archipelago Launcher, search for "Divinity Original Sin 2 Client" and launch it. A message box will appear asking for the directory you created in step 6 of the setup, select the Osiris Data folder and the client will open properly.
+ In the Divinity Original Sin 2 Client, type in the host's room in the server box at the top. This will either be "archipelago.gg:xxxxx" or an ip depending on what the host is hosting on. Hit connect and you
  will be prompted to enter your slot name. Enter the exact name you put as your name in your .yaml and you will be connected. From here, just open up Divinity Original Sin 2, make sure the Archipelago mod is enabled, and start playing!
 
 ## Hosting a Multiworld game
 
-Its recommended to use the hosting service provided on the Archipelago website.
+It's recommended to use the hosting service provided on the Archipelago website.
 
 1. Collect all the .yaml files from each player.
 2. Put them all in the "Players" folder in your Archipelago install.
@@ -66,8 +66,8 @@ Its recommended to use the hosting service provided on the Archipelago website.
 
 The client MUST be open and connected BEFORE a new game or save is loaded. It will not work otherwise.
 
-The mod and client talk to eachother using files in the directory stated above in the setup. These files will stay there forever. I'm looking for a way do not have that be the case, but for now
+The mod and client talk to each other using files in the directory stated above in the setup. These files will stay there forever. I'm looking for a way do not have that be the case, but for now
 please be aware of these files that are left behind. After you are done you are free to delete everything in the Osiris Data folder that is Archipelago related.
 
-This is very early in development and is far from complete. Your feedback is welcome. If you notice any problem, find some checks to be odd, think some locations aren't intuitve or think some are missing, please
+This is very early in development and is far from complete. Your feedback is welcome. If you notice any problem, find some checks to be odd, think some locations aren't intuitive or think some are missing, please
 let me know in the Archipelago AD Discord. As such, please keep in mind that there may be problems or hiccups while playing. Be cautious about bringing into public games for now.

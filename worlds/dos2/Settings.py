@@ -16,10 +16,11 @@ class DOS2Settings(settings.Group):
             from Utils import messagebox
 
             messagebox(
+                "DOS2 communication directory",
                 "Please select the DOS2 Osiris Data folder.\nThis will be in something like Documents\\Larian Studios\\Divinity Original Sin 2 Definitive Edition\\ or equivilent.\nIf it is not there, refer to the setup guide before continuing",
             )
             return super().browse(**kwargs)
 
     root_directory: RootDirectory = RootDirectory(
-        os.path.join("Documents", "Larian Studios", "Divinity Original Sin 2 Definitive Edition", "Osiris Data")
+        "error"
     )

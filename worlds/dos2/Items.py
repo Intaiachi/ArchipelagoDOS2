@@ -238,7 +238,58 @@ FILLER_ITEMS = [
     ["Raining Blood Scroll", "61085ef6-836c-4070-8ca8-316e50c39e06"],
     ["Laser Ray Scroll", "9f97f8fc-2010-4075-a591-d45fe9970d8b"],
     ["Lockpick", "06d0eecb-4271-42a7-bd8c-4cbf24927197"],
-    ["Trap Disarming Kit", "9fda335e-2220-4ae9-a4c2-2424d5ef5165"]
+    ["Trap Disarming Kit", "9fda335e-2220-4ae9-a4c2-2424d5ef5165"],
+    ["Giant Flame Rune", "8862cf16-de20-4a29-9400-91b37fc2d26b"],
+    ["Large Flame Rune", "9ac874d8-a7e5-48b1-954a-b11b46f6f390"],
+    ["Medium Flame Rune", "a09424da-d18f-4811-8184-80ce6311e43e"],
+    ["Small Flame Rune", "30c84c9d-51dc-4178-aaa2-9c894a095197"],
+    ["Giant Frost Rune", "2dada42b-41d8-418a-9e4f-4aa389e8dd59"],
+    ["Large Frost Rune", "4914fea9-7219-4746-9d58-345a0523f343"],
+    ["Medium Frost Rune", "5820bc99-3c3d-4843-8814-f49fd7f86bb6"],
+    ["Small Frost Rune", "42a657df-428c-48d0-a640-c1fbc65268ca"],
+    ["Giant Masterwork Rune", "fca17b46-c1dc-4cc2-bd61-5df21d55d15e"],
+    ["Large Masterwork Rune", "7e16d9af-6865-4f0f-a67a-144b8ef2da26"],
+    ["Medium Masterwork Rune", "f431a797-02a9-4293-894f-af210be0b798"],
+    ["Small Masterwork Rune", "8a53fce8-01b2-42e6-bdd5-1aa370d74eb6"],
+    ["Giant Rock Rune", "882998c4-2a77-4e86-a01c-9dc55b5030e3"],
+    ["Large Rock Rune", "ff307feb-9391-4b6a-ae8f-a3f396ac3c33"],
+    ["Medium Rock Rune", "062f9307-e738-45cc-8721-03e329e94712"],
+    ["Small Rock Rune", "5e390de3-cc28-40a8-b57f-bcb4f5cf2975"],
+    ["Giant Thunder Rune", "0768231b-a9d1-4e41-9b1d-69e76509c945"],
+    ["Large Thunder Rune", "c333595f-ed0a-497c-b185-4de1e8f0f3c4"],
+    ["Medium Thunder Rune", "65346280-430d-45e8-a499-db6079b5c636"],
+    ["Small Thunder Rune", "f27c8738-e46c-4780-98a1-2db27407e6ea"],
+    ["Giant Venom Rune", "49e6124d-cb1f-45bb-9549-d3f645413b39"],
+    ["Large Venom Rune", "7123043e-766f-4752-a62d-76972d7861ee"],
+    ["Medium Venom Rune", "ddceaae6-6f2c-4d0a-ae4a-1867481f62e0"],
+    ["Small Venom Rune", "1df69740-e463-4a27-b2ed-2222613750bb"],
+    ["Rune Frame Of Power", "56af1f95-82f2-406f-b651-acdb932f67ac"],
+    ["Mystical Rune Frame", "21e14ddb-9abe-433d-88f4-3706ed652e9c"],
+    ["Source Orb", "106a7107-cf36-4331-b5b5-6de71969f370"],
+    ["Armour-Piercing Grenade", "e057dc4a-3921-4740-a5ac-a4ca6a7a32f7"],
+    ["Blessed Ice Grenade", "4b70b9dc-ac99-415c-bfc8-15cd6dc9aa7d"],
+    ["Blessed Oil Flask", "d44fa069-7708-4c0f-a924-f66a75802113"],
+    ["Blessed Water Balloon", "40ce7ae0-d0a9-4d76-b638-4bbd2814075f"],
+    ["Chemical Warfare Grenade", "bdff5d65-29ef-425c-9096-a119e4de228f"],
+    ["Cluster Grenade", "f70ee2c6-9dda-4eed-b59b-75e4256c9059"],
+    ["Cursed Cluster Grenade", "d9e9a62c-0266-440d-9501-a6c2c43a22f6"],
+    ["Cursed Firestorm Grenade", "4f63b088-f686-4e09-8c0f-16df6504f0ea"],
+    ["Cursed Poison Flask", "f216b8d2-4158-4ce6-b8c9-15e920a6add4"],
+    ["Razzle Dazzle Grenade", "a71888d9-9d3f-4004-96c3-bbc1a158c3f6"],
+    ["Holy Hand Grenade", "f7ecad76-b074-4164-a99f-9262d3cd66db"],
+    ["Frost Grenade", "a16947e3-5f2f-42c7-b05b-7cdaeb204d28"],
+    ["Love Grenade", "22cd2247-45d7-432c-93bd-782777af3b33"],
+    ["Mind Maggot Grenade", "2b8f5417-b1f4-4978-983b-a59dc67d903f"],
+    ["Firestorm Grenade", "5208b121-64fa-4704-8924-c61c576e1ac5"],
+    ["Poison Cloud Grenade", "2cba3327-1650-4749-89ce-daeb6139aa17"],
+    ["Nailbomb Grenade", "c2dac4cd-724b-4179-b72b-84e0d9ffa7a1"],
+    ["Oil Flask", "54b64fbb-86bf-4f8d-a5c3-a25eac3f8d9d"],
+    ["Poison Flask", "6409a204-1ad0-4082-89b9-1edca837da2a"],
+    ["Smoke Grenade", "0c16cc46-26f9-4c07-b334-7905a10591ea"],
+    ["Thunderbolt Grenade", "29373e1d-5f91-490e-89dd-747042a1d6c7"],
+    ["Terror Grenade", "cbdc1f53-1acf-4288-bdb2-3ab085d27f29"],
+    ["Tremor Grenade", "220f7257-faa9-4bc4-903b-ae52765948ea"],
+    ["Water Balloon", "ee4b83e0-b2dc-4880-a974-af7742e6e960"],
 ]
 
 USEFUL_ITEMS = [
@@ -469,7 +520,9 @@ PROGRESSION_ITEMS = [
     ["Combat Ability Point", "combatAbilityPoint", 4, ItemClassification.progression, 0],
     ["Talent Point", "talentPoint", 5, ItemClassification.progression, 0],
     ["Max Source Point", "maxSourcePoint", 6, ItemClassification.progression, 0],
-    ["Civil Ability Point", "civilAbilityPoint", 7, ItemClassification.progression, 0]
+    ["Civil Ability Point", "civilAbilityPoint", 7, ItemClassification.progression, 0],
+    ["Source Amulet", "86c59384-3686-4594-b485-507caed669a5", 8, ItemClassification.progression, 3],
+    ["Scroll Of Atonement", "a266d681-bb84-4277-9889-9da15a4bf3b2", 9, ItemClassification.progression, 3]
 ]
 
 #item name, id in game, id in ap, classification, level
@@ -494,7 +547,10 @@ IS_DUPEABLE = {
     "combatAbilityPoint": True,
     "talentPoint": True,
     "maxSourcePoint": True,
-    "civilAbilityPoint": True
+    "civilAbilityPoint": True,
+    "2b4412a5-467a-44ae-9d7b-bf39a06794b2": True,
+    "86c59384-3686-4594-b485-507caed669a5": True,
+    "a266d681-bb84-4277-9889-9da15a4bf3b2": True
 }
 
 class DOS2Item(Item):
@@ -515,9 +571,10 @@ def create_all_items(world: DOS2World) -> None:
     itempool: list[Item] = []
 
     #these are used in item pool calculations
-    act1Location = 140
-    act2Location = 464
-    act3Location = 504
+    act1Location = 149
+    act2Location = 472
+    act3Location = 512
+    act4Location = 622
     #these will need some honing, nothing to do but get feedback
 
     scale = 1
@@ -525,24 +582,29 @@ def create_all_items(world: DOS2World) -> None:
         scale = act2Location / act1Location
     elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
         scale = act3Location / act1Location
-    levelups_to_add = math.floor(4 * scale) #2.9% of pool
-    attribute_to_add = math.floor(7 * scale) #5.0% of pool
-    combat_ability_to_add = math.floor(4 * scale) #2.9% of pool
-    talent_point_to_add = math.floor(2 * scale) #1.4% of pool
-    max_source_point_to_add = math.floor(2 * scale) #1.4% of pool
-    civil_ability_to_add = math.floor(4 * scale) #2.9% of pool
-    #stats make up 16.5% of pool
+    elif(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
+        scale = act4Location / act1Location
+    levelups_to_add = math.floor(4 * scale) #2.7% of pool
+    attribute_to_add = math.floor(7 * scale) #4.7% of pool
+    combat_ability_to_add = math.floor(4 * scale) #2.7% of pool
+    talent_point_to_add = math.floor(2 * scale) #1.3% of pool
+    max_source_point_to_add = math.floor(2 * scale) #1.3% of pool
+    civil_ability_to_add = math.floor(4 * scale) #2.7% of pool
+    #stats make up 15.4% of pool
 
-    commonWeaponToAdd = math.floor(3 * scale) #2.1% of pool
-    epicWeaponToAdd = math.floor(5 * scale) #3.6% of pool
-    legendaryWeaponToAdd = math.floor(3 * scale) #2.1% of pool
-    divineWeaponToAdd = math.floor(2 * scale) #1.4% of pool
-    commonGearToAdd = math.floor(6 * scale) #4.3% of pool
-    epicGearToAdd = math.floor(9 * scale) #6.4% of pool
-    legendaryGearToAdd = math.floor(6 * scale) #4.3% of pool
-    divineGearToAdd = math.floor(4 * scale) #2.9% of pool
-    #equipment makes up 27.1% of pool
+    commonWeaponToAdd = math.floor(3 * scale) #2.0% of pool
+    epicWeaponToAdd = math.floor(5 * scale) #3.4% of pool
+    legendaryWeaponToAdd = math.floor(3 * scale) #2.0% of pool
+    divineWeaponToAdd = math.floor(2 * scale) #1.3% of pool
+    commonGearToAdd = math.floor(6 * scale) #4.0% of pool
+    epicGearToAdd = math.floor(9 * scale) #6.0% of pool
+    legendaryGearToAdd = math.floor(6 * scale) #4.0% of pool
+    divineGearToAdd = math.floor(4 * scale) #2.7% of pool
+    #equipment makes up 25.4% of pool
 
+    if(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
+        itempool += [world.create_item("Source Amulet")]
+        itempool += [world.create_item("Scroll Of Atonement")]
     itempool += [world.create_item("Level Up") for _ in range(levelups_to_add)]
     itempool += [world.create_item("Attribute Point") for _ in range(attribute_to_add)]
     itempool += [world.create_item("Combat Ability Point") for _ in range(combat_ability_to_add)]

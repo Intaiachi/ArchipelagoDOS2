@@ -12,26 +12,26 @@ if TYPE_CHECKING:
 #A lot of the FTJ ones came from @chaotic and @JeyKey09, thank you!
 DOS2_KILL_LIST = [
     # --- merryweather ---
-    ["S_TUT_TopDeckVoidling10_bd0123ae-26fd-4dad-8326-b6ae9a3fc1c5", ["Merryweather: Voidling 1"], 0],
-    ["S_TUT_TopDeckVoidling11_2fcb5b84-875f-42bd-ac80-6f8495c6a47c", ["Merryweather: Voidling 2"], 0],
+    ["S_TUT_TopDeckVoidling10_bd0123ae-26fd-4dad-8326-b6ae9a3fc1c5", ["Merryweather: Voidling (27, 16)"], 0],
+    ["S_TUT_TopDeckVoidling11_2fcb5b84-875f-42bd-ac80-6f8495c6a47c", ["Merryweather: Voidling (28, 18)"], 0],
     # --- fort joy ---
     #beach voidlings
-    ["S_FTJ_BeachVw_001_08348b3a-bded-4811-92ce-f127aa4310e0", ["Fort Joy: Voidling 1 (158, 325)"], 0],
-    ["S_FTJ_BeachVw_002_1832a661-0e21-421f-acaa-a7e66e813b14", ["Fort Joy: Voidling 2 (157, 330)"], 0],
+    ["S_FTJ_BeachVw_001_08348b3a-bded-4811-92ce-f127aa4310e0", ["Fort Joy: Voidling (158, 325)"], 0],
+    ["S_FTJ_BeachVw_002_1832a661-0e21-421f-acaa-a7e66e813b14", ["Fort Joy: Voidling (157, 330)"], 0],
     #dirt mound zombie //not confident on this one
     ["S_FTJ_DirtMoundZombie_eb499ae9-21df-41e9-9d89-968a88ceb3ad", ["Fort Joy: Freshly Buried Corpse (225, 287)"], 0],
     #beach turtles
-    ["S_FTJ_SpikedTurtle_01_abd3afae-a6e5-452c-a94a-db57826dd082", ["Fort Joy: Turtle 1 (258, 363)"], 0],
+    ["S_FTJ_SpikedTurtle_01_abd3afae-a6e5-452c-a94a-db57826dd082", ["Fort Joy: Turtle (258, 363)"], 0],
     ["S_FTJ_SpikedTurtle_03_fb4618f9-9c61-4640-a32c-e4735783e878", ["Fort Joy: Ancient Turtle (271, 365)"], 0],
-    ["S_FTJ_SpikedTurtle_04_f37cb16e-027e-4a21-8504-d6cab12d9098", ["Fort Joy: Turtle 2 (283, 349)"], 0],
+    ["S_FTJ_SpikedTurtle_04_f37cb16e-027e-4a21-8504-d6cab12d9098", ["Fort Joy: Turtle (283, 349)"], 0],
     #teleport crocs
     ["S_FTJ_TeleporteQuestrCroc_001_bc1a10a1-51b6-42c5-b517-827565f6512b", ["Fort Joy: Saltwater Crocodile 1 (113, 217)"], 0],
     ["S_FTJ_TeleporteQuestrCroc_002_6be95689-ab8f-4edf-ba46-77a068594a19", ["Fort Joy: Saltwater Crocodile 2 (124, 224)"], 0],
     ["S_FTJ_TeleporteQuestrCroc_003_7cf7d4d4-de1a-4ac7-999a-1f128fac3789", ["Fort Joy: Saltwater Crocodile 3 (116, 231)"], 0],
     #frogs
     ["S_FTJ_FrogAmbush_Melee_01_747af1e4-d204-4564-9a50-9f1955dd4723", ["Fort Joy: Charged Amphibian (528, 489)"], 0],
-    ["S_FTJ_FrogAmbush_Ranged_02_ffae5e44-ac8a-4f43-ab14-2e684b60d87b", ["Fort Joy: Venomous Amphibian 1 (503, 491)"], 0],
-    ["S_FTJ_FrogAmbush_Ranged_03_18d2b17c-a400-4e1d-991f-d1cbb44cfac4", ["Fort Joy: Venomous Amphibian 2 (518, 504)"], 0],
+    ["S_FTJ_FrogAmbush_Ranged_02_ffae5e44-ac8a-4f43-ab14-2e684b60d87b", ["Fort Joy: Venomous Amphibian (503, 491)"], 0],
+    ["S_FTJ_FrogAmbush_Ranged_03_18d2b17c-a400-4e1d-991f-d1cbb44cfac4", ["Fort Joy: Venomous Amphibian (518, 504)"], 0],
     #arena of the one 
     ["S_FTJ_Arena_Gladiator_001_51a8d141-c7df-4d56-8d28-ca403033ca16", ["Fort Joy: Gedeon, the Tenacious One (69, 562)"], 0],
     ["S_FTJ_Arena_Gladiator_002_31fcfd4c-1417-4ac8-8817-1dfb8a5b8e7b", ["Fort Joy: Veerle, the Avid One (64, 566)"], 0],
@@ -39,38 +39,38 @@ DOS2_KILL_LIST = [
     ["S_FTJ_Arena_Gladiator_004_d2a430fc-8f01-4962-b455-93f883c287d0", ["Fort Joy: Rex (72, 566)"], 0],
     #holding cell
     ["S_FTJ_OlgoCellarMagister_001_402470db-ad49-4de7-8a60-7f69c8e5d26e", ["Fort Joy: Magister Houndmaster (276, 654)"], 0],
-    ["S_FTJ_OlgoCellarMagister_002_6d6b84bf-e940-4c28-a2b6-12516d049792", ["Fort Joy: Magister Swordsman 3 (276, 651)"], 0],
-    ["S_FTJ_OlgoCellarMagister_003_e8c14f56-b34a-41c3-adb3-dda318c5bdc1", ["Fort Joy: Magister Ranger 6 (280, 651)"], 0],
-    ["S_FTJ_OlgoCellarMagister_004_2955b578-1a8e-4ecd-aa7f-5f084c428e25", ["Fort Joy: Magister Ranger 7 (279, 663)"], 0],
+    ["S_FTJ_OlgoCellarMagister_002_6d6b84bf-e940-4c28-a2b6-12516d049792", ["Fort Joy: Magister Swordsman (276, 651)"], 0],
+    ["S_FTJ_OlgoCellarMagister_003_e8c14f56-b34a-41c3-adb3-dda318c5bdc1", ["Fort Joy: Magister Ranger (280, 651)"], 0],
+    ["S_FTJ_OlgoCellarMagister_004_2955b578-1a8e-4ecd-aa7f-5f084c428e25", ["Fort Joy: Magister Ranger (279, 663)"], 0],
     #prison
     ["S_FTJ_MagisterTorturer_1d1c0ba0-a91e-4927-af79-6d8d27e0646b", ["Fort Joy: Kniles the Flenser (384, 630)"], 0],
-    ["S_FTJ_Torturer_Golem_01_584db8ce-8dcf-4906-bc6f-e51eb057de08", ["Fort Joy: Meat Golem 1 (389, 641)"], 0],
-    ["S_FTJ_Torturer_Golem_02_aff8be39-58b0-4bff-8fa6-7cf501b5060b", ["Fort Joy: Meat Golem 2 (370, 639)"], 0],
-    ["S_FTJ_Torturer_Golem_03_d32d32b2-c05b-4acd-944c-f2b802ec7234", ["Fort Joy: Meat Golem 3 (389, 620)"], 0],
-    ["S_FTJ_SilentMonk_002_01343cec-09ab-48eb-9226-ce6b2880a6c0", ["Fort Joy: Agitated Silent Monk 1 (386, 651)"], 0],
-    ["S_FTJ_SilentMonk_004_652ac6e3-9778-42d3-81d1-35d88ffb2e8d", ["Fort Joy: Agitated Silent Monk 2 (389, 635)"], 0],
-    ["S_FTJ_SilentMonk_010_aa03733a-861f-4814-8bf8-ba0c1cabb876", ["Fort Joy: Agitated Silent Monk 3 (379, 614)"], 0],
+    ["S_FTJ_Torturer_Golem_01_584db8ce-8dcf-4906-bc6f-e51eb057de08", ["Fort Joy: Meat Golem (389, 641)"], 0],
+    ["S_FTJ_Torturer_Golem_02_aff8be39-58b0-4bff-8fa6-7cf501b5060b", ["Fort Joy: Meat Golem (370, 639)"], 0],
+    ["S_FTJ_Torturer_Golem_03_d32d32b2-c05b-4acd-944c-f2b802ec7234", ["Fort Joy: Meat Golem (389, 620)"], 0],
+    ["S_FTJ_SilentMonk_002_01343cec-09ab-48eb-9226-ce6b2880a6c0", ["Fort Joy: Agitated Silent Monk (386, 651)"], 0],
+    ["S_FTJ_SilentMonk_004_652ac6e3-9778-42d3-81d1-35d88ffb2e8d", ["Fort Joy: Agitated Silent Monk (389, 635)"], 0],
+    ["S_FTJ_SilentMonk_010_aa03733a-861f-4814-8bf8-ba0c1cabb876", ["Fort Joy: Agitated Silent Monk (379, 614)"], 0],
     #magisters in fort
-    ["S_FTJ_ChapelMagister_001_068d4518-9b23-4e2c-a160-8d978d1f78ff", ["Fort Joy: Magister Ranger 1 (293, 197)"], 0],
-    ["S_FTJ_ChapelMagister_002_090d7104-97f7-4603-a114-47dceaf021e5", ["Fort Joy: Magister Swordsman 1 (258, 164)"], 0],
-    ["S_FTJ_ChapelMagister_003_b5cb12b2-f347-4415-95ac-8d5ac4fc464b", ["Fort Joy: Magister Ranger 2 (302, 173)"], 0],
-    ["S_FTJ_ChapelMagister_004_8f330be0-a442-408f-850e-c7fd94e74ada", ["Fort Joy: Magister Ranger 3 (262, 196)"], 0],
-    ["S_FTJ_ChapelMagister_005_d5ea5e99-2406-4bb9-b2df-5fd975f1b63e", ["Fort Joy: Magister Swordsman 2 (260, 198)"], 0],
+    ["S_FTJ_ChapelMagister_001_068d4518-9b23-4e2c-a160-8d978d1f78ff", ["Fort Joy: Magister Ranger (293, 197)"], 0],
+    ["S_FTJ_ChapelMagister_002_090d7104-97f7-4603-a114-47dceaf021e5", ["Fort Joy: Magister Swordsman (258, 164)"], 0],
+    ["S_FTJ_ChapelMagister_003_b5cb12b2-f347-4415-95ac-8d5ac4fc464b", ["Fort Joy: Magister Ranger (302, 173)"], 0],
+    ["S_FTJ_ChapelMagister_004_8f330be0-a442-408f-850e-c7fd94e74ada", ["Fort Joy: Magister Ranger (262, 196)"], 0],
+    ["S_FTJ_ChapelMagister_005_d5ea5e99-2406-4bb9-b2df-5fd975f1b63e", ["Fort Joy: Magister Swordsman (260, 198)"], 0],
     ["S_FTJ_ChapelMagister_Captain_c4d751d4-20ff-4281-baf4-8ddeb1383e7e", ["Fort Joy: Magister Captian Trippel (279, 196)"], 0],
     #harbor near fort
-    ["S_FTJ_HarbourSilentMonk_001_f7bd3244-e1e7-4079-ac95-fef6145a236e", ["Fort Joy: Silent Monk 1 (328, 224)"], 0],
-    ["S_FTJ_HarbourSilentMonk_002_54b9a81b-7926-46b1-ad0d-6213c0d77749", ["Fort Joy: Silent Monk 2 (326, 224)"], 0],
-    ["S_FTJ_HarbourSilentMonk_003_61bf204e-ba2e-412f-ac86-e132a3930105", ["Fort Joy: Silent Monk 3 (323, 224)"], 0],
-    ["S_FTJ_HarbourSilentMonk_004_753d80ce-a515-43e3-8085-8ceacb3ceb4f", ["Fort Joy: Silent Monk 4 (321, 224)"], 0],
-    ["S_FTJ_HarbourSilentMonk_005_4149080d-9cc5-424d-a8fc-c52222bb463a", ["Fort Joy: Silent Monk 5 (331, 224)"], 0],
-    ["S_FTJ_HarbourMagister_001_d6a4e8d9-67bc-4961-95ce-c7016357ea64", ["Fort Joy: Magister Ranger 4 (324, 244)"], 0],
+    ["S_FTJ_HarbourSilentMonk_001_f7bd3244-e1e7-4079-ac95-fef6145a236e", ["Fort Joy: Silent Monk (328, 224)"], 0],
+    ["S_FTJ_HarbourSilentMonk_002_54b9a81b-7926-46b1-ad0d-6213c0d77749", ["Fort Joy: Silent Monk (326, 224)"], 0],
+    ["S_FTJ_HarbourSilentMonk_003_61bf204e-ba2e-412f-ac86-e132a3930105", ["Fort Joy: Silent Monk (323, 224)"], 0],
+    ["S_FTJ_HarbourSilentMonk_004_753d80ce-a515-43e3-8085-8ceacb3ceb4f", ["Fort Joy: Silent Monk (321, 224)"], 0],
+    ["S_FTJ_HarbourSilentMonk_005_4149080d-9cc5-424d-a8fc-c52222bb463a", ["Fort Joy: Silent Monk (331, 224)"], 0],
+    ["S_FTJ_HarbourMagister_001_d6a4e8d9-67bc-4961-95ce-c7016357ea64", ["Fort Joy: Magister Ranger (324, 244)"], 0],
     ["S_FTJ_HarbourMagister_002_14581b6d-9423-4e2c-8d19-8f1b222ab760", ["Fort Joy: Magister Inquisitor (323 246)"], 0],
-    ["S_FTJ_HarbourMagister_003_75ffb9bd-5ddb-4c2c-8ad0-55c00b34be7b", ["Fort Joy: Magister Ranger 5 (322, 244)"], 0],
+    ["S_FTJ_HarbourMagister_003_75ffb9bd-5ddb-4c2c-8ad0-55c00b34be7b", ["Fort Joy: Magister Ranger (322, 244)"], 0],
     ["S_FTJ_HarbourMagister_004_97492757-bbe8-42d8-af6d-35ca0ae96d36", ["Fort Joy: Magister Knight (333, 235)"], 0],
     ["S_FTJ_HarbourMagister_005_55c5c79e-2260-40bd-ab1d-c2d05fe31d45", ["Fort Joy: Magister Dayve (321, 225)"], 0],
     #court room
-    ["S_FTJ_CourtRoomGuard_001_c51d581d-9245-431f-a1eb-88adc8149827", ["Fort Joy: Magister Courtroom Swordsman 1 (276, 139)"], 0],
-    ["S_FTJ_CourtRoomGuard_002_bb9fd6c4-4231-44ac-a24d-5955dc300147", ["Fort Joy: Magister Courtroom Swordsman 2 (289, 139)"], 0],
+    ["S_FTJ_CourtRoomGuard_001_c51d581d-9245-431f-a1eb-88adc8149827", ["Fort Joy: Magister Courtroom Swordsman (276, 139)"], 0],
+    ["S_FTJ_CourtRoomGuard_002_bb9fd6c4-4231-44ac-a24d-5955dc300147", ["Fort Joy: Magister Courtroom Swordsman (289, 139)"], 0],
     ["S_FTJ_HighPriest_2a09f30c-0a3b-495f-8386-5390a6c4c08d", ["Fort Joy: High Judge Orivand (283, 129)"], 0],
     ["S_FTJ_AnkhPriestess_dfca80ec-cd31-48ed-abfc-801514f1bd8e", ["Fort Joy: Magister Cryomancer (280, 126)"], 0],
     ["S_FTJ_AnkhPriest_f06d709f-335c-4c34-b959-9ae753bc7d68", ["Fort Joy: Magister Pyromancer (284, 126)"], 0],
@@ -88,50 +88,54 @@ DOS2_KILL_LIST = [
     ["S_FTJ_SwampBuildup_A_Undead_Assassin_a54a04a3-8507-4a37-a8b6-068fd0ec8146", ["East Reaper's Eye: Decomposing Assassin (379, 152)"], 0],
     ["S_FTJ_SwampBuildup_A_Undead_Melee_01_8b70b76c-24f8-4b3c-aae8-3c78c93ab2bb", ["East Reaper's Eye: Decomposing Swashbuckler (386, 155)"], 0],
     ["S_FTJ_SwampBuildup_A_Undead_Terra_01_7dee6a3d-ef4f-4281-a311-a65d483e13d1", ["East Reaper's Eye: Decomposing Terramancer (389, 151)"], 0],
-    ["S_FTJ_SwampBuildup_B_Undead_Melee_01_e45ec44b-4033-4994-b6a4-f236dea40561", ["East Reaper's Eye: Decomposing Swashbuckler 2 (391, 206)"], 0],
+    ["S_FTJ_SwampBuildup_B_Undead_Melee_01_e45ec44b-4033-4994-b6a4-f236dea40561", ["East Reaper's Eye: Decomposing Swashbuckler (391, 206)"], 0],
     ["S_FTJ_SwampBuildup_B_Undead_Ranger_01_1195a59b-ba51-4662-afa7-7602b224cfc8", ["East Reaper's Eye: Decomposing Markswoman (401, 213)"], 0],
-    ["S_FTJ_SwampBuildup_B_Undead_Ranger_02_5468e7d7-8f83-4245-94fc-7303c11612b5", ["East Reaper's Eye: Decomposing Marksman 1 (396, 216)"], 0],
-    ["S_FTJ_SwampBuildup_B_Undead_Sword_9ee2fb19-5483-42a5-9037-c8147e9695fd", ["East Reaper's Eye: Decomposing Swashbuckler 3 (395, 210)"], 0],
+    ["S_FTJ_SwampBuildup_B_Undead_Ranger_02_5468e7d7-8f83-4245-94fc-7303c11612b5", ["East Reaper's Eye: Decomposing Marksman (396, 216)"], 0],
+    ["S_FTJ_SwampBuildup_B_Undead_Sword_9ee2fb19-5483-42a5-9037-c8147e9695fd", ["East Reaper's Eye: Decomposing Swashbuckler (395, 210)"], 0],
     #ambush
-    ["S_FTJ_VoidlingAmbush_000_d61a5845-383b-4759-9fe3-99f519dec4dc", ["East Reaper's Eye: Viscous Voidling 1 (461, 105)"], 0],
-    ["S_FTJ_VoidlingAmbush_001_eedb56aa-aad1-4de2-8097-3fd7241be1ec", ["East Reaper's Eye: Viscous Voidling 2 (443, 118)"], 0], 
-    ["S_FTJ_VoidlingAmbush_002_a8318c72-e603-4a08-b01d-09232110bccc", ["East Reaper's Eye: Viscous Voidling 3 (441, 98)"], 0], 
-    ["S_FTJ_VoidlingAmbush_003_53680e8b-a4ee-4b00-9419-3860e91e76e6", ["East Reaper's Eye: Viscous Voidling 4 (464, 109)"], 0], 
-    ["S_FTJ_VoidlingAmbush_004_3fe3a69c-97b6-42d5-b1db-bc646a66ab15", ["East Reaper's Eye: Viscous Voidling 5 (466, 115)"], 0], 
-    ["S_FTJ_VoidlingAmbush_005_03ed2bcc-3b3b-4e9c-bfd1-54c7f6a1bcaa", ["East Reaper's Eye: Viscous Voidling 6 (451, 114)"], 0], 
-    ["S_FTJ_VoidlingAmbush_006_0cf5424e-2183-4c52-980e-de156c31f5e4", ["East Reaper's Eye: Viscous Voidling 7 (453, 92)"], 0], 
-    ["S_FTJ_VoidlingAmbush_007_1aa2f181-c36b-4e9e-ae5e-9652fe038824", ["East Reaper's Eye: Viscous Voidling 8 (447, 95)"], 0], 
-    ["S_FTJ_VoidlingAmbush_008_8c83992f-328d-405d-bebd-0f5461d027ad", ["East Reaper's Eye: Viscous Voidling 9 (447, 120)"], 0], 
-    ["S_FTJ_VoidlingAmbush_009_811f904d-4822-463c-b77e-d658a0fb3380", ["East Reaper's Eye: Viscous Voidling 10 (454, 96)"], 0], 
-    ["S_FTJ_VoidlingAmbush_010_7dfba778-1b94-4cf7-8b26-663dfcb760d3", ["East Reaper's Eye: Viscous Voidling 11 (460, 114)"], 0], 
-    ["S_FTJ_VoidlingAmbush_011_a01a4838-c65a-452e-bde5-dc7b8e3dca27", ["East Reaper's Eye: Viscous Voidling 12 (440, 102)"], 0], 
-    ["S_FTJ_VoidlingAmbush_012_360a68c3-e5f1-4834-aa9e-7dc7497d9301", ["East Reaper's Eye: Viscous Voidling 13 (464, 106)"], 0],
+    ["S_FTJ_VoidlingAmbush_000_d61a5845-383b-4759-9fe3-99f519dec4dc", ["East Reaper's Eye: Viscous Voidling (461, 105)"], 0],
+    ["S_FTJ_VoidlingAmbush_001_eedb56aa-aad1-4de2-8097-3fd7241be1ec", ["East Reaper's Eye: Viscous Voidling (443, 118)"], 0], 
+    ["S_FTJ_VoidlingAmbush_002_a8318c72-e603-4a08-b01d-09232110bccc", ["East Reaper's Eye: Viscous Voidling (441, 98)"], 0], 
+    ["S_FTJ_VoidlingAmbush_003_53680e8b-a4ee-4b00-9419-3860e91e76e6", ["East Reaper's Eye: Viscous Voidling (464, 109)"], 0], 
+    ["S_FTJ_VoidlingAmbush_004_3fe3a69c-97b6-42d5-b1db-bc646a66ab15", ["East Reaper's Eye: Viscous Voidling (466, 115)"], 0], 
+    ["S_FTJ_VoidlingAmbush_005_03ed2bcc-3b3b-4e9c-bfd1-54c7f6a1bcaa", ["East Reaper's Eye: Viscous Voidling (451, 114)"], 0], 
+    ["S_FTJ_VoidlingAmbush_006_0cf5424e-2183-4c52-980e-de156c31f5e4", ["East Reaper's Eye: Viscous Voidling (453, 92)"], 0], 
+    ["S_FTJ_VoidlingAmbush_007_1aa2f181-c36b-4e9e-ae5e-9652fe038824", ["East Reaper's Eye: Viscous Voidling (447, 95)"], 0], 
+    ["S_FTJ_VoidlingAmbush_008_8c83992f-328d-405d-bebd-0f5461d027ad", ["East Reaper's Eye: Viscous Voidling (447, 120)"], 0], 
+    ["S_FTJ_VoidlingAmbush_009_811f904d-4822-463c-b77e-d658a0fb3380", ["East Reaper's Eye: Viscous Voidling (454, 96)"], 0], 
+    ["S_FTJ_VoidlingAmbush_010_7dfba778-1b94-4cf7-8b26-663dfcb760d3", ["East Reaper's Eye: Viscous Voidling (460, 114)"], 0], 
+    ["S_FTJ_VoidlingAmbush_011_a01a4838-c65a-452e-bde5-dc7b8e3dca27", ["East Reaper's Eye: Viscous Voidling (440, 102)"], 0], 
+    ["S_FTJ_VoidlingAmbush_012_360a68c3-e5f1-4834-aa9e-7dc7497d9301", ["East Reaper's Eye: Viscous Voidling (464, 106)"], 0],
     #salamander
     ["S_FTJ_SW_ShelterBackSalamander1_26d2a05f-bd32-408c-adab-c01767271bbf", ["East Reaper's Eye: Void Salamander (492, 94)"], 0],
     ["S_FTJ_SW_ShelterBackSalamander2_e3812c55-7530-4d74-b79b-e8f3c91558a4", ["East Reaper's Eye: Noxious Void Salamander (494, 86)"], 0],
     ["S_FTJ_SW_ShelterBackSalamander3_62ac9493-260e-40bf-a615-5cdf475208d9", ["East Reaper's Eye: Void Salamander (485, 82)"], 0],
     #saving Gareth fight
     ["S_FTJ_CorneringMagister1_324e8aca-3b0b-430e-b8bb-2f6e9edac3fe", ["East Reaper's Eye: Magister Inquisitor (471, 254)"], 0],
-    ["S_FTJ_CorneringMagister2_f278b94b-78ac-4cd7-9d8a-1c61e673ead3", ["East Reaper's Eye: Magister Ranger 1 (469, 253)"], 0],
-    ["S_FTJ_CorneringMagister3_34996c94-6294-45e7-9659-f6fce2a95ea5", ["East Reaper's Eye: Magister Ranger 2 (464, 254)"], 0],
-    ["S_FTJ_CorneringMagister4_96f35d8a-d38a-4fc1-9b23-bdf4349a16ec", ["East Reaper's Eye: Magister Swordsman 1 (462, 254)"], 0],
+    ["S_FTJ_CorneringMagister2_f278b94b-78ac-4cd7-9d8a-1c61e673ead3", ["East Reaper's Eye: Magister Ranger (469, 253)"], 0],
+    ["S_FTJ_CorneringMagister3_34996c94-6294-45e7-9659-f6fce2a95ea5", ["East Reaper's Eye: Magister Ranger (464, 254)"], 0],
+    ["S_FTJ_CorneringMagister4_96f35d8a-d38a-4fc1-9b23-bdf4349a16ec", ["East Reaper's Eye: Magister Swordsman (462, 254)"], 0],
     ["S_FTJ_OutsideMagister1_51825365-42fd-4b0c-9f35-d21ae40833a3", ["East Reaper's Eye: Magister Knight (469, 230)"], 0],
-    ["S_FTJ_OutsideMagister2_d3091599-a583-44b8-8ce7-3b7e9d88fdaa", ["East Reaper's Eye: Magister Ranger 3 (469, 228)"], 0],
-    ["S_FTJ_OutsideMagister3_d584fdbb-1cfa-46d4-add2-5587eafd3e29", ["East Reaper's Eye: Magister Swordsman 2 (460, 231)"], 0],
-    ["S_FTJ_OutsideMagister4_0a2cf9d4-6631-44c3-aea4-cc5a13f3419b", ["East Reaper's Eye: Magister Ranger 4 (460, 229)"], 0],
+    ["S_FTJ_OutsideMagister2_d3091599-a583-44b8-8ce7-3b7e9d88fdaa", ["East Reaper's Eye: Magister Ranger (469, 228)"], 0],
+    ["S_FTJ_OutsideMagister3_d584fdbb-1cfa-46d4-add2-5587eafd3e29", ["East Reaper's Eye: Magister Swordsman (460, 231)"], 0],
+    ["S_FTJ_OutsideMagister4_0a2cf9d4-6631-44c3-aea4-cc5a13f3419b", ["East Reaper's Eye: Magister Ranger (460, 229)"], 0],
     #skeleton near tower //these might not work
     ["S_FTJ_SW_BurningSkeleton1_0b0d054f-aba2-4fac-b89b-473f59cb085e", ["East Reaper's Eye: Incandescent Decapitator (529, 93)"], 0],
     ["S_FTJ_SW_BurningSkeleton2_11e95a85-9877-403f-944e-16b2c4e9a4b3", ["East Reaper's Eye: Incandescent Scorcher (539, 94)"], 0],
     ["S_FTJ_SW_BurningSkeleton3_d53d04be-e7d7-4b37-8b93-2807921fb58a", ["East Reaper's Eye: Incandescent Marksman (529, 100)"], 0],
     #trompdoy
-    ["S_FTJ_SW_IllusionistAtEntrance_e01c3723-872a-454d-a59b-d798b21183cd", ["East Reaper's Eye: Trompdoy (676, 487)"], 0],
-    ["S_FTJ_SW_IllusionistFinal_1a3b44d4-0ba4-4289-b158-a54111b83e1d", ["East Reaper's Eye: Trompdoy (700, 497)"], 0],
+    #["S_FTJ_SW_IllusionistAtEntrance_e01c3723-872a-454d-a59b-d798b21183cd", ["East Reaper's Eye: Trompdoy (676, 487)"], 0], #these arent even the hostile one why did i add these
+    #["S_FTJ_SW_IllusionistFinal_1a3b44d4-0ba4-4289-b158-a54111b83e1d", ["East Reaper's Eye: Trompdoy (700, 497)"], 0],
+    ["S_FTJ_SW_ChestRoomIllusionist_001_d656548b-329c-4ce4-ae61-984feb732503", ["East Reaper's Eye: Trompdoy (629, 496)"], 0],
+    ["S_FTJ_SW_ChestRoomIllusionist_002_0e5779db-8418-4be9-9fdf-7f52c38b67bc", ["East Reaper's Eye: Trompdoy (631, 482)"], 0],
+    ["S_FTJ_SW_ChestRoomIllusionist_003_f5b0ab9f-f99e-4360-b455-a2f7043349a8", ["East Reaper's Eye: Trompdoy (643, 496)"], 0],
+    ["S_FTJ_TrueIllusionist_a3b10150-1871-48a4-9d64-f51c84316b6d", ["East Reaper's Eye: Trompdoy (669, 538)"], 0],
     #deep dweller and friends //migth not work
     ["S_FTJ_SW_VWBoss_Mage_01_5cf41c21-bfed-499e-a6fe-6eda7c24b118", ["East Reaper's Eye: Decomposing Aeromancer (494, 170)"], 0],
     ["S_FTJ_SW_VWBoss_Mage_02_2f619e60-5cfc-4323-a094-e285ea922903", ["East Reaper's Eye: Decomposing Cryomancer (480, 159)"], 0],
-    ["S_FTJ_SW_VWBoss_Melee_01_961c827b-43d1-43c8-8553-6d1d4c8e8aed", ["East Reaper's Eye: Decomposing Swashbuckler 4 (481, 164)"], 0],
-    ["S_FTJ_SW_VWBoss_Melee_02_8644ff57-7eb3-4ed7-a496-00e977227b53", ["East Reaper's Eye: Decomposing Swashbuckler 5 (502, 167)"], 0],
-    ["S_FTJ_SW_VWBoss_Ranger_01_e8ad5533-b8f0-4c55-a261-4192f5cf1e48", ["East Reaper's Eye: Decomposing Marksman 1 (482, 175)"], 0],
+    ["S_FTJ_SW_VWBoss_Melee_01_961c827b-43d1-43c8-8553-6d1d4c8e8aed", ["East Reaper's Eye: Decomposing Swashbuckler (481, 164)"], 0],
+    ["S_FTJ_SW_VWBoss_Melee_02_8644ff57-7eb3-4ed7-a496-00e977227b53", ["East Reaper's Eye: Decomposing Swashbuckler (502, 167)"], 0],
+    ["S_FTJ_SW_VWBoss_Ranger_01_e8ad5533-b8f0-4c55-a261-4192f5cf1e48", ["East Reaper's Eye: Decomposing Marksman (482, 175)"], 0],
     ["S_FTJ_SW_VWBoss_VoidWoken_112f8c17-ea77-4658-ac72-239154772fb8", ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)"], 0], #kill list candidate
     #witch
     ["S_FTJ_SW_Witch_4014aee0-56f1-47e0-a8eb-89c4b5a1da83", ["East Reaper's Eye: Radeka the Witch (691, 602)"], 0], #kill list candidate
@@ -150,6 +154,11 @@ DOS2_KILL_LIST = [
     ["S_FTJ_SW_FinalBattleMagister_Gheist_06082187-829f-43e1-b3bb-f3242a70904d", ["North-east Reaper's Eye: Gheist (564, 306)"], 0],
     ["S_FTJ_SW_FinalBattle_Voidwoken_7dcf3cc2-d015-4aff-9949-71fc539fcc73", ["North-east Reaper's Eye: Voidwoken Drillworm (594, 408)"], 0],
     ["S_GLO_Alexandar_03e6345f-1bd3-403c-80e2-a443a74f6349", ["North-east Reaper's Eye: Bishop Alexander (564, 306)"], 0], #kill list candidate
+    #seed of power boat
+    ["CON01_MagisterPriest_c1c1f470-5786-4297-8a89-38fe2a3348a7 attackerOwner", ["Fort Joy: Magister Ellwin (337, 359)"], 0],
+    ["CON01_Magister_Leader_d0db4856-e955-44b4-af73-0e16beecf90b", ["Fort Joy: Magister Krendt (340, 361)"], 0],
+    ["CON01_MagisterWarrior_df34380d-030b-4d57-a5e5-855c88b714ab attackerOwner", ["Fort Joy: Magister Swentin (340, 365)"], 0],
+    ["CON01_SourceHound1_93c3bd2d-5106-4a16-bb63-8641dd7cdcb3 attackerOwner", ["Fort Joy: Source Hound Phyllip (332, 367)"], 0],
     #-- Reaper's Coast --
     ["S_RC_DU_Abduction_Combat1_04d4d854-8474-4c32-887e-43f395508392", ["Reaper's Coast: Viscous Voidling (423, -4)"], 1],
     ["S_RC_DU_Abduction_Combat2_bede8cbd-a5c9-4bd0-9e48-43f3b41d5a32", ["Reaper's Coast: Viscous Voidling (407, 1)"], 1],
@@ -348,13 +357,13 @@ DOS2_KILL_LIST = [
     ["S_RC_DW_WhiteMagister_b1bdd004-a286-4ad5-9826-a763d672b2a7", ["The Blackpits: Magister Reimond (355, 77)"], 1],
     #blackpits caverns
     ["S_RC_OIL_Workshop_Spitter1_ff8bd373-c076-4446-83c7-cc169251d2e7", ["The Blackpits: Armoured Voidling (290, 598)"], 1],
-    ["S_RC_OIL_Workshop_Spitter2_41926e48-1e0f-4b74-9a2d-f29b21183e60", ["The Blackpits: Fluorescent Voidling (309, 601)"], 1],
-    ["S_RC_OIL_Workshop_Spitter3_ff318373-4cfd-42f1-9491-3b824d35abac", ["The Blackpits: Fluorescent Voidling (295, 591)"], 1],
+    #["S_RC_OIL_Workshop_Spitter2_41926e48-1e0f-4b74-9a2d-f29b21183e60", ["The Blackpits: Fluorescent Voidling (309, 601)"], 1], #suicide doesnt send checks
+    #["S_RC_OIL_Workshop_Spitter3_ff318373-4cfd-42f1-9491-3b824d35abac", ["The Blackpits: Fluorescent Voidling (295, 591)"], 1], #suicide doesnt send checks
     ["S_RC_OIL_Workshop_Spitter4_ef36af9c-8b6a-4e61-86f0-405b342d9ee5", ["The Blackpits: Armoured Voidling (320, 599)"], 1],
     ["S_RC_OIL_Workshop_Spitter5_f8701acb-6095-49a9-967d-86b054b2ebc9", ["The Blackpits: Armoured Voidling (313, 604)"], 1],
     ["S_RC_OIL_Cave_MagisterFight_Spitter_01_f52018a8-6bb3-4253-9e99-d6c9214d4bfb", ["The Blackpits: Armoured Voidling (423, 561)"], 1],
-    ["S_RC_OIL_Cave_MagisterFight_Spitter_02_9e94bad2-1e19-48f9-8bf1-47006fd69228", ["The Blackpits: Fluorescent Voidling (415, 566)"], 1],
-    ["S_RC_OIL_Cave_MagisterFight_Spitter_03_f2794f9b-de1e-44aa-885b-64d828b42831", ["The Blackpits: Fluorescent Voidling (432, 549)"], 1],
+    #["S_RC_OIL_Cave_MagisterFight_Spitter_02_9e94bad2-1e19-48f9-8bf1-47006fd69228", ["The Blackpits: Fluorescent Voidling (415, 566)"], 1], #suicide doesnt send checks
+    #["S_RC_OIL_Cave_MagisterFight_Spitter_03_f2794f9b-de1e-44aa-885b-64d828b42831", ["The Blackpits: Fluorescent Voidling (432, 549)"], 1], #suicide doesnt send checks
     ["S_RC_OIL_Cave_MagisterFight_Spitter_04_c4b282a3-ca84-4bbb-ae9b-017029388e2c", ["The Blackpits: Armoured Voidling (409, 555)"], 1],
     ["S_RC_OIL_Cave_MagisterFight_VampireBat1_f9e3de44-8833-4caa-9973-f2dbbce1f7ec", ["The Blackpits: Vampiric Voidwoken (409, 550)"], 1],
     ["S_RC_OIL_Cave_MagisterFight_VampireBat2_5e45efb6-88a2-4e5b-bb41-3a7a9026a513", ["The Blackpits: Vampiric Voidwoken (429, 558)"], 1],
@@ -489,33 +498,163 @@ DOS2_KILL_LIST = [
     ["S_CoS_MonolithBoss_Char_c963ad5d-72f7-4c0e-8f08-910ffe11a0a3", ["The Nameless Isle: The Great Guardian (549, 923)"], 2], #kill list candidate
     #finale prob should double check this one
     ["S_CoS_AotO_SourceTitan_d230a9d9-e44d-493e-8c69-9570f2fa065f", ["The Nameless Isle: Source Titan (-211, 1027)"], 2], #kill list canidate
+    #-- act 4 --
+    #hermits
+    ["DeathfogZone_Voidwoken_Explosive_01_2a65a44f-ac78-4402-88b2-d595cb05475d", ["Arx Outskirts: Volatile Voidling (377, 1)"], 3],
+    ["DeathfogZone_Voidwoken_Explosive_02_4a5eb175-49d2-457d-b3db-25b1b5ba36cd", ["Arx Outskirts: Volatile Voidling (371, 3)"], 3],
+    ["DeathfogZone_Voidwoken_Explosive_03_0d9fa4d7-ab72-4586-84f3-065d1325d011", ["Arx Outskirts: Volatile Voidling (367, 1)"], 3],
+    ["DeathfogZone_Voidwoken_Explosive_04_6688b678-f05c-4d39-8383-ebe1a5968fea", ["Arx Outskirts: Volatile Voidling (373, -1)"], 3],
+    ["DeathfogZone_Voidwoken_Ranged_01_e4642ce2-fb01-41bc-b2b9-9aec5aa29fea", ["Arx Outskirts: Necro-Wing Voidwoken (377, -6)"], 3],
+    ["DeathfogZone_Voidwoken_Ranged_02_6157ab98-4971-4ef2-a562-59895f7a5e8c", ["Arx Outskirts: Necro-Wing Voidwoken (374, -15)"], 3],
+    ["DeathfogZone_Voidwoken_Ranged_03_a96fd67a-9acf-4fad-b6ba-9fa1475ef663", ["Arx Outskirts: Necro-Wing Voidwoken (360, -5)"], 3],
+    ["DeathfogZone_Troll_Undead_01_c7feba75-58ef-446b-8a90-779db62e5128", ["Arx Outskirts: Awakened Construct (381, -18)"], 3],
+    ["DeathfogZone_Champion_Undead_01_192521f2-0889-4e29-aa49-705c943aa024", ["Arx Outskirts: Loic the Immaculate (356, -7)"], 3], #hit list canidate
+    #harbor kraken leaves at half health unfortunatly
+    ["S_ARX_Outskirts_Harbour_Voidwoken_01_e0a7f25e-7aaf-428f-8725-3f8dadc643d4", ["Arx Outskirts: Abyssal Void Flayer (450, 136)"], 3],
+    ["S_ARX_Outskirts_Harbour_Voidwoken_02_6428cbe6-5356-408b-8607-b9effa0d5355", ["Arx Outskirts: Abyssal Void Flayer (463, 99)"], 3],
+    ["S_ARX_Outskirts_Harbour_Voidwoken_03_997a816c-2018-484b-81bd-c49621ac2cc7", ["Arx Outskirts: Abyssal Void Devourer (450, 100)"], 3],
+    #bottom left corner
+    ["S_ARX_JahansDemons_Fallback_Warrior_01_adeb719d-86a5-46c2-b7a9-1b82b5f24544", ["Arx Outskirts: Outcast Berserker (240, 74)"], 3],
+    ["S_ARX_JahansDemons_Fallback_Warrior_01_Animal_441c0c36-39bb-4563-a885-b06d6374af02", ["Arx Outskirts: Cuddles (242, 74)"], 3],
+    ["S_ARX_JahansDemons_Fallback_Ranger_01_185efcd7-4aa8-4091-b65e-2c62ff4199a3", ["Arx Outskirts: Outcast Hunter (236, 80)"], 3],
+    ["S_ARX_JahansDemons_Fallback_Ranger_01_Animal_126a13cd-5931-4a25-b568-db5c609082b0", ["Arx Outskirts: Featherfang (240, 81)"], 3],
+    ["S_ARX_JahansDemons_Fallback_Mage_01_cfef563e-2391-43a3-b291-acc6ba6a6692", ["Arx Outskirts: Outcast Spellweaver (236, 62)"], 3],
+    ["S_ARX_JahansDemons_Fallback_Mage_01_Animal_7f8d502d-cc64-475e-a0aa-18a4a0a98814", ["Arx Outskirts: Emberwing (236, 75)"], 3],
+    #entrance
+    ["S_ARX_ClanWar_OffStageVoidwoken_Boss_df50b95d-807b-47e5-8854-c2f01ae4f74b", ["Arx Outskirts: Voidwoken Bloodfury (302, 172)"], 3], #hit list canidate
+    ["S_ARX_ClanWar_Voidwoken_01_e3603964-4654-44a0-9556-61ac9cde82af", ["Arx Outskirts: Vampiric Voidwoken (291, 171)"], 3],
+    ["S_ARX_ClanWar_Voidwoken_02_ff762c81-0473-490c-b4f5-742aac4637ea", ["Arx Outskirts: Vampiric Voidwoken (291, 164)"], 3],
+    ["S_ARX_ClanWar_Voidwoken_03_41813ffd-4b91-408d-b4c9-538b6280b844", ["Arx Outskirts: Vampiric Voidwoken (295, 163)"], 3],
+    ["S_ARX_ClanWar_OffStageVoidwoken_01_0fde4292-1148-4bdb-b923-1165e93b0452", ["Arx Outskirts: Necro-Wing Voidwoken (282, 149)"], 3],
+    ["S_ARX_ClanWar_OffStageVoidwoken_02_89bd87d9-018d-4d8b-8c01-64bfdb9550d8", ["Arx Outskirts: Necro-Wing Voidwoken (302, 165)"], 3],
+    ["S_ARX_ClanWar_OffstageVoidwoken_06_295919a7-a232-4e6f-8ed3-869808c21052", ["Arx Outskirts: Necro-Wing Voidwoken (283, 162)"], 3],
+    #magister vault
+    ["S_ARX_Barracks_WhiteMagisterVault_Gheist1_bf45ee01-e395-4169-9013-4dd96e422e07", ["Arx: Gheist (145, 43)"], 3],
+    ["S_ARX_Barracks_WhiteMagisterVault_Gheist2_99366040-3f84-4fbb-ac32-b26fe0378ae8", ["Arx: Gheist (145, 50)"], 3],
+    ["S_ARX_Barracks_WhiteMagisterVault_Gheist3_1a3dd9ea-1c4c-440e-82bf-0e9ca9ac6e30", ["Arx: Gheist (143, 46)"], 3],
+    #blood dowry
+    ["S_ARX_MerchantEstate_Groom_50b47558-7485-4f84-b530-f04fcf3018d1", ["Arx: Dorian Gall (318, 336)"], 3],
+    ["S_ARX_Neighborhood_HouseAlchemist_Ooze_01_1673d4c0-937d-4cb3-ac2a-1ef40f3fb806", ["Arx: Failed Experiment (124, -39)"], 3],
+    ["S_ARX_Neighborhood_HouseAlchemist_Ooze_02_eeab1cbf-a852-416b-8133-9ee03ceed54d", ["Arx: Failed Experiment (112, -39)"], 3],
+    ["S_ARX_Neighborhood_HouseAlchemist_Ooze_03_6a6325cf-7949-48a4-9432-34ed19090ab9", ["Arx: Failed Experiment (124, -17)"], 3],
+    ["S_ARX_Neighborhood_HouseAlchemist_Ooze_04_96c029cb-adda-48eb-a086-89110dae6499", ["Arx: Failed Experiment (108, -22)"], 3],
+    #school
+    # ["S_ARX_DemonAmbush1_Spotter_cfd1a537-df32-46fc-9878-2c4181fd3c14", ["Arx: Nemesis Devourer (394, 259)"], 3], these run and are missable
+    # ["S_ARX_DemonAmbush2_Spotter_3dad22a2-0c6f-4f34-bfeb-b83c64e23832", ["Arx: Nemesis Soulhunter (218, 322)"], 3],
+    # ["S_ARX_DemonAmbush3_Spotter_a9cdf6c2-43f1-48eb-a976-9337f6bd36d2", ["Arx: Nemesis Heartpiercer (167, 238)"], 3],
+    # ["S_ARX_DemonAmbush4_55da9d21-9eaf-445b-82b0-aae2c85aac96", ["Arx: Nemesis Stargazer (109, 280)"], 3],
+    #old lady house
+    ["S_ARX_Neighborhood_TheFence_Demon_01_f7a9e3e9-1d24-41e2-9c7b-86feae69b012", ["Arx: Debt Collector (379, 735)"], 3],
+    ["S_ARX_Neighborhood_TheFence_Demon_02_3d0566de-786e-4ff9-ab1a-5c7a279c1580", ["Arx: Debt Collector (385, 741)"], 3],
+    ["S_ARX_Neighborhood_TheFence_Demon_03_0fc21242-8f25-4091-a42b-e7614199a243", ["Arx: Debt Collector (376, 733)"], 3],
+    ["S_ARX_Neighborhood_TheFence_973d85be-5756-4bf1-aae3-a2b06fcb2b31", ["Arx: Sanguinia Tell (419, 298)"], 3], #kill list canidate
+    #mistake
+    ["S_ARX_Prison_Mistake_BlackRing1_6144fe66-7ac8-4034-9f0d-8335efa4ac91", ["Arx: Saeva the Many-faced (148, 763)"], 3],
+    ["S_ARX_Prison_Mistake_BlackRing2_fb59309d-5167-4ad7-97fd-f43122040124", ["Arx: Sahun Woundbinder (148, 735)"], 3],
+    ["S_ARX_Prison_Mistake_BlackRing3_0419d25a-af6e-4ad2-9394-710803f4af0f", ["Arx: Urrha the Snake Charmer (177, 753)"], 3],
+    ["S_ARX_Prison_Mistake_BlackRing4_026049be-0529-4c39-82dd-245cb2c6b4cc", ["Arx: Kajun Frozenheart (177, 736)"], 3],
+    ["S_ARX_Prison_TheMistake_5136657b-5d75-409f-814c-0eee4ff3913d", ["Arx: Karon (163, 750)"], 3], #hit list candidate
+    #spider ambush
+    ["S_ARX_Sewers_CombatRoom_Spider_01_be2ee8d1-1e2c-4d49-9006-b13511d88efb", ["Arx: Fog-Swollen Crawler (444, 578)"], 3],
+    ["S_ARX_Sewers_CombatRoom_Spider_02_6aa78db3-f828-44ef-af25-702302a84506", ["Arx: Void-touched Crawler (427, 594)"], 3],
+    ["S_ARX_Sewers_CombatRoom_Spider_03_1dba6ede-5303-4a87-9e35-31a0e7da2fa1", ["Arx: Void-touched Crawler (458, 607)"], 3],
+    ["S_ARX_Sewers_CombatRoom_Spider_04_fda1a4b2-3477-4704-bafd-039698b80937", ["Arx: Fog-Swollen Crawler (443, 607)"], 3],
+    #isbel
+    ["S_ARX_Sewers_Q_52f20922-7b22-4d47-90f7-83172f21fe3b", ["Arx: Isbeil (280, 672)"], 3], #hit list canidate
+    ["S_ARX_Sewers_ImperialGuard_01_Unmasked_2a5e722e-0123-48ae-9d51-027bd9079b5c", ["Arx: Black Ring Witherknight (296, 617)"], 3],
+    ["S_ARX_Sewers_ImperialGuard_02_Unmasked_4d847c4b-3eb9-4ccf-8d94-f1d2b5de9f01", ["Arx: Black Rang Flamebringer (291, 618)"], 3],
+    ["S_ARX_Sewers_EliteImperialGuard_01_Unmasked_125b1265-cef0-4782-b7e6-a551210a2a8c", ["Arx: Black Ring Skullcrusher (308, 617)"], 3],
+    ["S_ARX_Sewers_EliteImperialGuard_04_Unmasked_e9293a04-303a-45b4-9226-1fbef76cc131", ["Arx: Black Ring Limbchopper (303, 617)"], 3],
+    #kemm garden
+    ["S_RC_ARX_KemmMansion_Garden_Shambl_Tank_01_0b0b9920-64e4-4b29-b465-0c578916a099", ["Arx: Thorny Suncaller (101, 286)"], 3], #hit lst candidate
+    ["S_RC_ARX_KemmMansion_Garden_Shambl_Ranger_01_cb26f904-3b70-4d1b-b36d-aee47955f8f3", ["Arx: Malignant Oak (100, 271)"], 3],
+    ["S_RC_ARX_KemmMansion_Garden_Shambl_Ranger_02_cddc80f7-32dd-4cd4-bdf4-0cf29b531ece", ["Arx: Malignant Oak (99, 301)"], 3],
+    ["S_RC_ARX_KemmMansion_Garden_Shambl_Caster_01_f971c19e-4fbb-45fb-a57e-2d7991aade88", ["Arx: Hungry Flower (97, 294)"], 3],
+    ["S_RC_ARX_KemmMansion_Garden_Shambl_Caster_02_67ea8705-133f-42d6-b8fe-32065f6c45c2", ["Arx: Hungry Flower (97, 277)"], 3],
+    #kemm vault
+    ["S_ARX_KemmVault_ArhusPrison_Horror_01_e5da66e9-a385-48ef-a488-df463dfc7de5", ["Arx: Black Ring Fearmaiden (279, 764)"], 3],
+    ["S_ARX_KemmVault_ArhusPrison_Horror_02_9abc5e99-9ebe-4107-b561-691bad0c6cd7", ["Arx: Black Ring Painweaver (267, 764)"], 3],
+    ["S_ARX_KemmVault_ArhusPrison_Horror_03_8604e931-2d21-4f2e-b5f4-b27a9c12eff3", ["Arx: Black Ring Defiler (282, 751)"], 3],
+    ["S_ARX_KemmVault_ArhusPrison_Horror_04_b5d345ea-7a93-4b3a-9f9b-9c6d666b6c01", ["Arx: Black Ring Defiler (264, 751)"], 3],
+    ["S_ARX_Kemm_3e6ead7d-dd35-4f9d-985e-af2de0d76d28", ["Arx: Lord Linder Kemm (325, 263)"], 3], #hit list canidate
+    #lizard consulate
+    ["S_ARX_LizardConsualte_InfernalLizard_01_ade1bfee-f057-4b1f-8390-33ae025e9ea8", ["Arx: Cursed Revenant (174, 332)"], 3],
+    ["S_ARX_LizardConsualte_InfernalLizard_02_c0f3c58e-8d05-4d64-9098-d2f7bb8669d0", ["Arx: Cursed Revenant (193, 333)"], 3],
+    ["S_ARX_LizardConsualte_InfernalLizard_03_85bf82a9-de63-4982-8806-bbd1cee3ab37", ["Arx: Cursed Revenant (182, 384)"], 3],
+    ["S_ARX_LizardConsualte_InfernalLizard_04_7161c772-d04d-4c6a-b5e4-46568fcbd612", ["Arx: Cursed Revenant (170, 375)"], 3],
+    ["S_ARX_LizardConsualte_InfernalLizard_05_7c94819e-89d2-46cf-8ea4-0d0d7e317a75", ["Arx: Cursed Revenant (190, 373)"], 3],
+    #lizard dream (nvm none of these figths happen if you have red prince in your party and the shadow prince fight afterwards dosent happen if you dont have red prince)
+    #there are two more hunter-dreamers, but you can leave without aggroing them and you cannot return to this area
+    # ["S_GLO_Brahmos_d4064352-33f9-49df-b208-09fd822d2270", ["Arx: Brahmos the Wanderer (633, 758)"], 3],
+    # ["S_ARX_HorrorSleep_WarZone_LizardDreamer_2_cb0fd13b-6719-47ea-b660-8b858940eb1b", ["Arx: Earth-dreamer (342, 1086)"], 3],
+    # ["S_ARX_HorrorSleep_WarZone_LizardDreamer_3_cf0cf358-d803-44e0-a742-922152950472", ["Arx: Wave-dreamer (346, 1091)"], 3],
+    # ["S_ARX_HorrorSleep_WarZone_LizardDreamer_4_d1aa71d7-4d75-4c47-baec-b7077426b627", ["Arx: Flame-dreamer (346, 1086)"], 3],
+    # ["S_ARX_HorrorSleep_WarZone_LizardDreamer_5_90e70559-d9de-465c-9a07-86009e6f6a21", ["Arx: Storm-dreamer (341, 1092)"], 3],
+    # ["S_ARX_HorrorSleep_Sunset_Newt_1f46750f-1d62-4676-aaa7-9ec226c96428", ["Arx: Dragonchild (281, 937)"], 3],
+    # ["S_ARX_HorrorSleep_Sunset_HunterDreamer_01_68e15ffc-7fb1-4ea0-8d91-ede24744ea06", ["Arx: Hunter-dreamer (292, 923)"], 3],
+    # ["S_ARX_HorrorSleep_Sunset_HunterDreamer_02_356d752f-03e4-48ee-88f3-3b72a8db6e2a", ["Arx: Hunter-dreamer (273, 929)"], 3],
+    # ["S_ARX_HorrorSleep_Sunset_LizardDreamer_01_f60aae58-94f5-4668-8e1f-173970b68a60", ["Arx: Earth-dreamer (299, 936)"], 3],
+    # ["S_ARX_HorrorSleep_Sunset_LizardDreamer_02_9b8741fb-ee59-41e3-b68f-82c3bea760fe", ["Arx: Flame-dreamer (277, 944)"], 3],
+    # ["S_GLO_RedPrincess_050fbbf9-3fc9-40cd-9cbb-43b4b3754a5e", ["Arx: Sadha (577, 445)"], 3],
+    #toys
+    ["S_ARX_CreepyShop_2ndFloor_SourcePuppet1_480f3e01-426b-4d07-b001-892b8aa7b7f7", ["Arx: Bewitched Moppet (100, -82)"], 3],
+    ["S_ARX_CreepyShop_2ndFloor_SourcePuppet2_aa35f60d-d12f-4021-b714-5207f138434b", ["Arx: Bewitched Moppet (119, -100)"], 3],
+    ["S_ARX_CreepyShop_2ndFloor_SourcePuppet3_ccce45e6-566c-4d59-88a0-f2721c2a692e", ["Arx: Bewitched Moppet (106, -93)"], 3],
+    ["S_ARX_CreepyShop_2ndFloor_SourcePuppet4_69cf2e83-1b5a-4831-b214-352cadceba96", ["Arx: Bewitched Moppet (105, -81)"], 3],
+    ["S_ARX_CreepyShop_2ndFloor_SourcePuppet5_72df0b99-e10f-4c8c-81de-c3967f31d94d", ["Arx: Bewitched Moppet (101, -96)"], 3],
+    #doctor
+    #["Creatures_Demon_Caster_A_ONLYUSE_THEDOCTOR_83083470-c543-45b3-ac8a-108df0daca8d", ["Arx: Adramahlihk (387, 418)"], 3], #the demon form, hit list canidate (shouldnt be needed anymore since it has the same id as normal doctor)
+    ["S_ARX_DoctorsHouse_TheDoctor_83083470-c543-45b3-ac8a-108df0daca8d", ["Arx: Adramahlihk (387, 418)"], 3], #the human form
+    #["S_ARX_DoctorsHouse_DoctorsDemon_01_4ac45868-d71a-4756-8e39-cf7550544c95", ["Arx: Nemesis Stargazer (386, 417)"], 3], #these only spawn if you do not snuff the candles
+    #["S_ARX_DoctorsHouse_DoctorsDemon_02_ba9b8596-ddfa-4199-b4bb-273d010046eb", ["Arx: Nemesis Devourer (386, 412)"], 3],
+    #["S_ARX_DoctorsHouse_DoctorsDemon_03_f12c9cc0-0219-46de-9746-3ea5b802cee6", ["Arx: Nemesis Heartpiercer (393, 427)"], 3],
+    #["S_ARX_DoctorsHouse_DoctorsDemon_04_7f2515b5-1482-41d5-8f3d-20304eda0e9e", ["Arx: Nemesis Soulhunter (386, 422)"], 3],
+    ["S_ARX_DoctorsHouse_Nurse_01_649673eb-79f4-417f-9703-2a640a284f12", ["Arx: Nurse Do (392, 417)"], 3],
+    ["S_ARX_DoctorsHouse_Nurse_02_e8cc0255-7d6e-4f52-81ca-2551e8b445a1", ["Arx: Nurse Fa (408, 382)"], 3],
+    ["S_ARX_DoctorsHouse_Nurse_03_0933d507-2e69-4d6d-9631-dff702e03744", ["Arx: Nurse Si (407, 434)"], 3],
+    ["S_ARX_DoctorsHouse_Nurse_04_6831724d-d355-42ef-be25-5bcc1e9baa52", ["Arx: Nurse Mi (426, 409)"], 3],
+    ["S_ARX_DoctorsHouse_Nurse_05_708e03a9-50c3-40de-90ed-c5f58a45df84", ["Arx: Nurse La (419, 421)"], 3],
+    ["S_ARX_DoctorsHouse_Nurse_06_88d45ba2-a4ec-45b8-bdcd-92951dbd06ca", ["Arx: Nurse Re (417, 397)"], 3],
+    #seed of power 
+    ["CON03_Ranger_01ae9dbb-2f5e-4000-b707-26667910d2ad", ["Arx: Spiked Trunk (169, 132)"], 3],
+    ["CON03_PoisonousPlant_000_21c39d23-1eb6-41ba-bd24-217d57e0a0b0", ["Arx: Corrosive Flower (165, 124)"], 3],
+    ["CON03_PoisonousPlant_c470733f-3a3b-412c-9892-d767974ec0aa", ["Arx: Corrosive Flower (158, 140)"], 3],
+    ["CON03_HeartOfMight_7d513fa3-a897-4351-aa50-0dbe501dca9c", ["Arx: Bloom of Might (152, 144)"], 3],
+    ["CON03_HeartOfNimbleness_4bab9a2d-7730-49fb-aae9-eae654afe843", ["Arx: Bloom of Momentum (159, 136)"], 3],
+    ["CON03_HeartOfEndurance_cc7fe0bd-abe4-4da3-8ee4-f253d864aba9", ["Arx: Bloom of Mettle (172, 117)"], 3],
+    ["CON03_ContaminationGuardian_93b0ac12-4884-4902-9b03-cedcb4f8a179", ["Arx: Contaminated Horror (172, 136)"], 3], #hit list candidate
+    #["CON00_ElvenScion_ARX_e13fde00-fca4-494e-973b-7812c56a08d1", ["Arx: Daeyena (172, 140)"], 3], #can die earlier than here
+    #end, braccus is the only one you kill with both choices for the ending
+    ["S_GLO_Braccus_358ba541-0710-43be-8263-87afe1a8d9b5", ["Tomb of Lucian: Braccus Rex (581, 284)"], 3], #hit list candidate
 ]
+
+for loc in DOS2_KILL_LIST:
+    loc[0] = loc[0].rsplit("_", 1)[-1]
 
 #All of the FTJ ones came from @chaotic and @JeyKey09, thank you!
 DOS2_LOCATION_LIST = [
-    #i dont think Nothing but Child's Play, and The Eternal Worshipper have flags
     ["Quest-TUT_ShipInvestigation", ["Merryweather: Death Belowdecks - Complete"], 0],
     ["Quest-TUT_ShipMurder", ["Merryweather: Troubled Waters - Complete"], 0],
     ["Quest-FTJ_Escape", ["Fort Joy: Escape From Fort Joy - Complete"], 0],
     ["Quest-FTJ_Escape_Island", ["North-east Reaper's Eye: Escape From Reaper's Eye - Complete", "Victory_Escape_Reapers_Eye"], 0],
     ["Quest-FTJ_Escape_Island_SUBA", ["North-east Reaper's Eye: Seek and You Shall Find - Complete"], 0], #Seek and You Shall Find
-    #["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0], I have no idea what these are #The Dragon's Way
+    #["Quest-FTJ_Escape_Island_SUBB", ["placeholder4"], 0], #The Dragon's Way, mutually exclusive
     #["Quest-FTJ_Escape_Island_SUBC", ["placeholder5"], 0], #Silence the Shrieking
     ["Quest-FTJ_Voice", ["East Reaper's Eye: The Voices - Complete"], 0],
-    #["Quest-FTJ_Godwoken", ["placeholder7"], 0], I dont know what this is #Champion of the Gods - {character}
-    #["Quest-FTJ_Hunted", ["placeholder8"], 0], #dont know #A Rare Prey
-    #["Quest-FTJ_Seeker", ["placeholder9"], 0], #I dont know #Signs of Resistance
+    #["Quest-FTJ_Godwoken", ["placeholder7"], 0], #Champion of the Gods - {character}
+    #["Quest-FTJ_Hunted", ["placeholder8"], 0], #A Rare Prey
+    #["Quest-FTJ_Seeker", ["placeholder9"], 0], #Signs of Resistance
     ["Quest-RC_FTJ_OlgoSaheila", ["Fort Joy: The Imprisioned Elf - Complete"], 0],
     ["Quest-RC_FTJ_MurderousGheist", ["Fort Joy: The Murderous Gheist - Complete"], 0],
     ["Quest-FTJ_SourceHounds", ["Fort Joy: Finding Emmie - Complete"], 0],
     ["Quest-FTJ_Arena", ["Fort Joy: The Arena of Fort Joy - Complete"], 0],
     ["Quest-RC_FTJ_SoulJar", ["Fort Joy: Withermoore's Soul Jar - Complete"], 0],
-    #["Quest-RC_FTJ_SaheilaSignet", ["placeholder16"], 0],
+    #["Quest-RC_FTJ_SaheilaSignet", ["placeholder16"], 0], #this doesnt seem to be used
     ["Quest-FTJ_Teleporter", ["Fort Joy: The Teleporter - Complete"], 0],
     ["Quest-FTJ_Elodi", ["Fort Joy: The Shakedown - Complete"], 0],
     ["Quest-FTJ_SW_Illusionist", ["East Reaper's Eye: The Vault of Braccus Rex - Complete"], 0],
-    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch/Most Dangerous When Cornered - Complete"], 0], #same flag as Dangerous When Cornered for some reason #Healing Touch
-    #["Quest-FTJ_SW_StuckHaunting", ["placeholder21"], 0], #looking at more flags, this does seem to be The Eternal Worshipper, haven't got the flag to shoot outside of leaving act 1 #The Eternal Worshipper
+    ["Quest-FTJ_SW_HurtSeekers", ["East Reaper's Eye: Healing Touch - Complete"], 0], #correctly seperated from Most Dangerous When Cornered now
+    ["Quest-FTJ_SW_StuckHaunting", ["East Reaper's Eye: The Eternal Worshipper - Complete"], 0], #patched the same way Most Dangerous When Cornered was
     ["Quest-FTJ_SW_Necromancers", ["East Reaper's Eye: A Fate Worse Than Death - Complete"], 0],
     ["Quest-FTJ_SW_BraccusArmory", ["East Reaper's Eye: The Armoury - Complete"], 0],
     ["Quest-FTJ_SW_CursedRing", ["East Reaper's Eye: The Cursed Ring - Complete"], 0],
@@ -525,9 +664,9 @@ DOS2_LOCATION_LIST = [
     ["Quest-FTJ_SW_CallToArms", ["East Reaper's Eye: Call to Arms - Complete"], 0],
     ["Quest-FTJ_SW_Shriekers", ["East Reaper's Eye: The Shreikers - Complete"], 0],
     ["Quest-FTJ_SW_Tyrant", ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete"], 0],
-    #["Quest-ContaminationArmour", ["Seed of Power - Complete"], 0], This isn't completeable till act 4
-    #["Quest-FTJ_SW_BatteredAndCornered", ["placeholder32"], 0], Youd think that this is Most Dangerous When Cornered but no (fires off on act exit) #Most Dangerous When Cornered
+    ["Quest-FTJ_SW_BatteredAndCornered", ["East Reaper's Eye: Most Dangerous When Cornered - Complete"], 0], #patched, all flags besides murder gareth did not have a QuestUpdate prefix
     ["Quest-CaptainArmour", ["North-east Reaper's Eye: Threads of a Curse - Complete"], 0],
+    ["Quest-RC_FTJ_SourceCollar", ["East Reaper's Eye: Hot Under the Collar - Complete"], 0], #patched in GLO_SourceCollars, might have unintended consequences
     #-- Act 2 -- #A Trial for all Seasons lacks flags, same with Burial Rites, Burying the Past
     ["Quest-LV_Main", ["Lady Vengence: Lady o' War - Complete"], 1],
     ["Quest-LV_HoE_Main", ["Lady Vengence: To The Hall of Echoes - Complete"], 1],
@@ -595,12 +734,12 @@ DOS2_LOCATION_LIST = [
     ["Quest-RC_FL_BrokenPromises", ["Paradise Downs: Unlikely Lovers - Complete"], 1],
     ["Quest-RC_FL_TabletForAlmira", ["Paradise Downs: Almira's Request - Complete"], 1],
     ["Quest-RC_BF_ThePresence", ["Cloisterwood: A Hunter of Wicked Things - Complete"], 1],
-    #["Quest-RC_BI_TheTruth", ["placeholder65"], 1], #The Secrets of Bloodmoon Island? cant be completed till act 4 if so (nvm fires on act exit i have no idea what this is) -it is secrets of bloodmoon
+    #["Quest-RC_BI_TheTruth", ["placeholder65"], 1], #The Secrets of Bloodmoon Island? cant be completed till act 4 if so (nvm fires on act exit i have no idea what this is) -it is secrets of bloodmoon (it also fire exactly where youd think too in act 4)
     ["Quest-RC_BI_TheVaults", ["Bloodmoon Island: The Forgotten and the Damned - Complete"], 1],
     ["Quest-RC_BI_TheVaults_SUBA", ["Bloodmoon Island: Delusions of Gradeur - Comeplete"], 1],
     ["Quest-RC_BI_TheVaults_SUBB", ["Bloodmoon Island: Silent as the Grave - Complete"], 1],
     ["Quest-RC_BI_TheVaults_SUBC", ["Bloodmoon Island: The Sweet Shackles of Pain - Complete"], 1], 
-    #["Quest-RC_BI_TheVaults_SUBD", ["placeholder70"], 1], #Metalwork? never popped
+    ["Quest-RC_BI_TheVaults_SUBD", ["Bloodmoon Island: Metalwork - Complete"], 1], #fixed same way Most Cornered When Dangerous was
     #["Quest-RC_BI_TheVaultGodwoken", ["placeholder71"], 1], none of them fired
     #["Quest-RC_BI_TheVaultKid", ["placeholder72"], 1],
     #["Quest-RC_BI_TheVaultAdventurer", ["placeholder73"], 1],
@@ -619,15 +758,14 @@ DOS2_LOCATION_LIST = [
     ["Quest-RC_MIL_GhostRevenge", ["The Cullwoods: An Eye for an Eye - Complete"], 1],
     ["Quest-RC_MIL_SelenHead", ["The Cullwoods: Finder's Fee - Complete"], 1],
     ["Quest-RC_MIL_GhostLog", ["The Cullwoods: The Bark's Bite - Complete"], 1],
-    #["Quest-DevourerArmour", ["A Hunger From Beyond - Complete"], 1], Cant be completed until act 4
     ["Quest-VultureArmour", ["Reaper's Bluffs: Keep Calm and Carrion - Complete"], 1],
     ["Quest-RC_DW_SnoozingAdventurer", ["Driftwood: The Snoozing Adventurer - Complete"], 1],
     ["Quest-RC_DW_RichMerchant", ["Driftwood: The Merchant - Complete"], 1],
     ["Quest-RC_DW_Beggar", ["Driftwood: A Man and His Dog - Complete"], 1],
-    #["Quest-RC_FL_GarethFarm", ["placeholder93"], 1], #fires when killing jonathan in the first encounter with gareth, no where else in Burying the Past. Every other path doesnt fire until act exit, opting to omit this one
+    #["Quest-RC_FL_GarethFarm", ["placeholder93"], 1], #fires when killing jonathan in the first encounter with gareth, no where else in Burying the Past. Every other path doesnt fire until act exit, opting to omit this one (can fix it, missable anyway)
     #["Quest-RC_FL_GarethParents", ["placeholder94"], 1], #This is whatever the one is for killing voidwoken at gareths parents behest, obnoixously missable, probably wont include, doesn't fire on act exit either #Infestation
-    #["Quest-RC_MIL_ElvenBurial", ["placeholder95"], 1], Confident this is Burial Rites, no flag sent when completeing burial rites (fires on leaving reapers coast)
-    #["Quest-RC_MIL_ElfTest", ["placeholder96"], 1], #A Trial for All Seasons, doesnt fire on completion
+    ["Quest-RC_MIL_ElvenBurial", ["The Cullwoods: Burial Rites - Complete"], 1], #fixed the same as Most Dangerous When Cornered
+    ["Quest-RC_MIL_ElfTest", ["The Cullwoods: A Trial for All Seasons - Complete"], 1], #fixed the same as Most Dangerous When Cornered
     ["Quest-RC_MIL_AvengingSaheila", ["The Cullwoods: The Elven Seer/Vengeance for the Fallen - Complete"], 1],
     ["Quest-RC_OIL_ThirdHouse", ["The Blackpits: On the Ropes - Complete"], 1],
     ["Quest-RC_DW_Meistr_SUBI", ["Driftwood: The Gift of the Blackroot - Complete"], 1],
@@ -652,58 +790,91 @@ DOS2_LOCATION_LIST = [
     ["Quest-CoS_ForbiddenLibrary", ["The Nameless Isle: Proving Ground - Complete"], 2], #(pops at aoto)
     ["Quest-CoS_Academy", ["The Nameless Isle: The Academy - Complete"], 2],
     ["Quest-CoS_ArenaOfTheOne", ["The Nameless Isle: The Arena of the One - Complete", "Victory_Escape_The_Nameless_Isle"], 2], #probably the goal locaion
+    #-- act 4 --
+    #["Quest-DevourerArmour", ["A Hunger From Beyond - Complete"], 1], very missable
+    ["Quest-ContaminationArmour", ["Arx: Seed of Power - Complete"], 3], #not actually missable, all piece can be found in arx if you missed some earlier, although if you get a piece and lose it the quest becomes incompleteable
+    ["Quest-ARX_HuntingForDallis", ["Arx Outskirts: Hammerfall - Complete"], 3], #probably hammerfall
+    ["Quest-ARX_HuntingForDallis_SUBA", ["Arx: Wisdom of the Keeper/The Righteous - Complete"], 3],
+    ["Quest-ARX_HuntingForDallis_SUBB", ["Arx: Wisdom of the Keeper/The Righteous - Complete"], 3], #techinacally mutually exclusive
+    ["Quest-ARX_KemmVault", ["Arx: The Vault of Linder Kemm - Complete"], 3],
+    ["Quest-ARX_KemmVault_SUBA", ["Arx: The Second Passion of Lucian - Complete"], 3], #it does work not really sure its a quest
+    ["Quest-ARX_DisappearanceOfArhu", ["Arx: Finding Lord Arhu - Complete"], 3],
+    #["Quest-ARX_CreepyCraftsman", [" - Complete"], 3], #fires when giving sanders the fully charged amulet, not really a quest though. missable if you do The Righteous
+    ["Quest-ARX_Barracks", ["Arx: The Last Stand of the Magisters - Complete"], 3],
+    ["Quest-ARX_LV_Godslayer", ["Arx: A King Reborn - Complete"], 3],
+    ["Quest-ARX_MerchantEstate_Wetwork", ["Arx: Blood Dowry - Complete"], 3],
+    ["Quest-ARX_MerchantEstate_Wetwork_SUBA", ["Arx: A Son's Contract - Complete"], 3], #surpiringly fine, pops on eithers death which is required to complete the other
+    ["Quest-ARX_MerchantEstate_Wetwork_SUBB", ["Arx: A Family Affair - Complete"], 3],
+    ["Quest-ARX_Cathedral_Dog", ["Arx: A Most Urgent Matter - Complete"], 3],
+    ["Quest-ARX_AntiqueTraders", ["Arx: Old means Gold - Complete"], 3],
+    ["Quest-ARX_Neighborhood_HouseSchool", ["Arx: School's Out - Complete"], 3],
+    #["Quest-ARX_Outskirts_PossessedKid", ["Arx Outskirts: Silence Broken - Complete"], 3], #missable, follows Silent as the Grave
+    #["Quest-ARX_Outskirts_PossessedKid_SUBA", ["Arx Outskirts: The Purity of Divinity - Complete"], 3], #hell no
+    #["Quest-ARX_Outskirts_PossessedKid_SUBB", ["Arx Outskirts: Who Am I? - Complete"], 3], #missable
+    #["Quest-ARX_Outskirts_PossessedKid_SUBC", ["Arx Outskirts: A Girl and Her Demon - Complete"], 3], #missable
+    ["Quest-RC_ARX_TheImperialDwarves", ["Arx: Deathfog Rising - Complete"], 3],
+    ["Quest-RC_ARX_TheImperialDwarves_SUBA", ["Arx: Dwarven Politics - Complete"], 3],
+    ["Quest-ARX_Prison_Windego", ["Arx: Mercy is Power - Complete"], 3],
+    ["Quest-ARX_Prison_TheMistake", ["Arx: Past Mistakes - Complete"], 3],
+    ["Quest-ARX_TheDoctor", ["Arx: Doctor's Orders - Complete"], 3],
+    ["Quest-ARX_TheWeakening", ["Arx: Crippling a Demon - Complete"], 3],
+    ["Quest-ARX_LizardConsulate", ["Arx: A Lizard Nightmare - Complete"], 3],
+    ["Quest-EG", ["Tomb of Lucian: End Times - Complete", "Victory_Defeat_Braccus_Rex"], 3],
+    #["Quest-ARX_DemonAmbush", [" - Complete"], 3], #probably unused
+    ["Quest-ARX_Neighborhood_TheFence", ["Arx: What a Fuss to have Wrought - Complete"], 3],
+    ["Quest-ARX_MissingPrisoners", ["Arx: The Missing Prisoners - Complete"], 3],
 ] + DOS2_KILL_LIST
 
 LOCATION_NAME_ID_REGION = [
     ["Merryweather: Death Belowdecks - Complete", 1, "Merryweather"],
     ["Merryweather: Troubled Waters - Complete", 2, "Merryweather"],
-    ["Merryweather: Voidling 1", 3, "Merryweather"],
-    ["Merryweather: Voidling 2", 4, "Merryweather"],
-    ["Fort Joy: Voidling 1 (158, 325)", 5, "Fort Joy"],
-    ["Fort Joy: Voidling 2 (157, 330)", 6, "Fort Joy"],
+    ["Merryweather: Voidling (27, 16)", 3, "Merryweather"],
+    ["Merryweather: Voidling (28, 18)", 4, "Merryweather"],
+    ["Fort Joy: Voidling (158, 325)", 5, "Fort Joy"],
+    ["Fort Joy: Voidling (157, 330)", 6, "Fort Joy"],
     ["Fort Joy: Freshly Buried Corpse (225, 287)", 7, "Fort Joy"],
-    ["Fort Joy: Turtle 1 (258, 363)", 8, "Fort Joy"],
+    ["Fort Joy: Turtle (258, 363)", 8, "Fort Joy"],
     ["Fort Joy: Ancient Turtle (271, 365)", 9, "Fort Joy"],
-    ["Fort Joy: Turtle 2 (283, 349)", 10, "Fort Joy"],
-    ["Fort Joy: Saltwater Crocodile 1 (113, 217)", 11, "Fort Joy"],
-    ["Fort Joy: Saltwater Crocodile 2 (124, 224)", 12, "Fort Joy"],
-    ["Fort Joy: Saltwater Crocodile 3 (116, 231)", 13, "Fort Joy"],
+    ["Fort Joy: Turtle (283, 349)", 10, "Fort Joy"],
+    ["Fort Joy: Saltwater Crocodile (113, 217)", 11, "Fort Joy"],
+    ["Fort Joy: Saltwater Crocodile (124, 224)", 12, "Fort Joy"],
+    ["Fort Joy: Saltwater Crocodile (116, 231)", 13, "Fort Joy"],
     ["Fort Joy: Charged Amphibian (528, 489)", 14, "Fort Joy"],
-    ["Fort Joy: Venomous Amphibian 1 (503, 491)", 15, "Fort Joy"],
-    ["Fort Joy: Venomous Amphibian 2 (518, 504)", 16, "Fort Joy"],
+    ["Fort Joy: Venomous Amphibian (503, 491)", 15, "Fort Joy"],
+    ["Fort Joy: Venomous Amphibian (518, 504)", 16, "Fort Joy"],
     ["Fort Joy: Gedeon, the Tenacious One (69, 562)", 17, "Fort Joy"],
     ["Fort Joy: Veerle, the Avid One (64, 566)", 18, "Fort Joy"],
     ["Fort Joy: Ailsa, the Cultured One (64, 559)", 19, "Fort Joy"],
     ["Fort Joy: Rex (72, 566)", 20, "Fort Joy"],
     ["Fort Joy: Magister Houndmaster (276, 654)", 21, "Fort Joy"],
-    ["Fort Joy: Magister Swordsman 3 (276, 651)", 22, "Fort Joy"],
-    ["Fort Joy: Magister Ranger 6 (280, 651)", 23, "Fort Joy"],
-    ["Fort Joy: Magister Ranger 7 (279, 663)", 24, "Fort Joy"],
+    ["Fort Joy: Magister Swordsman (276, 651)", 22, "Fort Joy"],
+    ["Fort Joy: Magister Ranger (280, 651)", 23, "Fort Joy"],
+    ["Fort Joy: Magister Ranger (279, 663)", 24, "Fort Joy"],
     ["Fort Joy: Kniles the Flenser (384, 630)", 27, "Fort Joy"],
-    ["Fort Joy: Meat Golem 1 (389, 641)", 28, "Fort Joy"],
-    ["Fort Joy: Meat Golem 2 (370, 639)", 29, "Fort Joy"],
-    ["Fort Joy: Meat Golem 3 (389, 620)", 30, "Fort Joy"],
-    ["Fort Joy: Agitated Silent Monk 1 (386, 651)", 31, "Fort Joy"],
-    ["Fort Joy: Agitated Silent Monk 2 (389, 635)", 32, "Fort Joy"],
-    ["Fort Joy: Agitated Silent Monk 3 (379, 614)", 33, "Fort Joy"],
-    ["Fort Joy: Magister Ranger 1 (293, 197)", 34, "Fort Joy"],
-    ["Fort Joy: Magister Swordsman 1 (258, 164)", 35, "Fort Joy"],
-    ["Fort Joy: Magister Ranger 2 (302, 173)", 36, "Fort Joy"],
-    ["Fort Joy: Magister Ranger 3 (262, 196)", 37, "Fort Joy"],
-    ["Fort Joy: Magister Swordsman 2 (260, 198)", 38, "Fort Joy"],
+    ["Fort Joy: Meat Golem (389, 641)", 28, "Fort Joy"],
+    ["Fort Joy: Meat Golem (370, 639)", 29, "Fort Joy"],
+    ["Fort Joy: Meat Golem (389, 620)", 30, "Fort Joy"],
+    ["Fort Joy: Agitated Silent Monk (386, 651)", 31, "Fort Joy"],
+    ["Fort Joy: Agitated Silent Monk (389, 635)", 32, "Fort Joy"],
+    ["Fort Joy: Agitated Silent Monk (379, 614)", 33, "Fort Joy"],
+    ["Fort Joy: Magister Ranger (293, 197)", 34, "Fort Joy"],
+    ["Fort Joy: Magister Swordsman (258, 164)", 35, "Fort Joy"],
+    ["Fort Joy: Magister Ranger (302, 173)", 36, "Fort Joy"],
+    ["Fort Joy: Magister Ranger (262, 196)", 37, "Fort Joy"],
+    ["Fort Joy: Magister Swordsman (260, 198)", 38, "Fort Joy"],
     ["Fort Joy: Magister Captian Trippel (279, 196)", 40, "Fort Joy"],
-    ["Fort Joy: Silent Monk 1 (328, 224)", 41, "Fort Joy"],
-    ["Fort Joy: Silent Monk 2 (326, 224)", 42, "Fort Joy"],
-    ["Fort Joy: Silent Monk 3 (323, 224)", 43, "Fort Joy"],
-    ["Fort Joy: Silent Monk 4 (321, 224)", 44, "Fort Joy"],
-    ["Fort Joy: Silent Monk 5 (331, 224)", 45, "Fort Joy"],
-    ["Fort Joy: Magister Ranger 4 (324, 244)", 46, "Fort Joy"],
+    ["Fort Joy: Silent Monk (328, 224)", 41, "Fort Joy"],
+    ["Fort Joy: Silent Monk (326, 224)", 42, "Fort Joy"],
+    ["Fort Joy: Silent Monk (323, 224)", 43, "Fort Joy"],
+    ["Fort Joy: Silent Monk (321, 224)", 44, "Fort Joy"],
+    ["Fort Joy: Silent Monk (331, 224)", 45, "Fort Joy"],
+    ["Fort Joy: Magister Ranger (324, 244)", 46, "Fort Joy"],
     ["Fort Joy: Magister Inquisitor (323 246)", 47, "Fort Joy"],
-    ["Fort Joy: Magister Ranger 5 (322, 244)", 48, "Fort Joy"],
+    ["Fort Joy: Magister Ranger (322, 244)", 48, "Fort Joy"],
     ["Fort Joy: Magister Knight (333, 235)", 49, "Fort Joy"],
     ["Fort Joy: Magister Dayve (321, 225)", 50, "Fort Joy"],
-    ["Fort Joy: Magister Courtroom Swordsman 1 (276, 139)", 51, "Fort Joy"],
-    ["Fort Joy: Magister Courtroom Swordsman 2 (289, 139)", 52, "Fort Joy"],
+    ["Fort Joy: Magister Courtroom Swordsman (276, 139)", 51, "Fort Joy"],
+    ["Fort Joy: Magister Courtroom Swordsman (289, 139)", 52, "Fort Joy"],
     ["Fort Joy: High Judge Orivand (283, 129)", 53, "Fort Joy"],
     ["Fort Joy: Magister Cryomancer (280, 126)", 54, "Fort Joy"],
     ["Fort Joy: Magister Pyromancer (284, 126)", 55, "Fort Joy"],
@@ -714,48 +885,54 @@ LOCATION_NAME_ID_REGION = [
     ["Fort Joy: Blademaster Guardian (378, 565)", 60, "Fort Joy"],
     ["Fort Joy: Eagle-Eyed Guardian (379, 577)", 61, "Fort Joy"],
     ["Fort Joy: Traitorous Guardian (370, 550)", 62, "Fort Joy"],
+    ["Fort Joy: Magister Ellwin (337, 359)", 1000, "Fort Joy"],
+    ["Fort Joy: Magister Krendt (340, 361)", 1001, "Fort Joy"],
+    ["Fort Joy: Magister Swentin (340, 365)", 1002, "Fort Joy"],
+    ["Fort Joy: Source Hound Phyllip (332, 367)", 1003, "Fort Joy"],
     ["East Reaper's Eye: Windego (357, 192)", 63, "East Reaper's Eye"],
     ["East Reaper's Eye: Decomposing Assassin (379, 152)", 64, "East Reaper's Eye"],
     ["East Reaper's Eye: Decomposing Swashbuckler (386, 155)", 65, "East Reaper's Eye"],
     ["East Reaper's Eye: Decomposing Terramancer (389, 151)", 66, "East Reaper's Eye"],
-    ["East Reaper's Eye: Decomposing Swashbuckler 2 (391, 206)", 67, "East Reaper's Eye"],
+    ["East Reaper's Eye: Decomposing Swashbuckler (391, 206)", 67, "East Reaper's Eye"],
     ["East Reaper's Eye: Decomposing Markswoman (401, 213)", 68, "East Reaper's Eye"],
-    ["East Reaper's Eye: Decomposing Marksman 1 (396, 216)", 69, "East Reaper's Eye"],
-    ["East Reaper's Eye: Decomposing Swashbuckler 3 (395, 210)", 70, "East Reaper's Eye"],
-    ["East Reaper's Eye: Viscous Voidling 1 (461, 105)", 71, "East Reaper's Eye"],
-    ["East Reaper's Eye: Viscous Voidling 2 (443, 118)", 72, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 3 (441, 98)", 73, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 4 (464, 109)", 74, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 5 (466, 115)", 75, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 6 (451, 114)", 76, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 7 (453, 92)", 77, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 8 (447, 95)", 78, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 9 (447, 120)", 79, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 10 (454, 96)", 80, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 11 (460, 114)", 81, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 12 (440, 102)", 82, "East Reaper's Eye"], 
-    ["East Reaper's Eye: Viscous Voidling 13 (464, 106)", 83, "East Reaper's Eye"],
+    ["East Reaper's Eye: Decomposing Marksman (396, 216)", 69, "East Reaper's Eye"],
+    ["East Reaper's Eye: Decomposing Swashbuckler (395, 210)", 70, "East Reaper's Eye"],
+    ["East Reaper's Eye: Viscous Voidling (461, 105)", 71, "East Reaper's Eye"],
+    ["East Reaper's Eye: Viscous Voidling (443, 118)", 72, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (441, 98)", 73, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (464, 109)", 74, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (466, 115)", 75, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (451, 114)", 76, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (453, 92)", 77, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (447, 95)", 78, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (447, 120)", 79, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (454, 96)", 80, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (460, 114)", 81, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (440, 102)", 82, "East Reaper's Eye"], 
+    ["East Reaper's Eye: Viscous Voidling (464, 106)", 83, "East Reaper's Eye"],
     ["East Reaper's Eye: Void Salamander (492, 94)", 84, "East Reaper's Eye"],
     ["East Reaper's Eye: Noxious Void Salamander (494, 86)", 85, "East Reaper's Eye"],
     ["East Reaper's Eye: Void Salamander (485, 82)", 86, "East Reaper's Eye"],
     ["East Reaper's Eye: Magister Inquisitor (471, 254)", 87, "East Reaper's Eye"],
-    ["East Reaper's Eye: Magister Ranger 1 (469, 253)", 88, "East Reaper's Eye"],
-    ["East Reaper's Eye: Magister Ranger 2 (464, 254)", 89, "East Reaper's Eye"],
-    ["East Reaper's Eye: Magister Swordsman 1 (462, 254)", 90, "East Reaper's Eye"],
+    ["East Reaper's Eye: Magister Ranger (469, 253)", 88, "East Reaper's Eye"],
+    ["East Reaper's Eye: Magister Ranger (464, 254)", 89, "East Reaper's Eye"],
+    ["East Reaper's Eye: Magister Swordsman (462, 254)", 90, "East Reaper's Eye"],
     ["East Reaper's Eye: Magister Knight (469, 230)", 91, "East Reaper's Eye"],
-    ["East Reaper's Eye: Magister Ranger 3 (469, 228)", 92, "East Reaper's Eye"],
-    ["East Reaper's Eye: Magister Swordsman 2 (460, 231)", 93, "East Reaper's Eye"],
-    ["East Reaper's Eye: Magister Ranger 4 (460, 229)", 94, "East Reaper's Eye"],
+    ["East Reaper's Eye: Magister Ranger (469, 228)", 92, "East Reaper's Eye"],
+    ["East Reaper's Eye: Magister Swordsman (460, 231)", 93, "East Reaper's Eye"],
+    ["East Reaper's Eye: Magister Ranger (460, 229)", 94, "East Reaper's Eye"],
     ["East Reaper's Eye: Incandescent Decapitator (529, 93)", 95, "East Reaper's Eye"],
     ["East Reaper's Eye: Incandescent Scorcher (539, 94)", 96, "East Reaper's Eye"],
     ["East Reaper's Eye: Incandescent Marksman (529, 100)", 97, "East Reaper's Eye"],
-    ["East Reaper's Eye: Trompdoy (676, 487)", 98, "East Reaper's Eye"],
-    ["East Reaper's Eye: Trompdoy (700, 497)", 99, "East Reaper's Eye"],
+    ["East Reaper's Eye: Trompdoy (629, 496)", 98, "East Reaper's Eye"],
+    ["East Reaper's Eye: Trompdoy (631, 482)", 99, "East Reaper's Eye"],
+    ["East Reaper's Eye: Trompdoy (643, 496)", 1005, "East Reaper's Eye"],
+    ["East Reaper's Eye: Trompdoy (669, 538)", 1006, "East Reaper's Eye"],
     ["East Reaper's Eye: Decomposing Aeromancer (494, 170)", 100, "East Reaper's Eye"],
     ["East Reaper's Eye: Decomposing Cryomancer (480, 159)", 101, "East Reaper's Eye"],
-    ["East Reaper's Eye: Decomposing Swashbuckler 4 (481, 164)", 102, "East Reaper's Eye"],
-    ["East Reaper's Eye: Decomposing Swashbuckler 5 (502, 167)", 103, "East Reaper's Eye"],
-    ["East Reaper's Eye: Decomposing Marksman 1 (482, 175)", 104, "East Reaper's Eye"],
+    ["East Reaper's Eye: Decomposing Swashbuckler (481, 164)", 102, "East Reaper's Eye"],
+    ["East Reaper's Eye: Decomposing Swashbuckler (502, 167)", 103, "East Reaper's Eye"],
+    ["East Reaper's Eye: Decomposing Marksman (482, 175)", 104, "East Reaper's Eye"],
     ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)", 105, "East Reaper's Eye"],
     ["East Reaper's Eye: Radeka the Witch (691, 602)", 106, "East Reaper's Eye"],
     ["East Reaper's Eye: Carrion Beetle (697, 620)", 107, "East Reaper's Eye"],
@@ -789,8 +966,8 @@ LOCATION_NAME_ID_REGION = [
     ["Fort Joy: The Teleporter - Complete", 136, "Fort Joy"],
     ["Fort Joy: The Shakedown - Complete", 137, "Fort Joy"],
     ["East Reaper's Eye: The Vault of Braccus Rex - Complete", 138, "East Reaper's Eye"],
-    ["East Reaper's Eye: Healing Touch - Complete/Most Dangerous When Cornered", 139, "East Reaper's Eye"],
-    #["placeholder21", 140, "Fort Joy"],
+    ["East Reaper's Eye: Healing Touch - Complete", 139, "East Reaper's Eye"],
+    ["East Reaper's Eye: The Eternal Worshipper - Complete", 140, "East Reaper's Eye"],
     ["East Reaper's Eye: A Fate Worse Than Death - Complete", 141, "East Reaper's Eye"],
     ["East Reaper's Eye: The Armoury - Complete", 142, "East Reaper's Eye"],
     ["East Reaper's Eye: The Cursed Ring - Complete", 143, "East Reaper's Eye"],
@@ -801,9 +978,10 @@ LOCATION_NAME_ID_REGION = [
     ["East Reaper's Eye: The Shreikers - Complete", 148, "East Reaper's Eye"],
     ["North-east Reaper's Eye: Artefacts of the Tyrant - Complete", 149, "North-east Reaper's Eye"],
     #["placeholder31", 150, "Fort Joy"],
-    #["placeholder32", 151, "Fort Joy"],
+    ["East Reaper's Eye: Most Dangerous When Cornered - Complete", 151, "East Reaper's Eye"],
     ["North-east Reaper's Eye: Threads of a Curse - Complete", 152, "North-east Reaper's Eye"],
     ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 153, "North-east Reaper's Eye"],
+    ["East Reaper's Eye: Hot Under the Collar - Complete", 1004, "East Reaper's Eye"],
     #-- Act 2 --
     ["Lady Vengence: Lady o' War - Complete", 154, "Lady Vengence"],
     ["Lady Vengence: To The Hall of Echoes - Complete", 155, "Lady Vengence"],
@@ -876,7 +1054,7 @@ LOCATION_NAME_ID_REGION = [
     ["Bloodmoon Island: Delusions of Gradeur - Comeplete", 222, "Bloodmoon Island"],
     ["Bloodmoon Island: Silent as the Grave - Complete", 223, "Bloodmoon Island"],
     ["Bloodmoon Island: The Sweet Shackles of Pain - Complete", 224, "Bloodmoon Island"],
-    #["placeholder70", 225, "Reaper's Coast"],
+    ["Bloodmoon Island: Metalwork - Complete", 225, "Bloodmoon Island"],
     #["placeholder71", 226, "Reaper's Coast"],
     #["placeholder72", 227, "Reaper's Coast"],
     #["placeholder73", 228, "Reaper's Coast"],
@@ -902,8 +1080,8 @@ LOCATION_NAME_ID_REGION = [
     ["Driftwood: A Man and His Dog - Complete", 248, "Driftwood"],
     #["placeholder93", 249, "Driftwood"],
     #["placeholder94", 250, "Driftwood"],
-    #["placeholder95", 251, "Driftwood"],
-    #["placeholder96", 252, "Driftwood"],
+    ["The Cullwoods: Burial Rites - Complete", 251, "The Cullwoods"],
+    ["The Cullwoods: A Trial for All Seasons - Complete", 252, "The Cullwoods"],
     ["The Blackpits: On the Ropes - Complete", 254, "The Blackpits"],
     ["Driftwood: The Gift of the Blackroot - Complete", 255, "Driftwood"],
     ["Reaper's Coast: Viscous Voidling (423, -4)", 256, "Reaper's Coast"],
@@ -1068,13 +1246,13 @@ LOCATION_NAME_ID_REGION = [
     ["The Blackpits: Magister Vorrh (629, 60)", 415, "The Blackpits"],
     ["The Blackpits: Magister Reimond (355, 77)", 416, "The Blackpits"],
     ["The Blackpits: Armoured Voidling (290, 598)", 417, "The Blackpits"],
-    ["The Blackpits: Fluorescent Voidling (309, 601)", 418, "The Blackpits"],
-    ["The Blackpits: Fluorescent Voidling (295, 591)", 419, "The Blackpits"],
+    #["The Blackpits: Fluorescent Voidling (309, 601)", 418, "The Blackpits"],
+    #["The Blackpits: Fluorescent Voidling (295, 591)", 419, "The Blackpits"],
     ["The Blackpits: Armoured Voidling (320, 599)", 420, "The Blackpits"],
     ["The Blackpits: Armoured Voidling (313, 604)", 421, "The Blackpits"],
     ["The Blackpits: Armoured Voidling (423, 561)", 422, "The Blackpits"],
-    ["The Blackpits: Fluorescent Voidling (415, 566)", 423, "The Blackpits"],
-    ["The Blackpits: Fluorescent Voidling (432, 549)", 424, "The Blackpits"],
+    #["The Blackpits: Fluorescent Voidling (415, 566)", 423, "The Blackpits"],
+    #["The Blackpits: Fluorescent Voidling (432, 549)", 424, "The Blackpits"],
     ["The Blackpits: Armoured Voidling (409, 555)", 425, "The Blackpits"],
     ["The Blackpits: Vampiric Voidwoken (409, 550)", 426, "The Blackpits"],
     ["The Blackpits: Vampiric Voidwoken (429, 558)", 427, "The Blackpits"],
@@ -1204,6 +1382,121 @@ LOCATION_NAME_ID_REGION = [
     ["The Nameless Isle: Lizard Dreamer (237, 750)", 550, "The Nameless Isle"],
     ["The Nameless Isle: The Great Guardian (549, 923)", 551, "The Nameless Isle"],
     ["The Nameless Isle: Source Titan (-211, 1027)", 552, "The Nameless Isle"],
+    #-- act 4 --
+    ["Arx: Seed of Power - Complete", 553, "Arx"],
+    ["Arx Outskirts: Hammerfall - Complete", 554, "Arx Outskirts"],
+    ["Arx: Wisdom of the Keeper/The Righteous - Complete", 555, "Arx"],
+    ["Arx: The Vault of Linder Kemm - Complete", 557, "Arx"],
+    ["Arx: The Second Passion of Lucian - Complete", 558, "Arx"],
+    ["Arx: Finding Lord Arhu - Complete", 559, "Arx"],
+    ["Arx: The Last Stand of the Magisters - Complete", 560, "Arx"],
+    ["Arx: A King Reborn - Complete", 561, "Arx"],
+    ["Arx: Blood Dowry - Complete", 562, "Arx"],
+    ["Arx: A Son's Contract - Complete", 563, "Arx"],
+    ["Arx: A Family Affair - Complete", 564, "Arx"],
+    ["Arx: A Most Urgent Matter - Complete", 565, "Arx"],
+    ["Arx: Old means Gold - Complete", 566, "Arx"],
+    ["Arx: School's Out - Complete", 567, "Arx"],
+    #["Arx Outskirts: Silence Broken - Complete", 568, "Arx Outskirts"],
+    #["Arx Outskirts: The Purity of Divinity - Complete", 569, "Arx Outskirts"],
+    #["Arx Outskirts: Who Am I? - Complete", 570, "Arx Outskirts"],
+    #["Arx Outskirts: A Girl and Her Demon - Complete", 571, "Arx Outskirts"],
+    ["Arx: Deathfog Rising - Complete", 572, "Arx"],
+    ["Arx: Dwarven Politics - Complete", 573, "Arx"],
+    ["Arx: Mercy is Power - Complete", 574, "Arx"],
+    ["Arx: Past Mistakes - Complete", 575, "Arx"],
+    ["Arx: Doctor's Orders - Complete", 576, "Arx"],
+    ["Arx: Crippling a Demon - Complete", 577, "Arx"],
+    ["Arx: A Lizard Nightmare - Complete", 578, "Arx"],
+    ["Tomb of Lucian: End Times - Complete", 579, "Tomb of Lucian"],
+    ["Arx: What a Fuss to have Wrought - Complete", 580, "Arx"],
+    ["Arx: The Missing Prisoners - Complete", 581, "Arx"],
+    ["Arx Outskirts: Volatile Voidling (377, 1)", 582, "Arx Outskirts"],
+    ["Arx Outskirts: Volatile Voidling (371, 3)", 583, "Arx Outskirts"],
+    ["Arx Outskirts: Volatile Voidling (367, 1)", 584, "Arx Outskirts"],
+    ["Arx Outskirts: Volatile Voidling (373, -1)", 585, "Arx Outskirts"],
+    ["Arx Outskirts: Necro-Wing Voidwoken (377, -6)", 586, "Arx Outskirts"],
+    ["Arx Outskirts: Necro-Wing Voidwoken (374, -15)", 587, "Arx Outskirts"],
+    ["Arx Outskirts: Necro-Wing Voidwoken (360, -5)", 588, "Arx Outskirts"],
+    ["Arx Outskirts: Awakened Construct (381, -18)", 589, "Arx Outskirts"],
+    ["Arx Outskirts: Loic the Immaculate (356, -7)", 590, "Arx Outskirts"],
+    ["Arx Outskirts: Abyssal Void Flayer (450, 136)", 591, "Arx Outskirts"],
+    ["Arx Outskirts: Abyssal Void Flayer (463, 99)", 592, "Arx Outskirts"],
+    ["Arx Outskirts: Abyssal Void Devourer (450, 100)", 593, "Arx Outskirts"],
+    ["Arx Outskirts: Outcast Berserker (240, 74)", 594, "Arx Outskirts"],
+    ["Arx Outskirts: Cuddles (242, 74)", 595, "Arx Outskirts"],
+    ["Arx Outskirts: Outcast Hunter (236, 80)", 596, "Arx Outskirts"],
+    ["Arx Outskirts: Featherfang (240, 81)", 597, "Arx Outskirts"],
+    ["Arx Outskirts: Outcast Spellweaver (236, 62)", 598, "Arx Outskirts"],
+    ["Arx Outskirts: Emberwing (236, 75)", 599, "Arx Outskirts"],
+    ["Arx Outskirts: Voidwoken Bloodfury (302, 172)", 600, "Arx Outskirts"],
+    ["Arx Outskirts: Vampiric Voidwoken (291, 171)", 601, "Arx Outskirts"],
+    ["Arx Outskirts: Vampiric Voidwoken (291, 164)", 602, "Arx Outskirts"],
+    ["Arx Outskirts: Vampiric Voidwoken (295, 163)", 603, "Arx Outskirts"],
+    ["Arx Outskirts: Necro-Wing Voidwoken (282, 149)", 604, "Arx Outskirts"],
+    ["Arx Outskirts: Necro-Wing Voidwoken (302, 165)", 605, "Arx Outskirts"],
+    ["Arx Outskirts: Necro-Wing Voidwoken (283, 162)", 606, "Arx Outskirts"],
+    ["Arx: Gheist (145, 43)", 607, "Arx"],
+    ["Arx: Gheist (145, 50)", 608, "Arx"],
+    ["Arx: Gheist (143, 46)", 609, "Arx"],
+    ["Arx: Dorian Gall (318, 336)", 610, "Arx"],
+    ["Arx: Failed Experiment (124, -39)", 611, "Arx"],
+    ["Arx: Failed Experiment (112, -39)", 612, "Arx"],
+    ["Arx: Failed Experiment (124, -17)", 613, "Arx"],
+    ["Arx: Failed Experiment (108, -22)", 614, "Arx"],
+    ["Arx: Debt Collector (379, 735)", 615, "Arx"],
+    ["Arx: Debt Collector (385, 741)", 616, "Arx"],
+    ["Arx: Debt Collector (376, 733)", 617, "Arx"],
+    ["Arx: Sanguinia Tell (419, 298)", 618, "Arx"],
+    ["Arx: Saeva the Many-faced (148, 763)", 619, "Arx"],
+    ["Arx: Sahun Woundbinder (148, 735)", 620, "Arx"],
+    ["Arx: Urrha the Snake Charmer (177, 753)", 621, "Arx"],
+    ["Arx: Kajun Frozenheart (177, 736)", 622, "Arx"],
+    ["Arx: Karon (163, 750)", 623, "Arx"],
+    ["Arx: Fog-Swollen Crawler (444, 578)", 634, "Arx"],
+    ["Arx: Void-touched Crawler (427, 594)", 635, "Arx"],
+    ["Arx: Void-touched Crawler (458, 607)", 636, "Arx"],
+    ["Arx: Fog-Swollen Crawler (443, 607)", 637, "Arx"],
+    ["Arx: Isbeil (280, 672)", 638, "Arx"],
+    ["Arx: Black Ring Witherknight (296, 617)", 639, "Arx"],
+    ["Arx: Black Rang Flamebringer (291, 618)", 640, "Arx"],
+    ["Arx: Black Ring Skullcrusher (308, 617)", 641, "Arx"],
+    ["Arx: Black Ring Limbchopper (303, 617)", 642, "Arx"],
+    ["Arx: Thorny Suncaller (101, 286)", 643, "Arx"],
+    ["Arx: Malignant Oak (100, 271)", 644, "Arx"],
+    ["Arx: Malignant Oak (99, 301)", 645, "Arx"],
+    ["Arx: Hungry Flower (97, 294)", 646, "Arx"],
+    ["Arx: Hungry Flower (97, 277)", 647, "Arx"],
+    ["Arx: Black Ring Fearmaiden (279, 764)", 648, "Arx"],
+    ["Arx: Black Ring Painweaver (267, 764)", 649, "Arx"],
+    ["Arx: Black Ring Defiler (282, 751)", 650, "Arx"],
+    ["Arx: Black Ring Defiler (264, 751)", 651, "Arx"],
+    ["Arx: Lord Linder Kemm (325, 263)", 652, "Arx"],
+    ["Arx: Cursed Revenant (174, 332)", 653, "Arx"],
+    ["Arx: Cursed Revenant (193, 333)", 654, "Arx"],
+    ["Arx: Cursed Revenant (182, 384)", 655, "Arx"],
+    ["Arx: Cursed Revenant (170, 375)", 656, "Arx"],
+    ["Arx: Cursed Revenant (190, 373)", 657, "Arx"],
+    ["Arx: Bewitched Moppet (100, -82)", 658, "Arx"],
+    ["Arx: Bewitched Moppet (119, -100)", 659, "Arx"],
+    ["Arx: Bewitched Moppet (106, -93)", 660, "Arx"],
+    ["Arx: Bewitched Moppet (105, -81)", 661, "Arx"],
+    ["Arx: Bewitched Moppet (101, -96)", 662, "Arx"],
+    ["Arx: Adramahlihk (387, 418)", 663, "Arx"],
+    ["Arx: Nurse Do (392, 417)", 664, "Arx"],
+    ["Arx: Nurse Fa (408, 382)", 665, "Arx"],
+    ["Arx: Nurse Si (407, 434)", 666, "Arx"],
+    ["Arx: Nurse Mi (426, 409)", 667, "Arx"],
+    ["Arx: Nurse La (419, 421)", 668, "Arx"],
+    ["Arx: Nurse Re (417, 397)", 669, "Arx"],
+    ["Arx: Spiked Trunk (169, 132)", 670, "Arx"],
+    ["Arx: Corrosive Flower (165, 124)", 671, "Arx"],
+    ["Arx: Corrosive Flower (158, 140)", 672, "Arx"],
+    ["Arx: Bloom of Might (152, 144)", 673, "Arx"],
+    ["Arx: Bloom of Momentum (159, 136)", 674, "Arx"],
+    ["Arx: Bloom of Mettle (172, 117)", 675, "Arx"],
+    ["Arx: Contaminated Horror (172, 136)", 676, "Arx"],
+    ["Tomb of Lucian: Braccus Rex (581, 284)", 677, "Tomb of Lucian"],
 ]
 
 LOCATION_NAME_TO_ID = {item[0]: item[1] for item in LOCATION_NAME_ID_REGION}
@@ -1238,6 +1531,10 @@ def create_regular_locations(world: DOS2World) -> None:
     bloodmoonIsland = world.get_region("Bloodmoon Island")
 
     namelessIsle = world.get_region("The Nameless Isle")
+
+    arxOutskirts = world.get_region("Arx Outskirts")
+    arx = world.get_region("Arx")
+    tombOfLucian = world.get_region("Tomb of Lucian")
 
     merryweatherLocationNames = []
     for loc in LOCATION_NAME_ID_REGION:
@@ -1353,6 +1650,28 @@ def create_regular_locations(world: DOS2World) -> None:
             namelessIsleLocations = get_location_names_with_ids(namelessIsleLocationNames)
             namelessIsle.add_locations(namelessIsleLocations, DOS2Location)
 
+            if(world.options.goal != world.options.goal.option_escape_the_nameless_isle and world.options.goal != world.options.goal.option_the_nameless_isle_hit_list):
+                arxOutskirtsLocationNames = []
+                for loc in LOCATION_NAME_ID_REGION:
+                    if(loc[2] == "Arx Outskirts"):
+                        arxOutskirtsLocationNames.append(loc[0])
+                arxOutskirtsLocations = get_location_names_with_ids(arxOutskirtsLocationNames)
+                arxOutskirts.add_locations(arxOutskirtsLocations, DOS2Location)
+
+                arxLocationNames = []
+                for loc in LOCATION_NAME_ID_REGION:
+                    if(loc[2] == "Arx"):
+                        arxLocationNames.append(loc[0])
+                arxLocations = get_location_names_with_ids(arxLocationNames)
+                arx.add_locations(arxLocations, DOS2Location)
+
+                tombOfLucianLocationNames = []
+                for loc in LOCATION_NAME_ID_REGION:
+                    if(loc[2] == "Tomb of Lucian"):
+                        tombOfLucianLocationNames.append(loc[0])
+                tombOfLucianLocations = get_location_names_with_ids(tombOfLucianLocationNames)
+                tombOfLucian.add_locations(tombOfLucianLocations, DOS2Location)
+
 
 
     if(world.options.goal == world.options.goal.option_escape_reapers_eye):
@@ -1361,5 +1680,7 @@ def create_regular_locations(world: DOS2World) -> None:
         ladyVengence.add_event("Victory_Leave_Reapers_Coast", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
     elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle):
         namelessIsle.add_event("Victory_Escape_The_Nameless_Isle", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-    elif(world.options.goal == world.options.goal.option_reapers_eye_hit_list or world.options.goal == world.options.goal.option_reapers_coast_hit_list or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
+    elif(world.options.goal == world.options.goal.option_defeat_braccus_rex):
+        tombOfLucian.add_event("Victory_Defeat_Braccus_Rex", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+    elif(world.options.goal == world.options.goal.option_reapers_eye_hit_list or world.options.goal == world.options.goal.option_reapers_coast_hit_list or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list or world.options.goal == world.options.goal.option_arx_hit_list):
         fortJoy.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
