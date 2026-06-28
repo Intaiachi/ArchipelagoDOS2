@@ -33,6 +33,11 @@ All items listed in the above list.
 
 No information will be presented in the game, the client is the only current way to see incoming and outgoing items.
 
+## Is multiplayer supported?
+
+Yes, as long as the host is the one with the Archipelago mod active and the one with the client connected. Other players playing the same game of Divinity do not need a .yaml, the game mod, nor the client.
+Basically, have the host play like they're going to play a single player archipelago, and have the others join their game.
+
 ## What happens when I receive an item?
 
 If it's an item, it will appear in the current controlled party members inventory. If it's the first of its type to be obtained, a pop up in the middle of the screen will show the item received.

@@ -62,6 +62,11 @@ It's recommended to use the hosting service provided on the Archipelago website.
 8. Connect with the port at the top of the page
 9. Play!
 
+## Playing Divinity Multiplayer
+
+You can play with multiple people in the same game of Divinity. The host of the game is the only one who needs to follow the instructions, the other players can simply just join their game.
+Other players can get checks just as you would expect. Deathlink also applies just as if the other players were normal party members. The host is the only one that will receive items in their inventory.
+
 ## IMPORTANT DISCLAIMERS
 
 The client MUST be open and connected BEFORE a new game or save is loaded. It will not work otherwise.
