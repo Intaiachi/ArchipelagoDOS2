@@ -690,7 +690,7 @@ DOS2_LOCATION_LIST = [
     #["Quest-RC_DW_FunnyMeat_SUBC", ["placeholder18"], 1], #Investigation Over
     ["Quest-RC_DW_HidingTinkerer", ["Driftwood: Strange Cargo - Complete"], 1],
     ["Quest-RC_DW_Dock_Kids", ["Driftwood: Hide & Seek - Complete"], 1],
-    ["Quest-RC_DW_FishScholar", ["Driftwood: Grebb the Scholar - Complete"], 1],
+    #["Quest-RC_DW_FishScholar", ["Driftwood: Grebb the Scholar - Complete"], 1], #no longer a quest in DE
     #["Quest-RC_DW_CaptiansGhost", ["placeholder22"], 1], notably not Drowning Her Sorrows, dosnt fire on act exit
     ["Quest-RC_DW_FishermanRing", ["Reaper's Bluffs: Lost and Found - Complete"], 1],
     #["Quest-RC_DW_Harmon", ["placeholder24"], 1], no idea, doest fire on act exit
@@ -1005,7 +1005,7 @@ LOCATION_NAME_ID_REGION = [
     #["placeholder18", 173, "Reaper's Coast"],
     ["Driftwood: Strange Cargo - Complete", 174, "Driftwood"],
     ["Driftwood: Hide & Seek - Complete", 175, "Driftwood"],
-    ["Driftwood: Grebb the Scholar - Complete", 176, "Driftwood"],
+    #["Driftwood: Grebb the Scholar - Complete", 176, "Driftwood"],
     #["placeholder22", 177, "Driftwood"],
     ["Reaper's Bluffs: Lost and Found - Complete", 178, "Reaper's Bluffs"],
     #["placeholder24", 179, "Reaper's Coast"],
@@ -1017,7 +1017,7 @@ LOCATION_NAME_ID_REGION = [
     ["Reaper's Coast: Counting your Chickens - Complete", 185, "Reaper's Coast"],
     ["Driftwood: The Law of the Order - Complete", 186, "Driftwood"],
     ["Driftwood: Fishy Business - Complete", 187, "Driftwood"],
-    ["Lady Vengence: Powerful Awakening - Complete", 188, "Lady Vengence"],
+    ["Lady Vengence: Powerful Awakening - Complete", 188, "End Act 2"],
     ["Reaper's Bluffs: Mordus Awakens - Complete", 189, "Reaper's Bluffs"],
     ["Stonegarden: Waking Ryker - Complete", 190, "Stonegarden"],
     ["Cloisterwood: Jahan's Lesson - Complete", 191, "Cloisterwood"],
@@ -1529,6 +1529,7 @@ def create_regular_locations(world: DOS2World) -> None:
     theCullwoods = world.get_region("The Cullwoods")
     paradiseDowns = world.get_region("Paradise Downs")
     bloodmoonIsland = world.get_region("Bloodmoon Island")
+    endAct2 = world.get_region("End Act 2")
 
     namelessIsle = world.get_region("The Nameless Isle")
 
@@ -1641,6 +1642,13 @@ def create_regular_locations(world: DOS2World) -> None:
                 bloodmoonIslandLocationNames.append(loc[0])
         bloodmoonIslandLocations = get_location_names_with_ids(bloodmoonIslandLocationNames)
         bloodmoonIsland.add_locations(bloodmoonIslandLocations, DOS2Location)
+
+        endAct2LocationNames = []
+        for loc in LOCATION_NAME_ID_REGION:
+            if(loc[2] == "End Act 2"):
+                endAct2LocationNames.append(loc[0])
+        endAct2Locations = get_location_names_with_ids(endAct2LocationNames)
+        endAct2.add_locations(endAct2Locations, DOS2Location)
 
         if(world.options.goal != world.options.goal.option_leave_reapers_coast and world.options.goal != world.options.goal.option_reapers_coast_hit_list):
             namelessIsleLocationNames = []

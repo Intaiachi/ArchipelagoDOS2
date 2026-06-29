@@ -6,7 +6,15 @@ All quest completions and hostile enemies killed will have a randomized reward.
 
 ## What is the goal when randomized
 
-The only goal currently is to defeat Bishop Alexander and escape Reaper's Eye. This will be expanded upon in later versions.
+There are several goals to choose from that fall into two main categories, beating an act or completing an act hit list.
+
+These goals ask you to beat its corresponding act:
+- Escape Reaper's Eye - beat act 1
+- Leave Reaper's Coast - beat act 2
+- Escape The Nameless Isle - beat act 3
+- Defeat Braccus Rex - beat act 4, and thus the game
+
+The hit list goals ask you to kill a list of bosses throughout the game before winning. The hits are configurable and contain bosses up to the goals corresponding act.
 
 ## What items and locations get shuffled?
 
@@ -16,7 +24,11 @@ The items that get shuffled consist of:
 - Gold
 - Special Arrows
 - Scrolls
+- Grenades
+- Runes
 - Skillbooks
+- Weapons
+- Gear
 - Level Ups
 - Attribute Points
 - Combat Ability Points
@@ -24,6 +36,10 @@ The items that get shuffled consist of:
 - Talent Points
 - Max Source Points
 - Purging Wand
+- Source Amulet
+- Scroll of Atonement
+
+To integrate reliance on the multiworld, exp and source points have been removed from the game. Levels and max source points will have to be obtained from AP items.
 
 ## Which items can be in another player's world?
 

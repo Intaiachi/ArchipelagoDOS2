@@ -572,35 +572,38 @@ def create_all_items(world: DOS2World) -> None:
 
     #these are used in item pool calculations
     act1Location = 149
-    act2Location = 472
-    act3Location = 512
-    act4Location = 622
+    act2Location = 471
+    act3Location = 511
+    act4Location = 621
     #these will need some honing, nothing to do but get feedback
 
     scale = 1
+    levelups_to_add = 8
     if(world.options.goal == world.options.goal.option_leave_reapers_coast or world.options.goal == world.options.goal.option_reapers_coast_hit_list):
         scale = act2Location / act1Location
+        levelups_to_add = 15
     elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
         scale = act3Location / act1Location
+        levelups_to_add = 16
     elif(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
         scale = act4Location / act1Location
-    levelups_to_add = math.floor(4 * scale) #2.7% of pool
-    attribute_to_add = math.floor(7 * scale) #4.7% of pool
-    combat_ability_to_add = math.floor(4 * scale) #2.7% of pool
+        levelups_to_add = 20
+    attribute_to_add = math.floor(5 * scale) #3.4% of pool
+    combat_ability_to_add = math.floor(3 * scale) #2.0% of pool
     talent_point_to_add = math.floor(2 * scale) #1.3% of pool
     max_source_point_to_add = math.floor(2 * scale) #1.3% of pool
     civil_ability_to_add = math.floor(4 * scale) #2.7% of pool
-    #stats make up 15.4% of pool
+    #stats make up 10.7% of pool
 
     commonWeaponToAdd = math.floor(3 * scale) #2.0% of pool
     epicWeaponToAdd = math.floor(5 * scale) #3.4% of pool
     legendaryWeaponToAdd = math.floor(3 * scale) #2.0% of pool
     divineWeaponToAdd = math.floor(2 * scale) #1.3% of pool
     commonGearToAdd = math.floor(6 * scale) #4.0% of pool
-    epicGearToAdd = math.floor(9 * scale) #6.0% of pool
-    legendaryGearToAdd = math.floor(6 * scale) #4.0% of pool
+    epicGearToAdd = math.floor(8 * scale) #5.3% of pool
+    legendaryGearToAdd = math.floor(5 * scale) #3.4% of pool
     divineGearToAdd = math.floor(4 * scale) #2.7% of pool
-    #equipment makes up 25.4% of pool
+    #equipment makes up 24.0% of pool
 
     if(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
         itempool += [world.create_item("Source Amulet")]
