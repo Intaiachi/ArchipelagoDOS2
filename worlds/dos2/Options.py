@@ -7,8 +7,8 @@ class Goal(Choice):
     Determines what constitutes a victory.
     These will determine the length of the game and thus what items and locations are avaliable
     Escape Reaper's Eye: Goal is to defeat Alexander and board the Lady Vengeance and escape Reaper's Eye. All items and locations will be limited to the Merryweather and Reaper's Eye.
-    Leave Reaper's Coast: Goal is to master source and leave Reaper's Coast. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, and Reaper's Coast.
-    Escape The Nameless Isle: Goal is to escape The Nameless Isle after Dallis sabotages your ascension. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengence, Reaper's Coast, and The Nameless Isle.
+    Leave Reaper's Coast: Goal is to master source and leave Reaper's Coast. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengeance, and Reaper's Coast.
+    Escape The Nameless Isle: Goal is to escape The Nameless Isle after Dallis sabotages your ascension. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengeance, Reaper's Coast, and The Nameless Isle.
     Defeat Braccus Rex: Goal is to defeat the final boss and complete the game. All items and locations are included.
     Reaper's Eye Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye.
     Reaper's Coast Hit List: Goal is to kill a defined group of enemies set in the following option. Hits limited to Reaper's Eye and Reaper's Coast.
@@ -90,6 +90,21 @@ class HitList(OptionSet):
         "Braccus Rex"
     }
 
+class ContainerSanity(Choice):
+    """
+    !!!!WORK IN PROGRESS, I DO NOT RECOMMEND TURNING THIS ON!!!!
+    When enabled, opening a container will send a check.
+    Chests Only: Only proper chests will be added as checks
+    Everything: If its a container that can be looted, its a check. Does not include containers that are not apart of the map such as the corpses of once alive enemies or smuggled barrels.
+    The check will also be sent out if the container is destroyed (it takes a couple seconds though be patient)
+    """
+
+    display_name = "ContainerSanity"
+
+    option_disabled = 0
+    option_chests = 1
+    option_everything = 2
+
 class Deathlink(Toggle):
     """
     If a player with this setting dies, all who also have this setting dies
@@ -164,6 +179,7 @@ class TrapStyle(Choice):
 class DOS2Options(PerGameCommonOptions):
     goal: Goal
     hitList: HitList
+    containerSanity: ContainerSanity
     death_link: Deathlink
     deathlinkStyleIn: DeathlinkStyleIn
     deathlinkStyleOut: DeathlinkStyleOut

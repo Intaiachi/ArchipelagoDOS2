@@ -1,5 +1,6 @@
 from __future__ import annotations
 from itertools import count
+from pathlib import Path
 
 import os
 import sys
@@ -141,8 +142,8 @@ class DOS2Context(CommonContext):
         game_options = DOS2World.settings
         if(game_options and getattr(game_options, "root_directory", None)):
             print(f"trying to see if {getattr(game_options, "root_directory", None)} is the right directory")
-            self.comm_file_directory = game_options.root_directory
-            if(not self.comm_file_directory.endswith("/Larian Studios/Divinity Original Sin 2 Definitive Edition/Osiris Data")):
+            self.comm_file_directory = Path(game_options.root_directory)
+            if(self.comm_file_directory.name != "Osiris Data"):
                 print("Comm file directory is incorrect!")
                 self.comm_file_directory = "error"
             else:

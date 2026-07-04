@@ -17,7 +17,7 @@ def create_all_regions(world: DOS2World) -> None:
     eastReapersEye = Region("East Reaper's Eye", world.player, world.multiworld)
     finalReapersEye = Region("North-east Reaper's Eye", world.player, world.multiworld)
 
-    ladyVengence = Region("Lady Vengence", world.player, world.multiworld)
+    ladyVengeance = Region("Lady Vengeance", world.player, world.multiworld)
     reapersCoast = Region("Reaper's Coast", world.player, world.multiworld)
     stonegarden = Region("Stonegarden", world.player, world.multiworld)
     theBlackpits = Region("The Blackpits", world.player, world.multiworld)
@@ -36,7 +36,7 @@ def create_all_regions(world: DOS2World) -> None:
     arx = Region("Arx", world.player, world.multiworld)
     tombOfLucian = Region("Tomb of Lucian", world.player, world.multiworld)
 
-    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye, ladyVengence, reapersCoast, stonegarden, theBlackpits, driftwood, reapersBluffs, cloisterwood, theMeadows, theCullwoods, paradiseDowns, bloodmoonIsland, endAct2, namelessIsle, arxOutskirts, arx, tombOfLucian]
+    regions = [merryweather, fortJoy, eastReapersEye, finalReapersEye, ladyVengeance, reapersCoast, stonegarden, theBlackpits, driftwood, reapersBluffs, cloisterwood, theMeadows, theCullwoods, paradiseDowns, bloodmoonIsland, endAct2, namelessIsle, arxOutskirts, arx, tombOfLucian]
 
     world.multiworld.regions += regions
 
@@ -46,7 +46,7 @@ def connect_regions(world: DOS2World) -> None:
     eastReapersEye = world.get_region("East Reaper's Eye")
     finalReapersEye = world.get_region("North-east Reaper's Eye")
 
-    ladyVengence = world.get_region("Lady Vengence")
+    ladyVengeance = world.get_region("Lady Vengeance")
     reapersCoast = world.get_region("Reaper's Coast")
     stonegarden = world.get_region("Stonegarden")
     theBlackpits = world.get_region("The Blackpits")
@@ -69,8 +69,8 @@ def connect_regions(world: DOS2World) -> None:
     fortJoy.connect(eastReapersEye, "Fort Joy to East Reaper's Eye", lambda state: state.has("Level Up", world.player, 6))
     eastReapersEye.connect(finalReapersEye, "East Reaper's Eye to North-east Reaper's Eye", lambda state: state.has("Level Up", world.player, 8) and state.has("Purging Wand", world.player))
     if(world.options.goal != world.options.goal.option_escape_reapers_eye and world.options.goal != world.options.goal.option_reapers_eye_hit_list):
-        finalReapersEye.connect(ladyVengence, "North-east Reaper's Eye to Lady Vengence", lambda state: state.has("Level Up", world.player, 8))
-        ladyVengence.connect(reapersCoast, "Lady Vengence to Reaper's Coast", lambda state: state.has("Level Up", world.player, 9))
+        finalReapersEye.connect(ladyVengeance, "North-east Reaper's Eye to Lady Vengeance", lambda state: state.has("Level Up", world.player, 8))
+        ladyVengeance.connect(reapersCoast, "Lady Vengeance to Reaper's Coast", lambda state: state.has("Level Up", world.player, 9))
         reapersCoast.connect(stonegarden, "Reaper's Coast to Stonegarden", lambda state: state.has("Level Up", world.player, 11))
         reapersCoast.connect(driftwood, "Reaper's Coast to Driftwood", lambda state: state.has("Level Up", world.player, 9))
         reapersCoast.connect(theMeadows, "Reaper's Coast to The Meadows", lambda state: state.has("Level Up", world.player, 12))
@@ -83,10 +83,10 @@ def connect_regions(world: DOS2World) -> None:
         theMeadows.connect(theCullwoods, "The Meadows to The Cullwoods", lambda state: state.has("Level Up", world.player, 12))
         theMeadows.connect(bloodmoonIsland, "The Meadows to Bloodmoon Island", lambda state: state.has("Level Up", world.player, 15))
         theCullwoods.connect(paradiseDowns, "The Cullwoods to Paradise Downs", lambda state: state.has("Level Up", world.player, 13))
-        ladyVengence.connect(endAct2, "Lady Vengence to End Act 2", lambda state: state.has("Level Up", world.player, 15) and state.has("Max Source Point", world.player, 2))
+        ladyVengeance.connect(endAct2, "Lady Vengeance to End Act 2", lambda state: state.has("Level Up", world.player, 15) and state.has("Max Source Point", world.player, 2))
         if(world.options.goal != world.options.goal.option_leave_reapers_coast and world.options.goal != world.options.goal.option_reapers_coast_hit_list):
-            endAct2.connect(namelessIsle, "Lady Vengence to The Nameless Isle", lambda state: state.has("Level Up", world.player, 16))
+            endAct2.connect(namelessIsle, "Lady Vengeance to The Nameless Isle", lambda state: state.has("Level Up", world.player, 16))
             if(world.options.goal != world.options.goal.option_escape_the_nameless_isle and world.options.goal != world.options.goal.option_the_nameless_isle_hit_list):
-                endAct2.connect(arxOutskirts, "Lady Vengence to Arx Outskirts", lambda state: state.has("Level Up", world.player, 17))
+                endAct2.connect(arxOutskirts, "Lady Vengeance to Arx Outskirts", lambda state: state.has("Level Up", world.player, 17))
                 arxOutskirts.connect(arx, "Arx Outskirts to Arx", lambda state: state.has("Level Up", world.player, 18))
                 arx.connect(tombOfLucian, "Arx to Tomb of Lucian", lambda state: state.has("Level Up", world.player, 20) and state.has("Source Amulet", world.player) and state.has("Scroll Of Atonement", world.player))
