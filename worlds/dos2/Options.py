@@ -6,7 +6,7 @@ class Goal(Choice):
     """
     Determines what constitutes a victory.
     These will determine the length of the game and thus what items and locations are avaliable
-    Escape Reaper's Eye: Goal is to defeat Alexander and board the Lady Vengeance and escape Reaper's Eye. All items and locations will be limited to the Merryweather and Reaper's Eye.
+    Escape Reaper's Eye: Goal is to defeat Alexandar and board the Lady Vengeance and escape Reaper's Eye. All items and locations will be limited to the Merryweather and Reaper's Eye.
     Leave Reaper's Coast: Goal is to master source and leave Reaper's Coast. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengeance, and Reaper's Coast.
     Escape The Nameless Isle: Goal is to escape The Nameless Isle after Dallis sabotages your ascension. All items and locations will be limited to the Merryweather, Reaper's Eye, Lady Vengeance, Reaper's Coast, and The Nameless Isle.
     Defeat Braccus Rex: Goal is to defeat the final boss and complete the game. All items and locations are included.
@@ -31,16 +31,17 @@ class HitList(OptionSet):
     """
     If a hit list is set as a goal, select which kills are required to complete the goal.
     Enemies selected that aren't available in the acts selected will be ignored
-    Reaper's Eye: Windego, Voidwoken Deep-dweller, Radeka the Witch, Bishop Alexander
+    Reaper's Eye: Kniles the Flenser, Windego, Voidwoken Deep-dweller, Radeka the Witch, Bishop Alexandar
     Reaper's Coast: Lich, Lamenting Abomination, Alice Alisceon, Harbinger of Doom, The Eternal Aetera, "Ghalann, Scion of the Elves", Ryker, Mordus
     The Nameless Isle: The Great Guardian, Source Titan
     Arx: Loic the Immaculate, Voidwoken Bloodfury, Sanguinia Tell, Karon, Isbeil, Thorny Suncaller, Lord Linder Kemm, Adramahlihk, Contaminated Horror, Braccus Rex
     """
     valid_keys = [
+        "Kniles the Flenser",
         "Windego",
         "Voidwoken Deep-dweller",
         "Radeka the Witch",
-        "Bishop Alexander",
+        "Bishop Alexandar",
         "Lich",
         "Lamenting Abomination",
         "Alice Alisceon",
@@ -64,10 +65,11 @@ class HitList(OptionSet):
     ]
     display_name = "User Defined Hit List"
     default = {
+        "Kniles the Flenser",
         "Windego",
         "Voidwoken Deep-dweller",
         "Radeka the Witch",
-        "Bishop Alexander",
+        "Bishop Alexandar",
         "Lich",
         "Lamenting Abomination",
         "Alice Alisceon",
@@ -92,11 +94,10 @@ class HitList(OptionSet):
 
 class ContainerSanity(Choice):
     """
-    !!!!WORK IN PROGRESS, I DO NOT RECOMMEND TURNING THIS ON!!!!
     When enabled, opening a container will send a check.
-    Chests Only: Only proper chests will be added as checks
-    Everything: If its a container that can be looted, its a check. Does not include containers that are not apart of the map such as the corpses of once alive enemies or smuggled barrels.
-    The check will also be sent out if the container is destroyed (it takes a couple seconds though be patient)
+    Chests Only: Only proper chests will be added as checks. Adds 65/191/259/364 checks.
+    Everything: If its a container that can be looted, its a check. Adds 836/2622/2940/4915 checks.
+    The check will also be sent out if the container is destroyed.
     """
 
     display_name = "ContainerSanity"
@@ -151,6 +152,7 @@ class SyncOption(Choice):
 
     display_name = "Sync Options"
 
+    default = 1
     option_on_spell = 0
     option_normally = 1
 

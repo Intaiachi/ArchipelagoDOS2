@@ -35,10 +35,11 @@ buggedLocations = [
     "Victory_Defeat_Braccus_Rex"
 ]
 reapersEyeBosses = [
+    ["Fort Joy: Kniles the Flenser (384, 630)", 4],
     ["East Reaper's Eye: Windego (357, 192)", 4], 
     ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)", 4], 
     ["East Reaper's Eye: Radeka the Witch (691, 602)", 4], 
-    ["North-east Reaper's Eye: Bishop Alexander (564, 306)", 4]
+    ["North-east Reaper's Eye: Bishop Alexandar (564, 306)", 4]
 ]
 reapersCoastBosses = [
     ["Driftwood: Dessicated Undead (490, 828)", 5], 
@@ -68,10 +69,11 @@ arxBosses = [
 ]
 goalBosses = reapersEyeBosses + reapersCoastBosses + namelessIsleBosses + arxBosses
 bossmap = {
+    "Kniles the Flenser": "Fort Joy: Kniles the Flenser (384, 630)",
     "Windego": "East Reaper's Eye: Windego (357, 192)",
     "Voidwoken Deep-dweller": "East Reaper's Eye: Voidwoken Deep-dweller (499, 157)",
     "Radeka the Witch": "East Reaper's Eye: Radeka the Witch (691, 602)",
-    "Bishop Alexander": "North-east Reaper's Eye: Bishop Alexander (564, 306)",
+    "Bishop Alexandar": "North-east Reaper's Eye: Bishop Alexandar (564, 306)",
 
     "Lich": "Driftwood: Dessicated Undead (490, 828)",
     "Lamenting Abomination": "Cloisterwood: Lamenting Abomination (112, 267)",

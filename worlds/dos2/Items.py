@@ -187,7 +187,7 @@ FILLER_ITEMS = [
     ["Chicken Claw Scroll", "c15024d5-f601-4acf-b291-acdbc64b1989"],
     ["Turn To Oil Scroll", "beb3ea08-3cfd-4361-b370-73a5fd0e5a51"],
     ["Corpse Explosion Scroll", "197ac6c6-5195-47f1-9066-5064346d05dd"],
-    ["Corrosive Tocuh Scroll", "eb9cc0a5-2f10-43d9-bcb9-e7b2324914a4"],
+    ["Corrosive Touch Scroll", "eb9cc0a5-2f10-43d9-bcb9-e7b2324914a4"],
     ["Cryogenic Stasis Scroll", "7892f88d-c187-4ce8-a864-45fa2353241d"],
     ["Cursed Electric Infusion Scroll", "be2321b3-f519-44da-be0d-3a1c7979401a"],
     ["Living on the Edge Scroll", "238a5a82-f19b-4dd4-ac51-4018e23bdffd"],
@@ -512,6 +512,199 @@ TRAPS = [
     ["Severe Random Status Trap", "TrapSevere"]
 ]
 
+UNIQUES = [
+    ["Abstinence", "ARP_Abstinence"],
+    ["Alexandar's Cloak", "ARP_AlexandarsCloak"],
+    ["Amulet of the Deep", "ARP_AmuletOfTheDeep"],
+    ["Amulet of the Void", "ARP_AmuletOfTheVoid"],
+    ["Astarte's Tears", "ARP_AstartesTears"],
+    ["Band of Braccus", "ARP_BandOfBraccus"],
+    ["Blazing Justice", "ARP_BlazingJustice"],
+    ["Burro's Club", "ARP_BurrosClub"],
+    ["Chastity", "ARP_Chastity"],
+    ["Commander of the Tides", "ARP_CommanderOfTheTides"],
+    ["Darling Bow", "ARP_DarlingBow"],
+    ["Decomposing Pyromancer's Belt", "ARP_DecomposingPyromancersBelt"],
+    ["Gawin's Robe", "ARP_GawinsRobe"],
+    ["Griff's Potato Peeler", "ARP_GriffsPotatoPeeler"],
+    ["Hallorn's Blade", "ARP_HallornsBlade"],
+    ["The Hands of the Tyrant", "ARP_HandsOfTheTyrant"], #dosent seem right (its the uncursed version)
+    ["Heart of the Tyrant", "ARP_HeartOfTheTyrant"], #dosent seem right (its the uncursed version)
+    ["Hildur's Plate", "ARP_HildursPlate"],
+    ["Hollind's Bow", "ARP_HolindsBow"], #missing aspects (or not its hard to tell)
+    ["Houndmaster's Crossbow", "ARP_HoundmastersCrossbow"],
+    ["Kalias' Stunner", "ARP_KaliasStunner"],
+    ["Knaap", "ARP_Knaap"],
+    ["Magister Carin's Shield", "ARP_MagisterCarinsShield"],
+    ["Magister Orivand's Mace", "ARP_MagisterOrivandsMace"],
+    ["Magister's Crossbow", "ARP_MagistersCrossbow"],
+    ["Magister's Mantle", "ARP_MagistersMantle"],
+    ["Magister's Sword", "ARP_MagistersSword"],
+    ["Magister Trippel's Twohander", "ARP_MagisterTripplesTwohander"], #missing +1 strength (or not, wikis disagree)
+    ["Mask of Strength", "ARP_MaskOfStrength"],
+    ["Migo's Breastplate", "ARP_MigosBreastplate"],
+    ["Migo's Ring", "ARP_MigosRing"],
+    ["Needle's Wand", "ARP_NeedlesWand"],
+    ["Radeka's Thorn", "ARP_RadekasThorn"],
+    ["Radiant Aegis", "ARP_RadiantAegis"],
+    ["Ring of Intelligence", "ARP_RingOfIntelligence"],
+    ["Saheila's Crest", "ARP_SaheilaSignet"],
+    ["Second Skin", "ARP_SecondSkin"],
+    ["Shadow's Eye", "ARP_ShadowsEye"],
+    ["Simple Pendant", "ARP_SimplePendant"],
+    ["Slug's Axe", "ARP_SlugsAxe"],
+    ["Spear of Braccus Rex", "ARP_SpearOfBraccusRex"],
+    ["Sundering Cleaver", "ARP_SunderingCleaver"],
+    ["The Illuminator", "ARP_TheIlluminator"],
+    ["The Reckoning", "ARP_TheReckoning"],
+    ["The Viper's Tongue", "ARP_TheVipersTongue"],
+    ["Tracks of the Tyrant", "ARP_TracksOfTheTyrant"], #(its the uncursed version)
+    ["Trompdoy's Hatchet", "ARP_TrompdoyHatchet"],
+    ["Turtle's Claw", "ARP_TurtlesClaw"],
+    ["Tyrant's Helm", "ARP_TyrantsHelm"], #(its the uncursed version)
+    ["Tyrant's Stride", "ARP_TyrantsStride"], #(its the uncursed version)
+    ["Waltz's Staff", "ARP_WaltzsStaff"],
+    ["Withermoore's Girdle", "ARP_WithermooresGirdle"],
+    ["Fang of the Winter Dragon", "ARP_FangOfTheWinterDragon"],
+    ["Gloves of Teleportation", "ARP_GlovesOfTeleportation"],
+    ["A Fingal Boyd's Limited Edition", "ARP_AFingalBoydsLimitedEdition"],
+    ["Amadio", "ARP_Amadio"],
+    ["An Mey Falin", "ARP_AnMeyFalin"],
+    ["Antique Armour", "ARP_AntiqueArmour"],
+    ["Antler Bow", "ARP_AntlerBow"],
+    ["Assassin's Bow", "ARP_AssassinsBow"],
+    ["Baran Levere's Ring of Bartering", "ARP_BaranLeveresRingOfBartering"],
+    ["Baran's Burning Dagger", "ARP_BaransBurningDagger"],
+    ["Baran's Electrifying Dagger", "ARP_BaransElectrifyingDagger"],
+    ["Brittle Spear", "ARP_BrittleSpear"],
+    ["Black Ring Blade", "ARP_BlackRingBlade"],
+    ["Captain Ablewether's Hat", "ARP_CaptainAblewethersHat"],
+    ["Captain's Compass", "ARP_CaptainsCompass"],
+    ["Chamore Doran", "ARP_CharmoreDoran"],
+    ["Copper Ring", "ARP_CopperRing"],
+    ["Danna Dumora", "ARP_DannaDumora"],
+    ["Deadeye's Signature Crossbow", "ARP_DeadeyesSignatureCrossbow"],
+    ["Djinn's Scimitar", "ARP_DjinnsScimitar"],
+    ["Elven Axe", "ARP_ElvenAxe"],
+    ["Emrach", "ARP_Emrach"],
+    ["Excruciating Echo", "ARP_ExcruciatingEcho"],
+    ["Executor Ninyan's Axe", "ARP_ExecutorNinyansAxe"],
+    ["Fancy Dagger", "ARP_FancyDagger"],
+    ["Gloves of Aquisition", "ARP_GlovesOfAquisition"],
+    ["Firewater's Staff", "ARP_FirewatersStaff"],
+    ["Flashing Footsteps", "ARP_FlashingFootsteps"],
+    ["Halla's Shiny Ribbon", "ARP_HallasShinyRibbon"],
+    ["Hanal Lechet", "ARP_HanalLechet"],
+    ["Hannag's Ring", "ARP_HannagsRing"],
+    ["Jonathan's Gloves", "ARP_JonathansGloves"],
+    ["Justinia's Favour", "ARP_JustiniasFavour"],
+    ["Livewood Shield", "ARP_LivewoodShield"],
+    ["Lohar's Two Handed Source Hammer", "ARP_LoharsTwoHandedSourceHammer"],
+    ["Lone Wolf Mark", "ARP_LoneWolfMark"],
+    ["Magister's Cloak", "ARP_MagistersCloak"],
+    ["Misery's Mirror", "ARP_MiserysMirror"],
+    ["Mordus' Amulet", "ARP_MordusAmulet"],
+    ["Morning's Light", "ARP_MorningsLight"],
+    ["Lover's Quarrel", "ARP_LoversQuarrel"],
+    ["Racht Muvora", "ARP_RachtMuvora"],
+    ["Rainwater Amulet", "ARP_RainwaterAmulet"],
+    ["Reaver's Axe", "ARP_ReaversAxe"],
+    ["Sacore Evdek", "ARP_SacoreEvdek"],
+    ["Spear of Foes", "ARP_SpearOfFoes"],
+    ["Spider-Silk Gloves", "ARP_SpiderSilkGloves"],
+    ["Soulforged Blade", "ARP_SoulforgedBlade"],
+    ["Soulforged Crossbow", "ARP_SoulforgedCrossbow"],
+    ["Sourcerer's Ring", "ARP_SourcerersRng"],
+    ["Stonecrusher Armour", "ARP_StonecrusherArmour"],
+    ["Stormforger", "ARP_Stormforger"],
+    ["Terrorbite", "ARP_Terrorbite"],
+    ["The Destroyer's Gloves", "ARP_TheDestroyersGloves"],
+    ["The Pride of Pryce", "ARP_ThePrideOfPryce"], #naming problems circumvented oddly
+    ["The Ravisher", "ARP_TheRavisher"],
+    ["Vard d'Layal", "ARP_VarddLayal"],
+    ["Venombite", "ARP_Venombite"],
+    ["Very Silent Watcher's Leather Shirt", "ARP_VerySilentWatchersLeatherShirt"],
+    ["Visha's Helm", "ARP_VishasHelm"],
+    ["Wand of the Elder", "ARP_WandOfTheElder"],
+    ["Xhaxh's Staff of Parasitic Decay", "ARP_XhaxhsStaffOfParasiticDecay"],
+    ["And Stay Down", "ARP_AndStayDown"],
+    ["Black Ring Sacrifcial Dagger", "ARP_BlackRingSacrificalDagger"],
+    ["Cowl of True Sight", "ARP_CowlOfTrueSight"],
+    ["Delorus' Bow", "ARP_DelorusBow"],
+    ["Divine Reckoning", "ARP_DivineReckoning"],
+    ["Fran the Bicorne Hat", "ARP_FranTheBicorneHat"],
+    ["Knight of Amadia's Gloves", "ARP_KnightOfAmadiasGloves"],
+    ["Knight of Duna's Helm", "ARP_KnightOfDunasHelm"],
+    ["Knight of Vrogir Boots", "ARP_KnightOfVrogirBoots"],
+    ["Sallow Chainmail", "ARP_SallowChainmail"],
+    ["Septa's Shield", "ARP_SeptasShield"],
+    ["The Eternal Stormblade", "ARP_TheEternalStormblade"],
+    ["The Shadow Prince's Signet", "ARP_TheShadowPrincesSignet"],
+    ["The Watcher's Amulet", "ARP_TheWatchersAmulet"],
+    ["Anathema", "ARP_Anathema"],
+    ["Ancient Belt", "ARP_AncientBelt"],
+    ["Ancient Spear of Bloodletting", "ARP_AncientSpearOfBloodletting"],
+    ["An Maflin", "ARP_AnMaflin"],
+    ["Antique Ring", "ARP_AntiqueRing"],
+    ["Ave Layal", "ARP_AveLayal"],
+    ["Band of the Faithful", "ARP_BandOfTheFaithful"],
+    ["Brahmos' Blade", "ARP_BrahmosBlade"],
+    ["Breeches of the Faithful", "ARP_BreechesOfTheFaithful"],
+    ["Boots of the Faithful", "ARP_BootsOfTheFaithful"],
+    ["Calamity", "ARP_Calamity"],
+    ["Circle of Suns", "ARP_CircleOfSuns"],
+    ["Confiscated Ancient Empire Water Staff", "ARP_ConfiscatedAncientEmpireWaterStaff"],
+    ["Cowl of the Faithful", "ARP_CowlOfTheFaithful"],
+    ["Deiseis Riveil", "ARP_DeiseisRiveil"],
+    ["Divine Spark", "ARP_DivineSpark"],
+    ["Domoh Dumora", "ARP_DomohDumora"],
+    ["Dora Rav", "ARP_DoraRav"],
+    ["Dritta Evyet", "ARP_DrittaEvyet"],
+    ["Dumora Lam", "ARP_DumoraLam"],
+    ["Ednet Voor", "ARP_EdnetVoor"],
+    ["Falone Girt", "ARP_FaloneGirt"],
+    ["Falone", "ARP_Falone"],
+    ["Fiery Inferno", "ARP_FireyInferno"],
+    ["Ghostly Morningstar", "ARP_GhostlyMorningstar"],
+    ["Glaoch Girt", "ARP_GlaochGirt"],
+    ["Gloves of the Faithful", "ARP_GlovesOfTheFaithful"],
+    ["Into Thin Air", "ARP_IntoThinAir"],
+    ["Kallisteis", "ARP_Kallisteis"],
+    ["Kemm's Deflector", "ARP_KemmsDeflector"],
+    ["Kvyn's Helm", "ARP_KvynsHelm"],
+    ["Kvyn's Hands", "ARP_KvynsHands"],
+    ["Kvyn's Heart", "ARP_KvynsHeart"],
+    ["Last One Standing", "ARP_LastOneStanding"],
+    ["Loic's Discipline", "ARP_LoicsDiscipline"],
+    ["Lord Ruaney's Boots", "ARP_LordRuaneysBoots"],
+    ["Lord Ruaney's Britches", "ARP_LordRuaneysBritches"],
+    ["Lucian's Divine Staff", "ARP_LuciansDivineStaff"],
+    ["Lucio", "ARP_Lucio"],
+    ["Luronta Temva", "ARP_LurontaTemva"],
+    ["Mantle of the Faithful", "ARP_MantleOfTheFaithful"],
+    ["Nazad Hunola", "ARP_NazadHunola"],
+    ["Rancour", "ARP_Rancour"],
+    ["Ring of the Faithful", "ARP_RingOfTheFaithful"],
+    ["Rutoma Rivelleis", "ARP_RutomaRivelleis"],
+    ["Ruvola", "ARP_Ruvola"],
+    ["Sash of the Faithful", "ARP_SashOfTheFaithful"],
+    ["Shattergrasp", "ARP_Shattergrasp"],
+    ["Soft Touch", "ARP_SoftTouch"],
+    ["Spear of Horrorsleep", "ARP_SpearOfHorrorsleep"],
+    ["Swornbreaker", "ARP_Swornbreaker"],
+    ["Talisman of the Faithful", "ARP_TalismanOfTheFaithful"],
+    ["The Executioner", "ARP_TheExecutioner"],
+    ["The Groom's Gift", "ARP_TheGroomsGift"],
+    ["The Judge", "ARP_TheJudge"],
+    ["The Silent Path", "ARP_TheSilentPath"],
+    ["Three Sisters", "ARP_ThreeSisters"],
+    ["Truthseeker", "ARP_Truthseeker"],
+    ["Vo Charlen", "ARP_VoCharlen"],
+    ["Voor d'Aravel", "ARP_VoordAravel"],
+    ["Voor d'Lamas", "ARP_VoordLamas"],
+    ["Vord Emver", "ARP_VordEmver"],
+]
+
 #0 - jort joy, 1 - reapers eye, tbd for future locations
 PROGRESSION_ITEMS = [
     ["Level Up", "levelUp", 1, ItemClassification.progression, 0],
@@ -530,6 +723,7 @@ ITEM_TUPLES = PROGRESSION_ITEMS \
   + [[item[0], item[1], index + 1000, ItemClassification.useful, 0] for index, item in enumerate(USEFUL_ITEMS)] \
   + [[item[0], item[1], index + 3000, ItemClassification.filler, 0] for index, item in enumerate(FILLER_ITEMS)] \
   + [[item[0], item[1], index + 5000, ItemClassification.useful, 0] for index, item in enumerate(EQUIPMENT)] \
+  + [[item[0], item[1], index + 6000, ItemClassification.useful, 0] for index, item in enumerate(UNIQUES)] \
   + [[item[0], item[1], index + 7000, ItemClassification.trap, 0] for index, item in enumerate(TRAPS)] \
 
 ITEM_NAME_TO_ID = {item[0]: item[2] for item in ITEM_TUPLES}
@@ -571,38 +765,41 @@ def create_all_items(world: DOS2World) -> None:
     itempool: list[Item] = []
 
     #these are used in item pool calculations
-    act1Location = 149
-    act2Location = 471
-    act3Location = 511
-    act4Location = 621
+    act1Location = 153 #218 / 989
+    act2Location = 482 #673 / 3104
+    act3Location = 522 #781 / 3462
+    act4Location = 638 #1002 / 5553
     #these will need some honing, nothing to do but get feedback
 
     scale = 1
-    levelups_to_add = 8
+    levelups_to_add = 8 #5.2% act 1 pool
     if(world.options.goal == world.options.goal.option_leave_reapers_coast or world.options.goal == world.options.goal.option_reapers_coast_hit_list):
         scale = act2Location / act1Location
-        levelups_to_add = 15
+        levelups_to_add = 15 #3.1% act 2 pool
     elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
         scale = act3Location / act1Location
-        levelups_to_add = 16
+        levelups_to_add = 16 #3.0% act 3 pool
     elif(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
         scale = act4Location / act1Location
-        levelups_to_add = 20
-    attribute_to_add = math.floor(5 * scale) #3.4% of pool
-    combat_ability_to_add = math.floor(3 * scale) #2.0% of pool
+        levelups_to_add = 20 #3.1% act 4 pool
+    attribute_to_add = math.floor(5 * scale) #3.2% of pool
+    combat_ability_to_add = math.floor(3 * scale) #1.9% of pool
     talent_point_to_add = math.floor(2 * scale) #1.3% of pool
     max_source_point_to_add = math.floor(2 * scale) #1.3% of pool
-    civil_ability_to_add = math.floor(4 * scale) #2.7% of pool
-    #stats make up 10.7% of pool
+    civil_ability_to_add = math.floor(4 * scale) #2.6% of pool
+    #stats make up 10.3% of pool
+    useful_to_add = min(math.ceil(48 * scale), 200) #skill books makes up 31.3% of pool
+    uniques_to_add = min(math.ceil(46 * scale), 190) #gear makes up 30% of pool
+    #filler makes up 23.2% - 25.4% of pool
 
-    commonWeaponToAdd = math.floor(3 * scale) #2.0% of pool
-    epicWeaponToAdd = math.floor(5 * scale) #3.4% of pool
-    legendaryWeaponToAdd = math.floor(3 * scale) #2.0% of pool
-    divineWeaponToAdd = math.floor(2 * scale) #1.3% of pool
-    commonGearToAdd = math.floor(6 * scale) #4.0% of pool
-    epicGearToAdd = math.floor(8 * scale) #5.3% of pool
-    legendaryGearToAdd = math.floor(5 * scale) #3.4% of pool
-    divineGearToAdd = math.floor(4 * scale) #2.7% of pool
+    # commonWeaponToAdd = math.floor(3 * scale) #2.0% of pool
+    # epicWeaponToAdd = math.floor(5 * scale) #3.4% of pool
+    # legendaryWeaponToAdd = math.floor(3 * scale) #2.0% of pool
+    # divineWeaponToAdd = math.floor(2 * scale) #1.3% of pool
+    # commonGearToAdd = math.floor(6 * scale) #4.0% of pool
+    # epicGearToAdd = math.floor(8 * scale) #5.3% of pool
+    # legendaryGearToAdd = math.floor(5 * scale) #3.4% of pool
+    # divineGearToAdd = math.floor(4 * scale) #2.7% of pool
     #equipment makes up 24.0% of pool
 
     if(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
@@ -615,26 +812,19 @@ def create_all_items(world: DOS2World) -> None:
     itempool += [world.create_item("Max Source Point") for _ in range(max_source_point_to_add)]
     itempool += [world.create_item("Civil Ability Point") for _ in range(civil_ability_to_add)]
     itempool += [world.create_item("Purging Wand")]
-    itempool += [world.create_item("Random Weak Weapon") for _ in range(commonWeaponToAdd)]
-    itempool += [world.create_item("Random Mediocre Weapon") for _ in range(epicWeaponToAdd)]
-    itempool += [world.create_item("Random Good Weapon") for _ in range(legendaryWeaponToAdd)]
-    itempool += [world.create_item("Random Powerful Weapon") for _ in range(divineWeaponToAdd)]
-    itempool += [world.create_item("Random Weak Gear") for _ in range(commonGearToAdd)]
-    itempool += [world.create_item("Random Mediocre Gear") for _ in range(epicGearToAdd)]
-    itempool += [world.create_item("Random Good Gear") for _ in range(legendaryGearToAdd)]
-    itempool += [world.create_item("Random Powerful Gear") for _ in range(divineGearToAdd)]
+    # itempool += [world.create_item("Random Weak Weapon") for _ in range(commonWeaponToAdd)]
+    # itempool += [world.create_item("Random Mediocre Weapon") for _ in range(epicWeaponToAdd)]
+    # itempool += [world.create_item("Random Good Weapon") for _ in range(legendaryWeaponToAdd)]
+    # itempool += [world.create_item("Random Powerful Weapon") for _ in range(divineWeaponToAdd)]
+    # itempool += [world.create_item("Random Weak Gear") for _ in range(commonGearToAdd)]
+    # itempool += [world.create_item("Random Mediocre Gear") for _ in range(epicGearToAdd)]
+    # itempool += [world.create_item("Random Good Gear") for _ in range(legendaryGearToAdd)]
+    # itempool += [world.create_item("Random Powerful Gear") for _ in range(divineGearToAdd)]
 
-    if(world.options.goal == world.options.goal.option_escape_reapers_eye or world.options.goal == world.options.goal.option_reapers_eye_hit_list): #fill 2/3 of the pool with useful, rest with filler
-        number_of_items = len(itempool)
-        number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
-        number_useful = 2 * (number_empty / 3)
-        itempool += [world.create_item(random.choice(USEFUL_ITEMS)[0]) for _ in range(math.ceil(number_useful))]
-        number_of_filler = number_empty - math.ceil(number_useful)
-        itempool += [world.create_filler() for _ in range(number_of_filler)]
-    else: #add every useful item, fill rest with filler
-        itempool += [world.create_item(item[0]) for item in USEFUL_ITEMS]
-        number_of_items = len(itempool)
-        number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
-        itempool += [world.create_filler() for _ in range(number_empty)]
+    itempool += [world.create_item(item[0]) for item in random.sample(USEFUL_ITEMS, useful_to_add)]
+    itempool += [world.create_item(item[0]) for item in random.sample(UNIQUES, uniques_to_add)]
+    number_of_items = len(itempool)
+    number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
+    itempool += [world.create_filler() for _ in range(number_empty)]
 
     world.multiworld.itempool += itempool
