@@ -106,6 +106,16 @@ class ContainerSanity(Choice):
     option_chests = 1
     option_everything = 2
 
+class RandomClassPool(Toggle):
+    """
+    A new class named Random can be chosen, and will have a random set of three starter skills as well as a random origin source skill and a random race skill.
+    Enabling this setting will expand the pool of skills this class can have to non-starter skills. The appropriate combat ability points to cast the skill will be given.
+    This often leads to characters starting with large amounts combat ability points.
+    Non-origin source skills will never be in the skill pool.
+    """
+
+    display_name = "Random Class Skill Pool Extension"
+
 class Deathlink(Toggle):
     """
     If a player with this setting dies, all who also have this setting dies
@@ -182,6 +192,7 @@ class DOS2Options(PerGameCommonOptions):
     goal: Goal
     hitList: HitList
     containerSanity: ContainerSanity
+    randomClassPool: RandomClassPool
     death_link: Deathlink
     deathlinkStyleIn: DeathlinkStyleIn
     deathlinkStyleOut: DeathlinkStyleOut

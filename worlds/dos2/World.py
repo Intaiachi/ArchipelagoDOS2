@@ -39,7 +39,7 @@ class DOS2World(World):
     
     def fill_slot_data(self) -> Mapping[str, Any]:
         slot_data = self.options.as_dict(
-            "goal", "death_link", "syncOption", "deathlinkStyleIn", "deathlinkStyleOut", "hitList", "trapPercentage", "trapStyle", "containerSanity"
+            "goal", "death_link", "syncOption", "deathlinkStyleIn", "deathlinkStyleOut", "hitList", "trapPercentage", "trapStyle", "containerSanity", "randomClassPool"
         )
         slot_data["death_link"] = slot_data.pop("death_link")
         slot_data["seed_name"] = str(self.multiworld.seed_name)

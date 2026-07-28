@@ -102,11 +102,12 @@ mapboss = {loc: name for name, loc in bossmap.items()}
 
 class DOS2ClientCommandProcessor(ClientCommandProcessor):
     def _cmd_resync(self):
-        """Manually resync"""
+        """Manually resync."""
         self.output(f"Syncing items...")
         self.syncing = True
 
     def _cmd_deathlink(self):
+        """Toggle Deathlink."""
         if(isinstance(self.ctx, DOS2Context)):
             self.ctx.has_death_link = not self.ctx.has_death_link
             Utils.async_start(self.ctx.update_death_link(self.ctx.has_death_link), name = "Update Deathlink")
@@ -122,6 +123,14 @@ class DOS2ClientCommandProcessor(ClientCommandProcessor):
                     with open(path, 'w') as f:
                         f.write("[]")
                 self.output(f"Deathlink disabled.")
+
+    def _cmd_directory(self):
+        """Display the communication file directory and its contents."""
+        self.output(f"Comm file directory:\n{self.ctx.comm_file_directory}")
+        self.output(f"Seed: {self.ctx.seed_name}")
+        for file in self.ctx.comm_file_directory.iterdir():
+            if(file.is_file()):
+                self.output(f"{file.name}\n")
     
 class DOS2Context(CommonContext):
     command_processor = DOS2ClientCommandProcessor
@@ -142,16 +151,17 @@ class DOS2Context(CommonContext):
         self.syncing = False
         self.awaiting_bridge = False
         game_options = DOS2World.settings
-        if(game_options and getattr(game_options, "root_directory", None)):
-            print(f"trying to see if {getattr(game_options, "root_directory", None)} is the right directory")
-            self.comm_file_directory = Path(game_options.root_directory)
-            if(self.comm_file_directory.name != "Osiris Data"):
-                print("Comm file directory is incorrect!")
-                self.comm_file_directory = "error"
-            else:
-                print(f"directory is correctly: {self.comm_file_directory}")
-        else:
-            self.comm_file_directory = "error"
+        self.comm_file_directory = Path(getattr(game_options, "root_directory", None))
+        # if(game_options and getattr(game_options, "root_directory", None)):
+        #     self.comm_file_directory = Path(game_options.root_directory)
+        #     if(self.comm_file_directory.name != "Osiris Data"):
+        #         print_error_and_close("Comm file directory is incorrect!")
+        #         print("Comm file directory is incorrect!")
+        #         self.comm_file_directory = "error"
+        #     else:
+        #         print(f"directory is correctly: {self.comm_file_directory}")
+        # else:
+        #     self.comm_file_directory = "error"
 
         # if(not os.path.isfile(os.path.join(self.comm_file_directory, self.comm_file_sent_items))):
         #     with open(self.comm_file_sent_items, "w") as file:

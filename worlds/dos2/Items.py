@@ -506,10 +506,112 @@ EQUIPMENT = [
     ["Random Powerful Gear", "ST_ArmorLegendary"]
 ]
 
-TRAPS = [
-    ["Minor Random Status Trap", "TrapMinor"],
+UNUSED_TRAPS = [
+    ["Minor Random Status Trap", "TrapMinor"], #keeping for backwards compatability test later
     ["Moderate Random Status Trap", "TrapModerate"],
     ["Severe Random Status Trap", "TrapSevere"]
+]
+
+TRAPS = [
+    ["Minor Poison Trap", "TrapMinorPOISONED"],
+    ["Minor Burn Trap", "TrapMinorBURNING"],
+    ["Minor Acid Trap", "TrapMinorACID"],
+    ["Minor Bleeding Trap", "TrapMinorBLEEDING"],
+    ["Minor Silence Trap", "TrapMinorMUTED"],
+    ["Minor Knock Down Trap", "TrapMinorKNOCKED_DOWN"],
+    ["Minor Terror Trap", "TrapMinorFEAR"],
+    ["Minor Blindness Trap", "TrapMinorBLIND"],
+    ["Minor Smelly Trap", "TrapMinorSMELLY"],
+    ["Minor Infection Trap", "TrapMinorINFECTIOUS_DISEASED"],
+    ["Minor Decay Trap", "TrapMinorDECAYING_TOUCH"],
+    ["Minor Ruptured Tendon Trap", "TrapMinorDAMAGE_ON_MOVE"],
+    ["Minor Atrophy Trap", "TrapMinorDISARMED"],
+    ["Minor Necrofire Trap", "TrapMinorNECROFIRE"],
+    ["Minor Stun Trap", "TrapMinorSTUNNED"],
+    ["Minor Freeze Trap", "TrapMinorFROZEN"],
+    ["Minor Chicken Trap", "TrapMinorCHICKEN"],
+    ["Minor Cow Trap", "TrapMinorCOW"],
+    ["Minor Curse Trap", "TrapMinorCURSED"],
+    ["Minor Cripple Trap", "TrapMinorCRIPPLED"],
+    ["Minor Disease Trap", "TrapMinorDISEASED"],
+    ["Minor Drunk Trap", "TrapMinorDRUNK"],
+    ["Minor Entangled Trap", "TrapMinorENTANGLED"],
+    ["Minor Mark Trap", "TrapMinorMARKED"],
+    ["Minor Petrify Trap", "TrapMinorPETRIFIED"],
+    ["Minor Plague Trap", "TrapMinorPLAGUE"],
+    ["Minor Remorse Trap", "TrapMinorREMORSE"],
+    ["Minor Shock Trap", "TrapMinorSHOCKED"],
+    ["Minor Sleep Trap", "TrapMinorSLEEPING"],
+    ["Minor Slow Trap", "TrapMinorSLOWED"],
+    ["Minor Suffocation Trap", "TrapMinorSUFFOCATING"],
+    ["Minor Weakness Trap", "TrapMinorWEAK"],
+    ["Minor Web Trap", "TrapMinorWEB"],
+    ["Moderate Poison Trap", "TrapModeratePOISONED"],
+    ["Moderate Burn Trap", "TrapModerateBURNING"],
+    ["Moderate Acid Trap", "TrapModerateACID"],
+    ["Moderate Bleeding Trap", "TrapModerateBLEEDING"],
+    ["Moderate Silence Trap", "TrapModerateMUTED"],
+    ["Moderate Knock Down Trap", "TrapModerateKNOCKED_DOWN"],
+    ["Moderate Terror Trap", "TrapModerateFEAR"],
+    ["Moderate Blindness Trap", "TrapModerateBLIND"],
+    ["Moderate Smelly Trap", "TrapModerateSMELLY"],
+    ["Moderate Infection Trap", "TrapModerateINFECTIOUS_DISEASED"],
+    ["Moderate Decay Trap", "TrapModerateDECAYING_TOUCH"],
+    ["Moderate Ruptured Tendon Trap", "TrapModerateDAMAGE_ON_MOVE"],
+    ["Moderate Atrophy Trap", "TrapModerateDISARMED"],
+    ["Moderate Necrofire Trap", "TrapModerateNECROFIRE"],
+    ["Moderate Stun Trap", "TrapModerateSTUNNED"],
+    ["Moderate Freeze Trap", "TrapModerateFROZEN"],
+    ["Moderate Chicken Trap", "TrapModerateCHICKEN"],
+    ["Moderate Cow Trap", "TrapModerateCOW"],
+    ["Moderate Curse Trap", "TrapModerateCURSED"],
+    ["Moderate Cripple Trap", "TrapModerateCRIPPLED"],
+    ["Moderate Disease Trap", "TrapModerateDISEASED"],
+    ["Moderate Drunk Trap", "TrapModerateDRUNK"],
+    ["Moderate Entangled Trap", "TrapModerateENTANGLED"],
+    ["Moderate Mark Trap", "TrapModerateMARKED"],
+    ["Moderate Petrify Trap", "TrapModeratePETRIFIED"],
+    ["Moderate Plague Trap", "TrapModeratePLAGUE"],
+    ["Moderate Remorse Trap", "TrapModerateREMORSE"],
+    ["Moderate Shock Trap", "TrapModerateSHOCKED"],
+    ["Moderate Sleep Trap", "TrapModerateSLEEPING"],
+    ["Moderate Slow Trap", "TrapModerateSLOWED"],
+    ["Moderate Suffocation Trap", "TrapModerateSUFFOCATING"],
+    ["Moderate Weakness Trap", "TrapModerateWEAK"],
+    ["Moderate Web Trap", "TrapModerateWEB"],
+    ["Severe Poison Trap", "TrapSeverePOISONED"],
+    ["Severe Burn Trap", "TrapSevereBURNING"],
+    ["Severe Acid Trap", "TrapSevereACID"],
+    ["Severe Bleeding Trap", "TrapSevereBLEEDING"],
+    ["Severe Silence Trap", "TrapSevereMUTED"],
+    ["Severe Knock Down Trap", "TrapSevereKNOCKED_DOWN"],
+    ["Severe Terror Trap", "TrapSevereFEAR"],
+    ["Severe Blindness Trap", "TrapSevereBLIND"],
+    ["Severe Smelly Trap", "TrapSevereSMELLY"],
+    ["Severe Infection Trap", "TrapSevereINFECTIOUS_DISEASED"],
+    ["Severe Decay Trap", "TrapSevereDECAYING_TOUCH"],
+    ["Severe Ruptured Tendon Trap", "TrapSevereDAMAGE_ON_MOVE"],
+    ["Severe Atrophy Trap", "TrapSevereDISARMED"],
+    ["Severe Necrofire Trap", "TrapSevereNECROFIRE"],
+    ["Severe Stun Trap", "TrapSevereSTUNNED"],
+    ["Severe Freeze Trap", "TrapSevereFROZEN"],
+    ["Severe Chicken Trap", "TrapSevereCHICKEN"],
+    ["Severe Cow Trap", "TrapSevereCOW"],
+    ["Severe Curse Trap", "TrapSevereCURSED"],
+    ["Severe Cripple Trap", "TrapSevereCRIPPLED"],
+    ["Severe Disease Trap", "TrapSevereDISEASED"],
+    ["Severe Drunk Trap", "TrapSevereDRUNK"],
+    ["Severe Entangled Trap", "TrapSevereENTANGLED"],
+    ["Severe Mark Trap", "TrapSevereMARKED"],
+    ["Severe Petrify Trap", "TrapSeverePETRIFIED"],
+    ["Severe Plague Trap", "TrapSeverePLAGUE"],
+    ["Severe Remorse Trap", "TrapSevereREMORSE"],
+    ["Severe Shock Trap", "TrapSevereSHOCKED"],
+    ["Severe Sleep Trap", "TrapSevereSLEEPING"],
+    ["Severe Slow Trap", "TrapSevereSLOWED"],
+    ["Severe Suffocation Trap", "TrapSevereSUFFOCATING"],
+    ["Severe Weakness Trap", "TrapSevereWEAK"],
+    ["Severe Web Trap", "TrapSevereWEB"]
 ]
 
 UNIQUES = [
@@ -725,6 +827,7 @@ ITEM_TUPLES = PROGRESSION_ITEMS \
   + [[item[0], item[1], index + 5000, ItemClassification.useful, 0] for index, item in enumerate(EQUIPMENT)] \
   + [[item[0], item[1], index + 6000, ItemClassification.useful, 0] for index, item in enumerate(UNIQUES)] \
   + [[item[0], item[1], index + 7000, ItemClassification.trap, 0] for index, item in enumerate(TRAPS)] \
+  + [[item[0], item[1], index + 8000, ItemClassification.trap, 0] for index, item in enumerate(UNUSED_TRAPS)] \
 
 ITEM_NAME_TO_ID = {item[0]: item[2] for item in ITEM_TUPLES}
 ID_TO_ITEM_NAME = {item[2]: item[0] for item in ITEM_TUPLES}
@@ -736,6 +839,7 @@ IS_DUPEABLE = {
     **{item[1]: True for item in USEFUL_ITEMS},
     **{item[1]: True for item in EQUIPMENT},
     **{item[1]: True for item in TRAPS},
+    **{item[1]: True for item in UNUSED_TRAPS},
     "levelUp": True,
     "attributePoint": True,
     "combatAbilityPoint": True,
@@ -752,8 +856,9 @@ class DOS2Item(Item):
 
 def get_random_filler_item_name(world: DOS2World) -> str:
     if(world.random.randint(0, 100) < world.options.trapPercentage):
-        type = world.random.randint(0, 2)
-        return TRAPS[type][0]
+        type = world.random.randint(0, 32)
+        typeSeverity = type + (world.random.randint(0, 2) * 33)
+        return TRAPS[typeSeverity][0]
     index = world.random.randint(0, len(FILLER_ITEMS) - 1)
     return FILLER_ITEMS[index][0]
 
