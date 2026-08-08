@@ -1,6 +1,7 @@
 from __future__ import annotations
 from itertools import count
 from pathlib import Path
+from datetime import datetime
 
 import os
 import sys
@@ -42,7 +43,6 @@ reapersEyeBosses = [
     ["North-east Reaper's Eye: Bishop Alexandar (564, 306)", 4]
 ]
 reapersCoastBosses = [
-    ["Driftwood: Dessicated Undead (490, 828)", 5], 
     ["Cloisterwood: Lamenting Abomination (112, 267)", 5], 
     ["Cloisterwood: Alice Alisceon (221, 316)", 5], 
     ["Paradise Downs: Harbinger of Doom (679, 437)", 5], 
@@ -58,6 +58,7 @@ namelessIsleBosses = [
 arxBosses = [
     ["Arx Outskirts: Loic the Immaculate (356, -7)", 7], 
     ["Arx Outskirts: Voidwoken Bloodfury (302, 172)", 7], 
+    ["Arx Outskirts: Kraken (475, 125)", 7],
     ["Arx: Sanguinia Tell (419, 298)", 7], 
     ["Arx: Karon (163, 750)", 7], 
     ["Arx: Isbeil (280, 672)", 7], 
@@ -75,7 +76,6 @@ bossmap = {
     "Radeka the Witch": "East Reaper's Eye: Radeka the Witch (691, 602)",
     "Bishop Alexandar": "North-east Reaper's Eye: Bishop Alexandar (564, 306)",
 
-    "Lich": "Driftwood: Dessicated Undead (490, 828)",
     "Lamenting Abomination": "Cloisterwood: Lamenting Abomination (112, 267)",
     "Alice Alisceon": "Cloisterwood: Alice Alisceon (221, 316)",
     "Harbinger of Doom": "Paradise Downs: Harbinger of Doom (679, 437)",
@@ -89,6 +89,7 @@ bossmap = {
 
     "Loic the Immaculate": "Arx Outskirts: Loic the Immaculate (356, -7)",
     "Voidwoken Bloodfury": "Arx Outskirts: Voidwoken Bloodfury (302, 172)",
+    "Kraken": "Arx Outskirts: Kraken (475, 125)",
     "Sanguinia Tell": "Arx: Sanguinia Tell (419, 298)",
     "Karon": "Arx: Karon (163, 750)",
     "Isbeil": "Arx: Isbeil (280, 672)",
@@ -125,12 +126,18 @@ class DOS2ClientCommandProcessor(ClientCommandProcessor):
                 self.output(f"Deathlink disabled.")
 
     def _cmd_directory(self):
-        """Display the communication file directory and its contents."""
-        self.output(f"Comm file directory:\n{self.ctx.comm_file_directory}")
+        """Displays the communication file directory and its contents."""
+        self.output(f"Comm file directory:\n{str(self.ctx.comm_file_directory).replace(str(Path.home()), "<user>")}")
         self.output(f"Seed: {self.ctx.seed_name}")
         for file in self.ctx.comm_file_directory.iterdir():
             if(file.is_file()):
-                self.output(f"{file.name}\n")
+                self.output(f"{file.name}\nSize: {os.path.getsize(file)}\nLast write: {datetime.fromtimestamp(os.path.getmtime(file))}")
+
+    def _cmd_hits(self):
+        """Displays the remaining hits left before victory. (Only works when connected)"""
+        self.output("Remaining hits:")
+        for hit in goalBosses:
+            self.output(f"{mapboss[hit]}")
     
 class DOS2Context(CommonContext):
     command_processor = DOS2ClientCommandProcessor
@@ -236,9 +243,9 @@ class DOS2Context(CommonContext):
                     if(key in bossmap):
                         user_selected_fight_values.add(bossmap[key])
                 goalBosses = [boss[0] for boss in goalBosses if boss[0] in user_selected_fight_values and boss[1] <= goal]
-                logger.info(f"Bosses on the hit list:\n")
-                for boss in goalBosses:
-                    logger.info(f"{mapboss[boss]}\n")
+                # logger.info(f"Bosses on the hit list:\n")
+                # for boss in goalBosses:
+                #     logger.info(f"{mapboss[boss]}\n")
             sync_option_path = os.path.join(self.comm_file_directory, self.sync_option)
             with open(sync_option_path, 'w') as f:
                 json.dump(slot_data, f)
@@ -310,9 +317,9 @@ async def game_watcher(ctx: DOS2Context):
                                         victory = True
                                     else:
                                         goalBosses = remainingBosses
-                                        logger.info(f"Remaining hits:\n")
-                                        for boss in goalBosses:
-                                            logger.info(f"{mapboss[boss]}\n")
+                                        # logger.info(f"Remaining hits:\n")
+                                        # for boss in goalBosses:
+                                        #     logger.info(f"{mapboss[boss]}\n")
                                 elif(apLoc == "Bad_State"):
                                     logger.error(f"Something occured that made locations unreachable, an earlier save might be needed")
                                     bad_states.append[loc]
@@ -327,7 +334,7 @@ async def game_watcher(ctx: DOS2Context):
                         deaths = json.load(file)
                         if(ctx.slot is not None):
                             for death in deaths:
-                                await ctx.send_death(f"{ctx.player_names[ctx.slot]} had {death} become food for the voidwoken")
+                                await ctx.send_death(f"{ctx.player_names[ctx.slot]} let {death} become food for the voidwoken.")
                     with open(path, 'w') as file:
                         json.dump([], file)
             await asyncio.sleep(3)

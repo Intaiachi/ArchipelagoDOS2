@@ -870,32 +870,32 @@ def create_all_items(world: DOS2World) -> None:
     itempool: list[Item] = []
 
     #these are used in item pool calculations
-    act1Location = 153 #218 / 989
-    act2Location = 482 #673 / 3104
-    act3Location = 522 #781 / 3462
-    act4Location = 638 #1002 / 5553
+    act1Location = 159 #226 / 1001
+    act2Location = 531 #725 / 3201
+    act3Location = 571 #833 / 3559
+    act4Location = 687 #1054 / 5649
     #these will need some honing, nothing to do but get feedback
 
     scale = 1
-    levelups_to_add = 8 #5.2% act 1 pool
+    levelups_to_add = 8 #5.0% act 1 pool
     if(world.options.goal == world.options.goal.option_leave_reapers_coast or world.options.goal == world.options.goal.option_reapers_coast_hit_list):
         scale = act2Location / act1Location
-        levelups_to_add = 15 #3.1% act 2 pool
+        levelups_to_add = 15 #2.8% act 2 pool
     elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
         scale = act3Location / act1Location
-        levelups_to_add = 16 #3.0% act 3 pool
+        levelups_to_add = 16 #2.8% act 3 pool
     elif(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
         scale = act4Location / act1Location
-        levelups_to_add = 20 #3.1% act 4 pool
-    attribute_to_add = math.floor(5 * scale) #3.2% of pool
+        levelups_to_add = 20 #2.9% act 4 pool
+    attribute_to_add = math.floor(5 * scale) #3.1% of pool
     combat_ability_to_add = math.floor(3 * scale) #1.9% of pool
     talent_point_to_add = math.floor(2 * scale) #1.3% of pool
     max_source_point_to_add = math.floor(2 * scale) #1.3% of pool
-    civil_ability_to_add = math.floor(4 * scale) #2.6% of pool
-    #stats make up 10.3% of pool
-    useful_to_add = min(math.ceil(48 * scale), 200) #skill books makes up 31.3% of pool
-    uniques_to_add = min(math.ceil(46 * scale), 190) #gear makes up 30% of pool
-    #filler makes up 23.2% - 25.4% of pool
+    civil_ability_to_add = math.floor(4 * scale) #2.5% of pool
+    #stats make up 10.1% of pool
+    useful_to_add = min(math.ceil(46.2 * scale), 200) #skill books makes up 29% of pool
+    uniques_to_add = min(math.ceil(43.8 * scale), 190) #gear makes up 27.5% of pool
+    #filler makes up 28.4% - 30.6% of pool
 
     # commonWeaponToAdd = math.floor(3 * scale) #2.0% of pool
     # epicWeaponToAdd = math.floor(5 * scale) #3.4% of pool
