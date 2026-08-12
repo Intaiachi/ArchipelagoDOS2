@@ -37,9 +37,9 @@ buggedLocations = [
 ]
 reapersEyeBosses = [
     ["Fort Joy: Kniles the Flenser (384, 630)", 4],
-    ["East Reaper's Eye: Windego (357, 192)", 4], 
-    ["East Reaper's Eye: Voidwoken Deep-dweller (499, 157)", 4], 
-    ["East Reaper's Eye: Radeka the Witch (691, 602)", 4], 
+    ["The Hollow Marshes: Windego (357, 192)", 4], 
+    ["The Hollow Marshes: Voidwoken Deep-dweller (499, 157)", 4], 
+    ["The Hollow Marshes: Radeka the Witch (691, 602)", 4], 
     ["North-east Reaper's Eye: Bishop Alexandar (564, 306)", 4]
 ]
 reapersCoastBosses = [
@@ -71,9 +71,9 @@ arxBosses = [
 goalBosses = reapersEyeBosses + reapersCoastBosses + namelessIsleBosses + arxBosses
 bossmap = {
     "Kniles the Flenser": "Fort Joy: Kniles the Flenser (384, 630)",
-    "Windego": "East Reaper's Eye: Windego (357, 192)",
-    "Voidwoken Deep-dweller": "East Reaper's Eye: Voidwoken Deep-dweller (499, 157)",
-    "Radeka the Witch": "East Reaper's Eye: Radeka the Witch (691, 602)",
+    "Windego": "The Hollow Marshes: Windego (357, 192)",
+    "Voidwoken Deep-dweller": "The Hollow Marshes: Voidwoken Deep-dweller (499, 157)",
+    "Radeka the Witch": "The Hollow Marshes: Radeka the Witch (691, 602)",
     "Bishop Alexandar": "North-east Reaper's Eye: Bishop Alexandar (564, 306)",
 
     "Lamenting Abomination": "Cloisterwood: Lamenting Abomination (112, 267)",
