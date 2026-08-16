@@ -527,7 +527,7 @@ DOS2_KILL_LIST = [
     ["S_RC_BI_AncestorTree_Blackring_002_ce4b11ce-0f4b-487b-a67c-4123134e1b8b", ["Bloodmoon Island: Black Ring Fearmaiden (278, 429)"], 1],
     ["S_RC_BI_AncestorTree_Blackring_003_ec71afef-c81f-4c56-b81d-7bc73958478d", ["Bloodmoon Island: Black Ring Painweaver (287, 438)"], 1],
     ["S_RC_BI_AncestorTree_Blackring_004_f1ca4587-d0e9-415c-a0c9-c0dd0a992748", ["Bloodmoon Island: Black Ring Fearmaiden (278, 447)"], 1],
-    ["S_RC_BI_AncestorTree_Blackring_005_ffaeae79-c8c7-422b-be80-c0190836b531", ["Bloodmoon Island: Dead Black Ring Destroyer (266, 437)"], 1],
+    #["S_RC_BI_AncestorTree_Blackring_005_ffaeae79-c8c7-422b-be80-c0190836b531", ["Bloodmoon Island: Dead Black Ring Destroyer (266, 437)"], 1], #dies when loading reapers coast, resed for the fight, but the check is already sent
     ["S_RC_BI_DemonSpot1_Demon_001_839d90c0-9457-4d9d-a263-dd1c0cd71c8a", ["Bloodmoon Island: Zerachial the Accursed (390, 418)"], 1],
     ["S_RC_BI_DemonSpot1_Demon_002_615510ae-efbf-4e09-94f5-83791d4767d2", ["Bloodmoon Island: Kortan the Stalker (390, 425)"], 1],
     ["S_RC_BI_DemonSpot1_Demon_003_0d40d6c6-09f6-44af-aba1-195bae750ff6", ["Bloodmoon Island: Enelrahc the Baleful (388, 418)"], 1],
@@ -574,7 +574,11 @@ DOS2_KILL_LIST = [
     ["S_CoS_Temples_BlackRingHub_Captain_7d32e545-6c6c-4a95-90dd-3ed14d3a20de", ["The Nameless Isle: Wordless (231, 773)"], 2],
     ["S_CoS_Temples_BlackRingHub_Dreamer_001_3307d7f7-b2fe-448e-828d-3cd3cde1cb8c", ["The Nameless Isle: Lizard Dreamer (242, 751)"], 2],
     ["S_CoS_Temples_BlackRingHub_Dreamer_002_25bf2b1b-0d49-4be1-946d-837dfd1ccf54", ["The Nameless Isle: Lizard Dreamer (237, 750)"], 2],
-    #arena ads die when boss does, so theyre missable
+    #arena ads die when boss does, so theyre missable (not with new kill method)
+    ["S_CoS_BossAutomation_001_95e541c2-9b4f-49a9-91d7-2e6875a8721d", ["The Nameless Isle: Eternal Protector (558, 936)"], 2],
+    ["S_CoS_BossAutomation_002_79e728db-4a6c-4b4f-a39b-630c924ba5d9", ["The Nameless Isle: Eternal Sentinel (536, 923)"], 2],
+    ["S_CoS_BossAutomation_003_028a43db-1718-4125-b7c7-f05a517ed0d2", ["The Nameless Isle: Eternal Protector (540, 931)"], 2],
+    ["S_CoS_BossAutomation_004_3238298b-05d0-41e4-b368-82aeb643e832", ["The Nameless Isle: Eternal Sentinel (564, 923)"], 2],
     ["S_CoS_MonolithBoss_Char_c963ad5d-72f7-4c0e-8f08-910ffe11a0a3", ["The Nameless Isle: The Great Guardian (549, 923)"], 2], #kill list candidate
     #finale prob should double check this one
     ["S_CoS_AotO_SourceTitan_d230a9d9-e44d-493e-8c69-9570f2fa065f", ["The Nameless Isle: Source Titan (-211, 1027)"], 2], #kill list canidate
@@ -6154,237 +6158,48 @@ constructLNIDR(DOS2_CHEST_LIST, 1000)
 constructLNIDR(DOS2_EVERYTHING_LIST, 2000)
 
 regionOverwrites = [
-    ["Lady Vengeance: Powerful Awakening - Complete", "End Act 2"],
-    ["Driftwood: Skeletal Hailcaster (496, 812)", "Reaper's Bluffs"],
-    ["Driftwood: Skeletal Graverobber (483, 826)", "Reaper's Bluffs"],
-    ["Driftwood: Skeletal Flameweaver (499, 842)", "Reaper's Bluffs"],
-    ["Driftwood: Skeletal Stormbinder (513, 831)", "Reaper's Bluffs"],
-    ["Driftwood: Skeletal Skullcrusher (496, 835)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (516, 783)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (514, 783)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (498, 786)", "Reaper's Bluffs"],
-    ["Driftwood: Vial Rack (492, 804)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (509, 818)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (514, 831)", "Reaper's Bluffs"],
-    ["Driftwood: Assortment of Books (515, 835)", "Reaper's Bluffs"],
-    ["Driftwood: Assortment of Books (515, 839)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (499, 841)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (497, 835)", "Reaper's Bluffs"],
-    ["Driftwood: Chest (498, 829)", "Reaper's Bluffs"],
-    ["Driftwood: Acid-Stained Chest (497, 824)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (496, 812)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (484, 835)", "Reaper's Bluffs"],
-    ["Driftwood: Vase (484, 824)", "Reaper's Bluffs"],
-    ["Driftwood: Tomb (482, 817)", "Reaper's Bluffs"],
-    ["Driftwood: Tomb (482, 824)", "Reaper's Bluffs"],
-    ["Driftwood: Tomb (482, 829)", "Reaper's Bluffs"],
-    ["Driftwood: Tomb (482, 835)", "Reaper's Bluffs"],
-    ["Cloisterwood: Old Gray Wolf (127, 273)", "Cloisterwood+"],
-    ["Cloisterwood: Black Wolf (110, 273)", "Cloisterwood+"],
-    ["Cloisterwood: Black Wolf (129, 267)", "Cloisterwood+"],
-    ["Cloisterwood: Black Wolf (116, 276)", "Cloisterwood+"],
-    ["Cloisterwood: Black Wolf (122, 262)", "Cloisterwood+"],
-    ["Cloisterwood: Lamenting Abomination (112, 267)", "Cloisterwood+"],
-    ["Cloisterwood: Alice Alisceon (221, 316)", "Cloisterwood+"],
-    ["The Meadows: Shadowcloak Skullcrusher (468, 233)", "The Blackpits"],
-    ["The Meadows: Shadowcloak Heartpiercer (484, 227)", "The Blackpits"],
-    ["The Meadows: Shadowcloak Deadeye (490, 230)", "The Blackpits"],
-    ["The Meadows: Shadowcloak Deadeye (464, 216)", "The Blackpits"],
-    ["The Meadows: Shadowcloak Spellweaver (475, 238)", "The Blackpits"],
-    ["The Meadows: Shadowcloak Spellweaver (492, 216)", "The Blackpits"],
-    ["The Blackpits: Silent Watcher (351, 76)", "The Blackpits+"],
-    ["The Blackpits: Silent Watcher (351, 82)", "The Blackpits+"],
-    ["The Blackpits: Source Hound (623, 62)", "The Blackpits+"],
-    ["The Blackpits: Source Hound (638, 58)", "The Blackpits+"],
-    ["The Blackpits: Magister Vorrh (629, 60)", "The Blackpits+"],
-    ["The Blackpits: Crate (637, 69)", "The Blackpits+"],
-    ["The Blackpits: Sacks (635, 69)", "The Blackpits+"],
-    ["The Blackpits: Crate (630, 66)", "The Blackpits+"],
-    ["The Blackpits: Crate (625, 69)", "The Blackpits+"],
-    ["The Blackpits: Crate (620, 68)", "The Blackpits+"],
-    ["The Blackpits: Sacks (621, 69)", "The Blackpits+"],
-    ["The Blackpits: Sacks 2 (621, 69)", "The Blackpits+"],
-    ["The Blackpits: Sacks (620, 67)", "The Blackpits+"],
-    ["The Blackpits: Sacks 2 (620, 67)", "The Blackpits+"],
-    ["The Blackpits: Well-worn Chest (621, 62)", "The Blackpits+"],
-    ["The Blackpits: Sacks (621, 60)", "The Blackpits+"],
-    ["The Blackpits: Crate (621, 56)", "The Blackpits+"],
-    ["The Blackpits: Coin Purse (628, 55)", "The Blackpits+"],
-    ["The Blackpits: Crate (638, 57)", "The Blackpits+"],
-    ["The Blackpits: Crate (638, 55)", "The Blackpits+"],
-    ["The Blackpits: Pile Of Body Parts (632, 52)", "The Blackpits+"],
-    ["The Blackpits: Pile Of Limbs (636, 48)", "The Blackpits+"],
-    ["The Blackpits: Dismembered Corpse (633, 50)", "The Blackpits+"],
-    ["The Blackpits: Dismembered Corpse (632, 48)", "The Blackpits+"],
-    ["Stonegarden: Venom-Wing Voidwoken (503, 52)", "Stonegarden-"],
-    ["Stonegarden: Noxious Voidwoken (497, 52)", "Stonegarden-"],
-    ["Stonegarden: Noxious Voidwoken (499, 58)", "Stonegarden-"],
-    ["Stonegarden: Venom-Wing Voidwoken (511, 48)", "Stonegarden-"],
-    ["Stonegarden: Sack (501, 65)", "Stonegarden-"],
-    ["Stonegarden: Closet (501, 64)", "Stonegarden-"],
-    ["Stonegarden: Cupboard (493, 64)", "Stonegarden-"],
-    ["Stonegarden: Basket (490, 67)", "Stonegarden-"],
-    ["Stonegarden: Basket (490, 71)", "Stonegarden-"],
-    ["Stonegarden: Sacks (490, 72)", "Stonegarden-"],
-    ["Stonegarden: Shelf (490, 73)", "Stonegarden-"],
-    ["Stonegarden: Closet (504, 74)", "Stonegarden-"],
-    ["Stonegarden: Closet (488, 65)", "Stonegarden-"],
-    ["Stonegarden: Desk (483, 64)", "Stonegarden-"],
-    ["Stonegarden: Closet (478, 65)", "Stonegarden-"],
-    ["Stonegarden: Mari Pruitt's Chest (481, 69)", "Stonegarden-"],
-    ["Stonegarden: Closet (480, 75)", "Stonegarden-"],
-    ["Stonegarden: Cupboard (488, 77)", "Stonegarden-"],
-    ["Stonegarden: Cupboard (489, 80)", "Stonegarden-"],
-    ["Stonegarden: Desk (485, 82)", "Stonegarden-"],
-    ["Stonegarden: Sacks (479, 76)", "Stonegarden-"],
-    ["Stonegarden: Assortment of Books (478, 83)", "Stonegarden-"],
-    ["Stonegarden: Barrel (477, 83)", "Stonegarden-"],
-    ["Stonegarden: Barrel (106, 596)", "Stonegarden-"],
-    ["Stonegarden: Crate (107, 596)", "Stonegarden-"],
-    ["Stonegarden: Barrel (109, 595)", "Stonegarden-"],
-    ["Stonegarden: Basket (108, 588)", "Stonegarden-"],
-    ["Stonegarden: Basket (108, 587)", "Stonegarden-"],
-    ["Stonegarden: Sacks (102, 592)", "Stonegarden-"],
-    ["Stonegarden: Basket (102, 588)", "Stonegarden-"],
-    ["Stonegarden: Basket (100, 587)", "Stonegarden-"],
-    ["Stonegarden: Cupboard (97, 588)", "Stonegarden-"],
-    ["Stonegarden: Basket (97, 588)", "Stonegarden-"],
-    ["Stonegarden: Basket (96, 586)", "Stonegarden-"],
-    ["Stonegarden: Crate (84, 594)", "Stonegarden-"],
-    ["Stonegarden: Crate (94, 592)", "Stonegarden-"],
-    ["Stonegarden: Crate 2 (94, 592)", "Stonegarden-"],
-    ["Stonegarden: Chest (87, 604)", "Stonegarden-"],
-    ["Stonegarden: Sack (92, 604)", "Stonegarden-"],
-    ["Stonegarden: Sack (93, 604)", "Stonegarden-"],
-    ["Stonegarden: Barrel (108, 599)", "Stonegarden-"],
-    ["Stonegarden: Barrel (98, 632)", "Stonegarden-"],
-    ["Arx Outskirts: Volatile Voidling (377, 1)", "Arx Outskirts+"],
-    ["Arx Outskirts: Volatile Voidling (371, 3)", "Arx Outskirts+"],
-    ["Arx Outskirts: Volatile Voidling (367, 1)", "Arx Outskirts+"],
-    ["Arx Outskirts: Volatile Voidling (373, -1)", "Arx Outskirts+"],
-    ["Arx Outskirts: Necro-Wing Voidwoken (377, -6)", "Arx Outskirts+"],
-    ["Arx Outskirts: Necro-Wing Voidwoken (374, -15)", "Arx Outskirts+"],
-    ["Arx Outskirts: Necro-Wing Voidwoken (360, -5)", "Arx Outskirts+"],
-    ["Arx Outskirts: Awakened Construct (381, -18)", "Arx Outskirts+"],
-    ["Arx Outskirts: Loic the Immaculate (356, -7)", "Arx Outskirts+"],
-    ["Arx Outskirts: Abyssal Void Flayer (450, 136)", "Arx Outskirts+"],
-    ["Arx Outskirts: Abyssal Void Flayer (463, 99)", "Arx Outskirts+"],
-    ["Arx Outskirts: Abyssal Void Devourer (450, 100)", "Arx Outskirts+"],
-    ["Arx Outskirts: Kraken (475, 125)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sack (386, 23)", "Arx Outskirts+"],
-    ["Arx Outskirts: Chest (381, 22)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (385, 10)", "Arx Outskirts+"],
-    ["Arx Outskirts: Well-worn Chest (363, 5)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (368, -4)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (363, -9)", "Arx Outskirts+"],
-    ["Arx Outskirts: Ornate Chest (386, -13)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (451, 151)", "Arx Outskirts+"],
-    ["Arx Outskirts: Crate (451, 152)", "Arx Outskirts+"],
-    ["Arx Outskirts: Chest (445, 92)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (463, 83)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (465, 83)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (467, 83)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (470, 84)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (471, 84)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (471, 83)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (476, 87)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (480, 94)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (481, 94)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sack (489, 91)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (493, 93)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sacks (494, 91)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (503, 101)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (478, 758)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (479, 759)", "Arx Outskirts+"],
-    ["Arx Outskirts: Basket (486, 763)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (486, 764)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (486, 765)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (469, 771)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (469, 766)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (469, 764)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (470, 764)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (473, 764)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (456, 109)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sacks (461, 107)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sacks (459, 142)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (469, 143)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (469, 142)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (471, 142)", "Arx Outskirts+"],
-    ["Arx Outskirts: Pouch (468, 150)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (475, 154)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (476, 154)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (503, 155)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (504, 157)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sacks (508, 158)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (511, 158)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sacks (514, 154)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (503, 131)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (497, 119)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (503, 117)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (504, 117)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (503, 115)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (507, 116)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (507, 115)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (513, 120)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (513, 125)", "Arx Outskirts+"],
-    ["Arx Outskirts: Sacks (511, 125)", "Arx Outskirts+"],
-    ["Arx Outskirts: Ornate Chest (517, 118)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (477, 744)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (473, 742)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (484, 742)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (485, 741)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (485, 739)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (485, 734)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (480, 734)", "Arx Outskirts+"],
-    ["Arx Outskirts: Fish Bucket (478, 733)", "Arx Outskirts+"],
-    ["Arx Outskirts: Elaborate Chest (473, 733)", "Arx Outskirts+"],
-    ["Arx Outskirts: Backpack (469, 735)", "Arx Outskirts+"],
-    ["Arx Outskirts: Fish Bucket (480, 728)", "Arx Outskirts+"],
-    ["Arx Outskirts: Fish Bucket (479, 728)", "Arx Outskirts+"],
-    ["Arx Outskirts: Crate (468, 727)", "Arx Outskirts+"],
-    ["Arx Outskirts: Reinforced Crate (468, 727)", "Arx Outskirts+"],
-    ["Arx Outskirts: Reinforced Crate (468, 729)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (476, 725)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (472, 724)", "Arx Outskirts+"],
-    ["Arx Outskirts: Box (472, 722)", "Arx Outskirts+"],
-    ["Arx Outskirts: Shelf (471, 723)", "Arx Outskirts+"],
-    ["Arx Outskirts: Reinforced Crate (480, 723)", "Arx Outskirts+"],
-    ["Arx Outskirts: Reinforced Crate 2 (480, 723)", "Arx Outskirts+"],
-    ["Arx Outskirts: Desk (472, 718)", "Arx Outskirts+"],
-    ["Arx Outskirts: Shelf (476, 717)", "Arx Outskirts+"],
-    ["Arx Outskirts: Barrel (485, 720)", "Arx Outskirts+"],
-    ["Arx Outskirts: Crate (485, 719)", "Arx Outskirts+"],
-    ["Fort Joy Ghetto: Finding Emmie - Complete", "Fort Joy"],
-    ["Fort Joy Ghetto: Withermoore's Soul Jar - Complete", "Fort Joy"],
-    ["The Hollow Marshes: The Shreikers - Complete", "North-east Reaper's Eye"],
-    ["Reaper's Coast: The Wrecked Caravan - Complete", "Driftwood"],
-    ["Reaper's Coast: They Shall Not Pass - Complete", "Stonegarden-"],
-    ["Driftwood: Shadow Over Driftwood - Complete", "Reaper's Bluffs"],
-    ["Driftwood: Drowning Her Sorrows - Complete", "Reaper's Bluffs"],
-    ["Driftwood: The Law of the Order - Complete", "Reaper's Bluffs"],
-    ["Stonegarden: Masked Servant (517, 182)/Masked Servant (573, 767)", "The Blackpits"],
-    ["Stonegarden: Masked Servant (498, 178)/Masked Servant (566, 771)", "The Blackpits"],
-    ["Stonegarden: Masked Servant (505, 184)/Masked Servant (567, 783)", "The Blackpits"],
-    ["Stonegarden: Ryker (516, 181)", "The Blackpits"],
-    ["Stonegarden: Waking Ryker - Complete", "The Blackpits"],
-    ["Cloisterwood: Jahan's Lesson - Complete", "Bloodmoon Island"],
-    ["Cloisterwood: Hannag's Bargin - Complete", "The Blackpits"],
-    ["Stonegarden: A Generous Offer - Complete", "The Blackpits"],
-    ["Stonegarden: Heroes' Rest - Complete", "The Blackpits"],
-    ["Stonegarden: All In The Family - Complete", "Bloodmoon Island"],
-    ["Stonegarden: The Reluctant Servants - Complete", "The Blackpits"],
-    ["The Meadows: Dark Dealings in the Blackpits - Complete", "The Blackpits"],
-    ["Paradise Downs: Almira's Request - Complete", "The Blackpits"],
-    ["Cloisterwood: A Hunter of Wicked Things - Complete", "Bloodmoon Island"],
-    ["Driftwood: A Taste of Freedom - Complete", "Cloisterwood"],
-    ["Reaper's Bluffs: Keep Calm and Carrion - Complete", "Reaper's Bluffs+"],
-    ["Arx: Wisdom of the Keeper/The Righteous - Complete", "Tomb of Lucian"],
-    ["Arx: Past Mistakes - Complete", "Tomb of Lucian"],
-    ["Arx: Saeva the Many-faced (148, 763)", "Tomb of Lucian"],
-    ["Arx: Sahun Woundbinder (148, 735)", "Tomb of Lucian"],
-    ["Arx: Urrha the Snake Charmer (177, 753)", "Tomb of Lucian"],
-    ["Arx: Kajun Frozenheart (177, 736)", "Tomb of Lucian"],
-    ["Arx: Karon (163, 750)", "Tomb of Lucian"],
+    ["Stonegarden: Venom-Wing Voidwoken (503, 52)", "Reaper's Coast"],
+    ["Stonegarden: Noxious Voidwoken (497, 52)", "Reaper's Coast"],
+    ["Stonegarden: Noxious Voidwoken (499, 58)", "Reaper's Coast"],
+    ["Stonegarden: Venom-Wing Voidwoken (511, 48)", "Reaper's Coast"],
+    ["Stonegarden: Sack (501, 65)", "Reaper's Coast"],
+    ["Stonegarden: Closet (501, 64)", "Reaper's Coast"],
+    ["Stonegarden: Cupboard (493, 64)", "Reaper's Coast"],
+    ["Stonegarden: Basket (490, 67)", "Reaper's Coast"],
+    ["Stonegarden: Basket (490, 71)", "Reaper's Coast"],
+    ["Stonegarden: Sacks (490, 72)", "Reaper's Coast"],
+    ["Stonegarden: Shelf (490, 73)", "Reaper's Coast"],
+    ["Stonegarden: Closet (504, 74)", "Reaper's Coast"],
+    ["Stonegarden: Closet (488, 65)", "Reaper's Coast"],
+    ["Stonegarden: Desk (483, 64)", "Reaper's Coast"],
+    ["Stonegarden: Closet (478, 65)", "Reaper's Coast"],
+    ["Stonegarden: Mari Pruitt's Chest (481, 69)", "Reaper's Coast"],
+    ["Stonegarden: Closet (480, 75)", "Reaper's Coast"],
+    ["Stonegarden: Cupboard (488, 77)", "Reaper's Coast"],
+    ["Stonegarden: Cupboard (489, 80)", "Reaper's Coast"],
+    ["Stonegarden: Desk (485, 82)", "Reaper's Coast"],
+    ["Stonegarden: Sacks (479, 76)", "Reaper's Coast"],
+    ["Stonegarden: Assortment of Books (478, 83)", "Reaper's Coast"],
+    ["Stonegarden: Barrel (477, 83)", "Reaper's Coast"],
+    ["Stonegarden: Barrel (106, 596)", "Reaper's Coast"],
+    ["Stonegarden: Crate (107, 596)", "Reaper's Coast"],
+    ["Stonegarden: Barrel (109, 595)", "Reaper's Coast"],
+    ["Stonegarden: Basket (108, 588)", "Reaper's Coast"],
+    ["Stonegarden: Basket (108, 587)", "Reaper's Coast"],
+    ["Stonegarden: Sacks (102, 592)", "Reaper's Coast"],
+    ["Stonegarden: Basket (102, 588)", "Reaper's Coast"],
+    ["Stonegarden: Basket (100, 587)", "Reaper's Coast"],
+    ["Stonegarden: Cupboard (97, 588)", "Reaper's Coast"],
+    ["Stonegarden: Basket (97, 588)", "Reaper's Coast"],
+    ["Stonegarden: Basket (96, 586)", "Reaper's Coast"],
+    ["Stonegarden: Crate (84, 594)", "Reaper's Coast"],
+    ["Stonegarden: Crate (94, 592)", "Reaper's Coast"],
+    ["Stonegarden: Crate 2 (94, 592)", "Reaper's Coast"],
+    ["Stonegarden: Chest (87, 604)", "Reaper's Coast"],
+    ["Stonegarden: Sack (92, 604)", "Reaper's Coast"],
+    ["Stonegarden: Sack (93, 604)", "Reaper's Coast"],
+    ["Stonegarden: Barrel (108, 599)", "Reaper's Coast"],
+    ["Stonegarden: Barrel (98, 632)", "Reaper's Coast"],
 ]
 
 for row in regionOverwrites:
@@ -6427,6 +6242,7 @@ def create_regular_locations(world: DOS2World) -> None:
     fortJoy = world.get_region("Fort Joy")
     theHollowMarshes = world.get_region("The Hollow Marshes")
     finalReapersEye = world.get_region("North-east Reaper's Eye")
+    endAct1 = world.get_region("End Act 1")
 
     ladyVengeance = world.get_region("Lady Vengeance")
     reapersCoast = world.get_region("Reaper's Coast")
@@ -6440,17 +6256,15 @@ def create_regular_locations(world: DOS2World) -> None:
     paradiseDowns = world.get_region("Paradise Downs")
     bloodmoonIsland = world.get_region("Bloodmoon Island")
     endAct2 = world.get_region("End Act 2")
-    cloisterwoodPlus = world.get_region("Cloisterwood+")
-    theBlackpitsPlus = world.get_region("The Blackpits+")
-    stonegardenMinus = world.get_region("Stonegarden-")
-    reapersBluffsPlus = world.get_region("Reaper's Bluffs+")
 
     namelessIsle = world.get_region("The Nameless Isle")
+    arenaOfTheOne = world.get_region("Arena Of The One")
 
     arxOutskirts = world.get_region("Arx Outskirts")
     arx = world.get_region("Arx")
     tombOfLucian = world.get_region("Tomb of Lucian")
     arxOutskirtsPlus = world.get_region("Arx Outskirts+")
+    endAct4 = world.get_region("End Act 4")
 
     includeChests = True if(world.options.containerSanity == world.options.containerSanity.option_chests or world.options.containerSanity == world.options.containerSanity.option_everything) else False
     includeEverything = True if(world.options.containerSanity == world.options.containerSanity.option_everything) else False
@@ -6473,116 +6287,25 @@ def create_regular_locations(world: DOS2World) -> None:
         placeLocations(theCullwoods, "The Cullwoods", includeChests, includeEverything)
         placeLocations(paradiseDowns, "Paradise Downs", includeChests, includeEverything)
         placeLocations(bloodmoonIsland, "Bloodmoon Island", includeChests, includeEverything)
-        placeLocations(endAct2, "End Act 2", includeChests, includeEverything)
-        placeLocations(cloisterwoodPlus, "Cloisterwood+", includeChests, includeEverything)
-        placeLocations(theBlackpitsPlus, "The Blackpits+", includeChests, includeEverything)
-        placeLocations(stonegardenMinus, "Stonegarden-", includeChests, includeEverything)
-        placeLocations(reapersBluffsPlus, "Reaper's Bluffs+", includeChests, includeEverything)
 
         if(world.options.goal != world.options.goal.option_leave_reapers_coast and world.options.goal != world.options.goal.option_reapers_coast_hit_list):
             placeLocations(namelessIsle, "The Nameless Isle", includeChests, includeEverything)
+            placeLocations(arenaOfTheOne, "Arena Of The One", includeChests, includeEverything)
 
             if(world.options.goal != world.options.goal.option_escape_the_nameless_isle and world.options.goal != world.options.goal.option_the_nameless_isle_hit_list):
                 placeLocations(arxOutskirts, "Arx Outskirts", includeChests, includeEverything)
                 placeLocations(arx, "Arx", includeChests, includeEverything)
                 placeLocations(tombOfLucian, "Tomb of Lucian", includeChests, includeEverything)
                 placeLocations(arxOutskirtsPlus, "Arx Outskirts+", includeChests, includeEverything)
+                placeLocations(endAct4, "End Act 4", includeChests, includeEverything)
 
     if(world.options.goal == world.options.goal.option_escape_reapers_eye):
-        finalReapersEye.add_event("Victory_Escape_Reapers_Eye", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+        endAct1.add_event("Victory_Escape_Reapers_Eye", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
     elif(world.options.goal == world.options.goal.option_leave_reapers_coast):
         endAct2.add_event("Victory_Leave_Reapers_Coast", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
     elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle):
-        namelessIsle.add_event("Victory_Escape_The_Nameless_Isle", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+        arenaOfTheOne.add_event("Victory_Escape_The_Nameless_Isle", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
     elif(world.options.goal == world.options.goal.option_defeat_braccus_rex):
-        tombOfLucian.add_event("Victory_Defeat_Braccus_Rex", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+        endAct4.add_event("Victory_Defeat_Braccus_Rex", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
     elif(world.options.goal == world.options.goal.option_reapers_eye_hit_list or world.options.goal == world.options.goal.option_reapers_coast_hit_list or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list or world.options.goal == world.options.goal.option_arx_hit_list):
-        regionPrio = [
-            ["Kniles the Flenser", "Fort Joy", 4],
-            ["Windego", "The Hollow Marshes", 4],
-            ["Voidwoken Deep-dweller", "The Hollow Marshes", 4],
-            ["Radeka the Witch", "The Hollow Marshes", 4],
-            ["Bishop Alexandar", "North-east Reaper's Eye", 4],
-
-            ["Mordus", "Reaper's Bluffs", 5],
-            ["Ryker", "Stonegarden", 5],
-            ["Ghalann, Scion of the Elves", "Stonegarden", 5],
-            ["Lamenting Abomination", "Cloisterwood+", 5],
-            ["Alice Alisceon", "Cloisterwood+", 5],
-            ["Harbinger of Doom", "Paradise Downs", 5],
-            ["The Eternal Aetera", "The Blackpits", 5],
-            
-            ["The Great Guardian", "The Nameless Isle", 6],
-            ["Source Titan", "The Nameless Isle", 6],
-
-            ["Voidwoken Bloodfury", "Arx Outskirts", 7],
-            ["Sanguinia Tell", "Arx", 7],
-            ["Isbeil", "Arx", 7],
-            ["Thorny Suncaller", "Arx", 7],
-            ["Lord Linder Kemm", "Arx", 7],
-            ["Adramahlihk", "Arx", 7],
-            ["Contaminated Horror", "Arx", 7],
-            ["Kraken", "Arx Outskirts+", 7],
-            ["Loic the Immaculate", "Arx Outskirts+", 7],
-            ["Karon", "Tomb of Lucian", 7],
-            ["Braccus Rex", "Tomb of Lucian", 7]
-        ]
-        regionWeight = {
-            "Fort Joy": 0,
-            "The Hollow Marshes": 1,
-            "North-east Reaper's Eye": 2,
-            "Reaper's Bluffs": 3,
-            "Stonegarden": 4,
-            "Cloisterwood+": 5,
-            "Paradise Downs": 6,
-            "The Blackpits": 7,
-            "The Nameless Isle": 8,
-            "Arx Outskirts": 9,
-            "Arx": 10,
-            "Arx Outskirts+": 11,
-            "Tomb of Lucian": 12
-        }
-        selectedHits = world.options.hitList
-        highest = 0
-        if(world.options.goal == world.options.goal.option_reapers_eye_hit_list):
-            limit = 4
-        elif(world.options.goal == world.options.goal.option_reapers_coast_hit_list):
-            limit = 5
-        elif(world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
-            limit = 6
-        else:
-            limit = 7
-        for hit in selectedHits:
-            for reverseHitInfo in regionPrio[::-1]:
-                if(hit == reverseHitInfo[0] and reverseHitInfo[2] <= limit and highest < regionWeight[reverseHitInfo[1]]):
-                    highest = regionWeight[reverseHitInfo[1]]
-                    break
-        match(highest):
-            case 0:
-                fortJoy.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 1:
-                theHollowMarshes.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 2:
-                finalReapersEye.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 3:
-                reapersBluffs.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 4:
-                stonegarden.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 5:
-                cloisterwoodPlus.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 6:
-                paradiseDowns.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 7:
-                theBlackpits.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 8:
-                namelessIsle.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 9:
-                arxOutskirts.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 10:
-                arx.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 11:
-                arxOutskirtsPlus.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case 12:
-                tombOfLucian.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
-            case _:
-                fortJoy.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)
+        merryweather.add_event("Victory_All_Hits", "Victory", location_type = DOS2Location, item_type = Items.DOS2Item)

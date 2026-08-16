@@ -92,6 +92,69 @@ class HitList(OptionSet):
         "Braccus Rex"
     }
 
+class Act1Keys(Range):
+    """
+    Sets the number of Reaper's Eye Keys needed to leave Reaper's Eye.
+    Setting it to 0 will allow leaving Reaper's Eye with no keys.
+    Recommended is 5.
+    """
+
+    display_name = "Act 1 Keys"
+    range_start = 0
+    range_end = 40
+    default = 5
+
+class Act2Keys(Range):
+    """
+    Sets the number of Reaper's Coast Keys needed to leave Reaper's Coast.
+    Setting it to 0 will allow leaving Reaper's Coast with no keys.
+    Doesn't do anything if goal doesn't include act.
+    Recommended is 10.
+    """
+
+    display_name = "Act 2 Keys"
+    range_start = 0
+    range_end = 109
+    default = 10
+
+class Act3Keys(Range):
+    """
+    Sets the number of The Nameless Isle Keys needed to leave The Nameless Isle.
+    Setting it to 0 will allow leaving The Nameless Isle with no keys.
+    Doesn't do anything if goal doesn't include act.
+    Recommended is 1.
+    """
+
+    display_name = "Act 3 Keys"
+    range_start = 0
+    range_end = 13
+    default = 1
+
+class Act4Keys(Range):
+    """
+    Sets the number of Arx Keys needed to leave Arx.
+    Setting it to 0 will allow leaving Arx with no keys.
+    Doesn't do anything if goal doesn't include act.
+    Recommended is 4.
+    """
+
+    display_name = "Act 4 Keys"
+    range_start = 0
+    range_end = 31
+    default = 4
+
+class RegionBarriers(Toggle):
+    """
+    When enabled, barriers blocking off certain region will be present. The only way to remove these barriers is to find their corresponding region unlock.
+    The following regions blocked by barriers are:
+    Reaper's Eye: Fort Joy, The Hollow Marshes, North-east Reaper's Eye.
+    Reaper's Coast: Driftwood, Stonegarden, Reaper's Bluffs, Cloisterwood, The Meadows, The Cullwoods, Paradise Downs, The Blackpits, Bloodmoon Island.
+    The Nameless Isle: None (it's a really short act).
+    Arx: Arx, Tomb of Lucian.
+    """
+
+    display_name = "Region Barriers"
+
 class ContainerSanity(Choice):
     """
     When enabled, opening a container will send a check.
@@ -129,7 +192,7 @@ class EnableLevelTeleport(Toggle):
 
 class Deathlink(Toggle):
     """
-    If a player with this setting dies, all who also have this setting dies
+    If a player with this setting dies, all who also have this setting dies.
     """
 
     display_name = "Deathlink"
@@ -139,9 +202,9 @@ class DeathlinkStyleIn(Choice):
     """
     This determines if the entire party dies, or only one party member dies when receiving a deathlink.
     Need to have deathlink enabled to do anything.
-    Party: The whole party dies when receiving a deathlink
-    Random: One random party member dies when receiving a deathlink
-    Player Controlled: Kills the currently controlled character when receiving a deathlink
+    Party: The whole party dies when receiving a deathlink.
+    Random: One random party member dies when receiving a deathlink.
+    Player Controlled: Kills the currently controlled character when receiving a deathlink.
     """
 
     display_name = "Deathlink Receive Style"
@@ -154,8 +217,8 @@ class DeathlinkStyleOut(Choice):
     """
     This determines whether a deathlink is sent out on a full party wipe or a singular party member's death.
     Needs to have deathlink enabled to do anything.
-    Party: A deathlink is sent out when the full party dies
-    Singular: A deathlink is sent out when a single party member dies
+    Party: A deathlink is sent out when the full party dies.
+    Singular: A deathlink is sent out when a single party member dies.
     """
 
     display_name = "Deathlink Send Style"
@@ -191,7 +254,7 @@ class TrapPercentage(Range):
 class TrapStyle(Choice):
     """
     Determines if a trap applies its status to all party members or one random party member.
-    Does nothing if traps aren't enabled
+    Does nothing if traps aren't enabled.
     """
 
     display_name = "Trap Style"
@@ -202,6 +265,11 @@ class TrapStyle(Choice):
 class DOS2Options(PerGameCommonOptions):
     goal: Goal
     hitList: HitList
+    act1Keys: Act1Keys
+    act2Keys: Act2Keys
+    act3Keys: Act3Keys
+    act4Keys: Act4Keys
+    regionBarriers: RegionBarriers
     containerSanity: ContainerSanity
     randomClassPool: RandomClassPool
     enableLevelTeleport: EnableLevelTeleport

@@ -807,6 +807,23 @@ UNIQUES = [
     ["Vord Emver", "ARP_VordEmver"],
 ]
 
+REGION_UNLOCKS = [
+    ["Fort Joy Unlock", "RegionFortJoy"],
+    ["The Hollow Marshes Unlock", "RegionTheHollowMarshes"],
+    ["North-east Reaper's Eye Unlock", "RegionNorthEastReapersEye"],
+    ["Driftwood Unlock", "RegionDriftwood"],
+    ["Stonegarden Unlock", "RegionStonegarden"],
+    ["Reaper's Bluffs Unlock", "RegionReapersBluffs"],
+    ["Cloisterwood Unlock", "RegionCloisterwood"],
+    ["The Meadows Unlock", "RegionTheMeadows"],
+    ["The Cullwoods Unlock", "RegionTheCullwoods"],
+    ["Paradise Downs Unlock", "RegionParadiseDowns"],
+    ["The Blackpits Unlock", "RegionTheBlackpits"],
+    ["Bloodmoon Island Unlock", "RegionBloodmoonIsland"],
+    ["Arx Unlock", "RegionArx"],
+    ["Tomb of Lucian Unlock", "RegionTombOfLucian"],
+]
+
 #0 - jort joy, 1 - reapers eye, tbd for future locations
 PROGRESSION_ITEMS = [
     ["Level Up", "levelUp", 1, ItemClassification.progression, 0],
@@ -817,7 +834,11 @@ PROGRESSION_ITEMS = [
     ["Max Source Point", "maxSourcePoint", 6, ItemClassification.progression, 0],
     ["Civil Ability Point", "civilAbilityPoint", 7, ItemClassification.progression, 0],
     ["Source Amulet", "86c59384-3686-4594-b485-507caed669a5", 8, ItemClassification.progression, 3],
-    ["Scroll Of Atonement", "a266d681-bb84-4277-9889-9da15a4bf3b2", 9, ItemClassification.progression, 3]
+    ["Scroll Of Atonement", "a266d681-bb84-4277-9889-9da15a4bf3b2", 9, ItemClassification.progression, 3],
+    ["Reaper's Eye Key", "24c696b8-5f2c-43da-9022-0d2979e289c2", 10, ItemClassification.progression, 0],
+    ["Reaper's Coast Key", "d5993f7a-4bf9-4d99-a30c-cff8f230a975", 11, ItemClassification.progression, 1],
+    ["The Nameless Isle Key", "b95bc01d-699d-4ef7-9ff5-90c3365aa848", 12, ItemClassification.progression, 2],
+    ["Arx Key", "8e781970-3612-441b-bc17-996e43e56943", 13, ItemClassification.progression, 3],
 ]
 
 #item name, id in game, id in ap, classification, level
@@ -828,6 +849,7 @@ ITEM_TUPLES = PROGRESSION_ITEMS \
   + [[item[0], item[1], index + 6000, ItemClassification.useful, 0] for index, item in enumerate(UNIQUES)] \
   + [[item[0], item[1], index + 7000, ItemClassification.trap, 0] for index, item in enumerate(TRAPS)] \
   + [[item[0], item[1], index + 8000, ItemClassification.trap, 0] for index, item in enumerate(UNUSED_TRAPS)] \
+  + [[item[0], item[1], index + 9000, ItemClassification.progression, 0] for index, item in enumerate(REGION_UNLOCKS)] \
 
 ITEM_NAME_TO_ID = {item[0]: item[2] for item in ITEM_TUPLES}
 ID_TO_ITEM_NAME = {item[2]: item[0] for item in ITEM_TUPLES}
@@ -848,7 +870,11 @@ IS_DUPEABLE = {
     "civilAbilityPoint": True,
     "2b4412a5-467a-44ae-9d7b-bf39a06794b2": True,
     "86c59384-3686-4594-b485-507caed669a5": True,
-    "a266d681-bb84-4277-9889-9da15a4bf3b2": True
+    "a266d681-bb84-4277-9889-9da15a4bf3b2": True,
+    "24c696b8-5f2c-43da-9022-0d2979e289c2": True,
+    "d5993f7a-4bf9-4d99-a30c-cff8f230a975": True,
+    "b95bc01d-699d-4ef7-9ff5-90c3365aa848": True,
+    "8e781970-3612-441b-bc17-996e43e56943": True
 }
 
 class DOS2Item(Item):
@@ -867,17 +893,20 @@ def create_item_with_correct_classification(world: DOS2World, name: str) -> DOS2
     return DOS2Item(name, classification, ITEM_NAME_TO_ID[name], world.player)
 
 def create_all_items(world: DOS2World) -> None:
-    itempool: list[Item] = []
 
     #these are used in item pool calculations
     act1Location = 159 #226 / 1001
     act2Location = 531 #725 / 3201
-    act3Location = 571 #833 / 3559
-    act4Location = 687 #1054 / 5649
+    act3Location = 575 #837 / 3563
+    act4Location = 691 #1058 / 5653
     #these will need some honing, nothing to do but get feedback
 
     scale = 1
     levelups_to_add = 8 #5.0% act 1 pool
+    act1KeysToAdd = world.options.act1Keys
+    act2KeysToAdd = world.options.act2Keys
+    act3KeysToAdd = world.options.act3Keys
+    act4KeysToAdd = world.options.act4Keys
     if(world.options.goal == world.options.goal.option_leave_reapers_coast or world.options.goal == world.options.goal.option_reapers_coast_hit_list):
         scale = act2Location / act1Location
         levelups_to_add = 15 #2.8% act 2 pool
@@ -907,16 +936,60 @@ def create_all_items(world: DOS2World) -> None:
     # divineGearToAdd = math.floor(4 * scale) #2.7% of pool
     #equipment makes up 24.0% of pool
 
+    def addItems(act, includeBarriers):
+        itempool: list[Item] = []
+        if(act == 4):
+            itempool += [world.create_item("Source Amulet")]
+            itempool += [world.create_item("Scroll Of Atonement")]
+            itempool += [world.create_item("Arx Key") for _ in range(act4KeysToAdd)]
+            if(includeBarriers):
+                itempool += [world.create_item("Arx Unlock")]
+                itempool += [world.create_item("Tomb of Lucian Unlock")]
+        if(act >= 3):
+            itempool += [world.create_item("The Nameless Isle Key") for _ in range(act3KeysToAdd)]
+        if(act >= 2):
+            itempool += [world.create_item("Reaper's Coast Key") for _ in range(act2KeysToAdd)]
+            if(includeBarriers):
+                itempool += [world.create_item("Driftwood Unlock")]
+                itempool += [world.create_item("Stonegarden Unlock")]
+                itempool += [world.create_item("Reaper's Bluffs Unlock")]
+                itempool += [world.create_item("Cloisterwood Unlock")]
+                itempool += [world.create_item("The Meadows Unlock")]
+                itempool += [world.create_item("The Cullwoods Unlock")]
+                itempool += [world.create_item("Paradise Downs Unlock")]
+                itempool += [world.create_item("The Blackpits Unlock")]
+                itempool += [world.create_item("Bloodmoon Island Unlock")]
+        if(includeBarriers):
+            itempool += [world.create_item("Fort Joy Unlock")]
+            itempool += [world.create_item("The Hollow Marshes Unlock")]
+            itempool += [world.create_item("North-east Reaper's Eye Unlock")]
+        itempool += [world.create_item("Level Up") for _ in range(levelups_to_add)]
+        itempool += [world.create_item("Attribute Point") for _ in range(attribute_to_add)]
+        itempool += [world.create_item("Combat Ability Point") for _ in range(combat_ability_to_add)]
+        itempool += [world.create_item("Talent Point") for _ in range(talent_point_to_add)]
+        itempool += [world.create_item("Max Source Point") for _ in range(max_source_point_to_add)]
+        itempool += [world.create_item("Civil Ability Point") for _ in range(civil_ability_to_add)]
+        itempool += [world.create_item("Purging Wand")]
+        itempool += [world.create_item("Reaper's Eye Key") for _ in range(act1KeysToAdd)]
+
+        itempool += [world.create_item(item[0]) for item in random.sample(USEFUL_ITEMS, useful_to_add)]
+        itempool += [world.create_item(item[0]) for item in random.sample(UNIQUES, uniques_to_add)]
+        number_of_items = len(itempool)
+        number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
+        itempool += [world.create_filler() for _ in range(number_empty)]
+
+        return itempool
+
+    act = 1
+    barriers = world.options.regionBarriers == world.options.regionBarriers.option_true
     if(world.options.goal == world.options.goal.option_defeat_braccus_rex or world.options.goal == world.options.goal.option_arx_hit_list):
-        itempool += [world.create_item("Source Amulet")]
-        itempool += [world.create_item("Scroll Of Atonement")]
-    itempool += [world.create_item("Level Up") for _ in range(levelups_to_add)]
-    itempool += [world.create_item("Attribute Point") for _ in range(attribute_to_add)]
-    itempool += [world.create_item("Combat Ability Point") for _ in range(combat_ability_to_add)]
-    itempool += [world.create_item("Talent Point") for _ in range(talent_point_to_add)]
-    itempool += [world.create_item("Max Source Point") for _ in range(max_source_point_to_add)]
-    itempool += [world.create_item("Civil Ability Point") for _ in range(civil_ability_to_add)]
-    itempool += [world.create_item("Purging Wand")]
+        act = 4
+    elif(world.options.goal == world.options.goal.option_escape_the_nameless_isle or world.options.goal == world.options.goal.option_the_nameless_isle_hit_list):
+        act = 3
+    elif(world.options.goal == world.options.goal.option_leave_reapers_coast or world.options.goal == world.options.goal.option_reapers_coast_hit_list):
+        act = 2
+    world.multiworld.itempool += addItems(act, barriers)
+
     # itempool += [world.create_item("Random Weak Weapon") for _ in range(commonWeaponToAdd)]
     # itempool += [world.create_item("Random Mediocre Weapon") for _ in range(epicWeaponToAdd)]
     # itempool += [world.create_item("Random Good Weapon") for _ in range(legendaryWeaponToAdd)]
@@ -925,11 +998,3 @@ def create_all_items(world: DOS2World) -> None:
     # itempool += [world.create_item("Random Mediocre Gear") for _ in range(epicGearToAdd)]
     # itempool += [world.create_item("Random Good Gear") for _ in range(legendaryGearToAdd)]
     # itempool += [world.create_item("Random Powerful Gear") for _ in range(divineGearToAdd)]
-
-    itempool += [world.create_item(item[0]) for item in random.sample(USEFUL_ITEMS, useful_to_add)]
-    itempool += [world.create_item(item[0]) for item in random.sample(UNIQUES, uniques_to_add)]
-    number_of_items = len(itempool)
-    number_empty = len(world.multiworld.get_unfilled_locations(world.player)) - number_of_items
-    itempool += [world.create_filler() for _ in range(number_empty)]
-
-    world.multiworld.itempool += itempool
