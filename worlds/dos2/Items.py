@@ -896,9 +896,9 @@ def create_all_items(world: DOS2World) -> None:
 
     #these are used in item pool calculations
     act1Location = 159 #226 / 1001
-    act2Location = 531 #725 / 3201
-    act3Location = 575 #837 / 3563
-    act4Location = 691 #1058 / 5653
+    act2Location = 530 #724 / 3200
+    act3Location = 573 #835 / 3561
+    act4Location = 685 #1052 / 5647
     #these will need some honing, nothing to do but get feedback
 
     scale = 1
@@ -923,7 +923,7 @@ def create_all_items(world: DOS2World) -> None:
     civil_ability_to_add = math.floor(4 * scale) #2.5% of pool
     #stats make up 10.1% of pool
     useful_to_add = min(math.ceil(46.2 * scale), 200) #skill books makes up 29% of pool
-    uniques_to_add = min(math.ceil(43.8 * scale), 190) #gear makes up 27.5% of pool
+    uniques_to_add = min(math.ceil(43.9 * scale), 190) #gear makes up 27.5% of pool
     #filler makes up 28.4% - 30.6% of pool
 
     # commonWeaponToAdd = math.floor(3 * scale) #2.0% of pool

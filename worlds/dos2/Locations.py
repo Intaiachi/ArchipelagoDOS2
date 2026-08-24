@@ -638,10 +638,10 @@ DOS2_KILL_LIST = [
     ["S_ARX_Neighborhood_TheFence_Demon_03_0fc21242-8f25-4091-a42b-e7614199a243", ["Arx: Debt Collector (376, 733)"], 3],
     ["S_ARX_Neighborhood_TheFence_973d85be-5756-4bf1-aae3-a2b06fcb2b31", ["Arx: Sanguinia Tell (419, 298)"], 3], #kill list canidate
     #mistake
-    ["S_ARX_Prison_Mistake_BlackRing1_6144fe66-7ac8-4034-9f0d-8335efa4ac91", ["Arx: Saeva the Many-faced (148, 763)"], 3],
-    ["S_ARX_Prison_Mistake_BlackRing2_fb59309d-5167-4ad7-97fd-f43122040124", ["Arx: Sahun Woundbinder (148, 735)"], 3],
-    ["S_ARX_Prison_Mistake_BlackRing3_0419d25a-af6e-4ad2-9394-710803f4af0f", ["Arx: Urrha the Snake Charmer (177, 753)"], 3],
-    ["S_ARX_Prison_Mistake_BlackRing4_026049be-0529-4c39-82dd-245cb2c6b4cc", ["Arx: Kajun Frozenheart (177, 736)"], 3],
+    # ["S_ARX_Prison_Mistake_BlackRing1_6144fe66-7ac8-4034-9f0d-8335efa4ac91", ["Arx: Saeva the Many-faced (148, 763)"], 3], #these four open arx dead, prematurely sending the check
+    # ["S_ARX_Prison_Mistake_BlackRing2_fb59309d-5167-4ad7-97fd-f43122040124", ["Arx: Sahun Woundbinder (148, 735)"], 3],
+    # ["S_ARX_Prison_Mistake_BlackRing3_0419d25a-af6e-4ad2-9394-710803f4af0f", ["Arx: Urrha the Snake Charmer (177, 753)"], 3],
+    # ["S_ARX_Prison_Mistake_BlackRing4_026049be-0529-4c39-82dd-245cb2c6b4cc", ["Arx: Kajun Frozenheart (177, 736)"], 3],
     ["S_ARX_Prison_TheMistake_5136657b-5d75-409f-814c-0eee4ff3913d", ["Arx: Karon (163, 750)"], 3], #hit list candidate
     #spider ambush
     ["S_ARX_Sewers_CombatRoom_Spider_01_be2ee8d1-1e2c-4d49-9006-b13511d88efb", ["Arx: Fog-Swollen Crawler (444, 578)"], 3],
@@ -6098,7 +6098,7 @@ DOS2_LOCATION_LIST = [
     #["Quest-CoS_HelpingAlexandar", ["The Nameless Isle: An Unlikely Patron - Complete"], 2], #(pops at aoto) this doesnt pop for anything, completing or failing the quest
     #["Quest-CoS_Delorus", ["The Nameless Isle: A Familiar Face - Complete"], 2], #missable
     #["Quest-CoS_GarethsRevenge", ["The Nameless Isle: Seeking Revenge - Complete"], 2], #also probably super missable, correct
-    ["Quest-CoS_BlackRing", ["The Nameless Isle: Invaders - Complete"], 2], #(pops at aoto)
+    #["Quest-CoS_BlackRing", ["The Nameless Isle: Invaders - Complete"], 2], #(pops at aoto) removed for a similar reason to An Unlikely Patron, the Sallow death helper completes The Nameless Isle for whatever reason
     ["Quest-CoS_TheWatcher", ["The Nameless Isle: The Watcher's Mercy - Complete"], 2], #(pops at aoto)
     ["Quest-CoS_SpyMaster", ["The Nameless Isle: The Mother Tree - Complete"], 2], #(pops at aoto)
     ["Quest-CoS_MissingStudent", ["The Nameless Isle: Unscholarly Pursuits - Complete"], 2], #(pops at aoto)
