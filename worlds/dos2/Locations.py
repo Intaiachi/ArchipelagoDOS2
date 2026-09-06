@@ -2371,7 +2371,7 @@ DOS2_EVERYTHING_LIST = [
     ["550d2faf-1066-40fd-b613-0ca8e7c659bb", ["Driftwood: Barrel (301, 173)"], 1],
     ["b6690171-b118-466e-9d6c-adff2e8f596d", ["Driftwood: Basket (379, 161)"], 1],
     ["eaf27a09-e1cd-4dfb-a376-3ccdb3d13757", ["Driftwood: Basket (298, 154)"], 1],
-    ["eab895d7-2637-8871-4a38-e57eceb706e7", ["Driftwood: Bsaket (419, 789)"], 1],
+    ["eab895d7-2637-8871-4a38-e57eceb706e7", ["Driftwood: Basket (419, 789)"], 1],
     ["91f71a73-f1c9-4930-8eb0-036af1a0103b", ["Driftwood: Basket (287, 138)"], 1],
     ["d6531b06-0217-8850-2e69-dda6543aaea6", ["Driftwood: Basket (419, 788)"], 1],
     ["b05485be-91f4-4588-956b-c8f9e34e5497", ["Driftwood: Basket (365, 159)"], 1],
